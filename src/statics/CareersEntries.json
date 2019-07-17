@@ -1,0 +1,21 @@
+{
+  "jobs": [
+    {
+      "slug": "mid-backend-dev",
+      "name" : "Mid-Level Backend Developer",
+      "section": "Web",
+      "location" : "London, UK",
+      "shift" : "Full Time",
+      "description": "Once upon a time there was a generous girl called Maud Sparrow. She was on the way to see her Albert Connor, when she decided to take a short cut through Spittleton Woods..."
+    },
+    {
+      "slug": "internship",
+      "name" : "Internship",
+      "section": "Marketing",
+      "location" : "London, UK",
+      "shift" : "Full Time",
+      "description": "Once upon a time there was a generous girl called Maud Sparrow. She was on the way to see her Albert Connor, when she decided to take a short cut through Spittleton Woods..."
+    }
+    
+  ]
+}
