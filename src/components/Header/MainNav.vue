@@ -40,7 +40,7 @@
 
 			<!-- Login To Platform -->
 			<li class="nav-item u-header__nav-last-item">
-				<a class="btn btn-sm btn-primary transition-3d-hover" href="https://insights.buzzradar.com/" target="_blank">
+				<a class="btn btn-sm btn-warning transition-3d-hover" href="https://insights.buzzradar.com/" target="_blank">
 				Login
 				</a>
 			</li>
@@ -71,6 +71,10 @@
 	  				//Products
 	  				router_config : this.$router.options.routes[3],
 	  				children : this.$router.options.routes[3].children,
+	  			},
+	  			{
+	  				//Services
+	  				router_config : this.$router.options.routes[4],
 	  			},
 	  			{
 	  				//Case Studies

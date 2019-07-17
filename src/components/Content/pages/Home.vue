@@ -551,8 +551,13 @@
       $('.js-bg-video').hsBgVideo();
       $.HSCore.components.HSFancyBox.init('.js-fancybox');
       $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+      dzsprx_init('.dzsparallaxer', { direction: "normal"} );
     },
-    
+    updated() {
+
+    }
+
   }
 
  </script>
