@@ -13,7 +13,8 @@ import BlogIndividual from './components/Content/pages/BlogIndividual';
 import CaseStudies from './components/Content/pages/CaseStudies';
 import Products from './components/Content/pages/Products';
 import RealTimeDash from './components/Content/pages/RealTimeDashboards';
-import AudienceIntel from './components/Content/pages/AudienceIntel';
+import AIAudienceAnal from './components/Content/pages/AIAudienceAnal';
+import MarketingIntel from './components/Content/pages/MarketingIntel';
 
 import BlogEntries from './statics/BlogsEntries.json';
 import JobsEntries from './statics/CareersEntries.json';
@@ -77,10 +78,16 @@ export default new Router({
           component: RealTimeDash
         },
         {
-          path: '/audiencesocialintel',
-          name : 'audiencesocialintel',
-          label : 'Audience & Social Intelligence',
-          component: AudienceIntel
+          path: '/aiaudienceanalysis',
+          name : 'aiaudienceanalysis',
+          label : 'AI Audience Analysis',
+          component: AIAudienceAnal
+        },
+        {
+          path: '/marketingintelplatform',
+          name : 'marketingintelplatform',
+          label : 'Marketing Intelligence Platform',
+          component: MarketingIntel
         },
       ]
     },
