@@ -162,18 +162,19 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Watson Image for Mobile -->
+    <div class="container position-relative">
+        <div class="row p-3">
+          <img class="img-fluid d-block d-md-none rounded" :src="`${publicPath}public_assets/html5-video/ibm-watson/ibm-watson-poster.jpg`" alt="Watson IBM">
+          <!-- Play Button Js-Fancybox -->
+          <a class="u-media-player u-media-player--centered text-center" href="#">
+            <h2 class="text-primary text-white">AI generated insights & recommendations</h2>
+            <h5 class="h6 text-white">Powered by Watson</h5>
+          </a>
+          <!-- Play Button Js-Fancybox -->
+        </div>
+    </div>
+    <!-- Watson Image for Mobile -->
 
 
 
@@ -235,7 +236,7 @@
 
 
     <!-- Icon Blocks Section -->
-    <div class="container space-top-3 space-bottom-md-3 space-bottom-">
+    <div class="container space-top-1 space-bottom-md-3 space-bottom-">
       <!-- Title -->
       <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
         <h2>How It works</h2>
