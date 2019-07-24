@@ -370,15 +370,31 @@
 
 
     <!-- Watson Image for Mobile -->
-    <div class="container position-relative">
+    <div class="container position-relative d-block d-md-none">
         <div class="row p-3">
-          <img class="img-fluid d-block d-md-none rounded" :src="`${publicPath}public_assets/html5-video/ibm-watson/ibm-watson-poster.jpg`" alt="Watson IBM">
-          <!-- Play Button Js-Fancybox -->
-          <a class="u-media-player u-media-player--centered text-center" href="#">
-            <h2 class="h6 text-primary text-white">This is the copy related to <strong>Credible Influence</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere risus quis quam posuere vehicula.</h2>
-            <small class="text-white">Powered by Watson</small>
-          </a>
-          <!-- Play Button Js-Fancybox -->
+
+          <div class="col-lg-5 mb-7">
+            <!-- Title -->
+            <div class="pr-lg-4">
+
+              <h2 class="h4 font-weight-semi-bold text-primary">Credible <span class="font-weight-semi-bold">Influence</span></h2>
+
+              <p class="mb-3">No mater how advanced your data insights platform an organisation will struggle to be effective without team members understanding what insights it needs and what to do with them to get results.</p>
+
+              <p class="mb-0">Credible Influence our team of strategists, tacticians and analysts are on hand with workshops to help you understand your objectives and get the most out of Buzz Radar’s class leading technology. We also  help some of the worlds largest brands with in-depth setup and can provide a myriad of effective reports, dashboards and best practice support.</p>
+
+              <a class="btn btn-primary mt-3" href="http://credibleinfluence.com/" role="button" target="_blank">Take me there</a>
+
+            </div>
+            <!-- End Title -->
+          </div>
+
+          <div class="col-lg-7">
+            <video loop="" muted="" autoplay="" poster="images/videoframe.jpg" class="aiwatson_video">
+                <source src="http://www.buzzradar.com/wp-content/uploads/2017/12/IBM-Watson_-Ambient-1.mp4" type="video/mp4">
+            </video>
+          </div>
+          
         </div>
     </div>
     <!-- Watson Image for Mobile -->
@@ -401,15 +417,32 @@
       <div class="bg-img-hero-bottom" :style="credibleInfluenceBgImage">
         
         <div class="container">
-            <div class="row justify-content-md-end">
-              <div class="col-md-6 col-lg-5 col-xl-4 space-top-5">
-                <!-- Testimonials -->
-                <div class="card border-0 bg-primary text-white shadow-primary-lg z-index-2">
-                  <div class="card-body p-6">
-                    <blockquote class="h6 font-weight-normal text-lh-md">This is the copy related to <strong>Credible Influence</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere risus quis quam posuere vehicula.</blockquote>
+            <div class="row">
+              <div class="col-md-12 space-3 text-white">
+
+
+                
+                
+                <!-- Title -->
+                <div class="w-md-60 text-center mx-md-auto">
+
+                  <div class="bg-soft-dark text-white text-center p-3 mb-3">
+                    <h2 class="h1 text-white">Credible <span class="font-weight-semi-bold">Influence</span></h2>
+
+                    <p class="text-white mb-3">No mater how advanced your data insights platform an organisation will struggle to be effective without team members understanding what insights it needs and what to do with them to get results.</p>
+
+                    <p class="text-white mb-0">Credible Influence our team of strategists, tacticians and analysts are on hand with workshops to help you understand your objectives and get the most out of Buzz Radar’s class leading technology. We also  help some of the worlds largest brands with in-depth setup and can provide a myriad of effective reports, dashboards and best practice support.</p>
+
+                    <a class="btn btn-outline-light mt-3" href="http://credibleinfluence.com/" role="button" target="_blank">Take me there</a>
+
                   </div>
+
+
+
+                  
                 </div>
-                <!-- End Testimonials -->
+                <!-- End Title -->
+                      
               </div>
             </div>
         </div>
@@ -467,7 +500,7 @@
 
 
     <!-- Clients Section -->
-    <div class="container mt-5 space-1 space-top-3">
+    <div class="container space-1 space-top-3">
       <div class="js-slick-carousel u-slick"
            data-autoplay="true"
            data-speed="5000"
@@ -628,6 +661,18 @@
     background:#07a9c2;
     position: absolute;
     left:0px;
+  }
+
+  .aiwatson_video{
+      position:relative;
+      width: 100%;
+      @include border-radius(10px);
+  }
+
+  .bg-soft-dark {
+    background-color: rgba(30, 32, 34, 0.5) !important;
+    border:1px solid rgba(255, 2545, 255, 0.3);
+    @include border-radius(10px);
   }
    
 
