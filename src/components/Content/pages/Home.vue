@@ -78,7 +78,7 @@
             <!-- Title -->
             <div class="pr-lg-4">
               <span class="btn btn-icon btn-soft-primary rounded-circle mb-3">
-                <span class="small font-weight-semi-bold btn-icon__inner">01.</span>
+                <span class="font-weight-semi-bold btn-icon__inner">1.</span>
               </span>
               <h2 class="h4 font-weight-semi-bold text-primary">Empower your team to make brillant data driven decisions</h2>
               <p class="mb-0">Using AI and Social data we can unlock powerful insights about your audience and then help communicate in straightforward engaging ways. Allowing anyone inside an organisation to gain understanding, make smarter decisions and improved results.</p>
@@ -98,7 +98,7 @@
                data-animate-out="zoomOut"
                data-caption="Front - Responsive Website Template"
                 >
-              <span class="u-media-player__icon">
+              <span class="u-media-player__icon bg-warning text-dark">
                 <span class="fas fa-play u-media-player__icon-inner"></span>
               </span>
             </a>
@@ -107,7 +107,7 @@
 
             <!-- SVG Mockup -->
             <figure class="ie-ellipse-mockup">
-              <img class="js-svg-injector" src="@/assets/svg/illustrations/ellipse-mockup.svg" alt="Image Description"
+              <img class="js-svg-injector" src="@/assets/buzzradar/svg/illustrations/ellipse-mockup.svg" alt="Image Description"
                    :data-img-paths="objDataImgMask3"
                    data-parent="#SVGellipseMockup2">
             </figure>
@@ -132,7 +132,7 @@
           <!-- Title -->
           <div class="pl-lg-4">
             <span class="btn btn-icon btn-soft-primary rounded-circle mb-3">
-              <span class="small font-weight-semi-bold btn-icon__inner">02.</span>
+              <span class="font-weight-semi-bold btn-icon__inner">2.</span>
             </span>
             <h2 class="h4 font-weight-semi-bold text-primary">Groundbreaking AI driven Social Intelligence</h2>
             <p class="mb-0">Learn how we’ve built a psychometric AI to uncover the most intimate and powerful map of audience interests, personality traits and consumer preferences and how it can revolutionise your marketing.</p>
@@ -163,7 +163,7 @@
             <!-- Title -->
             <div class="pr-lg-4">
               <span class="btn btn-icon btn-soft-primary rounded-circle mb-3">
-                <span class="small font-weight-semi-bold btn-icon__inner">03.</span>
+                <span class="font-weight-semi-bold btn-icon__inner">3.</span>
               </span>
               <h2 class="h4 font-weight-semi-bold text-primary">Great insights can be hard to uncover and even harder to communicate</h2>
               <p class="mb-0">No matter how powerful the insight, if it’s not delivered to the right person at the right moment in the right way it can be rendered useless. We think this happens far too frequently so Buzz Radar’s smart alerts, real-time dashboards and  intuitive on demand reporting are focuses on making lost insights a thing of the past.</p>
@@ -207,10 +207,13 @@
               <li class="nav-item w-100 mx-0 mb-3">
                 <a class="nav-link p-4 active" id="pills-one-code-features-tab" data-toggle="pill" href="#pills-one-code-features" role="tab" aria-controls="pills-one-code-features" aria-selected="true">
                   <div class="media">
-                    <figure id="icon45" class="svg-preloader ie-height-56 w-100 max-width-8 mt-2 mr-4">
+                    <!-- <figure id="icon45" class="svg-preloader ie-height-56 w-100 max-width-8 mt-2 mr-4">
                       <img class="js-svg-injector" src="@/assets/svg/icons/icon-45.svg" alt="SVG"
                            data-parent="#icon45">
-                    </figure>
+                    </figure> -->
+                    <span class="btn btn-icon btn-soft-primary rounded-circle mr-3">
+                      <span class="font-weight-semi-bold btn-icon__inner">1.</span>
+                    </span>
                     <div class="media-body">
                       <h3 class="h6">Get the big picture with real-time dashboards</h3>
                       <p class="mb-0">Setup customise and deploy real-time dashboards using a selection of over 50 animated visualisations. All in moments.</p>
@@ -222,10 +225,13 @@
               <li class="nav-item w-100 mx-0 mb-3">
                 <a class="nav-link p-4" id="pills-two-code-features-tab" data-toggle="pill" href="#pills-two-code-features" role="tab" aria-controls="pills-two-code-features" aria-selected="false">
                   <div class="media">
-                    <figure id="icon23" class="svg-preloader ie-height-56 w-100 max-width-8 mt-2 mr-4">
+                    <!-- <figure id="icon23" class="svg-preloader ie-height-56 w-100 max-width-8 mt-2 mr-4">
                       <img class="js-svg-injector" src="@/assets/svg/icons/icon-23.svg" alt="SVG"
                            data-parent="#icon23">
-                    </figure>
+                    </figure> -->
+                    <span class="btn btn-icon btn-soft-primary rounded-circle mr-3">
+                      <span class="font-weight-semi-bold btn-icon__inner">2.</span>
+                    </span>
                     <div class="media-body">
                       <h4 class="h6">Take a deeper dive using the insights platform</h4>
                       <p class="mb-0">Easily draft, change, customize and launch new course pages.</p>
@@ -237,10 +243,13 @@
               <li class="nav-item w-100 mx-0">
                 <a class="nav-link p-4" id="pills-three-code-features-tab" data-toggle="pill" href="#pills-three-code-features" role="tab" aria-controls="pills-three-code-features" aria-selected="false">
                   <div class="media">
-                    <figure id="icon44" class="svg-preloader ie-height-56 w-100 max-width-8 mt-2 mr-4">
+                    <!-- <figure id="icon44" class="svg-preloader ie-height-56 w-100 max-width-8 mt-2 mr-4">
                       <img class="js-svg-injector" src="@/assets/svg/icons/icon-23.svg" alt="SVG"
                            data-parent="#icon44">
-                    </figure>
+                    </figure> -->
+                    <span class="btn btn-icon btn-soft-primary rounded-circle mr-3">
+                      <span class="font-weight-semi-bold btn-icon__inner">3.</span>
+                    </span>
                     <div class="media-body">
                       <h4 class="h6">Actionable intelligence with powerful one click reports and alerts</h4>
                       <p class="mb-0">With Front, you or your team can modify any aspect of your website.</p>
@@ -360,31 +369,57 @@
 
 
 
+    <!-- Watson Image for Mobile -->
+    <div class="container position-relative">
+        <div class="row p-3">
+          <img class="img-fluid d-block d-md-none rounded" :src="`${publicPath}public_assets/html5-video/ibm-watson/ibm-watson-poster.jpg`" alt="Watson IBM">
+          <!-- Play Button Js-Fancybox -->
+          <a class="u-media-player u-media-player--centered text-center" href="#">
+            <h2 class="h6 text-primary text-white">This is the copy related to <strong>Credible Influence</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere risus quis quam posuere vehicula.</h2>
+            <small class="text-white">Powered by Watson</small>
+          </a>
+          <!-- Play Button Js-Fancybox -->
+        </div>
+    </div>
+    <!-- Watson Image for Mobile -->
+
+
+
 
 
 
     <!-- Video Content Section -->
-    <div id="SVGwave2Shape" class="svg-preloader position-relative">
+    <div id="SVGwave2Shape" class="svg-preloader position-relative min-height-450 d-none d-md-block">
+      
+      <div class="js-bg-video position-absolute w-100 h-100"
+           :data-hs-bgv-path="`${publicPath}public_assets/html5-video/ibm-watson/ibm-watson`"
+           data-hs-bgv-loop="1">
+      </div>
+
+
       <!-- Video Content -->
       <div class="bg-img-hero-bottom" :style="credibleInfluenceBgImage">
         
         <div class="container">
-        <div class="row justify-content-md-end">
-          <div class="col-md-6 col-lg-5 col-xl-4 space-top-5">
-            <!-- Testimonials -->
-            <div class="card border-0 bg-primary text-white shadow-primary-lg z-index-2">
-              <div class="card-body p-6">
-                <blockquote class="h6 font-weight-normal text-lh-md">This is the copy related to <strong>Credible Influence</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere risus quis quam posuere vehicula.</blockquote>
+            <div class="row justify-content-md-end">
+              <div class="col-md-6 col-lg-5 col-xl-4 space-top-5">
+                <!-- Testimonials -->
+                <div class="card border-0 bg-primary text-white shadow-primary-lg z-index-2">
+                  <div class="card-body p-6">
+                    <blockquote class="h6 font-weight-normal text-lh-md">This is the copy related to <strong>Credible Influence</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere risus quis quam posuere vehicula.</blockquote>
+                  </div>
+                </div>
+                <!-- End Testimonials -->
               </div>
             </div>
-            <!-- End Testimonials -->
-          </div>
         </div>
-      </div>
 
       </div>
       <!-- End Video Content Section -->
 
+
+
+    
       <!-- SVG Top Shape -->
       <figure class="position-absolute top-0 right-0 left-0">
         <img class="js-svg-injector" src="@/assets/svg/components/wave-2-top.svg" alt="Image Description"
@@ -400,6 +435,9 @@
       <!-- End SVG Bottom Shape -->
     </div>
     <!-- Video Content Section -->
+
+
+
 
 
 
@@ -543,6 +581,7 @@
         },
         
 
+        publicPath: process.env.BASE_URL,
 
 
 

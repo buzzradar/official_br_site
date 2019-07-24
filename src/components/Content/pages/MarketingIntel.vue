@@ -500,7 +500,7 @@
 
  	export default {
 
- 		name : 'AudienceIntel',
+ 		name : 'MarketingIntel',
     data () {
       return {
         objDataImgMaskIphone: JSON.stringify([{ "targetId": "#SVGiphoneImg1", "newPath": require('@/assets/buzzradar/img/282x500/iphone_insights.png') }]),
@@ -514,7 +514,6 @@
       $.HSCore.components.HSBgVideo.init('.js-bg-video');
       $.HSCore.components.HSFancyBox.init('.js-fancybox');
       $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
-
     },
     updated() {
       
