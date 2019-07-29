@@ -405,7 +405,7 @@
 
 
     <!-- Video Content Section -->
-    <div id="SVGwave2Shape" class="svg-preloader position-relative min-height-450 d-none d-md-block">
+    <div id="SVGwave2Shape" class="svg-preloader position-relative d-none d-md-block">
       
       <div class="js-bg-video position-absolute w-100 h-100"
            :data-hs-bgv-path="`${publicPath}public_assets/html5-video/ibm-watson/ibm-watson`"
@@ -424,21 +424,18 @@
                 
                 
                 <!-- Title -->
-                <div class="w-md-60 text-center mx-md-auto">
+                <div class="w-md-100 text-center mx-md-auto">
 
-                  <div class="bg-soft-dark text-white text-center p-3 mb-3">
+                  <div class="text-white text-center p-3 mb-3">
                     <h2 class="h1 text-white">Credible <span class="font-weight-semi-bold">Influence</span></h2>
 
                     <p class="text-white mb-3">No mater how advanced your data insights platform an organisation will struggle to be effective without team members understanding what insights it needs and what to do with them to get results.</p>
 
                     <p class="text-white mb-0">Credible Influence our team of strategists, tacticians and analysts are on hand with workshops to help you understand your objectives and get the most out of Buzz Radar’s class leading technology. We also  help some of the worlds largest brands with in-depth setup and can provide a myriad of effective reports, dashboards and best practice support.</p>
 
-                    <a class="btn btn-outline-light mt-3" href="http://credibleinfluence.com/" role="button" target="_blank">Take me there</a>
+                    <a class="btn btn-outline-light mt-3" href="http://credibleinfluence.com/" role="button" target="_blank">Show Me</a>
 
                   </div>
-
-
-
                   
                 </div>
                 <!-- End Title -->

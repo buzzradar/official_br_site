@@ -169,7 +169,7 @@
           <!-- Play Button Js-Fancybox -->
           <a class="u-media-player u-media-player--centered text-center" href="#">
             <h2 class="text-primary text-white">AI generated insights & recommendations</h2>
-            <h5 class="h6 text-white">Powered by Watson</h5>
+            <h5 class="h6 text-white">Powered by IBM Watson</h5>
           </a>
           <!-- Play Button Js-Fancybox -->
         </div>

@@ -36,6 +36,83 @@
 
 	      <div v-html="this.jobJSONContent.description"></div>
 
+
+
+
+
+
+
+
+
+
+			<!-- <div class="w-lg-80 mx-auto">
+				<div class="space-bottom-1">
+					
+					<p>We’re excited to be able to offer a summer internship in our data science team at Buzz Radar's London office. </p>
+ 
+					<p>Buzz Radar has been leading the world of real-time data visualisation since 2012, delivering command centres and interactive live data visualisations to the world’s leading, brands and events. With a client list, including Twitter, Burberry, Microsoft, Ogilvy, Samsung, IBM and Google. A winner of Tech City’s title of Most Disruptive Startup and Fastest Growing Startup, we’re excited to be at the forefront of social and marketing intelligence.</p>
+					 
+					<p>We’re looking for a talented analytically-minded person to work with our data science team over the summer, who isn’t afraid to roll up their sleeves, learns fast and lives for a challenge.</p>
+					
+				</div>
+			</div>
+
+
+			<div class="w-lg-80 mx-auto">
+
+				<div class="space-bottom-2">
+					<div class="mb-4">
+					<h3 class="h5">What you’ll be doing:</h3>
+					</div>
+
+					<p>You’ll help support the Buzz Radar product roadmap by helping our data analysts research new data sources and latest analysis techniques. You'll also have a hand in testing all our platform functionality as well as helping build data visualisations/command centres for clients.
+					</p>
+
+				</div>
+
+			</div>
+
+			<div class="w-lg-80 mx-auto">
+
+				<div class="space-bottom-2">
+
+					<div class="mb-4">
+					<h3 class="h5">What we are looking for:</h3>
+					</div>
+
+					<p>We're looking for someone with an aptitude for numeric and social media data. A critical thinker with an eye for detail. You'll understand what a boolean query is and how to write one. A basic understanding of Python is also a plus.
+					</p>
+
+				</div>
+
+			</div>
+
+			<div class="w-lg-80 mx-auto">
+
+				<div class="space-bottom-2">
+
+					<div class="mb-4">
+					<h3 class="h5">What you’ll get in return:</h3>
+					</div>
+
+					<p>You’ll have the opportunity to learn from some of the world's leading talent in the field. Working in an awesome bright airy office based out of an old dairy in the centre of Primrose Hill. We'll take care of your travel expenses and bring you along to industry events and client meetings.
+					</p>
+
+				</div>
+
+			</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
 	    </div>
 	    <!-- End Career Detail Section -->
 

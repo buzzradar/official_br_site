@@ -1,0 +1,41 @@
+{
+  "casesentries": [
+
+    {
+      "slug": "user-case-allianz",
+      "date": "April 21, 2018",
+      "imgName" : "use-case-allianz.jpg",
+      "title": "Use Case: Data driven strategic decision making",
+      "filter" : "filter1",
+      "copy" : "<p>One of our existing customers, a major technology brand, was struggling to figure out  what their next long term marketing partnership initiative was going to be. With a significant investment to make and very limited time to execute it in, the client wanted to make sure they picked the right partners based on data driven insights that would most likely help hit their objectives.</p>",
+      "pdf" : "case_study_partnership_strategy.pdf"
+    },
+    {
+      "slug": "user-case-campus",
+      "date": "April 21, 2018",
+      "imgName" : "use-case-campus.jpg",
+      "title": "Use Case: Customer Service",
+      "filter" : "filter3",
+      "copy" : "<p>Buzz Radar was recently installed at a South East Asia Telco company who struggled manage customer support in real-time, understand their customers, their concerns and reducing the number of user complaints and minimising service downtime were critical KPIs for our client.</p><p>They realised that customers were often the first people noticing faults in the product and expressing their feelings on social media. There was an imminent need for those data-driven social insights to be delivered to the relevant departments fast, to be easy to understand and to be effortlessly accessible to a wider audience in the organisation.</p>",
+      "pdf" : "case_study_telco_customer_service.pdf"
+    },
+    {
+      "slug": "user-case-customer-service",
+      "date": "April 21, 2018",
+      "imgName" : "use-case-data-driven-org-transf.jpg",
+      "title": "Use Case: Data driven organisational transformation",
+      "filter" : "filter3",
+      "copy" : "<p>Buzz Radar works with with one of the largest events in the world that accumulates millions of data points every year from its exhibitors and visitors.</p><p>The organisers main challenge was turning massive amounts of data into actionable insights to be understood by a wide array of stakeholders and identifying an engaging and actionable way of communicating this information in real time. The primary goal was to use these insights to inform both planning decisions and individual needs inside the organisation.</p>",
+      "pdf" : "case_study_data_driven_cta.pdf"
+    },
+    {
+      "slug": "the-first-emotionally-powered-billboard",
+      "date": "April 21, 2018",
+      "imgName" : "cannes-lion-billboard1.jpg,cannes-lion-billboard2.jpg",
+      "title": "Cannes Lions – Emotionally Powered Billboard",
+      "filter" : "filter4",
+      "copy" : "<p><strong>Clear Channel, Buzz Radar and IBM’s Watson in Action.</strong></p><p>Over the course of Cannes Lions, we analysed over 5,000 social media posts per hour using the #canneslions2016 hashtag then triggered adverts that coincide with their tone and emotion, using IBM’s Watson technology.</p><p>The posts ran through our Personality Insights software and were sorted by sentiment characteristics using emotional response theory. Emotions then were chosen and adverts attributed accordingly, within 15-minute cycles.</p><p>The emotionally intelligent advertising billboard was presented on Le Grand Screen on top of the Grand Hotel in the heart of Cannes. In addition, we showcased the latest in Command Centre technology and saw attendees interacting with real-time data visualisations from 300,000 conversations happening online at the festival.</p>"
+    }
+    
+  ]
+}

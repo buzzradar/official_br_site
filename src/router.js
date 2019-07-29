@@ -11,6 +11,7 @@ import CareerIndividual from './components/Content/pages/CareerIndividual';
 import Blog from './components/Content/pages/Blog';
 import BlogIndividual from './components/Content/pages/BlogIndividual';
 import CaseStudies from './components/Content/pages/CaseStudies';
+import CaseStudyIndividual from './components/Content/pages/CaseStudyIndividual';
 import Products from './components/Content/pages/Products';
 import RealTimeDash from './components/Content/pages/RealTimeDashboards';
 import AIAudienceAnal from './components/Content/pages/AIAudienceAnal';
@@ -18,6 +19,7 @@ import MarketingIntel from './components/Content/pages/MarketingIntel';
 
 import BlogEntries from './statics/BlogsEntries.json';
 import JobsEntries from './statics/CareersEntries.json';
+import CaseStudiesEntries from './statics/CaseStudiesEntries.json';
 
 //Routes for the Blog
 const blogRoutes = Object.keys(BlogEntries).map(section => {
@@ -50,6 +52,25 @@ const jobsRoutes = Object.keys(JobsEntries).map(section => {
     children
   }
 });
+
+
+//Routes for Case Studies
+const studiesRoutes = Object.keys(CaseStudiesEntries).map(section => {
+  const children = CaseStudiesEntries[section].map(child => ({
+    path: child.slug,
+    name: child.slug,
+    component: CaseStudyIndividual
+  }))
+  return {
+    path: '/casestudies',
+    name: 'casestudies',
+    label: 'Case Studies',
+    component: CaseStudies,
+    children
+  }
+});
+
+
 
 Vue.use(Router);
 
@@ -99,12 +120,15 @@ export default new Router({
         window.open('http://credibleinfluence.com/','_blank');
       },
     },
-    {
-      path: '/casestudies',
-      name: 'casestudies',
-      label : 'Case Studies',
-      component: CaseStudies
-    },
+    // {
+    //   path: '/casestudies',
+    //   name: 'casestudies',
+    //   label : 'Case Studies',
+    //   component: CaseStudies
+    // },
+
+    ...studiesRoutes,
+
     {
       path: '/aboutus',
       name: 'aboutus',
