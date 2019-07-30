@@ -20,36 +20,44 @@
 
 
 
+    <!-- Testimonials Section -->
 
-    <!-- Hero Section -->
-    <div id="SVGheroBGShapes" class="svg-preloader container position-relative min-height-550 space-top-3 space-bottom-2">
-      <div>
-        
+      <div class="container mb-5" :style="bannerBg" style="margin-top:100px;">
+        <div class="row">
+          <div class="col-md-6">
 
+            <!-- Content -->
+            <div class="container p-5">
+              <div class="row">
+                <div class="col-md-12 position-relative z-index-2">
+                  <div class="mb-4">
+                    <h1 class="display-5 text-white font-weight-normal">As soon I saw the platform I knew we had to have it.</h1>
+                  </div>
+                  
+                  <p class="lead text-white">Jeremy Waite – Chief Strategy Officer at IBM</p>
 
-        <!-- Content -->
-        <!-- <div class="container">
-          <div class="row">
-            <div class="col-md-6 position-relative z-index-2">
-              <div class="mb-4">
-                <h1 class="display-4 text-white font-weight-normal">A faster, smarter way to run your <strong>marketing</strong></h1>
+                  <!-- Fancybox -->
+                  <a class="js-fancybox btn btn-primary transition-3d-hover mb-2 mb-sm-0 mr-sm-2" href="javascript:;"
+                     data-src="//vimeo.com/249392499"
+                     data-speed="700"
+                     data-animate-in="zoomIn"
+                     data-animate-out="zoomOut"
+                     data-caption="Front - Responsive Website Template">
+                    <small class="fas fa-play mr-2"></small>
+                    Play Video
+                  </a>
+                  <!-- End Fancybox -->
+                  
+                </div>
               </div>
-              
-              <p class="lead text-white">Buzz Radar connects the sea of marketing data created by your organization and with the help of IBM’s Watson AI turns it into actionable, intelligent insights.</p>
-              
             </div>
-          </div>
-        </div> -->
-        <!-- End Content -->
+            <!-- End Content -->
 
-        <!-- SVG Shapes -->
-        <div class="w-100 position-absolute top-0 left-0">
-            <img class="js-svg-injector rounded-lg" src="@/assets/buzzradar/img/casestudies/ibm_banner_case_study.jpg" alt="Image Description" data-parent="#SVGheroBGShapes">
+          </div>
         </div>
-        <!-- End SVG Shapes -->
       </div>
-    </div>
-    <!-- End Hero Section -->
+    
+    <!-- End Testimonials Section -->
 
 
 
@@ -144,6 +152,10 @@
  		name : 'CaseStudies',
     data : function(){
       return {
+        bannerBg : {
+          backgroundImage : 'url('+require('@/assets/buzzradar/img/casestudies/ibm_banner_case_study.jpg')+')',
+          backgroundPosition: 'center',
+        },
         caseStudies : AllCaseStudiesEntries.casesentries,
       };
     },
@@ -169,6 +181,7 @@
     },
     mounted() {
       $.HSCore.components.HSCubeportfolio.init('.cbp');
+      $.HSCore.components.HSFancyBox.init('.js-fancybox');
     },
     updated() {
       //$.HSCore.components.HSCubeportfolio.init('.cbp');
