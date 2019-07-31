@@ -22,7 +22,7 @@
 
     <!-- Testimonials Section -->
 
-      <div class="container mb-5" :style="bannerBg" style="margin-top:100px;">
+      <div class="container mt-0 mt-md-10 mb-5" :style="bannerBg" >
         <div class="row">
           <div class="col-md-6">
 
@@ -154,7 +154,7 @@
       return {
         bannerBg : {
           backgroundImage : 'url('+require('@/assets/buzzradar/img/casestudies/ibm_banner_case_study.jpg')+')',
-          backgroundPosition: 'center',
+          backgroundPosition: 'left',
         },
         caseStudies : AllCaseStudiesEntries.casesentries,
       };

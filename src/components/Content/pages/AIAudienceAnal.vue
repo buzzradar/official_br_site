@@ -6,7 +6,7 @@
     
 
     <!-- Hero Section -->
-    <div class="container-fluid banner br">
+    <!-- <div class="container-fluid banner br">
       <div class="row">
 
         <div class="container p-6 space-1 space-md-3">
@@ -24,6 +24,30 @@
         </div>
 
       </div>
+    </div> -->
+    <!-- End Hero Section -->
+
+
+
+
+    <!-- Hero Section -->
+    <div id="parallaxDOM" class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll" data-options='{direction: "normal"}'>
+      <!-- Apply your Parallax background image here -->
+      <div class="divimage dzsparallaxer--target" :style="heroBgImage"></div>
+
+      <!-- Content -->
+      <div class="container position-relative space-2 space-top-md-3 space-bottom-md-2 z-index-2">
+        <div class="w-lg-80 mx-auto">
+          <h1 class="display-5">Don’t just rely on gut instinct<br>Truly <strong class="text-warning">understand your audience</strong>.</h1>
+          <p>Find what really makes your customers tick<br>with AI Audience Analysis.</p>
+          <div class="mt-2">
+            <button type="button" class="btn btn-sm btn-warning transition-3d-hover" tabindex="0">Book a Meeting</button>
+          </div>
+        </div>
+      </div>
+      <!-- End Content -->
+
+      
     </div>
     <!-- End Hero Section -->
 
@@ -158,13 +182,17 @@
     data () {
       return {
         publicPath: process.env.BASE_URL,
+        heroBgImage : {
+          height : '120%',
+          backgroundImage : 'url("'+require('@/assets/buzzradar/img/1920x692/banner_minority.jpg')+'")',
+        },
       }
     },
     mounted() {
       $.HSCore.components.HSBgVideo.init('.js-bg-video');
       $.HSCore.components.HSFancyBox.init('.js-fancybox');
       $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
-
+      dzsprx_init('#parallaxDOM', { direction: "normal", mode_scroll:"fromtop"} );
     },
     updated() {
       

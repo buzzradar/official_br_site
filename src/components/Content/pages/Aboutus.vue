@@ -5,10 +5,9 @@
 
 
     <!-- Hero Section -->
-    <div id="kk" class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll"
+    <div id="parallaxDOM" class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll"
          data-options='{direction: "normal"}'>
       <!-- Apply your Parallax background image here -->
-      Fuck
       <div class="divimage dzsparallaxer--target" :style="heroBgImage"></div>
 
       <!-- Content -->
@@ -553,7 +552,7 @@
       }
     },
     mounted() {
-      dzsprx_init('#kk', { direction: "normal", mode_scroll:"fromtop"} );
+      dzsprx_init('#parallaxDOM', { direction: "normal", mode_scroll:"fromtop"} );
     }
     
  	}
