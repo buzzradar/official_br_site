@@ -433,7 +433,7 @@
 
                     <p class="text-white mb-0">Credible Influence our team of strategists, tacticians and analysts are on hand with workshops to help you understand your objectives and get the most out of Buzz Radar’s class leading technology. We also  help some of the worlds largest brands with in-depth setup and can provide a myriad of effective reports, dashboards and best practice support.</p>
 
-                    <a class="btn btn-outline-light mt-3" href="http://credibleinfluence.com/" role="button" target="_blank">Show Me</a>
+                    <a class="btn btn-white transition-3d-hover mt-3" href="http://credibleinfluence.com/" target="_blank">Show Me</a>
 
                   </div>
                   

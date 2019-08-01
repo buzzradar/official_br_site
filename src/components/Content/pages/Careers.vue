@@ -44,53 +44,7 @@
       </div>
       <!-- End Job Positions -->
 
-      <!-- Articles Section -->
-      <div class="container space-2">
-        <div class="row">
-          <div class="col-lg-6 mb-5 mb-lg-0">
-            <!-- Card -->
-            <article class="card h-100 shadow-soft">
-              <div class="w-sm-65 p-5">
-                <h3 class="h4 mb-3">Have a project?</h3>
-                <div class="mb-4">
-                  <p>Hire us. Our top professionals are ready to help with your business.</p>
-                </div>
-                <a class="btn btn-sm btn-soft-primary btn-pill transition-3d-hover" href="hire-us.html">Hire Us</a>
-              </div>
-
-              <div class="position-absolute bottom-0 right-0 w-sm-35 max-width-27">
-                <figure id="projectSVG" class="svg-preloader ie-support-man">
-                  <img class="js-svg-injector" src="@/assets/svg/illustrations/support-man.svg" alt="Image Description"
-                       data-parent="#projectSVG">
-                </figure>
-              </div>
-            </article>
-            <!-- End Card -->
-          </div>
-
-          <div class="col-lg-6">
-            <!-- Card -->
-            <article class="card h-100 shadow-soft">
-              <div class="w-sm-65 p-5">
-                <h3 class="h4 mb-3">Get in touch</h3>
-                <div class="mb-4">
-                  <p>If you would like to find out more about how we can help you, please give us a call or drop us an email.</p>
-                </div>
-                <a class="btn btn-sm btn-soft-primary btn-pill transition-3d-hover" href="contacts-agency.html">Contact Us</a>
-              </div>
-
-              <div class="position-absolute bottom-0 right-0 w-sm-35 max-width-27">
-                <figure id="ContactsSVG" class="svg-preloader ie-list-app">
-                  <img class="js-svg-injector" src="@/assets/svg/illustrations/list-app.svg" alt="Image Description"
-                       data-parent="#ContactsSVG">
-                </figure>
-              </div>
-            </article>
-            <!-- End Card -->
-          </div>
-        </div>
-      </div>
-      <!-- End Articles Section -->
+      
 
     </div>
     <!-- Careers Jobs List -->
