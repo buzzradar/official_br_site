@@ -1,0 +1,64 @@
+{
+  "faqs": [
+    {
+      "title": "Are there any hidden fees?",
+      "copy" : "<p>Not at all! We believe in transparency. All plans are inclusive and flexible to adjust to your brand’s evolving nature.</p>"
+    },
+    {
+      "title": "What is your Cancellation Policy?",
+      "copy" : "<p>Our subscription plans are available weekly, monthly or yearly, putting you in control of your data.</p>"
+    },
+    {
+      "title": "Will there be lots of buzz words I need to know?",
+      "copy" : "<p>Not at all! We try to keep it simple. But to ensure there are no surprises, we have a full glossary here. If you’re just browsing for your package, these are the main terms you might need to know:</p><ol> <li><strong>Topic:</strong> A topic is your major area of focus. Within your topic, you have a set number of keywords that are relevant to your focus. This might be your brand name, a hashtag or a campaign you want to watch. The best part? You can adjust this at any time, based on your changing needs.</li> <li><strong>Installation:</strong> We define an installation as any incidence where you showcase your visualisations. We’ve seen brands broadcast their data in flagship stores, in sales rooms or even on window displays. Our visualisations are engaging, so don’t be shy with letting your data tell your story!</li></ol>"
+    },
+    {
+      "title": "Do you have one-off, single use options?",
+      "copy" : "<p>Of course! Just contact us here, and we’ll get you started.</p>"
+    },
+    {
+      "title": "What operating systems are you friendly with?",
+      "copy" : "<p>We like all systems equally. We’re compatible with both Windows and Mac. And we’re excited to say that since November of 2015, we’ve have fully transitioned over to HTML5, so you’ll also be able to view our visualisations on any mobile or tablet device.</p>"
+    },
+    {
+      "title": "How long does it take to get started?",
+      "copy" : "<p>You should be up and running within 10 minutes. Honestly! Data starts showing within 15 minutes — which means you have data at the fastest possible rate.</p>"
+    },
+    {
+      "title": "What data limitations are there?",
+      "copy" : "<p>As with any product, there are some limitations to what data you can access. Though we can pull in some data from before your topic was created, looking back at data from time periods before the creation of the topic will not always be accurate. For the most part, we’re able to provide the last 100 tweets, 100 photos, 25 Facebook posts, and the 20 YouTube videos from before the creation date. If you need more than that, contact us to see how we might be able to assist. In addition, most packages carry a maximum of 250,000 mentions a month. If you need a high volume data option, please contact us for more info.</p>"
+    },
+    {
+      "title": "Can I download data?",
+      "copy" : "<p>While we think visualisations do a better job of conveying information quickly, we also understand you sometimes need to download your data or tweets. You can currently download tweets in a variety of formats: json, xml, csv or xls. As we continue to build out more features throughout the year, we will be launching a feature which allows you to export the statistics used in Buzz Radar into an excel or PowerPoint format, as well as download reports directly from our Insights Platform.</p>"
+    },
+    {
+      "title": "Can I customise and brand the visualisations any way I want?",
+      "copy" : "<p>For the most part, yes! We allow you to change any font or colour used, as well as the texts in the visualisations. Our packages come with a pre-set theme to get you on your way faster, but you can edit and customise these as much as you’d like and at any time.</p>"
+    },
+    {
+      "title": "How long is the trial?",
+      "copy" : "<p>Our trials are 48 hours. We believe this helps you see the power of your data in a quick snapshot. We do have to limit the time we can offer free trials due to the cost of pulling and storing data. If you have a special circumstance and need to extend your trial, please feel free to email us at <a href='mailto:info@buzzradar.com'>info@buzzradar.com.</a></p>"
+    },
+    {
+      "title": "What is the full list of data sources you traditionally use and can you plug into other data sources or platforms?",
+      "copy" : "<p>We can pull in data from all the major social networks, including Twitter, Facebook, Instagram, YouTube, Google+, Vine, and Tumblr, as well as Klout and Google Analytics. We can also plug in other data sources. Our team is able to work with your company to ensure any customised data sources are displaying to give you the biggest picture possible.</p>"
+    },
+    {
+      "title": "Can I add my own messaging into the visualisations?",
+      "copy" : "<p>Of course! Our platform is fully customisable and offers the ability to upload your own graphics (or interstitials) to display between our visualisations.</p>"
+    },
+    {
+      "title": "How do I log into the Insights Platform?",
+      "copy" : "<p>We try to keep it simple! Go to BuzzRadar.com and select “Log In.” Use your username and password, and you will be immediately taken to your specialised Insights Platform. The tabs on left help guide you to the various sections of data and provide detailed breakdowns of what your visualisations are pulling from.</p>"
+    },
+    {
+      "title": "How do I get started?",
+      "copy" : "<p>Sign up here. We can’t wait to work with you.</p>"
+    }
+
+    
+  ]
+}
+
+
