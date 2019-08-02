@@ -38,9 +38,18 @@
 			<!-- End Root Level Menu Option -->
 
 
+			<!-- Book a Meeting -->
+			<li class="nav-item u-header__nav-last-item">
+				<a v-on:click="bookMeeting" class="btn btn-sm btn-warning btn-pill d-inline-block transition-3d-hover book-meeting" href="#" target="_blank">
+				Book a Demo
+				</a>
+			</li>
+			<!-- End Book a meeting -->
+
+
 			<!-- Login To Platform -->
 			<li class="nav-item u-header__nav-last-item">
-				<a class="btn btn-sm btn-primary transition-3d-hover" href="https://insights.buzzradar.com/" target="_blank">
+				<a class="btn btn-sm btn-primary btn-pill d-inline-block transition-3d-hover" href="https://insights.buzzradar.com/" target="_blank">
 				Login
 				</a>
 			</li>
@@ -81,21 +90,14 @@
 	  				router_config : this.$router.options.routes[5],
 	  			},
 	  			{
-	  				//About Us
+	  				//Blog
 	  				router_config : this.$router.options.routes[6],
 	  			},
-	  			{
-	  				//FAQ
+	   			{
+	  				//About Us
 	  				router_config : this.$router.options.routes[7],
+	  				children : this.$router.options.routes[7].children,
 	  			},
-	  			{
-	  				//Blog
-	  				router_config : this.$router.options.routes[8],
-	  			},
-	  			{
-	  				//Careers
-	  				router_config : this.$router.options.routes[9],
-	  			}
 	  		]
 	  	}
 	  },
@@ -114,7 +116,11 @@
 		
 	  },
 	  methods : {
-
+	  	bookMeeting : function(e) {
+	  		e.preventDefault();
+	  		Calendly.showPopupWidget('https://calendly.com/buzzradar/introduction-meeting');
+	  		return false;
+	  	}
 	  }
 	}
 

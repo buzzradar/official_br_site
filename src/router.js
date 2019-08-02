@@ -5,6 +5,7 @@ import NotFound from './components/Content/pages/NotFound';
 
 import Home from './components/Content/pages/Home';
 import Aboutus from './components/Content/pages/Aboutus';
+import Contactus from './components/Content/pages/Contactus';
 import Faq from './components/Content/pages/Faq';
 import Careers from './components/Content/pages/Careers';
 import CareerIndividual from './components/Content/pages/CareerIndividual';
@@ -120,31 +121,46 @@ export default new Router({
         window.open('http://credibleinfluence.com/','_blank');
       },
     },
-    // {
-    //   path: '/casestudies',
-    //   name: 'casestudies',
-    //   label : 'Case Studies',
-    //   component: CaseStudies
-    // },
 
     ...studiesRoutes,
 
-    {
-      path: '/aboutus',
-      name: 'aboutus',
-      label : 'About Us',
-      component: Aboutus
-    },
-    {
-      path: '/faq',
-      name: 'faq',
-      label : 'FAQ',
-      component: Faq
-    },
-
     ...blogRoutes,
 
-    ...jobsRoutes,
+
+    {
+      path: '/aboutus',
+      name : 'aboutus',
+      label : 'About Us',
+      component : Aboutus,
+      children: [
+        {
+          path: '/contactus',
+          name: 'contactus',
+          label : 'Contact Us',
+          component: Contactus
+        },
+        {
+          path: '/faq',
+          name: 'faq',
+          label : 'FAQ',
+          component: Faq
+        },
+        ...jobsRoutes,
+
+      ]
+      
+    },
+
+
+
+
+
+
+
+
+
+
+
 
     
   ]

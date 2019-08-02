@@ -89,7 +89,7 @@
             <!-- Filter -->
             <ul id="filterControls" class="list-inline cbp-l-filters-alignRight text-center">
               <li class="list-inline-item cbp-filter-item cbp-filter-item-active u-cubeportfolio__item" data-filter="*">All</li>
-              <li v-for="(filter,index) in casesFilters" class="list-inline-item cbp-filter-item u-cubeportfolio__item" :data-filter="`.`+filter">{{filter}}</li>
+              <li v-for="(filter,index) in casesFilters" class="list-inline-item cbp-filter-item u-cubeportfolio__item" :data-filter="`.`+filter.class">{{filter.name}}</li>
             </ul>
             <!-- End Filter -->
 
@@ -109,7 +109,7 @@
                 ]'>
 
               <!-- Item -->
-              <div v-for="(caseStudy,index) in caseStudies" :class="`cbp-item `+caseStudy.filter">
+              <div v-for="(caseStudy,index) in caseStudies" :class="`cbp-item `+caseStudy.filterClass">
                 <a class="cbp-caption" :href="'/casestudies/'+caseStudy.slug">
                   <img class="rounded" :src="require('@/assets/buzzradar/img/casestudies/'+caseStudy.THUMB_imgName)" alt="Image Description">
                   <div class="py-3">
@@ -168,7 +168,11 @@
           console.log(caseStudy.filter);
 
           if ( !filtersArray.includes(caseStudy.filter) ) {
-            filtersArray.push(caseStudy.filter);
+            // filtersArray.push(caseStudy.filter);
+            filtersArray.push({
+              name : caseStudy.filter,
+              class : caseStudy.filterClass,
+            });
           }
 
           //Let's prepare the thumb depending on the Main Photo name
