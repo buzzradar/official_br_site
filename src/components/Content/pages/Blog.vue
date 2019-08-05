@@ -7,16 +7,16 @@
     <div v-if="this.$router.currentRoute.path == '/blog' " class="container space-2 space-top-md-5 space-top-lg-3">
 
       <!-- Title -->
-      <div class="w-md-80 w-lg-60 mb-9">
+      <!-- <div class="w-md-80 w-lg-60 mb-9">
         <h1 class="font-weight-normal">Buzz Radar - <span class="text-primary font-weight-semi-bold">Blog</span></h1>
-      </div>
+      </div> -->
       <!-- End Title -->
 
       <!-- All Blog Posts -->
       <div class="row">
 
         <!-- Blog Entry -->
-        <div v-for="(blogPostEntry,index) in blogPosts" class="col-md-4 space-top-md-1">
+        <div v-for="(blogPostEntry,index) in blogPosts" class="col-md-4">
 
           <article class="card border-0">
             <div class="card-body p-0">

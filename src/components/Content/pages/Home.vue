@@ -82,6 +82,9 @@
               </span>
               <h2 class="h4 font-weight-semi-bold text-primary">Empower your team to make brillant data driven decisions</h2>
               <p class="mb-0">Using AI and Social data we can unlock powerful insights about your audience and then help communicate in straightforward engaging ways. Allowing anyone inside an organisation to gain understanding, make smarter decisions and improved results.</p>
+
+              <a class="btn btn-sm btn-primary btn-wide transition-3d-hover mt-4" href="/realtimedashboard">Find out More <span class="fas fa-angle-right ml-2"></span></a>
+
             </div>
             <!-- End Title -->
           </div>
@@ -136,6 +139,7 @@
             </span>
             <h2 class="h4 font-weight-semi-bold text-primary">Groundbreaking AI driven Social Intelligence</h2>
             <p class="mb-0">Learn how we’ve built a psychometric AI to uncover the most intimate and powerful map of audience interests, personality traits and consumer preferences and how it can revolutionise your marketing.</p>
+            <a class="btn btn-sm btn-primary btn-wide transition-3d-hover mt-4" href="/aiaudienceanalysis">Find out More <span class="fas fa-angle-right ml-2"></span></a>
           </div>
           <!-- End Title -->
         </div>
@@ -167,6 +171,7 @@
               </span>
               <h2 class="h4 font-weight-semi-bold text-primary">Great insights can be hard to uncover and even harder to communicate</h2>
               <p class="mb-0">No matter how powerful the insight, if it’s not delivered to the right person at the right moment in the right way it can be rendered useless. We think this happens far too frequently so Buzz Radar’s smart alerts, real-time dashboards and  intuitive on demand reporting are focuses on making lost insights a thing of the past.</p>
+              <a class="btn btn-sm btn-primary btn-wide transition-3d-hover mt-4" href="/marketingintelplatform">Find out More <span class="fas fa-angle-right ml-2"></span></a>
             </div>
             <!-- End Title -->
           </div>

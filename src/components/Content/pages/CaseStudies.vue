@@ -113,7 +113,7 @@
                 <a class="cbp-caption" :href="'/casestudies/'+caseStudy.slug">
                   <img class="rounded" :src="require('@/assets/buzzradar/img/casestudies/'+caseStudy.THUMB_imgName)" alt="Image Description">
                   <div class="py-3">
-                    <h4 class="h6 text-dark mb-0">{{caseStudy.title}}</h4>
+                    <h3 class="h6 text-dark mb-0">{{caseStudy.title}}</h3>
                     <p class="small mb-0">
                       on {{caseStudy.date}}
                     </p>
@@ -205,6 +205,11 @@
 <style lang="scss" scoped>
 
 	@import "compass";
+
+  h3{
+    height: 45px;
+    font-size:15px;
+  }
 
 </style>
 
