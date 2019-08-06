@@ -23,11 +23,11 @@
               <div class="mb-5">
                 <img class="img-fluid w-100 rounded" :src="require('@/assets/buzzradar/img/blog/500x280/'+blogPostEntry.imgName)" alt="Image Description">
               </div>
-              <small class="d-block text-secondary mb-1">March 20, 2018</small>
-              <h2 class="h5">
-                <a :href="'/blog/'+blogPostEntry.slug">Remote workers, here's how to dodge distractions</a>
+              <small class="d-block text-secondary mb-1">{{blogPostEntry.date}}</small>
+              <h2 class="h5 mb-6">
+                <a :href="'/blog/'+blogPostEntry.slug">{{blogPostEntry.title}}</a>
               </h2>
-              <p>We've been working hard with our besties at Reuters to design a new reading experience for Reuters.com.</p>
+              <!-- <p>We've been working hard with our besties at Reuters to design a new reading experience for Reuters.com.</p> -->
             </div>
           </article>
 
