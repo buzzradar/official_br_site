@@ -21,7 +21,7 @@
           <article class="card border-0">
             <div class="card-body p-0">
               <div class="mb-5">
-                <img class="img-fluid w-100 rounded" :src="require('@/assets/buzzradar/img/blog/500x280/'+blogPostEntry.imgName)" alt="Image Description">
+                <img class="img-fluid w-100 rounded" :src="require('@/assets/buzzradar/img/blog/'+blogPostEntry.thumbnail)" alt="Image Description">
               </div>
               <small class="d-block text-secondary mb-1">{{blogPostEntry.date}}</small>
               <h2 class="h5 mb-6">

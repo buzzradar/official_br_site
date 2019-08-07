@@ -3,48 +3,26 @@
     {
       "slug": "blog-post1",
       "date": "April 21, 2018",
-      "imgName" : "img1.jpg",
-      "title": "Maud Sparrow and the Four Wicked Horses",
-      "description": "Once upon a time there was a generous girl called Maud Sparrow. She was on the way to see her Albert Connor, when she decided to take a short cut through Spittleton Woods..."
+      "author" : "Peter Jones",
+      "thumbnail" : "cannes-banner-thumb.jpg",
+      "imgName" : "cannes-banner.jpg",
+      "title": "Reading Between The Lines With AI At Cannes Lions",
+      "description": "<p>We have a special relationship with Cannes: five years ago, Buzz Radar launched at Cannes Lions. Since then, we’ve we’ve made an appearance each year at Cannes Lions. And with each appearance, we strive to surface what’s unique about that year. This year, we’re excited for what we’ll be bringing to the Festival of Creativity in honour of our fifth birthday.</p> <p>This year, we are focusing on what it takes to win a Cannes Lions. What makes those that rise to the top different and what do they all have in common?</p> <p>Using our brand new Cognitive Command Centre, powered by IBM Watson AI, we will be running deep real-time analysis on over half a million social posts and posting key insights on the Le Grand Screen to keep people “in the know” at the world’s largest creative festival. Tracking data from a variety of social sources, we will be able to read between the lines and uncover what people really think of Cannes, finding impactful stories that sit beneath the surface of the tsunami of information posted at Cannes Lions. This includes the personality traits of the average Cannes Lions winner.</p> <p>On average, there are over 500,000 posts generated at Cannes Lions. It’d take a team of analysts a week to go through all the data and make sense of it all. But with AI we can surface a host of interesting insights. AI can learn from analysts and replicate those tasks in a quicker time frame. It also allows us to answer data questions in a similar way that a human analyst can but over a much larger data set, helping us to reveal deeper meanings behind that data. This brings the significance of creative minds in the world’s largest brands and agencies coming together to the forefront.</p> <p>Partnering with Ogilvy, we’ll be displaying regular insight headlines on Le Grand Screen, alongside real-time social data. You’ll get a chance to see these insights and AI in action in real-time.</p> <p>Want to learn more? There will also be a chance to interact with our team and our Cognitive Command Centre in the Clear Channel Playground on an 84″ Microsoft Surface Hub. Swing by and say hello, or book an appointment to get a one-on-one demo.</p>"
     },
     {
       "slug": "blog-post2",
       "date": "April 21, 2018",
-      "imgName" : "img2.jpg",
-      "title": "Vue Markdown Blog Maud Sparrow and the Four Wicked Horses",
-      "description": "Once upon a time there was a generous girl called Maud Sparrow. She was on the way to see her Albert Connor, when she decided to take a short cut through Spittleton Woods..."
+      "author" : "Nicky Yates",
+      "thumbnail" : "mac-frame-stats-thumb.jpg",
+      "imgName" : "mac-frame-stats.png",
+      "title": "We know what your customers are thinking. No, really",
+      "description": "<p>We have a special relationship with Cannes: five years ago, Buzz Radar launched at Cannes Lions. Since then, we’ve we’ve made an appearance each year at Cannes Lions. And with each appearance, we strive to surface what’s unique about that year. This year, we’re excited for what we’ll be bringing to the Festival of Creativity in honour of our fifth birthday.</p> <p>This year, we are focusing on what it takes to win a Cannes Lions. What makes those that rise to the top different and what do they all have in common?</p> <p>Using our brand new Cognitive Command Centre, powered by IBM Watson AI, we will be running deep real-time analysis on over half a million social posts and posting key insights on the Le Grand Screen to keep people “in the know” at the world’s largest creative festival. Tracking data from a variety of social sources, we will be able to read between the lines and uncover what people really think of Cannes, finding impactful stories that sit beneath the surface of the tsunami of information posted at Cannes Lions. This includes the personality traits of the average Cannes Lions winner.</p> <p>On average, there are over 500,000 posts generated at Cannes Lions. It’d take a team of analysts a week to go through all the data and make sense of it all. But with AI we can surface a host of interesting insights. AI can learn from analysts and replicate those tasks in a quicker time frame. It also allows us to answer data questions in a similar way that a human analyst can but over a much larger data set, helping us to reveal deeper meanings behind that data. This brings the significance of creative minds in the world’s largest brands and agencies coming together to the forefront.</p> <p>Partnering with Ogilvy, we’ll be displaying regular insight headlines on Le Grand Screen, alongside real-time social data. You’ll get a chance to see these insights and AI in action in real-time.</p> <p>Want to learn more? There will also be a chance to interact with our team and our Cognitive Command Centre in the Clear Channel Playground on an 84″ Microsoft Surface Hub. Swing by and say hello, or book an appointment to get a one-on-one demo.</p>"
     },
     {
       "slug": "blog-post3",
       "date": "April 21, 2018",
-      "imgName" : "img3.jpg",
-      "title": "Vue Markdown Blog Maud Sparrow and the Four Wicked Horses",
-      "description": "Once upon a time there was a generous girl called Maud Sparrow. She was on the way to see her Albert Connor, when she decided to take a short cut through Spittleton Woods..."
-    },
-    {
-      "slug": "blog-post4",
-      "date": "April 21, 2018",
-      "imgName" : "img1.jpg",
-      "title": "Maud Sparrow and the Four Wicked Horses",
-      "description": "Once upon a time there was a generous girl called Maud Sparrow. She was on the way to see her Albert Connor, when she decided to take a short cut through Spittleton Woods..."
-    },
-    {
-      "slug": "blog-post5",
-      "date": "April 21, 2018",
-      "imgName" : "img2.jpg",
-      "title": "Vue Markdown Blog Maud Sparrow and the Four Wicked Horses",
-      "description": "Once upon a time there was a generous girl called Maud Sparrow. She was on the way to see her Albert Connor, when she decided to take a short cut through Spittleton Woods..."
-    },
-    {
-      "slug": "blog-post6",
-      "date": "April 21, 2018",
-      "imgName" : "img3.jpg",
-      "title": "Vue Markdown Blog Maud Sparrow and the Four Wicked Horses",
-      "description": "Once upon a time there was a generous girl called Maud Sparrow. She was on the way to see her Albert Connor, when she decided to take a short cut through Spittleton Woods..."
-    },
-    {
-      "slug": "blog-post7",
-      "date": "April 21, 2018",
+      "author" : "Nicky Yates",
+      "thumbnail" : "img3-thumb.jpg",
       "imgName" : "img3.jpg",
       "title": "Vue Markdown Blog Maud Sparrow and the Four Wicked Horses",
       "description": "Once upon a time there was a generous girl called Maud Sparrow. She was on the way to see her Albert Connor, when she decided to take a short cut through Spittleton Woods..."

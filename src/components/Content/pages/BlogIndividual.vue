@@ -8,36 +8,24 @@
       <div class="w-lg-60 mx-auto">
 
         <!-- Title -->
-        <div class="w-md-100 w-lg-100 mb-9">
+        <div class="w-md-100 w-lg-100 mb-2">
           <h1 class="font-weight-normal">{{blogPostJSONContent.title}}</h1>
         </div>
         <!-- End Title -->
 
-        <div class="mb-4">
-          <span class="text-muted">{{blogPostJSONContent.date}}</span>
+        <div class="mb-4 text-right">
+          <span class="text-muted">{{blogPostJSONContent.date}}<br><small>by {{blogPostJSONContent.author}}</small></span>
         </div>
 
         <div class="mb-5">
 
-          <img class="rounded" :src="require('@/assets/buzzradar/img/blog/500x280/'+blogPostJSONContent.imgName)" :alt="blogPostJSONContent.title">
+          <img class="img-fluid rounded" :src="require('@/assets/buzzradar/img/blog/'+blogPostJSONContent.imgName)" :alt="blogPostJSONContent.title">
 
         </div>
 
         <div v-html="blogPostJSONContent.description" class="post-content">
           <!-- This will get loaded dynamically -->
         </div>
-
-        <!-- <div class="mb-5">
-          <p>At Front, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
-          <p>As we've grown, we've seen how Front has helped companies such as Spotify, Microsoft, Airbnb, Facebook, and Intercom bring their designers closer together to create amazing things. We've also learned that when the culture of sharing is brought in earlier, the better teams adapt and communicate with one another.</p>
-          <p>That's why we are excited to share that we now have a <a href="#">free version of Front</a>, which will allow individual designers, startups and other small teams a chance to create a culture of openness early on.</p>
-        </div>
-
-        <h2 class="h5 mb-3">Bringing the culture of sharing to everyone.</h2>
-
-        <p>Small teams and individual designers need a space where they can watch the design process unfold, both for themselves and for the people they work with – no matter if it's a fellow designer, product manager, developer or client. Front allows you to invite more people into the process, creating a central place for conversation around design. As those teams grow, transparency and collaboration becomes integrated in how they communicate and work together.</p> -->
-
-
 
         <!-- Jobs Link -->
         <div class="mt-6">
@@ -47,6 +35,29 @@
           </a>
         </div>
         <!-- End Jobs Link -->
+
+
+
+
+
+<!-- <p>Data is hidden within many sources. That’s why our Command Centres are expanding beyond social to give you deeper insights. With our new updates, we can integrate more data sources into our platform to give you a comprehensive view of your business. But we’re not stopping there.</p>
+
+<p>We’ve partnered with IBM to bring you next-generation cognitive insights from Watson. Your sentiment is now analysed with Watson’s AI API. Meaning you can understand how your social media followers feel about your products or brand.</p>
+
+<p>And want to know more about those discussing your brand? That’s where Watson comes in. We’re now able to run all your data through Watson Personality Insights to really understand more about your audience. Personality Insights extracts personality characteristics based on how a person writes. This is great for creating detailed personality portraits of individual customers for highly-targeted segmentation, improving lead quality based on “like” personality characteristics, personalizing recommendations, matching personality types, and more.</p>
+
+<img class="img-fluid rounded" src="@/assets/buzzradar/img/blog/img3.jpg" alt="aaaaaaaaaaaaaa">
+
+<p>From improving your experience visually to aggregating data and services that give you a better understanding, our goal is to make it easier for your team to truly be data-driven. Learn more about the science and methodology behind the tech here.</p>
+
+<p>Give it a go and add it to your dashboard — then, let us know what you think!</p>
+
+<p><em>If you haven’t tried Buzz Radar yet, take a free trial on us and let us know how you get on.</em></p>
+
+<a class='btn btn-primary mt-3' href="http://credibleinfluence.com/' role='button' target='_blank'>Drive your business with Data</a> -->
+
+
+
 
 
       </div>
@@ -82,7 +93,34 @@
 
       });
 
-      console.log(blogPostMatched);
+      //If I have [[imghere]] inside the description that means the image will be attached
+      //in between paragraphs.
+      if (blogPostMatched.description.indexOf('[[')) {
+
+        // var imgPath = require('@/assets/buzzradar/img/blog/'+blogPostMatched.imgName);
+        // var imgTag = '<img class="img-fluid rounded mb-3" src="'+imgPath+'" alt="'+blogPostMatched.title+'" >';
+        // blogPostMatched.description = blogPostMatched.description.replace('[[imghere]]',imgTag);
+
+        // var imgHereTag = 
+        // var posMatch = blogPostMatched.description.indexOf('[imghere:') + ('[imghere:').length;
+        // var imgPath = '';
+
+        // for (var i = posMatch; i < blogPostMatched.description.length; i++) { 
+        //   var char = blogPostMatched.description[i];
+
+        //   if (char == ']') {
+        //     console.log("genial");
+        //     console.log(char);
+        //     break;
+        //   }else{
+        //     imgPath = imgPath + char;
+        //   }
+
+        // };
+
+        // console.log(imgPath);
+        
+      }
 
       return {
         blogPostJSONContent : blogPostMatched,

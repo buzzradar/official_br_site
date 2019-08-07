@@ -40,7 +40,7 @@
 
 			<!-- Book a Meeting -->
 			<li class="nav-item u-header__nav-last-item">
-				<a v-on:click="bookMeeting" class="btn btn-sm btn-warning btn-pill d-inline-block transition-3d-hover book-meeting" href="#" target="_blank">
+				<a v-on:click="bookMeeting" class="btn btn-sm btn-warning btn-pill d-inline-block book-meeting" href="#" target="_blank">
 				Book a Demo
 				</a>
 			</li>
@@ -49,7 +49,7 @@
 
 			<!-- Login To Platform -->
 			<li class="nav-item u-header__nav-last-item">
-				<a class="btn btn-sm btn-primary btn-pill d-inline-block transition-3d-hover" href="https://insights.buzzradar.com/" target="_blank">
+				<a class="btn btn-sm btn-primary btn-pill d-inline-block" href="https://insights.buzzradar.com/" target="_blank">
 				Login
 				</a>
 			</li>
