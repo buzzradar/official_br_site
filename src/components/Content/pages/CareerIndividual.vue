@@ -22,12 +22,7 @@
 	          </div>
 
 	          <div class="col-md-3 text-md-right">
-	            <a class="js-go-to btn btn-primary transition-3d-hover" href="javascript:;"
-	               data-target="#applyForJob"
-	               data-compensation="#header"
-	               data-type="static">
-	              Apply Now
-	            </a>
+	            <a class="btn btn-primary transition-3d-hover" :href="applyToJob">Apply Now</a>
 	          </div>
 	        </div>
 	        <!-- End Title -->
@@ -142,6 +137,7 @@
  			});
 
 			return {
+				applyToJob : 'mailto:jobs@buzzradar.com?subject=JOB Application: '+jobItemMatched.name,
 				jobJSONContent : jobItemMatched,
 			};
 	    },

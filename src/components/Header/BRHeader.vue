@@ -6,7 +6,7 @@
 	<!-- ========== HEADER ========== -->
 	<header id="header"  
 
-	:class="this.headerClass"
+	class="u-header u-header--sticky-top u-header--show-hide"
 
 	data-header-fix-moment="500" 
 	data-header-fix-effect="slide">
@@ -19,62 +19,18 @@
 	          
 				
 
-
-				<!-- ========================== -->
-	        	<!-- TRANSPARNET NAV -->
-				<!-- White Logo -->
-				<router-link v-if="isTransparent" to="/" class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-default u-header__navbar-brand-text-white">
-
-					<img alt="Buzz Radar" src="@/assets/img/buzzradar_logo/buzzlogo_name_white.svg">
-
-				</router-link>
-				<!-- End White Logo -->
-
-
-				<!-- Default Logo -->
-				<router-link v-if="isTransparent" to="/" class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-collapsed">
-
+				<!-- Logo -->
+				<a href="/" class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-on-scroll">
 					<img alt="Buzz Radar" src="@/assets/img/buzzradar_logo/buzzlogo_name_dark.svg">
-
-				</router-link>
-				<!-- End Default Logo -->
-
-
-				<!-- On Scroll Logo -->
-				<router-link v-if="isTransparent" to="/" class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-on-scroll">
-
-					<img alt="Buzz Radar" src="@/assets/img/buzzradar_logo/buzzlogo_name_dark.svg">
-				</router-link>
-				<!-- End On Scroll Logo -->
-	        	<!-- TRANSPARNET NAV -->
-	        	<!-- =============================== -->
-
-
-
-
-
-
-
-	        	<!-- =============================== -->
-	        	<!-- WHITE BG NAV -->
-	        	<router-link v-if="isTransparent == false" to="/" class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-default u-header__navbar-brand-text-white">
-					<img alt="Buzz Radar" src="@/assets/img/buzzradar_logo/buzzlogo_name_dark.svg">
-	        	</router-link>
-
-	        	<!-- WHITE BG NAV -->
-	        	<!-- =============================== -->
-
-
-
-
-
+				</a>
+				<!-- End Logo -->
 
 
 
 				<!-- Responsive Toggle Button -->
 				<button type="button" 
 
-					  :class="this.hamburguerIconClass"
+					  class="navbar-toggler btn u-hamburger"
 
 				      aria-label="Toggle navigation"
 				      aria-expanded="false"
@@ -86,6 +42,7 @@
 					</span>
 				</button>
 				<!-- End Responsive Toggle Button -->
+
 
 
 				<MainNav></MainNav>
@@ -122,7 +79,6 @@
 		},
 		data() {
 			return {
-				isTransparent : true,
 				headerClass : 'u-header u-header--bg-transparent u-header--abs-top u-header--white-nav-links-md u-header--show-hide',
 				hamburguerIconClass : 'navbar-toggler btn u-hamburger u-hamburger--white',
 			};
@@ -131,33 +87,13 @@
 			$route (to, from){
 				console.log('route has changed!!!');
 				window.scrollTo(0,0);
-				this.checkIfTransparent();
-			},
-			// whenever question changes, this function will run
-			isTransparent: function (newValue, oldValue) {
-				console.log('isTransparent has changed!!!','New Value-->', newValue);
-				if (newValue == true) {
-					this.headerClass = 'u-header u-header--bg-transparent u-header--abs-top u-header--white-nav-links-md u-header--show-hide';
-					this.hamburguerIconClass = 'navbar-toggler btn u-hamburger u-hamburger--white';
-				}else{
-					this.headerClass = 'u-header u-header--abs-top-md u-header--show-hide-md';
-					this.hamburguerIconClass = 'navbar-toggler btn u-hamburger';
-				}
-				
-				$.HSCore.components.HSHeader.init($('#header'));
 			},
 		},
 		beforeMount() {
-			this.checkIfTransparent();
+			$.HSCore.components.HSHeader.init($('#header'));
 		},
 		methods : {
-			checkIfTransparent() {
-				if (this.$route.path != '/') {
-					this.isTransparent = false;  		
-				}else{
-					this.isTransparent = true;
-				}
-			},
+
 		}
 	}
 

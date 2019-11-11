@@ -18,13 +18,23 @@
 	               data-media-queries='[
 	                {"width": 300, "cols": 1}
 	              ]'>
-	            <!-- Item -->
-	            <div v-for="(image,index) in caseStudyJSONContent.imagesArray" class="cbp-item">
+	            <!-- Images in Content -->
+	            <div v-for="(image,index) in caseStudyJSONContent.content.photoArray" class="cbp-item">
 	              <div class="cbp-caption">
-	                <img class="rounded" :src="require('@/assets/buzzradar/img/casestudies/'+image)" :alt="caseStudyJSONContent.title">
+	                <!-- <img class="rounded" :src="require('@/assets/buzzradar/img/casestudies/'+image)" :alt="caseStudyJSONContent.title"> -->
+	                <img class="rounded" :src="'../public_assets/casestudies/'+image" :alt="caseStudyJSONContent.title">
 	              </div>
 	            </div>
-	            <!-- End Item -->
+	            <!-- End Images in Content -->
+
+	            <!-- Videos in Content -->
+	            <div v-if="caseStudyJSONContent.content.videoSrc" class="cbp-item">
+	              <div class="cbp-caption">
+	                <iframe title="vimeo-player" :src="caseStudyJSONContent.content.videoSrc" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+	              </div>
+	            </div>
+	            <!-- End Videos in Content -->
+
 	            
 	          </div>
 	          <!-- End Cubeportfolio -->
@@ -41,12 +51,12 @@
 	               data-offset-bottom="130">
 	            <div class="mb-6">
 	              <h1 class="h4 text-primary font-weight-semi-bold">{{caseStudyJSONContent.title}}</h1>
-	              <p v-html="caseStudyJSONContent.copy" class="mb-0"></p>
+	              <p v-html="caseStudyJSONContent.content.copy" class="mb-0"></p>
 	            </div>
 
 
 
-	            <a v-if="caseStudyJSONContent.PDF_path" :href="caseStudyJSONContent.PDF_path" class="btn btn-soft-warning" tabindex="-1" role="button" aria-disabled="true" download="">Download PDF</a>
+	            <a v-if="caseStudyJSONContent.content.PDF_path" :href="caseStudyJSONContent.content.PDF_path" class="btn btn-secondary" tabindex="-1" role="button" aria-disabled="true" download="">Download PDF</a>
 
 	            <hr class="my-5">
 
@@ -93,14 +103,20 @@
  				if (item.slug == currentSlug) {
  					caseStudyMatched = item;
 
- 					//Create tthe PDF Path
- 					if (caseStudyMatched.pdf != undefined) {
-	 					caseStudyMatched['PDF_path'] = process.env.BASE_URL + 'public_assets/pdf/'+caseStudyMatched.pdf;
+ 					//Create the PDF Path
+ 					if (caseStudyMatched.content.pdf) {
+	 					caseStudyMatched.content['PDF_path'] = process.env.BASE_URL + 'public_assets/pdf/'+caseStudyMatched.content.pdf;
 	 				}
 
 	 				//Create the main images gallery
-	 				var imagesArray = caseStudyMatched.imgName.split(',');
-	 				caseStudyMatched["imagesArray"] = imagesArray;
+	 				if (caseStudyMatched.content.photoArray) {
+	 					caseStudyMatched.content.photoArray = caseStudyMatched.content.photoArray.split(',');
+	 				}	 
+
+	 				//to create the Video Source
+	 				if (caseStudyMatched.content.videoId) {
+		 				caseStudyMatched.content["videoSrc"] = "https://player.vimeo.com/video/"+caseStudyMatched.content.videoId;
+	 				}
 
  				}
 

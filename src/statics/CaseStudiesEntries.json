@@ -3,53 +3,252 @@
 
     {
       "slug": "user-case-allianz",
-      "date": "April 21, 2018",
-      "imgName" : "use-case-allianz.jpg",
+      "date": "June 2018",
       "title": "Use Case: Data driven strategic decision making",
-      "filter" : "Real Time Marketing",
-      "filterClass" : "real-time-marketing",
-      "copy" : "<p>One of our existing customers, a major technology brand, was struggling to figure out  what their next long term marketing partnership initiative was going to be. With a significant investment to make and very limited time to execute it in, the client wanted to make sure they picked the right partners based on data driven insights that would most likely help hit their objectives.</p>",
-      "pdf" : "case_study_partnership_strategy.pdf"
+      "thumb" : "use-case-allianz-thumb.jpg",
+      "filter" : "strategy-research",
+      "content" : {
+        "videoId" : false,
+        "photoArray" : "use-case-allianz.jpg",
+        "copy" : "<p>One of our existing customers, a major technology brand, was struggling to figure out  what their next long term marketing partnership initiative was going to be. With a significant investment to make and very limited time to execute it in, the client wanted to make sure they picked the right partners based on data driven insights that would most likely help hit their objectives.</p>",
+        "pdf" : "case_study_partnership_strategy.pdf"
+      }
     },
     {
       "slug": "user-case-campus",
-      "date": "April 21, 2018",
-      "imgName" : "use-case-campus.jpg",
+      "date": "June 2018",
       "title": "Use Case: Customer Service",
-      "filter" : "Events",
-      "filterClass" : "events",
-      "copy" : "<p>Buzz Radar was recently installed at a South East Asia Telco company who struggled manage customer support in real-time, understand their customers, their concerns and reducing the number of user complaints and minimising service downtime were critical KPIs for our client.</p><p>They realised that customers were often the first people noticing faults in the product and expressing their feelings on social media. There was an imminent need for those data-driven social insights to be delivered to the relevant departments fast, to be easy to understand and to be effortlessly accessible to a wider audience in the organisation.</p>",
-      "pdf" : "case_study_telco_customer_service.pdf"
+      "thumb" : "use-case-campus-thumb.jpg",
+      "filter" : "strategy-research,crisis-manag",
+      "content" : {
+        "videoId" : false,
+        "photoArray" : "use-case-campus.jpg",
+        "copy" : "<p>Buzz Radar was recently installed at a South East Asia Telco company who struggled manage customer support in real-time, understand their customers, their concerns and reducing the number of user complaints and minimising service downtime were critical KPIs for our client.</p><p>They realised that customers were often the first people noticing faults in the product and expressing their feelings on social media. There was an imminent need for those data-driven social insights to be delivered to the relevant departments fast, to be easy to understand and to be effortlessly accessible to a wider audience in the organisation.</p>",
+        "pdf" : "case_study_telco_customer_service.pdf"
+      }
     },
     {
       "slug": "user-case-customer-service",
-      "date": "April 21, 2018",
-      "imgName" : "use-case-data-driven-org-transf.jpg",
+      "date": "June 2018",
       "title": "Use Case: Data driven organisational transformation",
-      "filter" : "Strategy + Research",
-      "filterClass" : "strategy-research",
-      "copy" : "<p>Buzz Radar works with with one of the largest events in the world that accumulates millions of data points every year from its exhibitors and visitors.</p><p>The organisers main challenge was turning massive amounts of data into actionable insights to be understood by a wide array of stakeholders and identifying an engaging and actionable way of communicating this information in real time. The primary goal was to use these insights to inform both planning decisions and individual needs inside the organisation.</p>",
-      "pdf" : "case_study_data_driven_cta.pdf"
+      "thumb" : "use-case-data-driven-org-transf-thumb.jpg",
+      "filter" : "strategy-research,events",
+      "content" : {
+        "videoId" : false,
+        "photoArray" : "use-case-data-driven-org-transf.jpg",
+        "copy" : "<p>Buzz Radar works with with one of the largest events in the world that accumulates millions of data points every year from its exhibitors and visitors.</p><p>The organisers main challenge was turning massive amounts of data into actionable insights to be understood by a wide array of stakeholders and identifying an engaging and actionable way of communicating this information in real time. The primary goal was to use these insights to inform both planning decisions and individual needs inside the organisation.</p>",
+        "pdf" : "case_study_data_driven_cta.pdf"
+      }    
     },
     {
       "slug": "the-first-emotionally-powered-billboard",
-      "date": "April 21, 2018",
-      "imgName" : "cannes-lion-billboard1.jpg,cannes-lion-billboard2.jpg",
+      "date": "June 2017",
       "title": "Cannes Lions – Emotionally Powered Billboard",
-      "filter" : "Crisis Management",
-      "filterClass" : "crisis-manag",
-      "copy" : "<p><strong>Clear Channel, Buzz Radar and IBM’s Watson in Action.</strong></p><p>Over the course of Cannes Lions, we analysed over 5,000 social media posts per hour using the #canneslions2016 hashtag then triggered adverts that coincide with their tone and emotion, using IBM’s Watson technology.</p><p>The posts ran through our Personality Insights software and were sorted by sentiment characteristics using emotional response theory. Emotions then were chosen and adverts attributed accordingly, within 15-minute cycles.</p><p>The emotionally intelligent advertising billboard was presented on Le Grand Screen on top of the Grand Hotel in the heart of Cannes. In addition, we showcased the latest in Command Centre technology and saw attendees interacting with real-time data visualisations from 300,000 conversations happening online at the festival.</p>"
+      "thumb" : "cannes-lion-billboard1-thumb.jpg",
+      "filter" : "events",
+      "content" : {
+        "videoId" : false,
+        "photoArray" : "cannes-lion-billboard1.jpg,cannes-lion-billboard2.jpg",
+        "copy" : "<p><strong>Clear Channel, Buzz Radar and IBM’s Watson in Action.</strong></p><p>Over the course of Cannes Lions, we analysed over 5,000 social media posts per hour using the #canneslions2016 hashtag then triggered adverts that coincide with their tone and emotion, using IBM’s Watson technology.</p><p>The posts ran through our Personality Insights software and were sorted by sentiment characteristics using emotional response theory. Emotions then were chosen and adverts attributed accordingly, within 15-minute cycles.</p><p>The emotionally intelligent advertising billboard was presented on Le Grand Screen on top of the Grand Hotel in the heart of Cannes. In addition, we showcased the latest in Command Centre technology and saw attendees interacting with real-time data visualisations from 300,000 conversations happening online at the festival.</p>",
+        "pdf" : false
+      } 
     },
     {
-      "slug": "the-first-emotionally-powered-billboard2",
-      "date": "April 21, 2018",
-      "imgName" : "cannes-lion-billboard1.jpg,cannes-lion-billboard2.jpg",
-      "title": "Cannes Lions – Emotionally Powered Billboard",
-      "filter" : "Digital Transformation",
-      "filterClass" : "digi-transf",
-      "copy" : "<p><strong>Clear Channel, Buzz Radar and IBM’s Watson in Action.</strong></p><p>Over the course of Cannes Lions, we analysed over 5,000 social media posts per hour using the #canneslions2016 hashtag then triggered adverts that coincide with their tone and emotion, using IBM’s Watson technology.</p><p>The posts ran through our Personality Insights software and were sorted by sentiment characteristics using emotional response theory. Emotions then were chosen and adverts attributed accordingly, within 15-minute cycles.</p><p>The emotionally intelligent advertising billboard was presented on Le Grand Screen on top of the Grand Hotel in the heart of Cannes. In addition, we showcased the latest in Command Centre technology and saw attendees interacting with real-time data visualisations from 300,000 conversations happening online at the festival.</p>"
+      "slug": "sta",
+      "date": "April 2017",
+      "title": "STA",
+      "thumb" : "sta-thumb.jpg",
+      "filter" : "brand-management,digital-trans",
+      "content" : {
+        "videoId" : false,
+        "photoArray" : "sta.jpg",
+        "copy" : "<p>Sharing Info in Real-time With 270 stores and over 2000 employees serving over 2M travellers a year, STA Travel is the known leader in the youth travel industry. STA Travel is constantly looking at their retail spaces, making sure they are evolving the way they operate and communicate to align with the shifting needs and wants of their millennial audience.</p><p>STA Travel recognised the opportunity to utilise their large active social communities, to enhance social proof and to highlight their customers’ adventures in real-time. Working off this idea, STA Travel partnered with us to build something new: a series of content visualisations that updated live in their flagship store in Victoria, London.</p>Just after one month of displaying live tweets, Instagram images of real-life adventures in real-time in their brick-and-mortar store was enough to convince senior management to take the idea global. Thus, we developed Relay to scale these content visualisations, mixing STA Travel’s own videos and advertising with their live user content, and we are now rolling it out in all of STA Travel’s stores globally to replicate our initial success.</p><p>STA Travel’s Global Creative Director Tor White added “It’s been fantastic rolling out our new digital signage system using Buzz Radar. We have a complex retail infrastructure globally, but now are able to house all of our display content centrally, control it all through the intuitive command centres in each market, and most importantly: leverage our social conversations by bringing them into our retail environment to create a really omnichannel experience for our customer. They can wander into our store – checking out great deals, talk with our Travel Experts, flick through our new digital brochures on iPads, and check out what our customers are actually saying (and generally getting really envious!!) through the BuzzRadar integration in our digital screens.”</p>",
+        "pdf" : false
+      }
+    },
+    {
+      "slug": "luxury-fashion-brand",
+      "date": "September 2016",
+      "title": "Luxury Fashion Brand",
+      "thumb" : "luxury-fashion-brand-thumb.jpg",
+      "filter" : "strategy-research,brand-management",
+      "content" : {
+        "videoId" : false,
+        "photoArray" : "luxury-fashion-brand.jpg,luxury-fashion-brand2.jpg",
+        "copy" : "<p><strong>Know Your Audience</strong></p><p>One of the most forward-thinking luxury fashion brands uses our real-time nature to huge effect during Fashion Week product launches. During a 20-minute runway show, this brand uses buzz Radar for a series of actions to create the most effective ads and campaigns from the data coming from their target audience.</p><p>Social team members assemble in a war room equipped with Buzz Radar and Twitter / Facebook ad buying tools. As the show starts, Buzz Radar visualises real-time chatter about the show. Of most interest to the team is who is the most talked about model, what are the most talked about products, which key influencers are talking and what the sentiment is. The team then uses this information to optimise hero content to be posted immediately after the show. Getting the most talked about model with the most talked about product creates the hero image.</p><p>This content is then posted to social channels, and then the team can see which of the key posts hits a pre-defined threshold of success first. This content is then promoted instantly via Twitter/ Facebook ad tools. The result is an 80% share of voice against their competition.</p>",
+        "pdf" : false
+      }
+    },
+    {
+      "slug": "major-electronics-brand",
+      "date": "April 2017",
+      "title": "Major Electronic Brands",
+      "thumb" : "major-electronics-brand-thumb.jpg",
+      "filter" : "brand-management",
+      "content" : {
+        "videoId" : false,
+        "photoArray" : "major-electronics-brand.jpg",
+        "copy" : "<p><strong>Tailoring and Optimising Content</strong></p><p>One of the world’s leading electronics brands uses Buzz Radar in their Live News Room, where their PR & social teams work. Buzz Radar is projected onto a large screen in the room and occupies additional second screens for each team member. Our Twitter Trends Visualisation gives an early indication of what is currently trending, allowing the brand to jump into an active conversation. (Brands who engage in relevant trending conversations effectively can often see up to 200% increases in engagement.)</p><p>The team couple this with our Most Effective Post Alert. If a post generated by the brand exceeds a preset success threshold, the team is instantly alerted to either share that content with other channels, expand on it or promote it. This leads to an average 30% more effective use of promoted spend on social channels.</p>",
+        "pdf" : false
+      }
+    },
+    {
+      "slug": "nike",
+      "date": "April 2017",
+      "title": "Nike",
+      "thumb" : "nike-thumb.jpg",
+      "filter" : "digital-trans",
+      "content" : {
+        "videoId" : false,
+        "photoArray" : "nike.jpg,nike2.jpg",
+        "copy" : "<p><strong>Tailoring and Optimising Content</strong></p><p>One of the world’s leading electronics brands uses Buzz Radar in their Live News Room, where their PR & social teams work. Buzz Radar is projected onto a large screen in the room and occupies additional second screens for each team member. Our Twitter Trends Visualisation gives an early indication of what is currently trending, allowing the brand to jump into an active conversation. (Brands who engage in relevant trending conversations effectively can often see up to 200% increases in engagement.)</p><p>The team couple this with our Most Effective Post Alert. If a post generated by the brand exceeds a preset success threshold, the team is instantly alerted to either share that content with other channels, expand on it or promote it. This leads to an average 30% more effective use of promoted spend on social channels.</p>",
+        "pdf" : false
+      }
+    },
+    {
+      "slug": "cannes-lions-hoff-or-not-keynote",
+      "date": "June 2016",
+      "title": "Cannes Lions - Hoff Or Not Keynote",
+      "thumb" : "cannes-lions-hoff-or-not-keynote-thumb.jpg",
+      "filter" : "events",
+      "content" : {
+        "videoId" : false,
+        "photoArray" : "cannes-lions-hoff-or-not-keynote.jpg",
+        "copy" : "<p><strong>Hoff or Not</strong></p><p>Cannes Lions has quickly become the place to have your advertising seen. Golin Harris tapped into the Hoff meme at Cannes Lions to show the power of a social movement. Using our platform, they were able to share how quickly trends take off and their extensive reach.</p>",
+        "pdf" : false
+      }
+    },
+    {
+      "slug": "guardians-of-the-galaxy",
+      "date": "April 2016",
+      "title": "Guardians of the Galaxy",
+      "thumb" : "guardians-of-the-galaxy-thumb.jpg",
+      "filter" : "events",
+      "content" : {
+        "videoId" : false,
+        "photoArray" : "guardians-of-the-galaxy.jpg,guardians-of-the-galaxy2.jpg",
+        "copy" : "<p><strong>Bringing Together Fans with Stars</strong></p><p>With the release of the much-anticipated Marvel’s Guardians of the Galaxy, Sponsor Skype utilised our platform ahead for of the premiere to create live social visualisations that truly engaged fans in both LA and New York. Skype positioned large screens in Madison Square Park Flatiron Plaza in New York to connect east coast fans to the premiere happening across the country in Los Angeles. Setting up a virtual red carpet, Skype provided a special portal to the stars and event. Fans’ tweets and comments were showcased for all to see, as well as connecting children involved in New York’s Police Athletic League to Skype chat with stars of the film all via on Skype.</p>",
+        "pdf" : false
+      }
+    },
+    {
+      "slug": "tesco-makechristmas",
+      "date": "December 2016",
+      "title": "Tesco #MakeChristmas",
+      "thumb" : "tesco-makechristmas-thumb.jpg",
+      "filter" : "brand-management",
+      "content" : {
+        "videoId" : false,
+        "photoArray" : "tesco-makechristmas.jpg,tesco-makechristmas2.jpg",
+        "copy" : "<p><strong>Making Holiday Magic</strong></p><p>When you have a client as big as Tesco, you want to ensure their Christmas campaign launch goes smoothly. Splendid Communications and Tesco teamed up with us to keep an eye on their biggest campaign and to engage fans in the most effective manner. Able to monitor feedback live and view results quickly, the duo were able adjust ongoing marketing strategies on the fly and ensure #MakeChristmas was a success.</p>",
+        "pdf" : false
+      }
+    },
+    {
+      "slug": "ogilvy",
+      "date": "September 2017",
+      "title": "Ogilvy",
+      "thumb" : "ogilvy-thumb.jpg",
+      "filter" : "digital-trans",
+      "content" : {
+        "videoId" : false,
+        "photoArray" : "ogilvy.jpg,ogilvy2.jpg",
+        "copy" : "<p><strong>Helping one of the words leading agencies connect</strong></p><p>Ogilvy is a powerhouse of a an agency, but how does one showcase their impressive storehouse of work? We partnered with them since 2013 to power their main screen in the London office, showing every visitor their incredible quality of work and the buzz their agency can build around it. Illustrating to their clients that they are always connected to the conversations around them and helping create a great sense of community by connecting the online with the offline, the installation highlights Ogilvy’s commitment to excellence.</p>",
+        "pdf" : false
+      }
+    },
+    {
+      "slug": "storm-clear-channel-twitter",
+      "date": "April 2016",
+      "title": "Clear Channel & Twitter",
+      "thumb" : "storm-clear-channel-twitter-thumb.jpg",
+      "filter" : "events",
+      "content" : {
+        "videoId" : false,
+        "photoArray" : "storm-clear-channel-twitter.jpg,storm-clear-channel-twitter2.jpg",
+        "copy" : "<p><strong>The Power of the User</strong></p><p>Partnering with MindShare and Storm Digital (Clear Channel), the #AskLondon campaign took over the iconic One Piccadilly digital billboard in London to showcase tweets, Vines, Instagram photos and more from anyone sharing their thoughts and responding to questions directed to Londoners. Questions ranged from What would your luxury item be on I am a Celeb to Why do you love London. It was one of the largest billboards ever used to share live user social posts and created huge buzz, not only on the ground but also online.</p>",
+        "pdf" : false
+      }
+    },
+    {
+      "slug": "google-campus",
+      "date": "September 2016",
+      "title": "Google Campus",
+      "thumb" : "google-campus-thumb.jpg",
+      "filter" : "digital-trans",
+      "content" : {
+        "videoId" : false,
+        "photoArray" : "google-campus.jpg,google-campus2.jpg",
+        "copy" : "<p><strong>Illuminating your stars</strong></p><p>As a leading UK incubator, Google Campus hosts rising startups who have the potential to make waves. As a way to showcase the caliber of their residents and enhance the sense of community, Google Campus used the Buzz Radar platform to create a set of visualisations on four giant touchscreens. In the heart of their campus, all visitors (and residents) can see who the next big thing is and what social trends they need to be aware of.</p>",
+        "pdf" : false
+      }
+    },
+    {
+      "slug": "adidas-world-cup",
+      "date": "June 2016",
+      "title": "Adidas World Cup",
+      "thumb" : "adidas-world-cup-thumb.jpg",
+      "filter" : "brand-management",
+      "content" : {
+        "videoId" : false,
+        "photoArray" : "adidas-world-cup.jpg,adidas-world-cup2.jpg",
+        "copy" : "<p><strong>Kwoning Your Audience</strong></p><p>adidas is a brand built on sports engagement. Knowing their core demographics would be glued to the World Cup, the brand not only used our command centre technology for their team to track the event they also worked used our Relay platform to create an engaging installation for their flagship store in Paris. A multi-screen display highlighted the top conversations coming out of the world games. In addition to showing off buzz around adidas, they featured sports fans’ tweets, Instagram posts and videos, putting their audience at the center of the world’s biggest arena.</p>",
+        "pdf" : false
+      }
+    },
+    {
+      "slug": "twitter-live-studio-world-cup",
+      "date": "June 2016",
+      "title": "Twitter Live Studio",
+      "thumb" : "twitter-live-studio-world-cup-thumb.jpg",
+      "filter" : "strategy-research",
+      "content" : {
+        "videoId" : false,
+        "photoArray" : "twitter-live-studio-world-cup.jpg,twitter-live-studio-world-cup2.jpg",
+        "copy" : "<p><strong>Marketing in the Moment</strong></p><p>The World Cup was expected to be — and proved to be — the biggest moment on Twitter to date. Twitter UK invited 30 of the worlds biggest brands to the Twitter Live Studio where our command centre technology provided real-time visualisations across 10 screens. We tracked and visualised each of the brands over 4 weeks during the workshops providing over 400 animated views on their data. This helped the brand and sales team highlight the importance of marketing in the moment to brand clients. By placing our visualisations in the UK Twitter Live Studio, the team was able to wow clients and highlight powerful timely insights to senior brand managers and it quickly became a major marketing point, helping driving sales.</p>",
+        "pdf" : false
+      }
+    },
+    {
+      "slug": "marks-spencer-spacebounds",
+      "date": "April 2016",
+      "title": "Marks & Spencer",
+      "thumb" : "marks-spencer-spacebounds-thumb.jpg",
+      "filter" : "digital-trans",
+      "content" : {
+        "videoId" : "64142290",
+        "photoArray" : false,
+        "copy" : "<p><strong>Data-driven Business Development</strong></p><p>Over 21 million customers visit leading UK retailer, Marks & Spencer, every week. Marks & Spencer wanted to create a culture of listening within their company, so using our platform created the M&S Social Walls: two giant 9 screen installations deployed in their Paddington HQ’s canteens and communal areas. It’s aim to create a live window that connected their customers with their employees. Upon installation, their confectionary team noted that their Percy Pig product was a hot topic. They brought key decision makers over to share the insights and subsequently increased related products, many of which are now top sellers.</p>",
+        "pdf" : false
+      }
+    },
+    {
+      "slug": "buzz-radar-skype-broadcast",
+      "date": "April 2017",
+      "title": "Skype",
+      "thumb" : "buzz-radar-skype-broadcast-thumb.jpg",
+      "filter" : "digital-trans",
+      "content" : {
+        "videoId" : "91357663",
+        "photoArray" : false,
+        "copy" : "<p><strong>The Comprehensive View</strong></p><p>When your brand garners 250 million mentions a month, you need to make sense of the conversation. Skype’s broadcast team partners with us to get the most comprehensive monitoring for all of their broadcast shows and competitors. With our Social Command Centre solution being used at their London and Palo Alto offices, their broadcast team can capitalise on trends and opportunities, creating a more effective strategy.</p>",
+        "pdf" : false
+      }
+    },
+    {
+      "slug": "casestudy-ces-2017",
+      "date": "March 2017",
+      "title": "Consumer Electronics Show (CES)",
+      "thumb" : "casestudy-ces-2017-thumb.jpg",
+      "filter" : "digital-trans",
+      "content" : {
+        "videoId" : "110587527",
+        "photoArray" : false,
+        "copy" : "<p><strong>Providing the Most Complete View</strong></p><p>CES is the mecca for all consumer-focused technology releases. Over the course of five days, major brands from around the globe launch new products and share their latest developments. CES have partnered with us for their 2014, 2015 and 2016 events to be their Social Command Centre, giving attendees and media the most complete view of the event possible. Positioned at the center of the showroom, our multi-screen display highlighted trends, and brands could quickly assess which products were gaining the most steam.</p>",
+        "pdf" : false
+      }
     }
-
+    
     
   ]
 }

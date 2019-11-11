@@ -3,79 +3,62 @@
   <div>
 
 
-    
-
-    <!-- Hero Section -->
-    <!-- <div class="container-fluid banner br">
-      <div class="row">
-
-        <div class="container p-6 space-1 space-md-3">
-          <div class="row">
-              
-              <div class="col-md-12 position-relative z-index-2">
-                <h1 class="display-5">Don’t just rely on gut instinct<br>Truly <strong class="text-warning">understand your audience</strong>.</h1>
-                <p>Find what really makes your customers tick<br>with AI Audience Analysis.</p>
-                <div class="mt-2">
-                  <button type="button" class="btn btn-sm btn-warning transition-3d-hover" tabindex="0">Book a Meeting</button>
-                </div>
-              </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div> -->
-    <!-- End Hero Section -->
-
-
-
-
     <!-- Hero Section -->
     <div id="parallaxDOM" class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll" data-options='{direction: "normal"}'>
-      <!-- Apply your Parallax background image here -->
-      <div class="divimage dzsparallaxer--target" :style="heroBgImage"></div>
-
-      <!-- Content -->
-      <div class="container position-relative space-2 space-top-md-3 space-bottom-md-2 z-index-2">
-        <div class="w-lg-80 mx-auto">
-          <h1 class="display-5">Don’t just rely on gut instinct<br>Truly <strong class="text-warning">understand your audience</strong>.</h1>
-          <p>Find what really makes your customers tick<br>with AI Audience Analysis.</p>
-          <div class="mt-2">
-            <button type="button" class="btn btn-sm btn-warning transition-3d-hover" tabindex="0">Book a Meeting</button>
-          </div>
-        </div>
+    <!-- Apply your Parallax background image here -->
+    <div class="divimage dzsparallaxer--target" :style="heroBgImage"></div>
+    <!-- Content -->
+    <div class="container space-3 space-top-md-4 space-bottom-md-3">
+      <div class="w-lg-75">
+        <h1 class="display-5 font-size-md-down-5 font-weight-bold mb-2">
+          Don’t just rely on gut instinct;<br>Truly <strong class="text-primary">understand your audience</strong>.
+        </h1>
+        <h3>Find what really makes your customers tick<br>with AI Audience Analysis.</h3>
+        <button type="button" class="btn btn-sm btn-primary transition-3d-hover try-now-btn mt-2" tabindex="0">Free Demo Now</button>
       </div>
-      <!-- End Content -->
-
-      
+    </div>
+    <!-- End Content -->      
     </div>
     <!-- End Hero Section -->
 
 
 
+    <!-- Result Layout -->
+    <div class="container">
+      <div class="row">
+        <div class="collapse col-md-12 mt-4 mb-4" id="result">
+            <!-- This is rendered in JavaScript (DisplayPersonalityData) -->
+        </div>
+      </div>
+    </div>
+    <!-- Result Layout -->
+
+
 
 
     <!-- The next Generation -->
-    <div class="container space-2 space-md-3">
-        <div class="row align-items-lg-center">
-          <div class="col-lg-6 mb-7 mb-lg-0">
-            <!-- Title -->
-            <div class="pr-lg-4">
-              <span class="btn btn-icon btn-soft-warning rounded-circle mb-3">
-                <span class="font-weight-semi-bold btn-icon__inner">1.</span>
-              </span>
-              <h2 class="h4 font-weight-semi-bold text-warning">The next generation in audience analysis and content optimisation</h2>
-              <p class="mb-0">Using our new Audience AI you can psychometrically profile your followers, influencers and those discussing your brand in a deeper more meaningful way than ever before.</p>
+    <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll bg-white" data-options='{direction: "normal"}'>
+      <!-- Apply your Parallax background image here -->
+      <div class="dzsparallaxer--target" :style="styleParallaxBg1"></div>
+      <div class="container space-2 space-md-3">
+          <div class="row align-items-lg-center">
+            <div class="col-lg-6 mb-7 mb-lg-0">
+              <!-- Title -->
+              <div class="pr-lg-4">
 
-              <p>Learn about the fundamental personality traits that drive your audience, enabling you to tailor messaging that resonates and engages more effectively. Give our demo a try on your own profile and imagine having that level of understand for your entire audience!</p>
+                <h2 class="h4 font-weight-semi-bold text-secondary">The next generation in audience analysis</h2>
+                <p class="mb-0">Psychometrically profile your followers, influencers and those discussing your brand in a deeper, more meaningful way than ever before. Audience AI reads all the publicly available posts from an individual to learn about their personality traits, interests, professions, culture and consumer preferences that drive your audience. Give our demo a try, and imagine having that level of understanding for your entire audience!</p>
+                <button type="button" class="btn btn-sm btn-outline-secondary transition-3d-hover try-now-btn mt-3" tabindex="0">Free Demo Now<span class="fas fa-angle-right ml-2"></span></button>
+
+              </div>
+              <!-- End Title -->
             </div>
-            <!-- End Title -->
-          </div>
 
-          <div class="offset-lg-1 col-lg-5 order-lg-1">
-            <img class="img-fluid rounded d-md-block" src="@/assets/buzzradar/img/ai_aud_analysis/devices_mockup.jpg" alt="The next generation in Audience and Content Optimisation">
-          </div>
+            <div class="offset-lg-1 col-lg-5 order-lg-1">
+              <img class="img-fluid rounded d-md-block" src="@/assets/buzzradar/img/ai_aud_analysis/devices_mockup.jpg" alt="The next generation in Audience and Content Optimisation">
+            </div>
 
+          </div>
         </div>
       </div>
       <!-- The next Generation -->
@@ -84,24 +67,28 @@
 
 
       <!-- Helping Creatives -->
-      <div class="container space-1">
-        <div class="row align-items-lg-center">
-          <div class="col-lg-6 offset-lg-1 order-lg-2 mb-7 mb-lg-0">
-            <!-- Title -->
-            <div class="pl-lg-4">
-              <span class="btn btn-icon btn-soft-warning rounded-circle mb-3">
-                <span class="font-weight-semi-bold btn-icon__inner">2.</span>
-              </span>
-              <h2 class="h4 font-weight-semi-bold text-warning">Helping creatives optimise content that your unique audience will love</h2>
-              <p class="mb-0">A great understanding of your audience is the one thing, but how can you use that to create content that resonates?</p>
-
-              <p>With Content Optimiser we capture your content and create a profile for your brand using the same AI driven psychometric analysis. This provides unique insight into your brand’s perceived personality, matching it up against your target audience. The results provides hugely powerful insights into how your creative content chimes with audiences. This is all provided alongside automatically tailored creative recommendations on how to adjust content for visibly better results!</p>
+      <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll bg-white" data-options='{direction: "normal"}'>
+        <!-- Apply your Parallax background image here -->
+        <div class="dzsparallaxer--target" :style="styleParallaxBg1"></div>
+        <div class="container space-1">
+          <div class="row align-items-lg-center">
+            <div class="col-lg-6 offset-lg-1 order-lg-2 mb-7 mb-lg-0">
+              <!-- Title -->
+              <div class="pl-lg-4">
+                <!-- <span class="btn btn-icon btn-soft-warning rounded-circle mb-3">
+                  <span class="font-weight-semi-bold btn-icon__inner">2.</span>
+                </span> -->
+                <h2 class="h4 font-weight-semi-bold text-secondary">Predict how new content will perform</h2>
+                <p class="mb-0">A great understanding of your audience is one thing, but how can you use that to create content that resonates</p>
+                <p>With Audience AI we capture and analyse your content from your website, social channels and even press releases and test it instantly against the virtual audience created by Audience AI. We provide predictive insight and powerful recommendations into how your can adjust your creative content to chime with your audience perfectly.</p>
+                <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="/casestudies/user-case-allianz">See the Case Study<span class="fas fa-angle-right ml-2"></span></a>
+              </div>
+              <!-- End Title -->
             </div>
-            <!-- End Title -->
-          </div>
 
-          <div class="col-lg-5 order-lg-1">
-            <img class="img-fluid rounded d-md-block" src="@/assets/buzzradar/img/ai_aud_analysis/man_touch_screen.jpg" alt="The next generation in Audience and Content Optimisation">
+            <div class="col-lg-5 order-lg-1">
+              <img class="img-fluid rounded d-md-block" src="@/assets/buzzradar/img/ai_aud_analysis/man_touch_screen.jpg" alt="The next generation in Audience and Content Optimisation">
+            </div>
           </div>
         </div>
       </div>
@@ -112,24 +99,29 @@
 
 
       <!-- Personas And Tribes -->
-      <div class="container space-2 space-md-3">
-          <div class="row align-items-lg-center">
-            <div class="col-lg-6 mb-7 mb-lg-0">
-              <!-- Title -->
-              <div class="pr-lg-4">
-                <span class="btn btn-icon btn-soft-warning rounded-circle mb-3">
-                  <span class="font-weight-semi-bold btn-icon__inner">3.</span>
-                </span>
-                <h2 class="h4 font-weight-semi-bold text-warning">Map your brand’s personas and tribes to your real audience.</h2>
-                <p class="mb-0">By detecting the profiles of everyone who interacts with your brand and competitors, Audience Analyser automatically captures all the publicly available social data from those mentioning and following your target audience across social media. It then analyses the personality of each individual and then assigns them to an audience segment that can be customised to your brands pre existing persona or tribe categories. It does this all while staying compliant with GDPR through a process of aggregation and anonymisation.</p>
+      <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll bg-white" data-options='{direction: "normal"}'>
+        <!-- Apply your Parallax background image here -->
+        <div class="dzsparallaxer--target" :style="styleParallaxBg1"></div>
+        <div class="container space-2 space-md-3">
+            <div class="row align-items-lg-center">
+              <div class="col-lg-6 mb-7 mb-lg-0">
+                <!-- Title -->
+                <div class="pr-lg-4">
+                  <!-- <span class="btn btn-icon btn-soft-warning rounded-circle mb-3">
+                    <span class="font-weight-semi-bold btn-icon__inner">3.</span>
+                  </span> -->
+                  <h2 class="h4 font-weight-semi-bold text-secondary">Create & discover data-driven brand personas</h2>
+                  <p class="mb-0">By using data that truly understands your audience, we create accurate personas or tribes based on them. Profiling each individual, we can map them into each persona or tribe grouping, giving you an accurate picture of where to focus your marketing efforts. Audience AI can also take examples of audience personas you want to attract and help you discover influencers or partners that have similar audiences for you to align with.</p>
+                  <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="/casestudies/user-case-customer-service">See the Case Study<span class="fas fa-angle-right ml-2"></span></a>
+                </div>
+                <!-- End Title -->
               </div>
-              <!-- End Title -->
-            </div>
 
-            <div class="offset-lg-1 col-lg-5 order-lg-1">
-              <img class="img-fluid rounded d-md-block" src="@/assets/buzzradar/img/ai_aud_analysis/br_simple_diagram.jpg" alt="The next generation in Audience and Content Optimisation">
-            </div>
+              <div class="offset-lg-1 col-lg-5 order-lg-1">
+                <img class="img-fluid rounded d-md-block" src="@/assets/buzzradar/img/ai_aud_analysis/br_simple_diagram.jpg" alt="The next generation in Audience and Content Optimisation">
+              </div>
 
+            </div>
           </div>
         </div>
         <!-- Personas And Tribes -->
@@ -137,31 +129,81 @@
 
 
 
-        <!-- IBM Watson -->
-        <div class="container space-1">
-          <div class="row align-items-lg-center">
-            <div class="col-lg-6 order-lg-2 mb-7 mb-lg-0">
-              <!-- Title -->
-              <div class="pl-lg-4">
-                <span class="btn btn-icon btn-soft-warning rounded-circle mb-3">
-                  <span class="font-weight-semi-bold btn-icon__inner">4.</span>
-                </span>
-                <h2 class="h4 font-weight-semi-bold text-warning">Our custom built AI psychometric analyser built with help from IBM Watson</h2>
-                <p class="mb-0">Two years in development alongside our own and IBM watson AI engineers Audience Analyser psychometrically analyses millions of posts to create personalities maps around 50 core traits based around OCEAN (Big 5) and Myers Briggs Models. The result is to provide an incredibly accurate and detailed profiles of your audience’s personalities while simultaneously matching it against the tone of your brands content.</p>
+
+        <!-- AI Watson -->
+        <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll bg-white" data-options='{direction: "normal"}'>
+          <!-- Apply your Parallax background image here -->
+          <div class="dzsparallaxer--target" :style="styleParallaxBg1"></div>
+          <div class="container space-1">
+            <div class="row align-items-lg-center">
+              <div class="col-lg-6 offset-lg-1 order-lg-2 mb-7 mb-lg-0">
+                <!-- Title -->
+                <div class="pl-lg-4">
+                  <!-- <span class="btn btn-icon btn-soft-warning rounded-circle mb-3">
+                    <span class="font-weight-semi-bold btn-icon__inner">2.</span>
+                  </span> -->
+                  <h2 class="h4 font-weight-semi-bold text-secondary">Built with help from IBM Watson</h2>
+                  <p class="mb-0">We spent two years developing Audience AI alongside IBM Watson’s AI engineers. Audience Analyser psychometrically analyses millions of posts to create personality maps around 50 core traits, based around OCEAN and Myers Briggs personality Models. This is combined with Natural Language Understanding to detect professions and interests and reinforced with machine learning to continually improve our models. The result is incredibly accurate and detailed profiles of your audience’s personalities and preferences.</p>
+                  <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="https://www.ibm.com/thought-leadership/smart/uk-en/watson/" target="_blank">Learn More<span class="fas fa-angle-right ml-2"></span></a>
+                </div>
+                <!-- End Title -->
               </div>
-              <!-- End Title -->
-            </div>
 
-            <div class="col-lg-6 order-lg-1">
+              <div class="col-lg-5 order-lg-1">
+                
+                <div class="position-relative min-height-250">
+                  <div class="js-bg-video position-absolute w-100 h-100 border-radius"
+                       :data-hs-bgv-path="watsonVideoURL"
+                       data-hs-bgv-loop="1">
+                  </div>
+                </div>
 
-              <video loop="" muted="" autoplay="" poster="images/videoframe.jpg" class="aiwatson_video">
-                  <source src="http://www.buzzradar.com/wp-content/uploads/2017/12/IBM-Watson_-Ambient-1.mp4" type="video/mp4">
-              </video>
-              
+              </div>
             </div>
           </div>
         </div>
-        <!-- IBM Watson -->
+        <!-- AI Watson -->
+
+
+
+
+
+
+
+        <!-- GDPR -->
+        <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll bg-white" data-options='{direction: "normal"}'>
+          <!-- Apply your Parallax background image here -->
+          <div class="dzsparallaxer--target" :style="styleParallaxBg1"></div>
+          <div class="container space-2 space-md-3">
+              <div class="row align-items-lg-center">
+                <div class="col-lg-6 mb-7 mb-lg-0">
+                  <!-- Title -->
+                  <div class="pr-lg-4">
+                    <!-- <span class="btn btn-icon btn-soft-warning rounded-circle mb-3">
+                      <span class="font-weight-semi-bold btn-icon__inner">3.</span>
+                    </span> -->
+                    <h2 class="h4 font-weight-semi-bold text-secondary">Compliant with privacy laws and GDPR</h2>
+                    <p class="mb-0">With such powerful technology comes a great responsibility to use data ethically and within all legal and industry guidelines. That’s why, even though we only use publicly available social posts, we anonymise and aggregate all identifiable user data and don’t store any specific customer identifying data after processing, all in compliance with GDPR.</p>
+                    <a v-on:click="bookMeeting" class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="#">Book a Demo<span class="fas fa-angle-right ml-2"></span></a>
+                  </div>
+                  <!-- End Title -->
+                </div>
+
+                <div class="offset-lg-1 col-lg-5 order-lg-1">
+                  <img class="img-fluid rounded d-md-block" src="@/assets/buzzradar/img/ai_aud_analysis/gdpr.jpg" alt="The next generation in Audience and Content Optimisation">
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- GDPR -->
+
+
+
+
+
+
+
 
 
 
@@ -181,21 +223,60 @@
     name : 'AudienceIntel',
     data () {
       return {
-        publicPath: process.env.BASE_URL,
+        watsonVideoURL : process.env.BASE_URL + 'public_assets/html5-video/ibm-watson/ibm-watson',
+        styleParallaxBg1 : {
+          backgroundImage : 'url('+require('@/assets/buzzradar/svg/components/bg-elements-7.svg')+')',
+          height : '120%',
+        },
         heroBgImage : {
           height : '120%',
-          backgroundImage : 'url("'+require('@/assets/buzzradar/img/1920x692/banner_minority.jpg')+'")',
+          backgroundImage : 'url("'+require('@/assets/buzzradar/img/ai_aud_analysis/banner_minority.jpg')+'")',
         },
       }
     },
     mounted() {
       $.HSCore.components.HSBgVideo.init('.js-bg-video');
-      $.HSCore.components.HSFancyBox.init('.js-fancybox');
-      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
       dzsprx_init('#parallaxDOM', { direction: "normal", mode_scroll:"fromtop"} );
+      dzsprx_init('.dzsparallaxer', { direction: "normal"} );
+
+      //Developer Note:
+      //Local Environment: 
+      //'src': 'perso_insights/PersoInsights.js',
+      //'data-root' : 'http://localhost:8081/perso_insights/',
+      //Live Environment
+      //'src': 'http://www.buzzradar.com/newbrsite/perso_insights/PersoInsights_min.js',
+      //'data-root' : 'http://www.buzzradar.com/newbrsite/perso_insights/',
+
+      jQuery(document).ready(function() {       
+          $('<script/>').attr({
+              'src': 'perso_insights/PersoInsights_min.js',
+              'data-root' : 'http://localhost:8081/perso_insights/',
+          }).appendTo( $('body') );
+      });
+
+
+      $(document).ready(function(){
+        var screenWidth = $(window).width();
+        // if window width is smaller than 800 remove the autoplay attribute
+        // from the video
+        if (screenWidth < 800){
+              $('video').removeAttr('autoplay');
+        } else {
+          $('video').attr('autoplay');
+        }
+      });
+  
+
     },
     updated() {
       
+    },
+    methods : {
+      bookMeeting : function(e) {
+        e.preventDefault();
+        Calendly.showPopupWidget('https://calendly.com/buzzradar/introduction-meeting');
+        return false;
+      }
     }
     
   }
@@ -220,16 +301,25 @@
       }
 
       &.br {
-          background: url('~@/assets/buzzradar/img/1920x692/banner_minority.jpg') no-repeat white top center;
+          background: url('~@/assets/buzzradar/img/ai_aud_analysis/banner_minority.jpg') no-repeat white top center;
           @include background-size(cover);
       }
 
   }
 
-  .aiwatson_video{
-      width: 100%;
-      @include border-radius(10px);
+  .buzzradar_bootbox  {
+    display: none !important;
   }
+
+  .min-height-250{
+    min-height: 250px;
+  }
+
+  .border-radius{
+    @include border-radius(10px);
+  }
+
+
 
 
 

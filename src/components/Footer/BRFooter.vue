@@ -19,7 +19,7 @@
 			  </router-link>
 	          <!-- End Logo -->
 
-	          <p class="small text-white-70">Buzz Radar is the leading social intelligence platform designed for marketers rather than analysts. Providing powerful, easy to digest actionable insights.</p>
+	          <p class="small text-white-70">Buzz Radar is the leading social intelligence platform designed for marketers rather than analysts, providing powerful, easy to digest, actionable insights.</p>
 	          <!-- Copyright -->
 	          <p class="small text-white-70 mb-0">All Rights Reserved, © 2019 Buzz Radar Ltd</p>
 	          <!-- End Copyright -->
@@ -43,16 +43,26 @@
 
 	            <!-- Subscribe Form -->
 	            <form class="js-validate js-form-message">
-	              <label class="sr-only" for="subscribeSrEmail">Your email</label>
-	              <div class="input-group">
-	                <input type="email" class="form-control" name="email" id="subscribeSrEmail" placeholder="Your email" aria-label="Your email" aria-describedby="subscribeButton" required
+	              <label class="sr-only" for="subscribeEmail">Your email</label>
+	              <div v-if="!subscribed" class="input-group">
+	                <input type="email" class="form-control" name="email" id="subscribeEmail" placeholder="Your email" aria-label="Your email" aria-describedby="subscribeButton"
 	                       data-msg="Please enter a valid email address.">
 	                <div class="input-group-append">
-	                  <button type="submit" class="btn btn-primary" id="subscribeButton">
+	                  <button v-on:click="updateMailingList" type="button" class="btn btn-primary">
 	                    <span class="fas fa-paper-plane"></span>
 	                  </button>
 	                </div>
 	              </div>
+	              <div v-else class="input-group">
+	                <input type="emailsent" class="form-control" name="emailsent" placeholder="Done, thank you!" disabled>
+	                <div class="input-group-append">
+	                  <button type="button" class="btn btn-green">
+	                    <span class="fas fa-check"></span>
+	                  </button>
+	                </div>
+	              </div>
+
+	              <span v-if="emailError" class="error-msg">Invalid email</span>
 	            </form>
 	            <!-- End Subscribe Form -->
 	          </div>
@@ -106,7 +116,69 @@
 <script>
 
 	export default {
-	  name: 'BRFooter',
+		name: 'BRFooter',
+		data : function() {
+	      return {
+	        subscribed : false,
+	        emailError : false,
+	      }
+	    },
+	    mounted() {
+	      
+	    },
+		methods : {
+			updateMailingList: function () {
+
+				var subscribedEmail = $('#subscribeEmail').val();
+				if (this.validEmail(subscribedEmail)) {
+
+					this.emailError = false;
+					console.log("It is valid!");
+
+					var newsLetterList =  {
+				        'ht' : '110cc29c538300a21aa753004897a90886c7e9f6:MTUyNDY3NDg0Ni43MzE2',
+				        'listId' : 'a06aa57adb',
+				    };
+
+				    var dataForm = {
+				        "mc_signupsource" : 'hosted',
+				        "EMAIL" : subscribedEmail,
+				        "FNAME" : " ",
+				        "LNAME" : " ",
+				    };
+
+				    console.log("MailChimp listName newsletter");
+				    console.log(newsLetterList);
+				    console.log(dataForm);
+
+				    var url = 'https://buzzradar.us5.list-manage.com/subscribe/post?u=c9003a2b46ba63c35711fc287&amp;id='+newsLetterList.listId;
+				    url = url.replace('/post?', '/post-json?').concat('&c=?');
+
+				    var $self = this;
+
+				    $.ajax({
+				        url: url,
+				        data : dataForm,
+				        success: function() {
+				        	$self.subscribed = true;
+				        	console.log("sucess....", $self.subscribed)
+				        },
+				        dataType: 'jsonp',
+				        error: function (resp, text) {
+				            console.log('mailchimp ajax submit error: ' + text);
+				        }
+				    });
+
+				}else{
+					this.emailError = true;
+				}
+   
+			},
+			validEmail: function (email) {
+				var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+				return re.test(email);
+			}
+		}, 
 	}
 
 </script>
@@ -124,6 +196,16 @@
 
 	.navbar-brand{
 		margin-bottom:10px;
+	}
+
+	.btn-green{
+		background: #21c6ca !important;
+		color: white;
+		cursor: default !important;
+	}
+
+	.error-msg{
+		color:#ff8282;
 	}
 
 </style>

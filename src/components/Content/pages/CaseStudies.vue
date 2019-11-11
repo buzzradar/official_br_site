@@ -5,21 +5,6 @@
     <!-- Case Studies CubePortfolio List -->
     <div v-if="this.$router.currentRoute.path == '/casestudies' ">
 
-
-        <!-- Hero Section -->
-        <!-- <div class="container space-top-3 space-bottom-2">
-          <div class="row">
-            <div class="col-md-12">
-              <img class="img-fluid rounded-lg" src="@/assets/buzzradar/img/casestudies/ibm_banner_case_study.jpg" />
-            </div>              
-          </div>
-        </div> -->
-        <!-- End Hero Section -->
-
-
-
-
-
     <!-- Testimonials Section -->
 
       <div class="container mt-0 mt-md-10 mb-5" :style="bannerBg" >
@@ -89,7 +74,7 @@
             <!-- Filter -->
             <ul id="filterControls" class="list-inline cbp-l-filters-alignRight text-center">
               <li class="list-inline-item cbp-filter-item cbp-filter-item-active u-cubeportfolio__item" data-filter="*">All</li>
-              <li v-for="(filter,index) in casesFilters" class="list-inline-item cbp-filter-item u-cubeportfolio__item" :data-filter="`.`+filter.class">{{filter.name}}</li>
+              <li v-for="(filter,index) in casesFilters" class="list-inline-item cbp-filter-item u-cubeportfolio__item" :data-filter="`.`+filtersLibrary[filter].class">{{filtersLibrary[filter].label}}</li>
             </ul>
             <!-- End Filter -->
 
@@ -111,7 +96,9 @@
               <!-- Item -->
               <div v-for="(caseStudy,index) in caseStudies" :class="`cbp-item `+caseStudy.filterClass">
                 <a class="cbp-caption" :href="'/casestudies/'+caseStudy.slug">
-                  <img class="rounded" :src="require('@/assets/buzzradar/img/casestudies/'+caseStudy.THUMB_imgName)" alt="Image Description">
+                  
+                  <img class="rounded" :src=" './public_assets/casestudies/' + caseStudy.thumb " alt="Image Description">
+
                   <div class="py-3">
                     <h3 class="h6 text-dark mb-0">{{caseStudy.title}}</h3>
                     <p class="small mb-0">
@@ -153,8 +140,30 @@
     data : function(){
       return {
         bannerBg : {
-          backgroundImage : 'url('+require('@/assets/buzzradar/img/casestudies/ibm_banner_case_study.jpg')+')',
+          backgroundImage : 'url("./public_assets/casestudies/ibm_banner_case_study.jpg")',
           backgroundPosition: 'left',
+        },
+        filtersLibrary : {
+          "brand-management" : {
+            "label" : "Brand Management",
+            "class" : "brand-management",
+          },
+          "events" : {
+            "label" : "Events",
+            "class" : "events",
+          },
+          "strategy-research" : {
+            "label" : "Strategy & Planning",
+            "class" : "strategy-research",
+          },
+          "crisis-manag" : {
+            "label" : "Crisis Management",
+            "class" : "crisis-manag",
+          },
+          "digital-trans" : {
+            "label" : "Digital Transformation",
+            "class" : "digi-transf",
+          }
         },
         caseStudies : AllCaseStudiesEntries.casesentries,
       };
@@ -162,35 +171,56 @@
     computed: {
       casesFilters : function() {
 
-        var filtersArray = [];
-
-        this.caseStudies.forEach(function(caseStudy) {
-          console.log(caseStudy.filter);
-
-          if ( !filtersArray.includes(caseStudy.filter) ) {
-            // filtersArray.push(caseStudy.filter);
-            filtersArray.push({
-              name : caseStudy.filter,
-              class : caseStudy.filterClass,
-            });
+        function containsObject(obj, list) {
+          var i;
+          for (i = 0; i < list.length; i++) {
+              if (JSON.stringify(list[i]) === JSON.stringify(obj)) {
+                  return true;
+              }
           }
+          return false;
+        }
 
-          //Let's prepare the thumb depending on the Main Photo name
-          caseStudy['THUMB_imgName'] = caseStudy.imgName.split('.jpg')[0]+'-thumb.jpg';
+        var filtersArray = [];    //this is the array that will tell us how many filters there are available
+        var _this = this;
+        this.caseStudies.forEach(function(caseStudy) {
+
+          var caseStudyFilters = caseStudy.filter.split(",");
+          caseStudy["filterClass"] = '';
+          caseStudyFilters.forEach(function(filter) {
+            if ( !filtersArray.includes(filter) ) {
+              filtersArray.push(filter);
+            }
+
+            //Just in case a case study has more than 1 filter we add the
+            //relevant class for all the items. We need this to enable the filters
+            caseStudy["filterClass"] += _this.filtersLibrary[filter].class + ' ';
+
+          });
 
         });
+
+        // console.log("Filters Array.......", filtersArray);
+        // console.log("CaseStudies.......", this.caseStudies);
 
         return filtersArray;
       }
     },
     mounted() {
-      $.HSCore.components.HSCubeportfolio.init('.cbp');
+      var hash = window.location.hash;
+      
+      var defaultFilter = '*';
+      if (hash){
+        defaultFilter = hash.replace('#','.');
+      }
+
+      $.HSCore.components.HSCubeportfolio.init('.cbp',{"defaultFilter": defaultFilter});
       $.HSCore.components.HSFancyBox.init('.js-fancybox');
     },
     updated() {
-      //$.HSCore.components.HSCubeportfolio.init('.cbp');
+      
     }
-    
+
  	}
 
  </script>

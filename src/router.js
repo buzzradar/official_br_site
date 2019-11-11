@@ -4,7 +4,8 @@ import Router from 'vue-router';
 import NotFound from './components/Content/pages/NotFound';
 
 import Home from './components/Content/pages/Home';
-import Aboutus from './components/Content/pages/Aboutus';
+import About from './components/Content/pages/AboutWrapper';
+import AboutUs from './components/Content/pages/AboutUs';
 import Contactus from './components/Content/pages/Contactus';
 import Faq from './components/Content/pages/Faq';
 import Careers from './components/Content/pages/Careers';
@@ -17,16 +18,19 @@ import Products from './components/Content/pages/Products';
 import RealTimeDash from './components/Content/pages/RealTimeDashboards';
 import AIAudienceAnal from './components/Content/pages/AIAudienceAnal';
 import MarketingIntel from './components/Content/pages/MarketingIntel';
+import MktgSocialIntelligence from './components/Content/pages/MktgIntelSocialIntelligence';
+import MktgPaidMedia from './components/Content/pages/MtkgIntelPaidMedia';
+import MktgNewsPr from './components/Content/pages/MktgIntelNewsPr';
 
-import BlogEntries from './statics/BlogsEntries.json';
+import BlogEntries from './statics/WPPostsEntries.json';
 import JobsEntries from './statics/CareersEntries.json';
 import CaseStudiesEntries from './statics/CaseStudiesEntries.json';
 
 //Routes for the Blog
 const blogRoutes = Object.keys(BlogEntries).map(section => {
   const children = BlogEntries[section].map(child => ({
-    path: child.slug,
-    name: child.slug,
+    path: 'post'+child.ID,
+    name: 'post'+child.ID,
     component: BlogIndividual
   }))
   return {
@@ -91,6 +95,7 @@ export default new Router({
       path: '/products',
       name : 'products',
       label : 'Products',
+      redirect: '/realtimedashboard',
       component : Products,
       children: [
         {
@@ -118,7 +123,7 @@ export default new Router({
       name: 'services',
       label : 'Services',
       beforeEnter() {
-        window.open('http://credibleinfluence.com/','_blank');
+        window.open('http://credibleinfluence.com/','_parent');
       },
     },
 
@@ -126,13 +131,19 @@ export default new Router({
 
     ...blogRoutes,
 
-
     {
-      path: '/aboutus',
-      name : 'aboutus',
+      path: '/about',
+      name : 'about',
       label : 'About Us',
-      component : Aboutus,
+      component : About,
+      //redirect : '/aboutus',
       children: [
+        {
+          path: '/aboutus',
+          name: 'aboutus',
+          label : 'About Us',
+          component: AboutUs
+        },
         {
           path: '/contactus',
           name: 'contactus',
@@ -152,7 +163,26 @@ export default new Router({
     },
 
 
+    {
+      path: '/marketingintelligence/socialintelligence',
+      name: 'socialintelligence',
+      label : 'Social Intelligence',
+      component: MktgSocialIntelligence
+    },
 
+    {
+      path: '/marketingintelligence/paidmedia',
+      name: 'paidmedia',
+      label : 'Paid Media',
+      component: MktgPaidMedia
+    },
+
+    {
+      path: '/marketingintelligence/newspr',
+      name: 'newspr',
+      label : 'News & PR',
+      component: MktgNewsPr
+    }
 
 
 
