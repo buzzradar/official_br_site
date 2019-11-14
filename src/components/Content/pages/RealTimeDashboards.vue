@@ -15,7 +15,7 @@
       <div class="container position-relative space-3 space-top-md-4 space-bottom-md-3 text-white">
         <div class="w-lg-75">
           <h1 class="display-5 font-size-md-down-5 font-weight-bold mb-2">
-            Clear insights make<br>for <strong class="text-primary">smart decisions</strong>.
+            Clear insights make<br>for <strong class="text-primary">smart decisions</strong>
           </h1>
           <h3>Turn your data into fast, accessible and actionable intelligence for your entire organisation.</h3>
         </div>

@@ -6,7 +6,7 @@
     <!-- Terms Content Section -->
     <div class="container space-2 space-top-md-3 space-bottom-md-3">
       <div class="row">
-        <div id="stickyBlockStartPoint" class="col-md-4 col-lg-3 mb-7 mb-md-0">
+        <div id="stickyBlockStartPoint" class="col-md-4 col-lg-3 mb-7 mb-md-0 d-none d-md-block">
           <!-- Nav -->
           <nav class="js-sticky-block card shadow-sm p-4"
                data-parent="#stickyBlockStartPoint"
