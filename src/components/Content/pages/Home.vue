@@ -43,7 +43,10 @@
               
                 Unlock the <br class="d-block d-md-none">secrets <br class="d-none d-md-block">of your <br class="d-block d-md-none">
                 <span class="text-white">
-                  <strong class="u-text-animation u-text-animation--typing text-primary">Audience</strong>
+                  <!-- <strong class="u-text-animation u-text-animation--typing text-primary"></strong> -->
+                  <span class="br-text-anim text-primary">
+                    Audience
+                  </span>
                 </span>
                 <br>
               
@@ -830,8 +833,10 @@
 
       setTimeout(function() {
 
+        $('.br-text-anim').html('<strong class="u-text-animation u-text-animation--typing text-primary"></strong>');
+
         var typed = new Typed(".u-text-animation.u-text-animation--typing", {
-          strings: ["Data", "Competitors", "Brands", "Audience"],
+          strings: ["Data","Data", "Competitors", "Brands", "Audience"],
           typeSpeed: 70,
           loop: true,
           backSpeed: 40,
@@ -839,6 +844,7 @@
         });
 
       },4000);
+
 
       
 

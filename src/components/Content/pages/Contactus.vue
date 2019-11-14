@@ -53,7 +53,7 @@
           <!-- End Office Hours -->
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 mb-3">
 
           <div class="col-md-12">
 
