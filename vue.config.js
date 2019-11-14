@@ -87,13 +87,13 @@ const SEORoutes = {
 		//If you need to get the thumbs from public folder: /public_assets/...
 		//To apply the sharer relative, you need to add ../ when there is one folder and ../../ where there are 2 folders into the tree.
 
-	    '/': './sharer.gif',
-        '/realtimedashboard': '../sharer_dashboard.jpg',
-        '/aiaudienceanalysis': '../sharer_ai_audience_analysis.gif',
-        '/marketingintelplatform': '../sharer_marketing_platform.gif',
-	  	'/marketingintelplatform/socialintelligence' : '../../sharer_marketing_platform.gif',
-	  	'/marketingintelplatform/paidmedia': '../../sharer_marketing_platform.gif',
-	  	'/marketingintelplatform/newspr': '../../sharer_marketing_platform.gif',
+	    '/': 'https://www.buzzradar.com/sharer.gif',
+        '/realtimedashboard': 'https://www.buzzradar.com/sharer_dashboard.jpg',
+        '/aiaudienceanalysis': 'https://www.buzzradar.com/sharer_ai_audience_analysis.gif',
+        '/marketingintelplatform': 'https://www.buzzradar.com/sharer_marketing_platform.gif',
+	  	'/marketingintelplatform/socialintelligence' : 'https://www.buzzradar.com/sharer_marketing_platform.gif',
+	  	'/marketingintelplatform/paidmedia': 'https://www.buzzradar.com/sharer_marketing_platform.gif',
+	  	'/marketingintelplatform/newspr': 'https://www.buzzradar.com/sharer_marketing_platform.gif',
 	},
 };
 // readFileAsync('./src/statics/CaseStudiesEntries.json');

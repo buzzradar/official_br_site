@@ -139,7 +139,7 @@ export default new Router({
       name: 'services',
       label : 'Services',
       beforeEnter() {
-        window.open('http://credibleinfluence.com/','_parent');
+        window.open('https://www.credibleinfluence.com/','_parent');
       },
     },
 
