@@ -54,7 +54,6 @@ export default {
 
 
 
-
 <style lang="scss">
 
   html,body{

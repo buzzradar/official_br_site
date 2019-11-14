@@ -55,7 +55,7 @@
                    data-speed="700"
                    data-animate-in="zoomIn"
                    data-animate-out="zoomOut"
-                   data-caption="Front - Responsive Website Template">Find out More <span class="fas fa-angle-right ml-2"></span>
+                   data-caption="Jeremy Waite – Chief Strategy Officer at IBM">Find out More <span class="fas fa-angle-right ml-2"></span>
                 </a>
                 <!-- End Fancybox -->
 

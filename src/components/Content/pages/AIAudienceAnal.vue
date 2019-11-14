@@ -231,6 +231,7 @@
         heroBgImage : {
           height : '120%',
           backgroundImage : 'url("'+require('@/assets/buzzradar/img/ai_aud_analysis/banner_minority.jpg')+'")',
+          backgroundPosition: 'top left',
         },
       }
     },
@@ -239,18 +240,11 @@
       dzsprx_init('#parallaxDOM', { direction: "normal", mode_scroll:"fromtop"} );
       dzsprx_init('.dzsparallaxer', { direction: "normal"} );
 
-      //Developer Note:
-      //Local Environment: 
-      //'src': 'perso_insights/PersoInsights.js',
-      //'data-root' : 'http://localhost:8081/perso_insights/',
-      //Live Environment
-      //'src': 'http://www.buzzradar.com/newbrsite/perso_insights/PersoInsights_min.js',
-      //'data-root' : 'http://www.buzzradar.com/newbrsite/perso_insights/',
 
       jQuery(document).ready(function() {       
           $('<script/>').attr({
               'src': 'perso_insights/PersoInsights_min.js',
-              'data-root' : 'http://localhost:8081/perso_insights/',
+              'data-root' : 'perso_insights/',
           }).appendTo( $('body') );
       });
 
@@ -288,8 +282,6 @@
 
 
 
-
-
 <style lang="scss" scoped>
 
   @import "compass";
@@ -318,9 +310,6 @@
   .border-radius{
     @include border-radius(10px);
   }
-
-
-
 
 
 </style>

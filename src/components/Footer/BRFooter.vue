@@ -15,13 +15,13 @@
 	        <div class="col-sm-9 col-lg-4">
 	          <!-- Logo -->
 	          <router-link to="/" class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-default u-header__navbar-brand-text-white">
-				<img alt="Buzz Radar" src="@/assets/img/buzzradar_logo/buzzlogo_name_white.svg">
+				<img alt="Buzz Radar" src="@/assets/buzzradar/svg/buzzradar_logo/buzzlogo_name_white.svg">
 			  </router-link>
 	          <!-- End Logo -->
 
 	          <p class="small text-white-70">Buzz Radar is the leading social intelligence platform designed for marketers rather than analysts, providing powerful, easy to digest, actionable insights.</p>
 	          <!-- Copyright -->
-	          <p class="small text-white-70 mb-0">All Rights Reserved, © 2019 Buzz Radar Ltd</p>
+	          <p class="small text-white-70 mb-0">All Rights Reserved, © 2019 Buzz Radar Ltd <a href="/terms-conditions">T&C</a>/<a href="/privacy-policy">Privacy</a></p>
 	          <!-- End Copyright -->
 	        </div>
 
@@ -96,7 +96,7 @@
 
 	    <!-- SVG Wave Shape -->
 	    <figure class="position-absolute top-0 right-0 left-0">
-	      <img class="js-svg-injector" src="@/assets/svg/components/wave-1-top-sm.svg" alt="Image Description"
+	      <img class="js-svg-injector" src="@/assets/buzzradar/svg/components/wave-1-top-sm.svg" alt="Image Description"
 	           data-parent="#SVGfooterTopShape">
 	    </figure>
 	    <!-- End SVG Wave Shape -->

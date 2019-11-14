@@ -21,6 +21,8 @@ import MarketingIntel from './components/Content/pages/MarketingIntel';
 import MktgSocialIntelligence from './components/Content/pages/MktgIntelSocialIntelligence';
 import MktgPaidMedia from './components/Content/pages/MtkgIntelPaidMedia';
 import MktgNewsPr from './components/Content/pages/MktgIntelNewsPr';
+import TermsConditions from './components/Content/pages/TermsConditions';
+import PrivacyPolicy from './components/Content/pages/PrivacyPolicy';
 
 import BlogEntries from './statics/WPPostsEntries.json';
 import JobsEntries from './statics/CareersEntries.json';
@@ -74,6 +76,20 @@ const studiesRoutes = Object.keys(CaseStudiesEntries).map(section => {
     children
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -164,25 +180,39 @@ export default new Router({
 
 
     {
-      path: '/marketingintelligence/socialintelligence',
+      path: '/marketingintelplatform/socialintelligence',
       name: 'socialintelligence',
       label : 'Social Intelligence',
       component: MktgSocialIntelligence
     },
 
     {
-      path: '/marketingintelligence/paidmedia',
+      path: '/marketingintelplatform/paidmedia',
       name: 'paidmedia',
       label : 'Paid Media',
       component: MktgPaidMedia
     },
 
     {
-      path: '/marketingintelligence/newspr',
+      path: '/marketingintelplatform/newspr',
       name: 'newspr',
       label : 'News & PR',
       component: MktgNewsPr
-    }
+    },
+
+    {
+      path: '/terms-conditions',
+      name: 'terms-conditions',
+      label : 'Terms & Conditions',
+      component: TermsConditions
+    },
+
+    {
+      path: '/privacy-policy',
+      name: 'privacy-policy',
+      label : 'Privacy Policy',
+      component: PrivacyPolicy
+    },
 
 
 

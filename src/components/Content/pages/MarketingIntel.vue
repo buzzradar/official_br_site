@@ -173,14 +173,14 @@
 
         <!-- SVG Top Shape -->
         <figure class="position-absolute top-0 right-0 left-0">
-          <img class="js-svg-injector" src="@/assets/svg/components/wave-2-top.svg" alt="Image Description"
+          <img class="js-svg-injector" src="@/assets/buzzradar/svg/components/wave-2-top.svg" alt="Image Description"
                data-parent="#SVGwave2Shape">
         </figure>
         <!-- End SVG Top Shape -->
 
         <!-- SVG Bottom Shape -->
         <figure class="position-absolute right-0 bottom-0 left-0">
-          <img class="js-svg-injector" src="@/assets/svg/components/wave-2-bottom.svg" alt="Image Description"
+          <img class="js-svg-injector" src="@/assets/buzzradar/svg/components/wave-2-bottom.svg" alt="Image Description"
                data-parent="#SVGwave2Shape">
         </figure>
         <!-- End SVG Bottom Shape -->
@@ -228,7 +228,7 @@
                 <!-- End SVG Icon -->
                 <h3 class="h5 mt-3">Social Intelligence</h3>
                 <p class="mb-md-0">Access award-winning social tracking capability across nearly all major social channels.</p>
-                <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="/marketingintelligence/socialintelligence">Find out More <span class="fas fa-angle-right ml-2"></span></a>
+                <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="/marketingintelplatform/socialintelligence">Find out More <span class="fas fa-angle-right ml-2"></span></a>
               </div>
             </div>
 
@@ -241,7 +241,7 @@
                 <!-- End SVG Icon -->
                 <h3 class="h5 mt-3">Paid Media Analysis</h3>
                 <p class="mb-md-0">Receive insights and detailed reports on your performance for Facebook Ads and Google Adwords.</p>
-                <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="/marketingintelligence/paidmedia">Find out More <span class="fas fa-angle-right ml-2"></span></a>
+                <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="/marketingintelplatform/paidmedia">Find out More <span class="fas fa-angle-right ml-2"></span></a>
               </div>
             </div>
 
@@ -254,7 +254,7 @@
                 <!-- End SVG Icon -->
                 <h3 class="h5 mt-3">News & PR Monitoring</h3>
                 <p class="mb-md-0">Capture and analyse data from all your PR campaigns across 3M+ news outlets and blogs.</p>
-                <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="/marketingintelligence/newspr">Find out More <span class="fas fa-angle-right ml-2"></span></a>
+                <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="/marketingintelplatform/newspr">Find out More <span class="fas fa-angle-right ml-2"></span></a>
               </div>
             </div>
           </div>
@@ -272,7 +272,7 @@
 
             <!-- Mockup Browser -->
             <figure id="SVGBrowserShape" class="svg-preloader ie-browser u-browser-v1__svg">
-              <img class="js-svg-injector how-works-main-photo" src="@/assets/svg/illustrations/browser.svg" alt="Image Description"
+              <img class="js-svg-injector how-works-main-photo" src="@/assets/buzzradar/svg/illustrations/browser.svg" alt="Image Description"
                    :data-img-paths="objDataImgMaskBrowser"
                    data-parent="#SVGBrowserShape">
             </figure>
@@ -316,8 +316,6 @@
           backgroundImage : 'url('+require('@/assets/buzzradar/svg/components/bg-elements-7.svg')+')',
           height : '120%',
         },
-        objDataImgMaskIphone: JSON.stringify([{ "targetId": "#SVGiphoneImg1", "newPath": require('@/assets/buzzradar/img/282x500/iphone_insights.png') }]),
-        objDataImgMaskTablet: JSON.stringify([{ "targetId": "#SVGtabletImg1", "newPath": require('@/assets/buzzradar/img/533x711/ipad_insights.png') }]),
         objDataImgMaskBrowser: JSON.stringify([{ "targetId": "#SVGBrowserShapeImg1", "newPath": require('@/assets/buzzradar/img/marketingplatform/socialtracking-insights.jpg') }]),
       }
     },

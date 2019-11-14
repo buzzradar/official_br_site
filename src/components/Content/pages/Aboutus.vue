@@ -58,9 +58,9 @@
         <div class="container space-2">
           <div class="w-lg-65 mx-lg-auto">
 
-              <p>Buzz Radar was founded in 2012 by a veteran team of social intelligence specialists AI and data visualisation engineers. Before starting Buzz Radar, we worked on some of the most piviotal social marketing campaigns and all found we where encountering the same challenge: how to make data accessible, insightful and actionable for everyone Inside an organisation quickly and easily.</p>
+              <p><span class="text-primary"><strong>Buzz Radar</strong></span> was founded in 2012 by a veteran team of social intelligence specialists AI and data visualisation engineers. Before starting <span class="text-primary"><strong>Buzz Radar</strong></span>, we worked on some of the most piviotal social marketing campaigns and all found we where encountering the same challenge: how to make data accessible, insightful and actionable for everyone Inside an organisation quickly and easily.</p>
 
-              <p>To try and solve this, we created Buzz Radar. It delivers valuable insights to the right person at the right moment in ways that they can easily understand and act on.</p>
+              <p>To try and solve this, we created <span class="text-primary"><strong>Buzz Radar</strong></span>. It delivers valuable insights to the right person at the right moment in ways that they can easily understand and act on.</p>
 
               <p>Now, we are helping the world's biggest brands, events and broadcasters gain actionable intelligence from their data.</p>
 
@@ -93,7 +93,7 @@
 <script>
 
 	export default {
-        name: 'About Us',
+        name: 'AboutUs',
         data() {
             return {
                 imgAboutUsBg1 : {

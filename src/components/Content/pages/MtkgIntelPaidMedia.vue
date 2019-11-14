@@ -121,7 +121,9 @@
           <div v-for="(caseStudy,index) in randomCaseStudiesArray" class="js-slide card border-0 mb-3">
             <div class="card-body p-5">
               <small class="d-block text-muted mb-2">{{caseStudy.date}}</small>
-              <a :href="'/casestudies/'+caseStudy.slug"><img :src=" '../public_assets/casestudies/' + caseStudy.thumb " :alt="caseStudy.title" class="img-fluid rounded"></a>
+              <a :href="'/casestudies/'+caseStudy.slug">
+                <img :src=" require('@/assets/buzzradar/img/casestudies/'+caseStudy.thumb) " :alt="caseStudy.title" class="img-fluid rounded">
+              </a>
               <h5 class="h6 mt-3">
                 <a :href="'/casestudies/'+caseStudy.slug">{{caseStudy.title}}</a>
               </h5>

@@ -27,7 +27,7 @@
                      data-speed="700"
                      data-animate-in="zoomIn"
                      data-animate-out="zoomOut"
-                     data-caption="Front - Responsive Website Template">
+                     data-caption="Jeremy Waite – Chief Strategy Officer at IBM">
                     <small class="fas fa-play mr-2"></small>
                     Play Video
                   </a>
@@ -97,7 +97,7 @@
               <div v-for="(caseStudy,index) in caseStudies" :class="`cbp-item `+caseStudy.filterClass">
                 <a class="cbp-caption" :href="'/casestudies/'+caseStudy.slug">
                   
-                  <img class="rounded" :src=" './public_assets/casestudies/' + caseStudy.thumb " alt="Image Description">
+                  <img class="rounded" :src=" require('@/assets/buzzradar/img/casestudies/'+caseStudy.thumb) " alt="Image Description">
 
                   <div class="py-3">
                     <h3 class="h6 text-dark mb-0">{{caseStudy.title}}</h3>
@@ -140,7 +140,7 @@
     data : function(){
       return {
         bannerBg : {
-          backgroundImage : 'url("./public_assets/casestudies/ibm_banner_case_study.jpg")',
+          backgroundImage : 'url('+require('@/assets/buzzradar/img/casestudies/ibm_banner_case_study.jpg')+')',
           backgroundPosition: 'left',
         },
         filtersLibrary : {
@@ -216,6 +216,8 @@
 
       $.HSCore.components.HSCubeportfolio.init('.cbp',{"defaultFilter": defaultFilter});
       $.HSCore.components.HSFancyBox.init('.js-fancybox');
+
+
     },
     updated() {
       

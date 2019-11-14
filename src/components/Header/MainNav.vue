@@ -31,7 +31,7 @@
 				<!-- End Submenu -->
 
 			</li>
-			<li v-else class="nav-item u-header__nav-item">
+			<li v-else class="nav-item u-header__nav-item nav-item-standalone">
 
 				<router-link :to="route.router_config.path" class="nav-link u-header__nav-link">{{route.router_config.label}}</router-link>
 				<!-- <a class="nav-link u-header__nav-link" :href="route.router_config.path">{{route.router_config.label}}</a> -->
@@ -104,9 +104,10 @@
 	  	}
 	  },
 	  mounted() {
-	 //  	$(".navbar-nav li a").click(function(event) {
-		// 	$(".navbar-collapse").collapse('hide');
-		// });
+	  	//For mobile we need to make sure the panels get contracted when users taps on the menu.
+	  	$(".u-header__sub-menu-nav-link,.nav-item-standalone").click(function(event) {
+			$(".navbar-collapse").collapse('hide');
+		});
 	  },
 	  created: function(){
 

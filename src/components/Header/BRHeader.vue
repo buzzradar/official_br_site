@@ -21,7 +21,7 @@
 
 				<!-- Logo -->
 				<a href="/" class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-on-scroll">
-					<img alt="Buzz Radar" src="@/assets/img/buzzradar_logo/buzzlogo_name_dark.svg">
+					<img alt="Buzz Radar" src="@/assets/buzzradar/svg/buzzradar_logo/buzzlogo_name_dark.svg">
 				</a>
 				<!-- End Logo -->
 
@@ -85,7 +85,7 @@
 		},
 		watch: {
 			$route (to, from){
-				console.log('route has changed!!!');
+				//console.log('route has changed!!!');
 				window.scrollTo(0,0);
 			},
 		},

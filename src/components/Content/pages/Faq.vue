@@ -94,7 +94,7 @@
           <!-- Contacts Info -->
           <div class="media pr-lg-9">
             <figure id="icon15" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4">
-              <img class="js-svg-injector" src="@/assets/svg/icons/icon-15.svg" alt="SVG"
+              <img class="js-svg-injector" src="@/assets/buzzradar/svg/icons/icon-15.svg" alt="SVG"
                    data-parent="#icon15">
             </figure>
             <div class="media-body">
@@ -110,13 +110,13 @@
           <!-- Contacts Info -->
           <div class="media pl-lg-9">
             <figure id="icon4" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4">
-              <img class="js-svg-injector" src="@/assets/svg/icons/icon-4.svg" alt="SVG"
+              <img class="js-svg-injector" src="@/assets/buzzradar/svg/icons/icon-4.svg" alt="SVG"
                    data-parent="#icon4">
             </figure>
             <div class="media-body">
               <h3 class="h5">Technical questions</h3>
-              <p class="mb-1">Have some technical questions? Hit us on community page or just say hello.</p>
-              <a class="font-size-1" href="#">Open ticket <span class="fas fa-angle-right align-middle ml-2"></span></a>
+              <p class="mb-1">Have some technical questions? Hit us with an email or just say hello on the bottom right corner of the page.</p>
+              <a class="font-size-1" href="mailto:support@buzzradar.com?subject=Technical Question">Email us <span class="fas fa-angle-right align-middle ml-2"></span></a>
             </div>
           </div>
           <!-- End Contacts Info -->

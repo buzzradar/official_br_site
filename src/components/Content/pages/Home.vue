@@ -2,11 +2,16 @@
   
   <div>
 
+    
     <!-- Hero Section -->
     <div class="gradient-overlay-half-primary-video-v1" data-vide-bg="assets/video/bg2" data-vide-options="position: 0% 50%;">
         
+
+
+
+
       <!-- Video Background -->
-      <div class="js-bg-video position-absolute top-0 right-0 bottom-0 left-0 w-100 h-100"
+      <div class="js-bg-video position-absolute top-0 right-0 bottom-0 left-0 w-100 h-100 d-none d-md-block"
                        :data-hs-bgv-path="videoBgURL"
                        data-hs-bgv-loop="1"></div>
       <!-- End Video Background -->
@@ -14,16 +19,31 @@
 
 
 
-      <div class="position-relative z-index-2">
+
+      <!-- Mobile Background -->
+      <div class="position-absolute top-0 right-0 bottom-0 left-0 w-100 h-100 d-block d-md-none"
+                       :style="heroBgImageMobile"></div>
+      <!-- End Mobile Background -->
+
+
+
+
+
+
+      <div class="position-relative z-index-2">   <!-- :style="heroBgImageMobile" -->
         <!-- Content -->
         <div class="container position-relative space-bottom-2 space-top-3 space-top-md-4 space-bottom-md-3 z-index-2 text-white">
           <div class="w-lg-75">
+
+
+      <!-- <div class="divimage" :style="heroBgImageMobile"></div> -->
+
 
             <h1 class="display-5 font-size-md-down-5 font-weight-bold mb-2">
               
                 Unlock the <br class="d-block d-md-none">secrets <br class="d-none d-md-block">of your <br class="d-block d-md-none">
                 <span class="text-white">
-                  <strong class="u-text-animation u-text-animation--typing text-primary"></strong>
+                  <strong class="u-text-animation u-text-animation--typing text-primary">Audience</strong>
                 </span>
                 <br>
               
@@ -37,7 +57,7 @@
                data-speed="700"
                data-animate-in="zoomIn"
                data-animate-out="zoomOut"
-               data-caption="Front - Responsive Website Template">
+               data-caption="Buzz Radar">
               <small class="fas fa-play mr-2"></small>
               Play Video
             </a>
@@ -91,14 +111,18 @@
           </div>
 
 
-          <div id="SVGempowerteam" class="col-lg-7 svg-preloader">
-            <!-- SVG Icon -->
+              
+          <!-- <div id="SVGempowerteam" class="col-lg-7 svg-preloader">
             <figure class="ie-app-development">
-              <img class="js-svg-injector" src="@/assets/buzzradar/svg/illustrations/homepage/empower_team.svg" alt="SVG Illustration"
+              <img class="js-svg-injector" src="@/assets/buzzradar/svg/illustrations/homepage/empower_team.svg" alt="Empower Team"
                    data-parent="#SVGempowerteam">
             </figure>
-            <!-- End SVG Icon -->
+          </div> -->
+
+          <div class="col-lg-7">
+            <img class="img-fluid" src="@/assets/buzzradar/svg/illustrations/homepage/empower_team.png" alt="Empower Team">
           </div>
+
 
         </div>
       </div>
@@ -130,7 +154,7 @@
         <div id="SVGappDevelopment" class="col-lg-7 order-lg-1 svg-preloader">
           <!-- SVG Icon -->
           <figure class="ie-app-development">
-            <img class="js-svg-injector" src="@/assets/buzzradar/svg/illustrations/homepage/ai_social_intelligence.svg" alt="SVG Illustration"
+            <img class="js-svg-injector" src="@/assets/buzzradar/svg/illustrations/homepage/ai_social_intelligence.svg" alt="AI Social Intelligence"
                  data-parent="#SVGappDevelopment">
           </figure>
           <!-- End SVG Icon -->
@@ -162,7 +186,7 @@
           <div id="SVGbusinessAnalysis" class="col-lg-7 svg-preloader">
             <!-- SVG Icon -->
             <figure class="ie-app-development">
-              <img class="js-svg-injector" src="@/assets/buzzradar/svg/illustrations/homepage/great_insights.svg" alt="SVG Illustration"
+              <img class="js-svg-injector" src="@/assets/buzzradar/svg/illustrations/homepage/great_insights.svg" alt="Great Insights"
                    data-parent="#SVGbusinessAnalysis">
             </figure>
             <!-- End SVG Icon -->
@@ -731,14 +755,14 @@
     data () {
       return {
 
-        credibleInfluenceBgImage : {
-          backgroundImage : 'url('+require('@/assets/img/1920x800/img4.jpg')+')',
-        },
-        objDataImgMask3: JSON.stringify([{ "targetId": "#SVGellipseMockupImg1", "newPath": require('@/assets/buzzradar/img/615x750/empower.jpg') }]),
         videoBgURL : process.env.BASE_URL + 'public_assets/html5-video/universe/universe',
-        bgImageVideoObject : {
-          backgroundImage : 'url('+require('@/assets/buzzradar/img/900x450/br_home_video_poster.jpg')+')',
+
+        heroBgImageMobile : {
+          height : '100%',
+          backgroundImage : 'url("'+require('@/assets/buzzradar/img/homepage/heroImgMobile.jpg')+'")',
+          backgroundPosition : 'top center',
         },
+
         styleParallaxBg1 : {
           backgroundImage : 'url('+require('@/assets/buzzradar/svg/components/bg-elements-7.svg')+')',
           height : '120%',
@@ -803,13 +827,20 @@
 
 
       // initialization of text animation (typing)
-      var typed = new Typed(".u-text-animation.u-text-animation--typing", {
-        strings: ["Data", "Audience", "Brand", "Competitors"],
-        typeSpeed: 70,
-        loop: true,
-        backSpeed: 40,
-        backDelay: 2000
-      });
+
+      setTimeout(function() {
+
+        var typed = new Typed(".u-text-animation.u-text-animation--typing", {
+          strings: ["Data", "Competitors", "Brands", "Audience"],
+          typeSpeed: 70,
+          loop: true,
+          backSpeed: 40,
+          backDelay: 2000
+        });
+
+      },4000);
+
+      
 
       $('#powerful_tools').find('.nav-link').click(function(e){
         e.preventDefault();
@@ -831,7 +862,7 @@
       onChange(event) {
           $('a[href="#tab_use_cases_' + event.target.value + '"]').tab('show');
       }
-    }
+    },
 
   }
 

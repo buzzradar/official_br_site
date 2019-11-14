@@ -27,7 +27,7 @@ const readFileAsync = (FILE_NAME) => {
 		  //Descriptions (Object)
 		  SEORoutes.descriptions['/casestudies/'+caseStudy.slug] = 'Find out how Buzz Radar has helped a wide range of organisations gain critical insights from their data.';
 		  //Sharer Images (Object)
-		  SEORoutes.sharerImages['/casestudies/'+caseStudy.slug] = './public_assets/casestudies/'+caseStudy.thumb;
+		  SEORoutes.sharerImages['/casestudies/'+caseStudy.slug] = '/public_assets/casestudies/'+caseStudy.thumb;
 		});
 
 		// console.clear();
@@ -60,43 +60,43 @@ const SEORoutes = {
 	  	'/realtimedashboard', 
 	  	'/aiaudienceanalysis', 
 	  	'/marketingintelplatform',
-	  	'/marketingintelligence/socialintelligence',
-	  	'/marketingintelligence/paidmedia',
-	  	'/marketingintelligence/newspr',
-	  	'/casestudies',
+	  	'/marketingintelplatform/socialintelligence',
+	  	'/marketingintelplatform/paidmedia',
+	  	'/marketingintelplatform/newspr',
 	],
 	titles : {
 	    '/': 'Buzz Radar - Real Time Social Media Intelligence Made Easy',
 	    '/realtimedashboard': 'Real-Time Dashboard',
 	    '/aiaudienceanalysis': 'Audience AI',
 	    '/marketingintelplatform': 'Marketing Intelligence Platform',	   
-	  	'/marketingintelligence/socialintelligence' : 'Social Intelligence',
-	  	'/marketingintelligence/paidmedia': 'Paid Media Analysis',
-	  	'/marketingintelligence/newspr': 'News & PR Monitoring',
-	    '/casestudies': 'Case Studies',
+	  	'/marketingintelplatform/socialintelligence' : 'Social Intelligence',
+	  	'/marketingintelplatform/paidmedia': 'Paid Media Analysis',
+	  	'/marketingintelplatform/newspr': 'News & PR Monitoring',
 	},
 	descriptions : {
 	    '/': 'Buzz Radar is the leading social intelligence platform designed for marketers rather than analysts. Providing powerful, easy to digest actionable insights.',
 	    '/realtimedashboard': 'Easily turn your data into fast accessible and actionable data visualisations for your entire organisation.',
 	    '/aiaudienceanalysis': 'Find out what really makes your customers tick with the psychometric audience analysis.',
 	    '/marketingintelplatform': 'In a few clicks take your organisations marketing data and turn it into actionable, intelligent insights.',	   
-	  	'/marketingintelligence/socialintelligence' : 'Access award-winning social media listening and monitoring intelligence across the major networks.',
-	  	'/marketingintelligence/paidmedia': 'Smart easy to digest insights on your performance for Facebook Ads and Google Adwords.',
-	  	'/marketingintelligence/newspr': 'Capture and analyse data from all your PR campaigns from across over 3 Million news outlets and blogs.',
-	    '/casestudies': 'Find out how Buzz Radar has helped a wide range of organisations gain critical insights from their data.',
+	  	'/marketingintelplatform/socialintelligence' : 'Access award-winning social media listening and monitoring intelligence across the major networks.',
+	  	'/marketingintelplatform/paidmedia': 'Smart easy to digest insights on your performance for Facebook Ads and Google Adwords.',
+	  	'/marketingintelplatform/newspr': 'Capture and analyse data from all your PR campaigns from across over 3 Million news outlets and blogs.',
 	},
 	sharerImages : {
+
+		//If you need to get the thumbs from public folder: /public_assets/...
+		//To apply the sharer relative, you need to add ../ when there is one folder and ../../ where there are 2 folders into the tree.
+
 	    '/': './sharer.gif',
-        '/realtimedashboard': './sharer.gif',
-        '/aiaudienceanalysis': './sharer.gif',
-        '/marketingintelplatform': './sharer.gif',
-	  	'/marketingintelligence/socialintelligence' : './sharer.gif',
-	  	'/marketingintelligence/paidmedia': './sharer.gif',
-	  	'/marketingintelligence/newspr': './sharer.gif',
-	    '/casestudies': './sharer.gif',
+        '/realtimedashboard': '../sharer_dashboard.jpg',
+        '/aiaudienceanalysis': '../sharer_ai_audience_analysis.gif',
+        '/marketingintelplatform': '../sharer_marketing_platform.gif',
+	  	'/marketingintelplatform/socialintelligence' : '../../sharer_marketing_platform.gif',
+	  	'/marketingintelplatform/paidmedia': '../../sharer_marketing_platform.gif',
+	  	'/marketingintelplatform/newspr': '../../sharer_marketing_platform.gif',
 	},
 };
-readFileAsync('./src/statics/CaseStudiesEntries.json');
+// readFileAsync('./src/statics/CaseStudiesEntries.json');
 
 
 
@@ -110,7 +110,7 @@ readFileAsync('./src/statics/CaseStudiesEntries.json');
 // ---------------------------------------------------- //
 
 module.exports = {
-	publicPath: process.env.NODE_ENV === 'production' ? '/newbrsite/' : '/',
+	publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
 
 	configureWebpack: {
 		plugins: [
@@ -118,7 +118,7 @@ module.exports = {
 			  staticDir: path.join(__dirname, '.', 'dist'),
 			  routes: SEORoutes.slugs,
 			  renderer: new PuppeteerRenderer({
-			    renderAfterElementExists: '#app'
+			    renderAfterElementExists: '#app',
 			  }),
 			  minify : false,
 			  postProcess: function (context) {
@@ -142,6 +142,10 @@ module.exports = {
 		            /S-H-A-R-E-I-M-G/g,
 		            SEORoutes.sharerImages[context.route]
 		          );
+
+		       //    if (renderedRoute.route == '/casestudies') {
+			      // 	context.outputPath = path.join(__dirname, 'dist', renderedRoute.route)
+			      // }
 
 		          return context;
 	          },

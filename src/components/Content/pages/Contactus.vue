@@ -205,7 +205,7 @@
         </div>
 
 
-        <div class="col-lg-1 d-none d-md-inline-block">
+        <div class="col-lg-1 d-none d-lg-inline-block">
           <!-- Illustration -->
           <figure id="contactSVGillustration2" class="svg-preloader ie-chatting-man position-absolute bottom-0 left-0 w-100">
             <img class="js-svg-injector" src="@/assets/buzzradar/svg/contactus/contactus.svg" alt="Image Description"
