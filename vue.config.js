@@ -120,7 +120,7 @@ module.exports = {
 			  renderer: new PuppeteerRenderer({
 			    renderAfterElementExists: '#app',
 			  }),
-			  minify : false,
+			  minify : true,
 			  postProcess: function (context) {
 
 				  context.html = context.html.replace(

@@ -249,25 +249,16 @@
       // 'src': 'https://www.buzzradar.com/perso_insights/PersoInsights_min.js',
       // 'data-root' : 'perso_insights/',
 
-
+      var _this = this;
       jQuery(document).ready(function() {       
+        if (!_this.isPersoInsightsLoaded()) {
           $('<script/>').attr({
               'src': 'https://www.buzzradar.com/perso_insights/PersoInsights_min.js',
-              'data-root' : 'perso_insights/',
-          }).appendTo( $('body') );
-      });
-
-
-      $(document).ready(function(){
-        var screenWidth = $(window).width();
-        // if window width is smaller than 800 remove the autoplay attribute
-        // from the video
-        if (screenWidth < 800){
-              $('video').removeAttr('autoplay');
-        } else {
-          $('video').attr('autoplay');
+              'data-root' : 'https://www.buzzradar.com/perso_insights/',
+          }).appendTo( $('body') ); 
         }
       });
+
   
 
     },
@@ -278,6 +269,14 @@
       bookMeeting : function(e) {
         e.preventDefault();
         Calendly.showPopupWidget('https://calendly.com/buzzradar/introduction-meeting');
+        return false;
+      },
+      isPersoInsightsLoaded : function() {
+        var url = "https://www.buzzradar.com/perso_insights/PersoInsights_min.js";
+        var scripts = document.getElementsByTagName('script');
+        for (var i = scripts.length; i--;) {
+            if (scripts[i].src == url) return true;
+        }
         return false;
       }
     }
