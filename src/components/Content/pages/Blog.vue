@@ -3,50 +3,61 @@
 
   <div>
 
-	  <!-- Blog Classic Section -->
-    <div v-if="this.$router.currentRoute.path == '/blog' " class="container space-2 space-top-md-5 space-top-lg-3">
 
-      <!-- Title -->
-      <!-- <div class="w-md-80 w-lg-60 mb-9">
-        <h1 class="font-weight-normal">Buzz Radar - <span class="text-primary font-weight-semi-bold">Blog</span></h1>
-      </div> -->
-      <!-- End Title -->
+    <div v-if="routeContains(this.$router.currentRoute.path,'blog/post')">
 
-      <!-- All Blog Posts -->
-      <div class="row">
+      <!-- ++++++++++++++++++++ -->
+      <!-- Individual Blog Post -->
+      <!-- ++++++++++++++++++++ -->
+      <router-view />
+      <!-- ++++++++++++++++++++ -->
+      <!-- End Individual Blog Post -->
+      <!-- ++++++++++++++++++++ -->
 
-        <!-- Blog Entry -->
-        <div v-for="(blogPostEntry,index) in blogPosts" class="col-md-4">
+    </div>
 
+    <div v-else>
 
+      <!-- ++++++++++++++++++++ -->
+      <!-- All Posts Blog Classic Section -->
+      <!-- ++++++++++++++++++++ -->
+      <div class="container space-2 space-top-md-5 space-top-lg-3">
 
-          <article class="card border-0">
-            <div class="card-body p-0">
-              <div class="mb-5">
-                <a :href="'/blog/post'+blogPostEntry.ID"><img class="img-fluid w-100 rounded" :src="require('@/assets/buzzradar/img/blog/'+blogPostEntry.thumb_name)" alt="Image Description"></a>
+        <div class="row">
+
+          <!-- Blog Entry -->
+          <div v-for="(blogPostEntry,index) in blogPosts" class="col-md-4">
+            <article class="card border-0">
+              <div class="card-body p-0">
+                <div class="mb-5">
+                  <a :href="'/blog/post'+blogPostEntry.ID"><img class="img-fluid w-100 rounded" :src="require('@/assets/buzzradar/img/blog/'+blogPostEntry.thumb_name)" alt="Image Description"></a>
+                </div>
+                <small class="d-block text-secondary mb-1">{{blogPostEntry.post_date}}</small>
+                <h2 class="h6 mb-6">
+                  <a :href="'/blog/post'+blogPostEntry.ID">{{blogPostEntry.post_title}}</a>
+                </h2>
+                <!-- <p>We've been working hard with our besties at Reuters to design a new reading experience for Reuters.com.</p> -->
               </div>
-              <small class="d-block text-secondary mb-1">{{blogPostEntry.post_date}}</small>
-              <h2 class="h6 mb-6">
-                <a :href="'/blog/post'+blogPostEntry.ID">{{blogPostEntry.post_title}}</a>
-              </h2>
-              <!-- <p>We've been working hard with our besties at Reuters to design a new reading experience for Reuters.com.</p> -->
-            </div>
-          </article>
+            </article>
 
+          </div>
+          <!-- End Blog Entry -->
+          
         </div>
-        <!-- End Blog Entry -->
         
       </div>
-      <!-- End All Blog Posts -->
-      
-    </div>
-    <!-- Blog Classic Section -->
+      <!-- ++++++++++++++++++++ -->
+      <!-- End All Posts Blog Classic Section -->
+      <!-- ++++++++++++++++++++ -->
 
-    <!-- Individual Blog Post -->
-    <div v-else>
-      <router-view />
     </div>
-    <!-- End Individual Blog Post -->
+
+
+
+
+    
+
+
 
   </div>
 
@@ -56,7 +67,6 @@
 
 <script>
 	
-  // import AllBlogEntries from '../../../statics/WPPostsEntries_original.json';
   import AllBlogEntries from '../../../statics/WPPostsEntries.json';
 	
  	export default {
@@ -101,6 +111,14 @@
  		},
     mounted() {
       
+    },
+    methods: {
+      routeContains(currentRoute,matchingRoute) {
+
+        console.log('----------------------------------------');
+        console.log(currentRoute, matchingRoute);
+        return currentRoute.includes(matchingRoute);
+      }
     }
  	}
 

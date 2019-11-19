@@ -1,7 +1,40 @@
 {
   "blogentries": [
     {
+      "ID": 7221,
+      "author" : "Patrick Charlton",
+      "post_author": "13",
+      "post_date": "2019-11-18 14:00:00",
+      "post_date_gmt": "2019-11-18 14:00:00",
+      "post_content": "<p>As all marketing tech companies tend to do every 18 months, we launched a website re-design to better reflect our ever developing offerings and improve the way we communicate with our audience.</p> <p>However there are two things that I’m really proud of with this website.</p> <p>We built the site entirely in-house from scratch using one designer, one developer and myself copywriting. I think it just proves that, with the right team, you can execute major projects to a really high standard without spending the earth. At the start of the year I was in conversation with the CEO of a similar company in our space, he divulged how much they where spending on their new website and I had to sit down and have a glass of water! If there is one thing it’s taught me is that you and your team understand your story, audience and product better than anyone else. It saves a lot of time and money because having someone else figure that out for you is expensive and never quite works out as well as you hoped.</p> <p>We used our own tools and processes at Buzz Radar to better understand our audience and tailor our messaging, tone and design. I think a lot of marketing technology companies and agencies are guilty of focusing their talents on their clients and almost entirely forgetting to turn those skills and technologies on themselves. Our new Audience AI technology presented us with an opportunity. We needed to see how effective it was so we used ourselves as the guinea pig! I’ll go into more detail in a future blog post, but essentially, we turned our platform on ourselves, the social intelligence category and our competitors to learn as much as we could about our audience. We profiled over 20k people who spoke about social intelligence tools and topics in 2019 and used that as our virtual audience. We tested our existing messaging and website against them to see what worked and what didn’t we even did the same with some of our biggest competitors! We learnt some key insights that became the bedrock of our new website the highlights I’ll share with you now.</p> <p class=\"ml-3\"> <span class=\"btn btn-xs btn-icon btn-primary rounded-circle mr-3\"><span class=\"fas fa-arrow-right btn-icon__inner\"></span></span> <strong>Our target audience is a lot more emotionally intelligent than we were giving them credit for:</strong> highly empathetic and understanding of people's and organisational needs than we realised. They cared much more about how our tools would help them communicate with their team and consumers than we thought.</p> <p class=\"ml-3\"> <span class=\"btn btn-xs btn-icon btn-primary rounded-circle mr-3\"><span class=\"fas fa-arrow-right btn-icon__inner\"></span></span> <strong>They are also a lot less impressed by tech and how things work on a functional level than we expected.</strong> As a team of technologist we love talking about the power of technology and how it can improve the world, however, we learnt that our target audience where much less interested in how it works and focused on how it could help them, their organisation and audience.</p> <p>There is MUCH more nuanced detail than just this that I’m happy to share with anyone who asks. However, in short it made us work on a much more empathetic, less tech-focused copy and imagery that I hope you can see reflected in the website. We’ve also used much more illustration and changed our tone to be more empathetic and friendly with more inclusive and less combative techy sounding language.</p> <img class=\"img-thumbnail mt-3 mb-3\" src=\"https://3c90f21d2e52d99af65d-cc7a500d9b10d65e67a8ddf30b9c21f5.ssl.cf3.rackcdn.com/official_site_assets/blog/patrick_sitting_desk.jpg\" /> <p>We’ve tested the new website against our Audience AI and seen an uplift from 50% to 65% in content / audience resonance. Based on the work we’ve done with our clients and our research, we expect that to translate in a 30% uplift in time on site and post engagement. We’ll keep you posted and let you know how we are looking. The proof is in the pudding after all!</p> <p class=\"mt-7\"> Patrick Charlton<br> Director & Co-Founder - Buzz Radar </p>",
+      "post_title": "Welcome to our new website!",
+      "post_excerpt": "",
+      "post_status": "publish",
+      "comment_status": "closed",
+      "ping_status": "open",
+      "post_password": "",
+      "post_name": "2019-welcome-new-website",
+      "to_ping": "",
+      "pinged": "",
+      "post_type": "post",
+      "post_mime_type": "",
+      "comment_count": "0",
+      "filter": "raw",
+      "thumb_name": "7221-thumb.jpg",
+      "terms": {
+        "category": [
+          "Website"
+        ],
+        "post_tag": [
+          "data visualisation",
+          "social insights"
+        ],
+        "post_format": []
+      }
+    },
+    {
       "ID": 7220,
+      "author" : "Nicky Yates",
       "post_author": "13",
       "post_date": "2019-08-29 15:50:25",
       "post_date_gmt": "2019-08-29 15:50:25",
@@ -39,6 +72,7 @@
     },
     {
       "ID": 7211,
+      "author" : "Nicky Yates",
       "post_author": "13",
       "post_date": "2019-08-08 14:32:38",
       "post_date_gmt": "2019-08-08 14:32:38",
@@ -76,6 +110,7 @@
     },
     {
       "ID": 6498,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2017-06-12 11:00:35",
       "post_date_gmt": "2017-06-12 11:00:35",
@@ -117,6 +152,7 @@
     },
     {
       "ID": 6429,
+      "author" : "Nicky Yates",
       "post_author": "1",
       "post_date": "2017-02-15 15:22:52",
       "post_date_gmt": "2017-02-15 15:22:52",
@@ -161,6 +197,7 @@
     },
     {
       "ID": 6354,
+      "author" : "Nicky Yates",
       "post_author": "1",
       "post_date": "2017-02-14 09:57:52",
       "post_date_gmt": "2017-02-14 09:57:52",
@@ -198,6 +235,7 @@
     },
     {
       "ID": 6337,
+      "author" : "Nicky Yates",
       "post_author": "1",
       "post_date": "2017-02-06 16:28:56",
       "post_date_gmt": "2017-02-06 16:28:56",
@@ -247,6 +285,7 @@
     },
     {
       "ID": 6332,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2017-01-13 00:02:48",
       "post_date_gmt": "2017-01-13 00:02:48",
@@ -284,6 +323,7 @@
     },
     {
       "ID": 6235,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2017-01-04 19:01:17",
       "post_date_gmt": "2017-01-04 19:01:17",
@@ -320,6 +360,7 @@
     },
     {
       "ID": 5998,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-10-05 14:57:27",
       "post_date_gmt": "2016-10-05 14:57:27",
@@ -357,6 +398,7 @@
     },
     {
       "ID": 5809,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-09-20 17:37:26",
       "post_date_gmt": "2016-09-20 17:37:26",
@@ -396,6 +438,7 @@
     },
     {
       "ID": 5747,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-08-24 19:00:06",
       "post_date_gmt": "2016-08-24 19:00:06",
@@ -439,6 +482,7 @@
     },
     {
       "ID": 5729,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-08-17 14:09:25",
       "post_date_gmt": "2016-08-17 14:09:25",
@@ -477,6 +521,7 @@
     },
     {
       "ID": 5713,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-08-09 16:13:13",
       "post_date_gmt": "2016-08-09 16:13:13",
@@ -516,6 +561,7 @@
     },
     {
       "ID": 5538,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-07-05 16:06:37",
       "post_date_gmt": "2016-07-05 16:06:37",
@@ -555,6 +601,7 @@
     },
     {
       "ID": 5533,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-06-30 12:01:03",
       "post_date_gmt": "2016-06-30 12:01:03",
@@ -596,6 +643,7 @@
     },
     {
       "ID": 5529,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-06-23 10:46:06",
       "post_date_gmt": "2016-06-23 10:46:06",
@@ -640,6 +688,7 @@
     },
     {
       "ID": 5522,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-06-22 16:06:55",
       "post_date_gmt": "2016-06-22 16:06:55",
@@ -683,6 +732,7 @@
     },
     {
       "ID": 5512,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-06-21 13:01:19",
       "post_date_gmt": "2016-06-21 13:01:19",
@@ -724,6 +774,7 @@
     },
     {
       "ID": 5469,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-06-13 10:00:37",
       "post_date_gmt": "2016-06-13 10:00:37",
@@ -763,6 +814,7 @@
     },
     {
       "ID": 5451,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-06-06 05:13:20",
       "post_date_gmt": "2016-06-06 05:13:20",
@@ -805,6 +857,7 @@
     },
     {
       "ID": 5438,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-06-07 12:27:35",
       "post_date_gmt": "2016-06-07 12:27:35",
@@ -842,6 +895,7 @@
     },
     {
       "ID": 5431,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-05-31 07:00:34",
       "post_date_gmt": "2016-05-31 07:00:34",
@@ -881,6 +935,7 @@
     },
     {
       "ID": 5385,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-05-23 07:00:23",
       "post_date_gmt": "2016-05-23 07:00:23",
@@ -923,6 +978,7 @@
     },
     {
       "ID": 5373,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-05-18 15:30:53",
       "post_date_gmt": "2016-05-18 15:30:53",
@@ -961,6 +1017,7 @@
     },
     {
       "ID": 5349,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-05-02 08:00:43",
       "post_date_gmt": "2016-05-02 08:00:43",
@@ -999,6 +1056,7 @@
     },
     {
       "ID": 5325,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-04-25 17:01:50",
       "post_date_gmt": "2016-04-25 17:01:50",
@@ -1037,6 +1095,7 @@
     },
     {
       "ID": 5254,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-04-28 08:00:58",
       "post_date_gmt": "2016-04-28 08:00:58",
@@ -1075,6 +1134,7 @@
     },
     {
       "ID": 5242,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-04-18 08:00:04",
       "post_date_gmt": "2016-04-18 08:00:04",
@@ -1113,6 +1173,7 @@
     },
     {
       "ID": 5181,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-04-11 10:46:27",
       "post_date_gmt": "2016-04-11 10:46:27",
@@ -1153,6 +1214,7 @@
     },
     {
       "ID": 5050,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-04-04 17:49:20",
       "post_date_gmt": "2016-04-04 17:49:20",
@@ -1193,6 +1255,7 @@
     },
     {
       "ID": 4908,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-03-01 15:31:20",
       "post_date_gmt": "2016-03-01 15:31:20",
@@ -1235,6 +1298,7 @@
     },
     {
       "ID": 4854,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-02-09 21:26:43",
       "post_date_gmt": "2016-02-09 21:26:43",
@@ -1278,6 +1342,7 @@
     },
     {
       "ID": 4793,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-01-09 23:49:56",
       "post_date_gmt": "2016-01-09 23:49:56",
@@ -1318,6 +1383,7 @@
     },
     {
       "ID": 4787,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-01-09 00:45:01",
       "post_date_gmt": "2016-01-09 00:45:01",
@@ -1358,6 +1424,7 @@
     },
     {
       "ID": 4783,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-01-08 00:27:28",
       "post_date_gmt": "2016-01-08 00:27:28",
@@ -1399,6 +1466,7 @@
     },
     {
       "ID": 4766,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-01-07 01:18:05",
       "post_date_gmt": "2016-01-07 01:18:05",
@@ -1439,6 +1507,7 @@
     },
     {
       "ID": 4715,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-01-06 06:07:02",
       "post_date_gmt": "2016-01-06 06:07:02",
@@ -1477,6 +1546,7 @@
     },
     {
       "ID": 4677,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2016-01-04 19:45:11",
       "post_date_gmt": "2016-01-04 19:45:11",
@@ -1514,6 +1584,7 @@
     },
     {
       "ID": 4661,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-12-23 18:13:26",
       "post_date_gmt": "2015-12-23 18:13:26",
@@ -1556,6 +1627,7 @@
     },
     {
       "ID": 4621,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-12-04 08:00:17",
       "post_date_gmt": "2015-12-04 08:00:17",
@@ -1595,6 +1667,7 @@
     },
     {
       "ID": 4506,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-11-05 20:19:25",
       "post_date_gmt": "2015-11-05 20:19:25",
@@ -1638,6 +1711,7 @@
     },
     {
       "ID": 4493,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-10-21 16:54:01",
       "post_date_gmt": "2015-10-21 16:54:01",
@@ -1676,6 +1750,7 @@
     },
     {
       "ID": 4484,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-10-12 16:44:49",
       "post_date_gmt": "2015-10-12 16:44:49",
@@ -1719,6 +1794,7 @@
     },
     {
       "ID": 4466,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-10-08 12:31:10",
       "post_date_gmt": "2015-10-08 12:31:10",
@@ -1761,6 +1837,7 @@
     },
     {
       "ID": 4443,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-09-08 21:13:18",
       "post_date_gmt": "2015-09-08 21:13:18",
@@ -1803,6 +1880,7 @@
     },
     {
       "ID": 4431,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-09-22 20:22:26",
       "post_date_gmt": "2015-09-22 20:22:26",
@@ -1842,6 +1920,7 @@
     },
     {
       "ID": 4368,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-08-19 19:23:12",
       "post_date_gmt": "2015-08-19 19:23:12",
@@ -1883,6 +1962,7 @@
     },
     {
       "ID": 4366,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-08-06 22:03:24",
       "post_date_gmt": "2015-08-06 22:03:24",
@@ -1921,6 +2001,7 @@
     },
     {
       "ID": 4329,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-07-15 17:20:11",
       "post_date_gmt": "2015-07-15 17:20:11",
@@ -1961,6 +2042,7 @@
     },
     {
       "ID": 4289,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-08-11 10:00:57",
       "post_date_gmt": "2015-08-11 10:00:57",
@@ -2002,6 +2084,7 @@
     },
     {
       "ID": 4270,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-06-29 15:33:17",
       "post_date_gmt": "2015-06-29 15:33:17",
@@ -2052,6 +2135,7 @@
     },
     {
       "ID": 4268,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-06-28 14:56:08",
       "post_date_gmt": "2015-06-28 14:56:08",
@@ -2094,6 +2178,7 @@
     },
     {
       "ID": 4266,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-06-26 14:47:10",
       "post_date_gmt": "2015-06-26 14:47:10",
@@ -2136,6 +2221,7 @@
     },
     {
       "ID": 4264,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-06-25 14:39:21",
       "post_date_gmt": "2015-06-25 14:39:21",
@@ -2179,6 +2265,7 @@
     },
     {
       "ID": 4260,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-06-24 11:18:05",
       "post_date_gmt": "2015-06-24 11:18:05",
@@ -2222,6 +2309,7 @@
     },
     {
       "ID": 4257,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-06-23 08:06:43",
       "post_date_gmt": "2015-06-23 08:06:43",
@@ -2265,6 +2353,7 @@
     },
     {
       "ID": 4215,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-06-19 10:22:46",
       "post_date_gmt": "2015-06-19 10:22:46",
@@ -2304,6 +2393,7 @@
     },
     {
       "ID": 4189,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-06-17 17:28:11",
       "post_date_gmt": "2015-06-17 17:28:11",
@@ -2343,6 +2433,7 @@
     },
     {
       "ID": 4180,
+      "author" : "Nicky Yates",
       "post_author": "1",
       "post_date": "2015-06-15 16:27:46",
       "post_date_gmt": "2015-06-15 16:27:46",
@@ -2381,6 +2472,7 @@
     },
     {
       "ID": 4176,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-06-08 20:47:20",
       "post_date_gmt": "2015-06-08 20:47:20",
@@ -2427,6 +2519,7 @@
     },
     {
       "ID": 4165,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-06-04 13:48:41",
       "post_date_gmt": "2015-06-04 13:48:41",
@@ -2467,6 +2560,7 @@
     },
     {
       "ID": 4125,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-05-22 09:14:42",
       "post_date_gmt": "2015-05-22 09:14:42",
@@ -2509,6 +2603,7 @@
     },
     {
       "ID": 4026,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-05-13 15:18:51",
       "post_date_gmt": "2015-05-13 15:18:51",
@@ -2548,6 +2643,7 @@
     },
     {
       "ID": 3978,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-05-03 21:00:11",
       "post_date_gmt": "2015-05-03 21:00:11",
@@ -2592,6 +2688,7 @@
     },
     {
       "ID": 3966,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-04-27 21:26:50",
       "post_date_gmt": "2015-04-27 21:26:50",
@@ -2631,6 +2728,7 @@
     },
     {
       "ID": 3960,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-04-15 08:00:31",
       "post_date_gmt": "2015-04-15 08:00:31",
@@ -2671,6 +2769,7 @@
     },
     {
       "ID": 3936,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-03-06 14:01:01",
       "post_date_gmt": "2015-03-06 14:01:01",
@@ -2711,6 +2810,7 @@
     },
     {
       "ID": 3925,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-04-09 17:57:01",
       "post_date_gmt": "2015-04-09 17:57:01",
@@ -2751,6 +2851,7 @@
     },
     {
       "ID": 3920,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-02-25 01:46:18",
       "post_date_gmt": "2015-02-25 01:46:18",
@@ -2791,6 +2892,7 @@
     },
     {
       "ID": 3918,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-04-01 01:17:39",
       "post_date_gmt": "2015-04-01 01:17:39",
@@ -2830,6 +2932,7 @@
     },
     {
       "ID": 3849,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-02-04 21:06:23",
       "post_date_gmt": "2015-02-04 21:06:23",
@@ -2873,6 +2976,7 @@
     },
     {
       "ID": 3824,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-01-23 14:47:53",
       "post_date_gmt": "2015-01-23 14:47:53",
@@ -2913,6 +3017,7 @@
     },
     {
       "ID": 3763,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-01-18 02:50:11",
       "post_date_gmt": "2015-01-18 02:50:11",
@@ -2953,6 +3058,7 @@
     },
     {
       "ID": 3761,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-01-12 02:50:51",
       "post_date_gmt": "2015-01-12 02:50:51",
@@ -2993,6 +3099,7 @@
     },
     {
       "ID": 3696,
+      "author" : "Nicky Yates",
       "post_author": "5",
       "post_date": "2015-01-09 02:16:52",
       "post_date_gmt": "2015-01-09 02:16:52",
@@ -3035,6 +3142,7 @@
     },
     {
       "ID": 3643,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2015-01-07 18:24:10",
       "post_date_gmt": "2015-01-07 18:24:10",
@@ -3076,6 +3184,7 @@
     },
     {
       "ID": 3240,
+      "author" : "Nicky Yates",
       "post_author": "5",
       "post_date": "2013-11-26 17:00:31",
       "post_date_gmt": "2013-11-26 17:00:31",
@@ -3116,6 +3225,7 @@
     },
     {
       "ID": 1187,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2014-09-15 05:00:27",
       "post_date_gmt": "2014-09-15 05:00:27",
@@ -3156,6 +3266,7 @@
     },
     {
       "ID": 1179,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2014-09-12 04:00:55",
       "post_date_gmt": "2014-09-12 04:00:55",
@@ -3197,6 +3308,7 @@
     },
     {
       "ID": 1144,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2014-08-18 03:30:03",
       "post_date_gmt": "2014-08-18 03:30:03",
@@ -3236,6 +3348,7 @@
     },
     {
       "ID": 1112,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2014-08-01 15:54:38",
       "post_date_gmt": "2014-08-01 15:54:38",
@@ -3283,6 +3396,7 @@
     },
     {
       "ID": 1089,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2014-07-29 14:41:34",
       "post_date_gmt": "2014-07-29 14:41:34",
@@ -3322,6 +3436,7 @@
     },
     {
       "ID": 1084,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2014-07-23 04:00:16",
       "post_date_gmt": "2014-07-23 04:00:16",
@@ -3364,6 +3479,7 @@
     },
     {
       "ID": 1075,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2014-07-22 19:46:41",
       "post_date_gmt": "2014-07-22 19:46:41",
@@ -3404,6 +3520,7 @@
     },
     {
       "ID": 1060,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2014-07-15 12:51:07",
       "post_date_gmt": "2014-07-15 12:51:07",
@@ -3445,6 +3562,7 @@
     },
     {
       "ID": 1055,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2014-07-07 00:39:20",
       "post_date_gmt": "2014-07-07 00:39:20",
@@ -3488,6 +3606,7 @@
     },
     {
       "ID": 1046,
+      "author" : "Nicky Yates",
       "post_author": "2",
       "post_date": "2014-06-30 22:28:36",
       "post_date_gmt": "2014-06-30 22:28:36",
@@ -3531,7 +3650,8 @@
     },
     {
       "ID": 994,
-      "post_author": "2",
+
+"author" : "Nicky Yates",      "post_author": "2",
       "post_date": "2014-06-26 01:20:42",
       "post_date_gmt": "2014-06-26 01:20:42",
       "post_content": "The 61st Annual Cannes Lions Festival of Creativity was true to it's name, inspiring more than 18,000 photos and videos, including Vine stories of the winners, and 144k social mentions. The highlighted themes at the festival included storytelling, women in advertising and the Award for Humanitarian Efforts, given to Bono of U2 for his work on AIDS campaigns.\r\n\r\nThroughout the course of the week, #OgilvyCannes echoed in everyone's ears, with a brilliant social campaign, as well as many award wins. During the week, the brand raked up almost 40k mentions online. Twitter's #LiveStories brought together Sir Patrick Stewart, drone selfie machines and a documentary about their platform that was half-filmed previous to Cannes and contained live interviews at the festival.\r\n\r\nThe week did not stay in France, reaching over 1.4 billion online. Ogilvy continued to lead the way for brands being talked about, with Twitter in second place. In fact, Ogilvy popped up more than the official account for Cannes Lions followed by @Scullather, @JaredLeto, @NeilTyson and @Red.\r\n\r\nThe crowds were most captivated by the Film Craft Awards, followed by Product Design. And we must congratulate Ogilvy's Tham Khai Meng, CCO, the most popular speaker. Bono is second most popular, with Keith Weed and Jared Leto also very popular speakers. Not too surprising, the most RTed tweet showcased Bono:\r\n<blockquote class=\"twitter-tweet\" lang=\"en\">Jonathan Ive presents the first Cannes LionHeart Award to Bono for his pioneering work with <a href=\"https://twitter.com/RED\">@RED</a> <a href=\"https://twitter.com/hashtag/CannesLions?src=hash\">#CannesLions</a> <a href=\"http://t.co/yUdVEDXXV0\">pic.twitter.com/yUdVEDXXV0</a>\r\n\r\n— Cannes Lions (@Cannes_Lions) <a href=\"https://twitter.com/Cannes_Lions/statuses/480412777673424896\">June 21, 2014</a></blockquote>\r\n<script src=\"//platform.twitter.com/widgets.js\" async=\"\" charset=\"utf-8\"></script>\r\n\r\nThe importance of getting to the hearts and minds of consumers has never been more present at the festival, and the creatives this year will go home to spread that word about the power of storytelling. We were honored to help showcase the data and social trends coming out of the festival.",
@@ -3575,7 +3695,8 @@
     },
     {
       "ID": 981,
-      "post_author": "2",
+
+"author" : "Nicky Yates",      "post_author": "2",
       "post_date": "2014-06-20 16:09:27",
       "post_date_gmt": "2014-06-20 16:09:27",
       "post_content": "The world has turned their attention to the World Cup. And rightly so. Thirty-two countries play for national pride throughout 64 matches over the course of a month. With so many elite players on the pitch vying for the title, it truly is an energetic month of beautiful athleticism. \r\n\r\nBut it's not all about the sport. Since the last World Cup in 2010, the number of users on social media has <a href=\"http://www.statista.com/statistics/278414/number-of-worldwide-social-network-users/\">grown 53%</a>, with second screen experiences a common component of any event. As such, fans are taking to the web to share in the drama of the event. Memes are abounding -- and we're loving it. \r\n\r\nSo, while you know what has taken place on the pitch, here's our break down of the social data from the first week of games, starting with Brazil's Opening Ceremony. In the days that have followed, (looking at English-speaking social conversation), more than one million photos and 2800 short videos have been shared, with over 25 million mentions of the event in general. Despite not being a heavily favored team, the United States is leading the conversation with more than 5.4 million active users, followed by 1.5 million in Great Britain. \r\n\r\nAll this means any mistake or moment can last forever. The Internet quickly jumped on Robin van Persie's amazing goal, with #Persieing now a trend. \r\n\r\n<blockquote class=\"twitter-tweet\" lang=\"en\"><p>Amazing. Even <a href=\"https://twitter.com/Persie_Official\">@Persie_Official</a>&#39;s 93 year old grandpa is <a href=\"https://twitter.com/search?q=%23Persieing&amp;src=hash\">#Persieing</a>. <a href=\"https://twitter.com/search?q=%23teamadidas&amp;src=hash\">#teamadidas</a> <a href=\"https://twitter.com/search?q=%23WorldCup&amp;src=hash\">#WorldCup</a> <a href=\"http://t.co/qQQ71rRsQs\">http://t.co/qQQ71rRsQs</a> <a href=\"http://t.co/lsjcbmTlTB\">pic.twitter.com/lsjcbmTlTB</a></p>&mdash; Michael Ehrlich (@adidasUSPRGuy) <a href=\"https://twitter.com/adidasUSPRGuy/statuses/479249483465621504\">June 18, 2014</a></blockquote>\r\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\n<img src=\"http://newsite.buzzradar.com/wp_uploads/2014/06/b28.jpg\" alt=\"b28\" width=\"598\" height=\"419\" class=\"alignnone size-full wp-image-982\" />\r\n\r\n<img src=\"http://newsite.buzzradar.com/wp_uploads/2014/06/84d.jpg\" alt=\"84d\" width=\"600\" height=\"338\" class=\"alignnone size-large wp-image-983\" />\r\n\r\nBut van Persie isn't the only hero of the tournament. Mexico's keeper Ochoa quickly impressed fans of all nationalities with his numerous saves, keeping Mexico in the Group Stage. \r\n\r\n<img src=\"http://newsite.buzzradar.com/wp_uploads/2014/06/8d1.jpeg\" alt=\"\" width=\"570\" height=\"299\" class=\"alignnone size-full wp-image-984\" />\r\n\r\n<img src=\"http://newsite.buzzradar.com/wp_uploads/2014/06/53f.jpeg\" alt=\"53f\" width=\"569\" height=\"414\" class=\"alignnone size-large wp-image-985\" />\r\n\r\n<img src=\"http://newsite.buzzradar.com/wp_uploads/2014/06/610.jpeg\" alt=\"610\" width=\"570\" height=\"321\" class=\"alignnone size-large wp-image-986\" />\r\n\r\nWhile the stars definitely are shining, some teams have seen the dark underbelly of the Internet. With Spain quickly being eliminated, the social realm was not too kind with the jokes. \r\n\r\n<blockquote class=\"twitter-tweet\" lang=\"en\"><p>Hahaha Spain in the World Cup.. | <a href=\"http://t.co/eWA9eVZYd3\">http://t.co/eWA9eVZYd3</a></p>&mdash; Football Stuff (@FootbalIStuff) <a href=\"https://twitter.com/FootbalIStuff/statuses/479547385455345664\">June 19, 2014</a></blockquote>\r\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\n<blockquote class=\"twitter-tweet\" lang=\"en\"><p>I already know this guy&#39;s face better than my own.&#10;<a href=\"https://twitter.com/search?q=%23Spainvschile&amp;src=hash\">#Spainvschile</a> <a href=\"https://twitter.com/search?q=%23newgangnam&amp;src=hash\">#newgangnam</a> <a href=\"http://t.co/rIsoZUiIkv\">pic.twitter.com/rIsoZUiIkv</a></p>&mdash; Russell Brand (@rustyrockets) <a href=\"https://twitter.com/rustyrockets/statuses/479375236065157120\">June 18, 2014</a></blockquote>\r\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\n<blockquote class=\"twitter-tweet\" lang=\"en\"><p>Spain <a href=\"http://t.co/1PeJUeu5ZB\">pic.twitter.com/1PeJUeu5ZB</a></p>&mdash; GeniusFootball (@GeniusFootball) <a href=\"https://twitter.com/GeniusFootball/statuses/479357910388969472\">June 18, 2014</a></blockquote>\r\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\nThe Uruguay and England also proved to bring out the jokes trolling England and praising Suarez. \r\n\r\n<blockquote class=\"twitter-tweet\" lang=\"en\"><p>bit early for a England joke? <a href=\"https://twitter.com/search?q=%23england&amp;src=hash\">#england</a> <a href=\"http://t.co/k6AumVzcSV\">pic.twitter.com/k6AumVzcSV</a></p>&mdash; Zeo (@zeo_95) <a href=\"https://twitter.com/zeo_95/statuses/479922836250042368\">June 20, 2014</a></blockquote>\r\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\n<blockquote class=\"twitter-tweet\" lang=\"en\"><p><a href=\"https://twitter.com/search?q=%23Suarez&amp;src=hash\">#Suarez</a> <a href=\"http://t.co/f857FEDwmv\">pic.twitter.com/f857FEDwmv</a></p>&mdash; Tony Parker#9 (@Coriaa24) <a href=\"https://twitter.com/Coriaa24/statuses/479753579348369409\">June 19, 2014</a></blockquote>\r\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\nWith the games just starting, we know there's more to come with the rest of the World Cup. And we'll be watching it all. \r\n",
@@ -3617,7 +3738,8 @@
     },
     {
       "ID": 970,
-      "post_author": "2",
+
+"author" : "Nicky Yates",      "post_author": "2",
       "post_date": "2014-06-20 11:31:48",
       "post_date_gmt": "2014-06-20 11:31:48",
       "post_content": "Each year, the advertising world descends on France in an annual tradition to celebrate creativity in the field. Cannes Lions is the world's biggest annual awards show and festival for professionals in the creative communications industry. And we've been following along. Here's our recap from the start of the festival to Wednesday: \r\n\r\nAt the 61st Cannes Lions Festival of Creativity, storytelling is THE main topic. It has been a major influence throughout the week's activities, from Twitter's <a href=\"https://www.youtube.com/watch?v=n2EPHfUf33g\">#LiveStories</a> to real-time marketing, content marketing, and social engagement. As Sir Patrick Stewart said, \"There is a hunger for this kind of in the moment excitement. People today are excited by that -- by the immediacy of it. It connects to events; it connects them to people instantly.\"  \r\n\r\nAnd this is more relevant than ever. Creatives have caught on to the importance of these aspects. Here at Buzz Radar, we believe there is a great story in the data if you know how to tell it. Using all we know about Cannes Lions, we want to bring this story to you: \r\n\r\nSocial@Ogilvy has consistently produced engaging content all week, keeping their fans in the know with all that's happening at Cannes Lions. And with 24k mentions, they are clearly the winner at the social game for #CannesLions this year. The brand is also leading the way for brands being talked about, with Twitter in second place. In fact, Ogilvy shows more than the official account for Cannes Lions, followed by @Scullather, @ThamKhiMeng and @SirPatStew. Ogilvy's Tham Khai Meng, CCO, has also been the more popular speaker, with Jared Leto and Spike Jonze being another fan favorite. \r\n\r\n<img src=\"http://newsite.buzzradar.com/wp_uploads/2014/06/BqRLXZqCcAAWBrl.jpg\" alt=\"\" width=\"599\" height=\"336\" class=\"alignnone size-full wp-image-978\" />\r\n\r\nIn the over 78k mentions for Cannes Lions, the Media Lions, Selfies from Space, the classic beach views, Tham Khai Meng, David Karp, and Mark Parker are all other major topics grabbing attendees' (social) attention. Creativity, inspire, create, and future all feature prominently in the discussion emerging. And this focus on the future, inspiration and creativity is showing up in the photos and videos taking over the social space. With over 11,000 photos already shared and more than 200 short videos, Cannes Lions is reaching more than 785 million this year. From <a href=\"https://www.youtube.com/watch?v=Q9htSG-8uss&feature=youtube_gdata\">Kanye West on stage</a> to <a href=\"http://instagram.com/p/pXj_1NLdJu\">Young Lion parties</a>, attendees are getting creative in how they share their experience. \r\n\r\nWe all want to react to the speed, pace and energy of the moment. And even if you're not there, you can still take part in the action. With Twitter's #LiveStories, share your reactions to what's happening. And following the festival, we'll be giving you another update on all that happened. \r\n",
@@ -3658,7 +3780,8 @@
     },
     {
       "ID": 907,
-      "post_author": "2",
+
+"author" : "Nicky Yates",      "post_author": "2",
       "post_date": "2014-05-24 20:36:05",
       "post_date_gmt": "2014-05-24 20:36:05",
       "post_content": "With 3.2 billion people watching the last World Cup, 715 million for the finals alone, the World Cup is the world's largest sporting event. It could be argued it's the world's biggest event period. And in this culture, that means a lot of online conversation. In fact, three separate soccer matches have already achieved higher tweets-per-second peaks than the 2012 London Olympics. In 2012, The Euro Cup Final generated 16.5 million total tweets -- with a viewing audience of about 300 million. The last World Cup Final in 2010 had double that viewing audience. Twitter even has found that one in six viewers retweet football related content.\r\n\r\nMike Mikho in AdWeek <a href=\"http://www.adweek.com/news/advertising-branding/brazil-s-world-cup-marketers-dream-also-potential-nightmare-152890\" target=\"_blank\">puts it best</a>, \"There will be 64 matches next summer generating hundreds of millions of social mentions. That massive chatfest equates to a greater opportunity for earned media, but it also makes it incredibly difficult to stand out.\"\r\n\r\nWith fans simultaneously watching the game and their mobile devices, many are influenced by the messages that they see from brands. In fact, Twitter has found that 56% of Twitter mobile users are influenced by content on Twitter when they are buying a product or service. This is perfect news for marketers with savvy brands, tweeting engaging and relevant World Cup content, will be able to connect with fans no matter where they are watching the games.\r\n\r\nSo, how can your brand stand out? One, you need to know the conversation. What are people talking about as it happens? Two, you need to know how your brand fits in. Football fans are passionate -- so your brand needs to ensure your conversation around the event is real and makes sense. Third, you need to know what your competitors are doing. Fourth, you need to understand who is watching. Twitter has <a href=\"https://blog.twitter.com/en-gb/2014/11-facts-about-twitter-users-and-the-2014-world-cup\" target=\"_blank\">eleven facts</a> about Twitter users and the upcoming World Cup:\r\n\r\n<a href=\"http://newsite.buzzradar.com/wp_uploads/2014/05/11-Football-Facts-Turf-copy_0.jpg\"><img class=\"alignnone size-full wp-image-910\" src=\"http://newsite.buzzradar.com/wp_uploads/2014/05/11-Football-Facts-Turf-copy_0.jpg\" alt=\"11-Football-Facts-Turf-copy_0\" width=\"700\" height=\"1076\" /></a>\r\n\r\nGetting all the data you need and making sense of it can be difficult. Showing how hard you're working to make it pay off can be even more difficult. And we believe it doesn't have to be that way. So, we've launched World Cup Mission Control Centres for Brands. We want to empower you and your brand to better visually monitor your reputation and online conversation around the World Cup 2014 in real time. The World Cup Mission Control Centre provides live data visualisations around online mentions, share of voice, popular topics, user-generated photos and Vines, competitor standings, and more so you can stay on top of the world’s biggest event this summer.\r\n\r\nWe know data can be simple, beautiful and powerful. And with the World Cup Mission Control Centre, we want to put that in your hands. Brands, like Adidas France, can prominently display the live data and interact in real time, making the tool perfect for any brand taking an active role in the World Cup this summer. With the World Cup Mission Control Centre, marketing teams can be set up in less than 20 minutes to interact with consumers, surface relevant and new content, and share data instantaneously, all in a way that is much more engaging, collaborative and insightful.\r\n\r\nWant to learn more or get your own Control Centre? Email us at <a href=\"mailto:worldcup@buzzradar.com\" target=\"_blank\">worldcup@buzzradar.com</a>. However your brand gets involved, you don't want to miss taking part in this global event. The World Cup is full of passion and highly active viewers.",
@@ -3701,7 +3824,8 @@
     },
     {
       "ID": 775,
-      "post_author": "5",
+
+"author" : "Nicky Yates",      "post_author": "5",
       "post_date": "2014-01-16 14:15:59",
       "post_date_gmt": "2014-01-16 14:15:59",
       "post_content": "<a href=\"http://newsite.buzzradar.com/wp_uploads/2014/01/20140110_174808.jpg\"><img class=\"size-medium wp-image-776 alignleft\" alt=\"20140110_174808\" src=\"http://newsite.buzzradar.com/wp_uploads/2014/01/20140110_174808-300x225.jpg\" width=\"300\" height=\"225\" /></a>This week STA Travel unveiled a new look for its flagship store in London Victoria and we here at Buzz Radar are really excited to have played a part of their new look.\r\n\r\nIn what we believe is one of the first examples of  in-store social visualisation STA are playing out tweets and Instagram images mentioning their brand on digital screens both in the store window and inside the shop.\r\n\r\nPutting customer content have via social media at the heart of the remodelling of the store is all part of a new emerging trend of putting consumer Tweets and Instagram pictures in bricks and mortar stores to bring the social domain into the physical retail space.\r\n\r\nFeaturing social conversations and data in store bolsters consumer confidence, as you are more likely trust personal recommendations over a brand message. According to Nielsen’s <a href=\"http://www.nielsen.com/us/en/newswire/2012/consumer-trust-in-online-social-and-mobile-advertising-grows.htmlhttp://www.nielsen.com/us/en/newswire/2012/consumer-trust-in-online-social-and-mobile-advertising-grows.html\">Global Trust in Advertising</a> report as much as 92% of consumers say they trust earned media above all other forms of advertising.\r\n\r\n<img class=\"wp-image-779 alignright\" alt=\"20140107_180403\" src=\"http://newsite.buzzradar.com/wp_uploads/2014/01/20140107_180403.jpg\" width=\"311\" height=\"233\" />\r\n<p style=\"text-align: left;\">It also demonstrates that companies are listening to their consumers and shows an innovative streak by incorporating into social into the physical retail space.</p>\r\n<p style=\"text-align: left;\">We think the visualisations look fantastic with the inspiring travel photography setting the background. Go check it out if you ever find yourself in Victoria.</p>",
@@ -3740,7 +3864,8 @@
     },
     {
       "ID": 567,
-      "post_author": "5",
+
+"author" : "Nicky Yates",      "post_author": "5",
       "post_date": "2013-07-26 00:27:40",
       "post_date_gmt": "2013-07-26 00:27:40",
       "post_content": "<p style=\"text-align: left;\">... and why all brands can benefit from a listening post.</p>\r\n<p style=\"text-align: left;\">Social media has enjoyed the fastest rate of adoption of any media form in human history.  As individuals we consume and produce media amongst one another continuously, but when it comes to social media engagement, most brands and organizations still have the old culture of broadcasting. Over the past few years, companies have joined social media channels in droves, but for many, these new channels are seen as just this, channels - additional outlets for more broadcasted messages.  What companies need is maybe to do less talking, and more listening.</p>\r\n<p style=\"text-align: left;\"><!--more--></p>\r\n<p style=\"text-align: left;\">In an <a title=\"SEO is dead. Long live social media optimisation\" href=\"http://www.guardian.co.uk/technology/2013/jul/22/seo-is-dead-long-live-social-media-optimisation\">interesting take in The Guardian this week, Tim Anderson</a> suggested that companies should stop worrying about search engine optimization and turn their attention to social media optimization instead:</p>\r\n<p style=\"padding-left: 30px; text-align: left;\"><em>\"What then is social media optimisation? It is about inviting people into conversation rather than merely broadcasting a message. It is about listening to social media chatter and acting on the results. It is a hashtag or twitter handle on every ad, and a responsive team behind that social media presence for those who respond.\"</em></p>\r\n<p style=\"text-align: left;\">During the past few years, a few brands have started taking this to heart and built up social media listening centers of various shapes and sizes.</p>\r\n<p style=\"text-align: left;\"><strong>The first brand to buz</strong><strong>z about their command center was Gatorade:</strong></p>\r\n<p style=\"text-align: left;\">The company launched its Gatorade Mission Control Center inside of its Chicago headquarters, a room that sits in the middle of the marketing department and could best be thought of as a war room for monitoring the brand in real-time across social media.<a title=\"Inside Gatorade’s Social Media Command Center\" href=\"http://mashable.com/2010/06/15/gatorade-social-media-mission-control/\"> (Adam Ostrow,Mashable 2010)</a></p>\r\n\r\n\r\n[caption id=\"attachment_577\" align=\"alignnone\" width=\"591\"]<a href=\"http://newsite.buzzradar.com/wp_uploads/2013/07/gatorade31.jpg\"><img class=\"size-medium wp-image-577\" alt=\"Gatorade's Social Command Center 2010\" src=\"http://newsite.buzzradar.com/wp_uploads/2013/07/gatorade31-300x216.jpg\" width=\"591\" height=\"425\" /></a> Gatorade's Social Command Center 2010[/caption]\r\n<p style=\"text-align: left;\"><strong>Dell soon followed (2010) with the Dell Ground Control</strong></p>\r\n<p style=\"text-align: left;\">Based in its Round Rock, Texas headquarters, Dell’s new social monitor center was (and most likely still is)  an integral part of its @Dellcares customer care.  Dell understood the significance of social media for customer \"listening\" and used this in evolution of the call center. Keeping an eye on social media was seen as a tool to spot an unhappy customer before they called the call center or go viral with their complaint. But that’s not all as <a title=\"Social Media Mission Control, The Contact Center Must Evolve #SocialSupport\" href=\"http://www.web-strategist.com/blog/2010/10/14/social-media-mission-control-the-contact-center-must-evolve-socialsupport/\">Manish Mehta commented on Jeremiah Owyang’s blog</a>:</p>\r\n<p style=\"padding-left: 30px; text-align: left;\"><em>\"Our new “Ground Control” is about tracking the largest number possible conversations across the Web and making sure we “internalize” that feedback – good and bad. ... Dell’s Ground Control is also about getting that information to the right people wherever they are in the Dell organization, globally and functionally.\"</em></p>\r\n\r\n\r\n[caption id=\"attachment_579\" align=\"alignnone\" width=\"599\"]<a href=\"http://newsite.buzzradar.com/wp_uploads/2013/07/dell-to-launch-social-media-listening-command-center-exclusive-a81ebc0bbf1.jpg\"><img class=\"size-medium wp-image-579\" alt=\"dell-to-launch-social-media-listening-command-center-exclusive--a81ebc0bbf\" src=\"http://newsite.buzzradar.com/wp_uploads/2013/07/dell-to-launch-social-media-listening-command-center-exclusive-a81ebc0bbf1-300x168.jpg\" width=\"599\" height=\"335\" /></a> Dell's Ground Control[/caption]\r\n<p style=\"text-align: left;\"><strong>Australia’s National Rugby League' (NRL) Mission Control Room 2013</strong></p>\r\n<p style=\"text-align: left;\">Another style and purpose command centers serve is to support the production of high volume real time social media content for short term big events. Check out the 2013 Australia’s National Rugby League' (NRL) Mission Control Room created for the The State of Origin considered the Super Bowl of rugby. The NRL Mission Control Room was manned full-time during the 2013 State of Origin Series to track, engage, reward, and amplify the real-time social conversation going on.  <a title=\"Australia’s National Rugby League Sets Up Social Media Mission Control Room, Generates 1B Impressions\" href=\"http://www.mediabistro.com/alltwitter/australias-national-rugby-league-social-media-mission-control_b46675\">According to Allison Stadd’s article in AllTwitter</a>:</p>\r\n<p style=\"padding-left: 30px; text-align: left;\"><em>\"The effort generated more than 1 billion impressions of the State of Origin hashtags, unprecedented engagement with the league’s content. Set up inside the stadium, the control room employed famous ex-players and celebrities along with a team of social media experts, designers, and copywriters to produce custom content on the fly.\"</em></p>\r\n<p style=\"text-align: left;\"><iframe src=\"http://player.vimeo.com/video/70398336?byline=0&amp;portrait=0&amp;color=52b646\" height=\"281\" width=\"500\" allowfullscreen=\"\" frameborder=\"0\"></iframe></p>\r\n<p style=\"text-align: left;\"><strong>Social Media Command Centers create a culture of listening</strong></p>\r\n<p style=\"text-align: left;\">For Marks &amp; Spencer, Buzz Radar created a social media command center with a big screen visualization aimed at the whole organization. This next step in the evolution of the command center creates a culture of listening to the customer in real time throughout the whole organization. Built on our earlier experience with Nokia's Agora command center, we have seen the power of democratizing the real-time aggregated social communications about a brand instead of keeping it silo-ed within specific departments or waiting for someone in one department to disseminate to another.</p>\r\n<p style=\"text-align: left;\">While social is at the heart of the conversations the visuals become increasingly powerful when the live social streaming is paired with company specific real-time metrics like number of downloads of their app from iTunes store or number of pre-orders on Amazon.</p>\r\n<p style=\"text-align: left;\">We believe this information should be seen by the whole organizations, and by placing the visualizations in common areas, everyone can not only see it, but it sparks conversations between employees, entertains and builds company culture centered around the customer.</p>\r\n<p style=\"text-align: left;\"><iframe src=\"http://player.vimeo.com/video/64142290?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933\" height=\"281\" width=\"500\" allowfullscreen=\"\" frameborder=\"0\"></iframe></p>\r\n<p style=\"text-align: left;\"><a href=\"http://vimeo.com/64142290\">The M&amp;S Social Wall</a> from <a href=\"http://vimeo.com/buzzradar\">Buzz Radar</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>\r\n<p style=\"text-align: left;\">We believe all organizations, not just large enterprises can greatly benefit from listening to social media, our Social Media Command Centers serve companies large and small.</p>\r\n<p style=\"text-align: left;\">With our new 'Listening Post' system soon you'll be able to build your own visualizations in 10 minutes for your brand or event.  <a href=\"http://www.buzzradar.com/beta-apply/\">Sign up for an invite to our beta coming soon.</a></p>",
@@ -3778,7 +3903,8 @@
     },
     {
       "ID": 462,
-      "post_author": "5",
+
+"author" : "Nicky Yates",      "post_author": "5",
       "post_date": "2013-07-18 15:37:14",
       "post_date_gmt": "2013-07-18 15:37:14",
       "post_content": "Look around you next time you attend an event - conference, music, sporting -  chances are a fair percent of your fellow humans are tweeting, and on Facebook &amp; Instagram ... with people not present. With the explosion in the use of social media, the very essence of an event has shifted focus from engaging the people at the event to engaging a much wider audience.  But most of those conversations become fragmented in the ether.\r\n\r\n<!--more-->\r\n\r\nThe next evolution in event social media is to bring all these conversations together in real-time, converging remote and in-person participant media, by using real-time social media visualizations, a key new technology for engaging with audiences.\r\n\r\nThis last June, Buzzradar witnessed and enabled this convergence at several spots around the 2013 <a title=\"Cannes Lions International Festival of Creativity\" href=\"http://www.canneslions.com/\">Cannes Lions International Festival of Creativity.</a>\r\n<blockquote class=\"twitter-tweet\"><a href=\"https://twitter.com/search?q=%23happeningnow&amp;src=hash\">#happeningnow</a> at <a href=\"https://twitter.com/search?q=%23canneslions&amp;src=hash\">#canneslions</a>. Buzz radar working it with real time festival images. <a href=\"http://t.co/cYtGeLgxbv\">pic.twitter.com/cYtGeLgxbv</a>\r\n\r\n— Christel Quek (@ladyxtel) <a href=\"https://twitter.com/ladyxtel/statuses/347324638524739584\">June 19, 2013</a></blockquote>\r\n<strong><script charset=\"utf-8\" type=\"text/javascript\" src=\"//platform.twitter.com/widgets.js\" async=\"\"></script>The Bigger Picture</strong>\r\n\r\nCollecting, collating and broadcasting all the buzz, lifts the subnet of conversation off the small screen and onto shared screens enabling participants to see the bigger picture ultimately giving conversations more cohesion.  Seeing all conversations come together in real-time captures attention, builds audience engagement, and starts conversations which are further unified by promoted hashtags.\r\n\r\nDuring the Cannes Lions Festival, we created for Clear Channel, the largest Twitter &amp; Instagram wall ever! even larger than Twitter’s.\r\n\r\n<a href=\"http://newsite.buzzradar.com/wp_uploads/2013/07/curb_cannesCanvas_38261.jpg\"><img class=\"alignnone size-medium wp-image-491\" alt=\"curb_cannesCanvas_3826\" src=\"http://newsite.buzzradar.com/wp_uploads/2013/07/curb_cannesCanvas_38261-300x200.jpg\" width=\"630\" height=\"420\" /></a>\r\n\r\n<a href=\"http://www.bit.ly/17QLVM0\">Clear Channel's Largest Twitter Wall Ever</a>\r\n\r\n<strong>Interaction with the Podium.</strong>\r\n\r\nLive social media adds a new dimension to keynotes and panels and is practical too.  Not only will using social visualizations for Q&amp;A allow the guy with the mic to finally take a seat, but speakers can interact with the audience to enliven their talks.\r\n\r\n<strong>At Cannes, actor Jack Black read live tweets during his keynote:</strong>\r\n\r\n<strong></strong><a href=\"http://newsite.buzzradar.com/wp_uploads/2013/07/Yahoo-Seminar_Jack-Black.jpg\"><img class=\"alignnone size-medium wp-image-464\" alt=\"Yahoo-Seminar_Jack-Black\" src=\"http://newsite.buzzradar.com/wp_uploads/2013/07/Yahoo-Seminar_Jack-Black-300x200.jpg\" width=\"630\" height=\"420\" /></a>\r\n\r\n<strong>Adobe and real-time feeds during TED Talk: There is Magic In the Future:</strong>\r\n\r\n<a href=\"http://newsite.buzzradar.com/wp_uploads/2013/07/DFD00A8D-5824-4F57-B2B1-256D285239D42.jpg\"><img class=\"alignnone size-medium wp-image-486\" alt=\"DFD00A8D-5824-4F57-B2B1-256D285239D4\" src=\"http://newsite.buzzradar.com/wp_uploads/2013/07/DFD00A8D-5824-4F57-B2B1-256D285239D42-300x196.jpg\" width=\"630\" height=\"411\" /></a>\r\n\r\n<strong>Gamifying Events</strong>\r\n\r\nBrands get competitive at Cannes.\r\n\r\n<a href=\"http://newsite.buzzradar.com/wp_uploads/2013/07/Ogilvy-@-Cannes.jpg\"><img class=\"alignnone size-medium wp-image-511\" alt=\"Ogilvy @ Cannes\" src=\"http://newsite.buzzradar.com/wp_uploads/2013/07/Ogilvy-@-Cannes-300x233.jpg\" width=\"631\" height=\"490\" /></a>\r\n\r\n<a title=\"2013 #canneslions Ogilvy &amp; Mather Impact Report\" href=\"http://www.slideshare.net/AdamKornblum/2013-canneslions-ogilvy-mather-impact-report-ogilvycannes\">From the 2013 #CANNESLIONS, Ogilvy &amp; Mather Impact</a>\r\n\r\n<a href=\"http://www.buzzradar.com/#event-visualisations\">Click here for more information on our event products.</a>",
@@ -3817,7 +3943,8 @@
     },
     {
       "ID": 419,
-      "post_author": "5",
+
+"author" : "Nicky Yates",      "post_author": "5",
       "post_date": "2013-07-10 22:40:53",
       "post_date_gmt": "2013-07-10 22:40:53",
       "post_content": "&nbsp;\r\n\r\nThe AC Pavilion may have opened its doors to visitors on July 4th, but fans of the event were already buzzing all around the internet.  We've been monitoring the chatter since early July.  We are bringing you live social commentary from the Buzz Radar platform.\r\n\r\n<!--more-->\r\n\r\n<a href=\"http://newsite.buzzradar.com/wp_uploads/2013/06/AmericasCup_DEVID6HJD0L.swf\">America's Cup 2013 Live Social Conversations</a>\r\n\r\nThe sport of sailing  is typically a tough spectator sport, as the action happens out on the water - in most cases beyond even the best binocular's reach - but that is not the story of what is happening on shore.  With @AmericasCup having 42.7k followers , and 16k tweets for <a title=\"#americascup\" href=\"https://twitter.com/americascup\">@americascup</a> to date, total social reach* on FB, Twitter and Instagram alone is nearing the 1 Billion mark, and there are weeks more sailing to go.  While the organizers are doing a great job keeping fans posted with live racing and event coverage vis Titter, watching what the fans and participants have to say gives the event more depth, dimension and a sense of community, which is why we would like to share it.\r\n\r\n[demo_swf]DEVIDQQFFTQ[/demo_swf]\r\n\r\nWhen major events happen somewhere in the world, they happen globally on Twitter, Facebook, Instagram. Social media brings people closer to the things they care about and to like minded fellow fans.  America’s Cup fans get updates right from the racecourse @EmirateszTeamNZ.\r\n<blockquote class=\"twitter-tweet\">Just rounded the third mark, as expected we are in front. The guys look to be having a very nice sail around the bay. <a href=\"http://t.co/BWzIEo3brB\">http://t.co/BWzIEo3brB</a>\r\n\r\n— EmiratesTeamNZ (@EmiratesTeamNZ) <a href=\"https://twitter.com/EmiratesTeamNZ/statuses/354685821913280513\">July 9, 2013</a></blockquote>\r\n&nbsp;\r\n\r\nBe sure to follow your favorite team;  @LR_Challenge, @EmirateszTeamNZ, @OracleTeamUSA, @ArtemisRacing and use official hashtag #americascup to join the global conversation.",
@@ -3855,7 +3982,8 @@
     },
     {
       "ID": 412,
-      "post_author": "5",
+
+"author" : "Nicky Yates",      "post_author": "5",
       "post_date": "2013-07-03 12:59:56",
       "post_date_gmt": "2013-07-03 12:59:56",
       "post_content": "The Delegates at the Cannes Lions Festival of Creativity this year encountered the Grand Audi Theatre with a new perspective, in the form of Social Data - visualized.  Buzz Radar and Adobe partnered with the festival to create the biggest indoor visualizations of social data, using the hashtag, #canneslions. We monitored the most mentioned brands and speakers of the festival as well as the latest tweets and photos tagged with hashtag, #canneslions.  This became the main focus of the delegate's attention in between the seminars, and our creative visualizations promoted interaction with the attendees of the festival to result in 91,446 total mentions.\r\n\r\n<!--more-->\r\n\r\nWorking with Adobe's creative team, branding team, and social media team, we partnered to create a visual that suited both Adobe and the Cannes Lions festival.  Adobe became the 3rd most mentioned brand at the festival, and was part of a social reach of 542,032,912. As Technology and the questions of what to do with Big Data were prominent at the festival this year, the delegates of the festival were pleased to see a visual advancement of both these components.\r\n\r\nBy the 3rd day of the Festival of Creativity, Buzz Radar had become the medium for a competition among brand mentions. Ogilvy was clearly leading the brand mentions with a well rehearsed and focused social strategy. Twitter, appropriately, was the 2nd most mentioned brand at the festival as their platform contributed to 98% of the data produced. Towards the last days of the festival, Ogilvy was successfully battling to keep their place and were only overshadowed when P Ditty, Deb Roy from Twitter, and Conan O'Brien took the stage.\r\n\r\n[caption id=\"attachment_556\" align=\"alignnone\" width=\"300\"]<a href=\"http://newsite.buzzradar.com/wp_uploads/2013/07/buzz-radar-most-talked-about.jpg\"><img class=\"size-medium wp-image-556\" alt=\"During the festival, we monitored the most talked about subjects and topics tagged with #canneslions.\" src=\"http://newsite.buzzradar.com/wp_uploads/2013/07/buzz-radar-most-talked-about-300x168.jpg\" width=\"300\" height=\"168\" /></a> During the festival, we monitored the most talked about subjects and topics tagged with #canneslions.[/caption]\r\n\r\n&nbsp;\r\n\r\n<a href=\"http://newsite.buzzradar.com/wp_uploads/2013/07/buzz-radar-brands.jpg\"><img class=\"size-medium wp-image-555\" alt=\"The competition was strong for Ogilvy.\" src=\"http://newsite.buzzradar.com/wp_uploads/2013/07/buzz-radar-brands-300x174.jpg\" width=\"300\" height=\"174\" /></a>\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
@@ -3894,7 +4022,8 @@
     },
     {
       "ID": 411,
-      "post_author": "5",
+
+"author" : "Nicky Yates",      "post_author": "5",
       "post_date": "2013-07-03 12:51:04",
       "post_date_gmt": "2013-07-03 12:51:04",
       "post_content": "Welcome to the Buzz Radar blog!  If this is your first time visiting our site, we hope you will be creatively inspired with exciting ways to capture, curate and visualize the social media buzzing around the internet about your brand, products, event, and harness it to engage your audiences and learn more from your customers.\r\n\r\nIf you are an old friend, you will notice a few new things about us:\r\n\r\n1.  We are very excited about <a title=\"Buzz Radar Website\" href=\"http://www.buzzradar.com\"><strong>our new website</strong></a>.\r\n\r\n2.  We had an outstanding time <strong>@CannesLions</strong> working with clients like <strong>Clear Channel, Adobe</strong> and the event organizers themselves.  Stay tuned for a use case of that event in a future post.\r\n\r\n3.  We are accepting <a title=\"Buzz Radar Beta\" href=\"http://www.buzzradar.com/beta-apply/\">sign-ups</a> to help us beta test our new DIY Social Media Command Center allowing <!--more-->customers to set up and control their own social media visualizations in a matter of minutes. We are currently on the third generation of our platform, which has been built and refined with the user in mind and we believe that social media is something to be shared with the whole organization in real time.  We work hard behind the scenes to make our products simple, intuitive and effective.  Please <a href=\"http://www.buzzradar.com/beta-apply/\">join our beta</a> and share your insights.\r\n\r\nOur blogging goal is to bring you tips and insights into the ever growing world of social media curation, social media analytics and social visualization.\r\n\r\nIf there is a topic you would like us to comment on, let us know.\r\n\r\nThe Buzz Radar Team",
@@ -3932,7 +4061,8 @@
     },
     {
       "ID": 327,
-      "post_author": "5",
+
+"author" : "Nicky Yates",      "post_author": "5",
       "post_date": "2013-06-17 08:00:07",
       "post_date_gmt": "2013-06-17 08:00:07",
       "post_content": "So it's a huge day here for the Buzz Radar team. Not only are we launching our refreshed <a title=\"Buzz Radar\" href=\"http://www.buzzradar.com\">website</a> but we are also at the 60th Cannes Lions international festival of creativity launching some fantastic projects with our partners at the <a title=\"Cannes Lions\" href=\"http://www.canneslions.com\">festival</a>, Clear Channel Outdoor  and Adobe all on the SAME DAY!\r\n\r\nOver the next few days we will be giving you an in depth look at each of the three projects but here is a quick overview\r\n\r\nWe are providing the official #Canneslions visualisations and stats for the festival\r\n\r\nWith Adobe we are visualising all the conversation, photos and data around #canneslions with four real time info-graphics that are playing out in the two massive auditoriums of the palais de festivals to an audience of several thousand everyday.\r\n\r\n<img class=\"size-medium wp-image-367 aligncenter\" src=\"http://buzzradar.com/wp-content/uploads/2013/06/IMG_0856-300x225.jpeg\" alt=\"IMG_0856\" width=\"300\" height=\"225\" />\r\n\r\nFor Clear Channel Outdoor we're projection social media visualisations onto the\r\n\r\n&nbsp;",

@@ -19,15 +19,14 @@ const readFileAsync = (FILE_NAME) => {
 
         //Run through all the case studies to create the slugs, titles and images
         dataJson.casesentries.forEach(function(caseStudy) {
-
 		  //Slugs (Array)
-		  SEORoutes.slugs.push('/casestudies/'+caseStudy.slug);
+		  SEORoutes.slugs.push('/studies_library/'+caseStudy.slug);
 		  //Titles (Object)
-		  SEORoutes.titles['/casestudies/'+caseStudy.slug] = caseStudy.title;
+		  SEORoutes.titles['/studies_library/'+caseStudy.slug] = caseStudy.title;
 		  //Descriptions (Object)
-		  SEORoutes.descriptions['/casestudies/'+caseStudy.slug] = 'Find out how Buzz Radar has helped a wide range of organisations gain critical insights from their data.';
+		  SEORoutes.descriptions['/studies_library/'+caseStudy.slug] = 'Find out how Buzz Radar has helped a wide range of organisations gain critical insights from their data.';
 		  //Sharer Images (Object)
-		  SEORoutes.sharerImages['/casestudies/'+caseStudy.slug] = '/public_assets/casestudies/'+caseStudy.thumb;
+		  SEORoutes.sharerImages['/studies_library/'+caseStudy.slug] = '/public_assets/studies_library/'+caseStudy.thumb;
 		});
 
 		// console.clear();
@@ -63,6 +62,8 @@ const SEORoutes = {
 	  	'/marketingintelplatform/socialintelligence',
 	  	'/marketingintelplatform/paidmedia',
 	  	'/marketingintelplatform/newspr',
+	  	'/blog',
+	  	// '/studies_library/guardians-of-the-galaxy',
 	],
 	titles : {
 	    '/': 'Buzz Radar - Real Time Social Media Intelligence Made Easy',
@@ -72,6 +73,8 @@ const SEORoutes = {
 	  	'/marketingintelplatform/socialintelligence' : 'Social Intelligence',
 	  	'/marketingintelplatform/paidmedia': 'Paid Media Analysis',
 	  	'/marketingintelplatform/newspr': 'News & PR Monitoring',
+	  	'/blog': 'Blog Buzz Radar',
+	  	// '/studies_library/guardians-of-the-galaxy' : 'Guardians of The Galaxy',
 	},
 	descriptions : {
 	    '/': 'Buzz Radar is the leading social intelligence platform designed for marketers rather than analysts. Providing powerful, easy to digest actionable insights.',
@@ -81,22 +84,26 @@ const SEORoutes = {
 	  	'/marketingintelplatform/socialintelligence' : 'Access award-winning social media listening and monitoring intelligence across the major networks.',
 	  	'/marketingintelplatform/paidmedia': 'Smart easy to digest insights on your performance for Facebook Ads and Google Adwords.',
 	  	'/marketingintelplatform/newspr': 'Capture and analyse data from all your PR campaigns from across over 3 Million news outlets and blogs.',
+	  	'/blog': 'Capture and analyse data from all your PR campaigns from across over 3 Million news outlets and blogs.',
+	  	// '/studies_library/guardians-of-the-galaxy' : 'Guardians of The Galaxy - DESCRIPTION',
 	},
 	sharerImages : {
 
 		//If you need to get the thumbs from public folder: /public_assets/...
 		//To apply the sharer relative, you need to add ../ when there is one folder and ../../ where there are 2 folders into the tree.
 
-	    '/': 'https://www.buzzradar.com/sharer.gif',
+	    '/': 'https://www.buzzradar.com/sharer.jpg',
         '/realtimedashboard': 'https://www.buzzradar.com/sharer_dashboard.jpg',
-        '/aiaudienceanalysis': 'https://www.buzzradar.com/sharer_ai_audience_analysis.gif',
-        '/marketingintelplatform': 'https://www.buzzradar.com/sharer_marketing_platform.gif',
-	  	'/marketingintelplatform/socialintelligence' : 'https://www.buzzradar.com/sharer_marketing_platform.gif',
-	  	'/marketingintelplatform/paidmedia': 'https://www.buzzradar.com/sharer_marketing_platform.gif',
-	  	'/marketingintelplatform/newspr': 'https://www.buzzradar.com/sharer_marketing_platform.gif',
+        '/aiaudienceanalysis': 'https://www.buzzradar.com/sharer_ai_audience_analysis.jpg',
+        '/marketingintelplatform': 'https://www.buzzradar.com/sharer_mark_intelligence.jpg',
+	  	'/marketingintelplatform/socialintelligence' : 'https://www.buzzradar.com/sharer_mark_intelligence.jpg',
+	  	'/marketingintelplatform/paidmedia': 'https://www.buzzradar.com/sharer_mark_intelligence.jpg',
+	  	'/marketingintelplatform/newspr': 'https://www.buzzradar.com/sharer_mark_intelligence.jpg',
+	  	'/blog': 'https://www.buzzradar.com/sharer.jpg',
+	  	// '/studies_library/guardians-of-the-galaxy' : 'https://www.buzzradar.com/public_assets/studies_library/guardians-of-the-galaxy2.jpg',
 	},
 };
-// readFileAsync('./src/statics/CaseStudiesEntries.json');
+readFileAsync('./src/statics/CaseStudiesEntries.json');
 
 
 
@@ -123,11 +130,6 @@ module.exports = {
 			  minify : true,
 			  postProcess: function (context) {
 
-				  context.html = context.html.replace(
-		            /<title>[^<]*<\/title>/i,
-		            '<title>' + SEORoutes.titles[context.route] + '</title>'
-		          );
-
 		          context.html = context.html.replace(
 		            /T-I-T-L-E/g,
 		            SEORoutes.titles[context.route]
@@ -143,9 +145,10 @@ module.exports = {
 		            SEORoutes.sharerImages[context.route]
 		          );
 
-		       //    if (renderedRoute.route == '/casestudies') {
-			      // 	context.outputPath = path.join(__dirname, 'dist', renderedRoute.route)
-			      // }
+		          context.html = context.html.replace(
+		            /U-R-L/g,
+		            'https://www.buzzradar.com'+context.route
+		          );
 
 		          return context;
 	          },

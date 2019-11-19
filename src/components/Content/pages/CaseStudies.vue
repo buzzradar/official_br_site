@@ -2,46 +2,42 @@
   
   <div>
 
-    <!-- Case Studies CubePortfolio List -->
-    <div v-if="this.$router.currentRoute.path == '/casestudies' ">
 
     <!-- Testimonials Section -->
+    <div class="container mt-0 mt-md-10 mb-5" :style="bannerBg" >
+      <div class="row">
+        <div class="col-md-6">
 
-      <div class="container mt-0 mt-md-10 mb-5" :style="bannerBg" >
-        <div class="row">
-          <div class="col-md-6">
-
-            <!-- Content -->
-            <div class="container p-5">
-              <div class="row">
-                <div class="col-md-12 position-relative z-index-2">
-                  <div class="mb-4">
-                    <h1 class="display-5 text-white font-weight-normal">As soon I saw the platform I knew we had to have it.</h1>
-                  </div>
-                  
-                  <p class="lead text-white">Jeremy Waite – Chief Strategy Officer at IBM</p>
-
-                  <!-- Fancybox -->
-                  <a class="js-fancybox btn btn-primary transition-3d-hover mb-2 mb-sm-0 mr-sm-2" href="javascript:;"
-                     data-src="//vimeo.com/249392499"
-                     data-speed="700"
-                     data-animate-in="zoomIn"
-                     data-animate-out="zoomOut"
-                     data-caption="Jeremy Waite – Chief Strategy Officer at IBM">
-                    <small class="fas fa-play mr-2"></small>
-                    Play Video
-                  </a>
-                  <!-- End Fancybox -->
-                  
+          <!-- Content -->
+          <div class="container p-5">
+            <div class="row">
+              <div class="col-md-12 position-relative z-index-2">
+                <div class="mb-4">
+                  <h1 class="display-5 text-white font-weight-normal">As soon I saw the platform I knew we had to have it.</h1>
                 </div>
+                
+                <p class="lead text-white">Jeremy Waite – Chief Strategy Officer at IBM</p>
+
+                <!-- Fancybox -->
+                <a class="js-fancybox btn btn-primary transition-3d-hover mb-2 mb-sm-0 mr-sm-2" href="javascript:;"
+                   data-src="//vimeo.com/249392499"
+                   data-speed="700"
+                   data-animate-in="zoomIn"
+                   data-animate-out="zoomOut"
+                   data-caption="Jeremy Waite – Chief Strategy Officer at IBM">
+                  <small class="fas fa-play mr-2"></small>
+                  Play Video
+                </a>
+                <!-- End Fancybox -->
+                
               </div>
             </div>
-            <!-- End Content -->
-
           </div>
+          <!-- End Content -->
+
         </div>
       </div>
-    
+    </div>
     <!-- End Testimonials Section -->
 
 
@@ -95,7 +91,7 @@
 
               <!-- Item -->
               <div v-for="(caseStudy,index) in caseStudies" :class="`cbp-item `+caseStudy.filterClass">
-                <a class="cbp-caption" :href="'/casestudies/'+caseStudy.slug">
+                <a class="cbp-caption" :href="'/studies_library/'+caseStudy.slug">
                   
                   <img class="rounded" :src=" require('@/assets/buzzradar/img/casestudies/'+caseStudy.thumb) " alt="Image Description">
 
@@ -115,13 +111,7 @@
         </div>
         <!--End Case Studies CubePortfolio List -->
 
-    </div>
-
-    <!-- Individual Job Item -->
-    <div v-else>
-      <router-view />
-    </div>
-    <!-- End Individual Job Item -->
+   
     
 
   </div>

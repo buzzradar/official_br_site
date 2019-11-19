@@ -22,7 +22,10 @@
 	            <div v-for="(image,index) in caseStudyJSONContent.content.photoArray" class="cbp-item">
 	              <div class="cbp-caption">
 	                <!-- <img class="rounded" :src="require('@/assets/buzzradar/img/casestudies/'+image)" :alt="caseStudyJSONContent.title"> -->
-	                <img class="rounded" :src="'../public_assets/casestudies/'+image" :alt="caseStudyJSONContent.title">
+	                <!-- ********************** -->
+	                <!-- DEVELOPER NOTE: This path must be absolute for SEO purposes and for the URL Preview -->
+	                <!-- ********************** -->
+	                <img class="rounded" :src="'https://www.buzzradar.com/public_assets/studies_library/'+image" :alt="caseStudyJSONContent.title">
 	              </div>
 	            </div>
 	            <!-- End Images in Content -->
@@ -96,11 +99,19 @@
  		data : function(){
 
  			var currentPath = this.$router.currentRoute.path;
- 			var currentSlug = currentPath.split("/casestudies/")[1];
+ 			var currentSlug = currentPath.split("/studies_library/")[1];
  			var caseStudyMatched;
 
+ 			console.log("All Case Studies", AllCaseStudiesEntries);
+
  			AllCaseStudiesEntries.casesentries.forEach(function(item,index){
- 				if (item.slug == currentSlug) {
+
+ 				// console.log(item.slug, "<-> ",currentSlug);
+
+ 				if ( currentSlug.includes(item.slug) ) {
+
+ 					console.log("--------------------i am in!--------------------");
+
  					caseStudyMatched = item;
 
  					//Create the PDF Path

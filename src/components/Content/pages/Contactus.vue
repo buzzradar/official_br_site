@@ -4,7 +4,7 @@
 
     
     <!-- Contact Form Section -->
-    <div class="container space-md-3">
+    <div class="container space-2 space-top-md-3">
       <div class="row justify-content-lg-between">
         <div class="col-lg-5 mb-9 mb-lg-0">
           <!-- Title -->
