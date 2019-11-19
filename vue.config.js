@@ -3,9 +3,10 @@ const path = require('path');
 const PrerenderSPAPlugin = require('prerender-spa-plugin');
 const PuppeteerRenderer = PrerenderSPAPlugin.PuppeteerRenderer;
 
-
-//This is only to add the info for each CASE Study
-const readFileAsync = (FILE_NAME) => {
+//---------------------------------------------
+// CASE STUDIES: To Add Specific Info for each 
+//---------------------------------------------
+const readFileAsyncCASESTUDIES = (FILE_NAME) => {
   fs.readFile(FILE_NAME, (error, data) => {
     console.log('Async Read: starting...');
     if (error) {
@@ -42,13 +43,62 @@ const readFileAsync = (FILE_NAME) => {
 };
 
 
+
+
+//---------------------------------------------
+// BLOG POSTS: To Add Specific Info for each 
+//---------------------------------------------
+const readFileAsyncBLOGPOSTS = (FILE_NAME) => {
+  fs.readFile(FILE_NAME, (error, data) => {
+    console.log('Async Read: starting...');
+    if (error) {
+      console.log('Async Read: NOT successful!');
+      console.log(error);
+    } else {
+      try {
+        const dataJson = JSON.parse(data);
+        console.log('Async Read: successful!');
+        // console.log(dataJson);
+
+        //Run through all the case studies to create the slugs, titles and images
+        dataJson.blogentries.forEach(function(blogPost) {
+		  //Slugs (Array)
+		  SEORoutes.slugs.push('/blog/post'+blogPost.ID);
+		  //Titles (Object)
+		  SEORoutes.titles['/blog/post'+blogPost.ID] = blogPost.post_title;
+		  //Descriptions (Object)
+		  SEORoutes.descriptions['/blog/post'+blogPost.ID] = 'Find out how Buzz Radar has helped a wide range of organisations gain critical insights from their data.';
+		  //Sharer Images (Object)
+		  SEORoutes.sharerImages['/blog/post'+blogPost.ID] = '/public_assets/blog/'+blogPost.thumb_name;
+		});
+
+		console.clear();
+		console.log(" final SEORoutes --------->");
+		console.log(SEORoutes);
+
+
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  });
+};
+
+
+
+
+
+
+
+
+
 // ---------------------------------------------------- //
 // Developer note: WE need to prerender all index.html to make them 
 // SEO friendly. That will include a specific TITLE for each page, and specific
 // SHARERE IMAGE for each page. The following object contains all the routes
 // we want to make SEO friendly and the titles we want to use and the images.
 
-// After that we run the function readFileAsync to load all the Casestudies and 
+// After that we run the function readFileAsyncCASESTUDIES to load all the Casestudies and 
 // we will create all the SLUGS, TITLES and SHARERE IMAGES for each individual
 // Case Study.
 // ---------------------------------------------------- //
@@ -103,7 +153,8 @@ const SEORoutes = {
 	  	// '/studies_library/guardians-of-the-galaxy' : 'https://www.buzzradar.com/public_assets/studies_library/guardians-of-the-galaxy2.jpg',
 	},
 };
-readFileAsync('./src/statics/CaseStudiesEntries.json');
+// readFileAsyncCASESTUDIES('./src/statics/CaseStudiesEntries.json');
+readFileAsyncBLOGPOSTS('./src/statics/WPPostsEntries.json');
 
 
 
