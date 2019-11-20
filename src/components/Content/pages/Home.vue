@@ -43,7 +43,7 @@
               
                 Unlock the <br class="d-block d-md-none">secrets <br class="d-none d-md-block">of your <br class="d-block d-md-none">
                 <span class="text-white">
-                  <!-- <strong class="u-text-animation u-text-animation--typing text-primary"></strong> -->
+                  <!-- <strong class="u-text-animation u-text-animation- -typing text-primary"></strong> -->
                   <span class="br-text-anim text-primary">
                     Audience
                   </span>
@@ -71,7 +71,6 @@
         <!-- End Content -->
       </div>
 
-      <div class="d-lg-none position-absolute top-0 right-0 bottom-0 left-0 bg-img-hero" style="background-image: url(assets_theme/img/1920x1080/img20.jpg);"></div>
     </div>
     <!-- End Hero Section -->
 

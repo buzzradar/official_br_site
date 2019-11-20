@@ -87,11 +87,14 @@
       var currentSlug = currentPath.split("/blog/")[1];
       var blogPostMatched;
 
+
+      console.log("For each!",AllBlogPosts);
+
       AllBlogPosts.blogentries.forEach(function(item,index){
 
-        //console.log("post"+item.post.ID, currentSlug);
+        // console.log("post"+item.ID, currentSlug);
 
-        if ('post'+item.ID == currentSlug) {
+        if ( currentSlug.includes('post'+item.ID) ) {
           blogPostMatched = item;
 
           console.log("item matched", item);

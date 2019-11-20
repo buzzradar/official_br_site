@@ -2,7 +2,7 @@
   "casesentries": [
 
     {
-      "slug": "user-case-allianz",
+      "slug": "cs-user-case-allianz",
       "date": "June 2018",
       "title": "Use Case: Data driven strategic decision making",
       "thumb" : "use-case-allianz-thumb.jpg",
@@ -15,7 +15,7 @@
       }
     },
     {
-      "slug": "user-case-campus",
+      "slug": "cs-user-case-campus",
       "date": "June 2018",
       "title": "Use Case: Customer Service",
       "thumb" : "use-case-campus-thumb.jpg",
@@ -28,7 +28,7 @@
       }
     },
     {
-      "slug": "user-case-customer-service",
+      "slug": "cs-user-case-customer-service",
       "date": "June 2018",
       "title": "Use Case: Data driven organisational transformation",
       "thumb" : "use-case-data-driven-org-transf-thumb.jpg",
@@ -41,7 +41,7 @@
       }    
     },
     {
-      "slug": "the-first-emotionally-powered-billboard",
+      "slug": "cs-the-first-emotionally-powered-billboard",
       "date": "June 2017",
       "title": "Cannes Lions – Emotionally Powered Billboard",
       "thumb" : "cannes-lion-billboard1-thumb.jpg",
@@ -54,7 +54,7 @@
       } 
     },
     {
-      "slug": "sta",
+      "slug": "cs-sta",
       "date": "April 2017",
       "title": "STA",
       "thumb" : "sta-thumb.jpg",
@@ -67,7 +67,7 @@
       }
     },
     {
-      "slug": "luxury-fashion-brand",
+      "slug": "cs-luxury-fashion-brand",
       "date": "September 2016",
       "title": "Luxury Fashion Brand",
       "thumb" : "luxury-fashion-brand-thumb.jpg",
@@ -80,7 +80,7 @@
       }
     },
     {
-      "slug": "major-electronics-brand",
+      "slug": "cs-major-electronics-brand",
       "date": "April 2017",
       "title": "Major Electronic Brands",
       "thumb" : "major-electronics-brand-thumb.jpg",
@@ -93,7 +93,7 @@
       }
     },
     {
-      "slug": "nike",
+      "slug": "cs-nike",
       "date": "April 2017",
       "title": "Nike",
       "thumb" : "nike-thumb.jpg",
@@ -106,7 +106,7 @@
       }
     },
     {
-      "slug": "cannes-lions-hoff-or-not-keynote",
+      "slug": "cs-cannes-lions-hoff-or-not-keynote",
       "date": "June 2016",
       "title": "Cannes Lions - Hoff Or Not Keynote",
       "thumb" : "cannes-lions-hoff-or-not-keynote-thumb.jpg",
@@ -119,7 +119,7 @@
       }
     },
     {
-      "slug": "guardians-of-the-galaxy",
+      "slug": "cs-guardians-of-the-galaxy",
       "date": "April 2016",
       "title": "Guardians of the Galaxy",
       "thumb" : "guardians-of-the-galaxy-thumb.jpg",
@@ -132,7 +132,7 @@
       }
     },
     {
-      "slug": "tesco-makechristmas",
+      "slug": "cs-tesco-makechristmas",
       "date": "December 2016",
       "title": "Tesco #MakeChristmas",
       "thumb" : "tesco-makechristmas-thumb.jpg",
@@ -145,7 +145,7 @@
       }
     },
     {
-      "slug": "ogilvy",
+      "slug": "cs-ogilvy",
       "date": "September 2017",
       "title": "Ogilvy",
       "thumb" : "ogilvy-thumb.jpg",
@@ -158,7 +158,7 @@
       }
     },
     {
-      "slug": "storm-clear-channel-twitter",
+      "slug": "cs-storm-clear-channel-twitter",
       "date": "April 2016",
       "title": "Clear Channel & Twitter",
       "thumb" : "storm-clear-channel-twitter-thumb.jpg",
@@ -171,7 +171,7 @@
       }
     },
     {
-      "slug": "google-campus",
+      "slug": "cs-google-campus",
       "date": "September 2016",
       "title": "Google Campus",
       "thumb" : "google-campus-thumb.jpg",
@@ -184,7 +184,7 @@
       }
     },
     {
-      "slug": "adidas-world-cup",
+      "slug": "cs-adidas-world-cup",
       "date": "June 2016",
       "title": "Adidas World Cup",
       "thumb" : "adidas-world-cup-thumb.jpg",
@@ -197,7 +197,7 @@
       }
     },
     {
-      "slug": "twitter-live-studio-world-cup",
+      "slug": "cs-twitter-live-studio-world-cup",
       "date": "June 2016",
       "title": "Twitter Live Studio",
       "thumb" : "twitter-live-studio-world-cup-thumb.jpg",
@@ -210,7 +210,7 @@
       }
     },
     {
-      "slug": "marks-spencer-spacebounds",
+      "slug": "cs-marks-spencer-spacebounds",
       "date": "April 2016",
       "title": "Marks & Spencer",
       "thumb" : "marks-spencer-spacebounds-thumb.jpg",
@@ -223,7 +223,7 @@
       }
     },
     {
-      "slug": "buzz-radar-skype-broadcast",
+      "slug": "cs-buzz-radar-skype-broadcast",
       "date": "April 2017",
       "title": "Skype",
       "thumb" : "buzz-radar-skype-broadcast-thumb.jpg",
@@ -236,7 +236,7 @@
       }
     },
     {
-      "slug": "casestudy-ces-2017",
+      "slug": "cs-casestudy-ces-2017",
       "date": "March 2017",
       "title": "Consumer Electronics Show (CES)",
       "thumb" : "casestudy-ces-2017-thumb.jpg",

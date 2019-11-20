@@ -25,7 +25,7 @@
 	                <!-- ********************** -->
 	                <!-- DEVELOPER NOTE: This path must be absolute for SEO purposes and for the URL Preview -->
 	                <!-- ********************** -->
-	                <img class="rounded" :src="'https://www.buzzradar.com/public_assets/studies_library/'+image" :alt="caseStudyJSONContent.title">
+	                <img class="rounded" :src="'https://www.buzzradar.com/public_assets/casestudies/'+image" :alt="caseStudyJSONContent.title">
 	              </div>
 	            </div>
 	            <!-- End Images in Content -->
@@ -99,7 +99,7 @@
  		data : function(){
 
  			var currentPath = this.$router.currentRoute.path;
- 			var currentSlug = currentPath.split("/studies_library/")[1];
+ 			var currentSlug = currentPath.split("/casestudies/")[1];
  			var caseStudyMatched;
 
  			console.log("All Case Studies", AllCaseStudiesEntries);

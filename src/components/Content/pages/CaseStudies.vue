@@ -3,116 +3,124 @@
   <div>
 
 
-    <!-- Testimonials Section -->
-    <div class="container mt-0 mt-md-10 mb-5" :style="bannerBg" >
-      <div class="row">
-        <div class="col-md-6">
 
-          <!-- Content -->
-          <div class="container p-5">
-            <div class="row">
-              <div class="col-md-12 position-relative z-index-2">
-                <div class="mb-4">
-                  <h1 class="display-5 text-white font-weight-normal">As soon I saw the platform I knew we had to have it.</h1>
-                </div>
-                
-                <p class="lead text-white">Jeremy Waite – Chief Strategy Officer at IBM</p>
 
-                <!-- Fancybox -->
-                <a class="js-fancybox btn btn-primary transition-3d-hover mb-2 mb-sm-0 mr-sm-2" href="javascript:;"
-                   data-src="//vimeo.com/249392499"
-                   data-speed="700"
-                   data-animate-in="zoomIn"
-                   data-animate-out="zoomOut"
-                   data-caption="Jeremy Waite – Chief Strategy Officer at IBM">
-                  <small class="fas fa-play mr-2"></small>
-                  Play Video
-                </a>
-                <!-- End Fancybox -->
-                
-              </div>
-            </div>
-          </div>
-          <!-- End Content -->
+    <div v-if="routeContains(this.$router.currentRoute.path,'casestudies/cs-')">
 
-        </div>
-      </div>
+      <!-- +++++++++++++++++++++++ -->
+      <!-- Individual Case Studies -->
+      <!-- +++++++++++++++++++++++ -->
+      <router-view />
+      <!-- +++++++++++++++++++++++++++ -->
+      <!-- End Individual Case Studies -->
+      <!-- +++++++++++++++++++++++++++ -->
+
     </div>
-    <!-- End Testimonials Section -->
 
+    <div v-else>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-        <!-- Portfolio Section -->
-        <div class="container space-bottom-md-3">
-          <div class="u-cubeportfolio">
-
-            <!-- Filter -->
-            <ul id="filterControls" class="list-inline cbp-l-filters-alignRight text-center">
-              <li class="list-inline-item cbp-filter-item cbp-filter-item-active u-cubeportfolio__item" data-filter="*">All</li>
-              <li v-for="(filter,index) in casesFilters" class="list-inline-item cbp-filter-item u-cubeportfolio__item" :data-filter="`.`+filtersLibrary[filter].class">{{filtersLibrary[filter].label}}</li>
-            </ul>
-            <!-- End Filter -->
+      <!-- +++++++++++++++++++++++++++++++++ -->
+      <!-- All Case Studies (Cube Portfolio) -->
+      <!-- +++++++++++++++++++++++++++++++++ -->
+     
+      <!-- Testimonials Section -->
+      <div class="container mt-0 mt-md-10 mb-5" :style="bannerBg" >
+        <div class="row">
+          <div class="col-md-6">
 
             <!-- Content -->
-            <div class="cbp"
-                 data-layout="grid"
-                 data-controls="#filterControls"
-                 data-animation="quicksand"
-                 data-x-gap="32"
-                 data-y-gap="32"
-                 data-media-queries='[
-                  {"width": 1500, "cols": 4},
-                  {"width": 1100, "cols": 4},
-                  {"width": 800, "cols": 3},
-                  {"width": 480, "cols": 2},
-                  {"width": 300, "cols": 1}
-                ]'>
-
-              <!-- Item -->
-              <div v-for="(caseStudy,index) in caseStudies" :class="`cbp-item `+caseStudy.filterClass">
-                <a class="cbp-caption" :href="'/studies_library/'+caseStudy.slug">
-                  
-                  <img class="rounded" :src=" require('@/assets/buzzradar/img/casestudies/'+caseStudy.thumb) " alt="Image Description">
-
-                  <div class="py-3">
-                    <h3 class="h6 text-dark mb-0">{{caseStudy.title}}</h3>
-                    <p class="small mb-0">
-                      on {{caseStudy.date}}
-                    </p>
+            <div class="container p-5">
+              <div class="row">
+                <div class="col-md-12 position-relative z-index-2">
+                  <div class="mb-4">
+                    <h1 class="display-5 text-white font-weight-normal">As soon I saw the platform I knew we had to have it.</h1>
                   </div>
-                </a>
+                  
+                  <p class="lead text-white">Jeremy Waite – Chief Strategy Officer at IBM</p>
+
+                  <!-- Fancybox -->
+                  <a class="js-fancybox btn btn-primary transition-3d-hover mb-2 mb-sm-0 mr-sm-2" href="javascript:;"
+                     data-src="//vimeo.com/249392499"
+                     data-speed="700"
+                     data-animate-in="zoomIn"
+                     data-animate-out="zoomOut"
+                     data-caption="Jeremy Waite – Chief Strategy Officer at IBM">
+                    <small class="fas fa-play mr-2"></small>
+                    Play Video
+                  </a>
+                  <!-- End Fancybox -->
+                  
+                </div>
               </div>
-              <!-- End Item -->
-            
             </div>
             <!-- End Content -->
+
           </div>
         </div>
-        <!--End Case Studies CubePortfolio List -->
+      </div>
+      <!-- End Testimonials Section -->
 
-   
-    
+
+
+
+
+      <!-- Portfolio Section -->
+      <div class="container space-bottom-md-3">
+        <div class="u-cubeportfolio">
+
+          <!-- Filter -->
+          <ul id="filterControls" class="list-inline cbp-l-filters-alignRight text-center">
+            <li class="list-inline-item cbp-filter-item cbp-filter-item-active u-cubeportfolio__item" data-filter="*">All</li>
+            <li v-for="(filter,index) in casesFilters" class="list-inline-item cbp-filter-item u-cubeportfolio__item" :data-filter="`.`+filtersLibrary[filter].class">{{filtersLibrary[filter].label}}</li>
+          </ul>
+          <!-- End Filter -->
+
+          <!-- Content -->
+          <div class="cbp"
+               data-layout="grid"
+               data-controls="#filterControls"
+               data-animation="quicksand"
+               data-x-gap="32"
+               data-y-gap="32"
+               data-media-queries='[
+                {"width": 1500, "cols": 4},
+                {"width": 1100, "cols": 4},
+                {"width": 800, "cols": 3},
+                {"width": 480, "cols": 2},
+                {"width": 300, "cols": 1}
+              ]'>
+
+            <!-- Item -->
+            <div v-for="(caseStudy,index) in caseStudies" :class="`cbp-item `+caseStudy.filterClass">
+              <a class="cbp-caption" :href="'/casestudies/'+caseStudy.slug">
+                
+                <img class="rounded" :src=" require('@/assets/buzzradar/img/casestudies/'+caseStudy.thumb) " alt="Image Description">
+
+                <div class="py-3">
+                  <h3 class="h6 text-dark mb-0">{{caseStudy.title}}</h3>
+                  <p class="small mb-0">
+                    on {{caseStudy.date}}
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- End Item -->
+          
+          </div>
+          <!-- End Content -->
+        </div>
+      </div>
+      <!--End Case Studies CubePortfolio List -->
+
+      <!-- +++++++++++++++++++++++++++++++++++++ -->
+      <!-- End All Case Studies (Cube Portfolio) -->
+      <!-- +++++++++++++++++++++++++++++++++++++ -->
+
+    </div>
+
+
+
+
 
   </div>
 
@@ -124,9 +132,9 @@
   
   import AllCaseStudiesEntries from '../../../statics/CaseStudiesEntries.json';
 
- 	export default {
+  export default {
 
- 		name : 'CaseStudies',
+    name : 'CaseStudies',
     data : function(){
       return {
         bannerBg : {
@@ -211,9 +219,17 @@
     },
     updated() {
       
+    },
+    methods: {
+      routeContains(currentRoute,matchingRoute) {
+
+        console.log('----------------------------------------');
+        console.log(currentRoute, matchingRoute);
+        return currentRoute.includes(matchingRoute);
+      }
     }
 
- 	}
+  }
 
  </script>
 
@@ -226,7 +242,7 @@
 
 <style lang="scss" scoped>
 
-	@import "compass";
+  @import "compass";
 
   h3{
     height: 45px;

@@ -18,17 +18,23 @@ const readFileAsyncCASESTUDIES = (FILE_NAME) => {
         console.log('Async Read: successful!');
         // console.log(dataJson);
 
-        //Run through all the case studies to create the slugs, titles and images
-        dataJson.casesentries.forEach(function(caseStudy) {
+
+        //Run through 10 Case Studies to create the slugs, titles and images for SEO
+		var i = 0;
+        while (i < 10) {
+		  var caseStudy = dataJson.casesentries[i];
+
 		  //Slugs (Array)
-		  SEORoutes.slugs.push('/studies_library/'+caseStudy.slug);
+		  SEORoutes.slugs.push('/casestudies/'+caseStudy.slug);
 		  //Titles (Object)
-		  SEORoutes.titles['/studies_library/'+caseStudy.slug] = caseStudy.title;
+		  SEORoutes.titles['/casestudies/'+caseStudy.slug] = caseStudy.title;
 		  //Descriptions (Object)
-		  SEORoutes.descriptions['/studies_library/'+caseStudy.slug] = 'Find out how Buzz Radar has helped a wide range of organisations gain critical insights from their data.';
+		  SEORoutes.descriptions['/casestudies/'+caseStudy.slug] = 'Find out how Buzz Radar has helped a wide range of organisations gain critical insights from their data.';
 		  //Sharer Images (Object)
-		  SEORoutes.sharerImages['/studies_library/'+caseStudy.slug] = '/public_assets/studies_library/'+caseStudy.thumb;
-		});
+		  SEORoutes.sharerImages['/casestudies/'+caseStudy.slug] = '/public_assets/casestudies/'+caseStudy.thumb;
+
+		  i++;
+		};
 
 		// console.clear();
 		// console.log(" final SEORoutes --------->");
@@ -60,8 +66,11 @@ const readFileAsyncBLOGPOSTS = (FILE_NAME) => {
         console.log('Async Read: successful!');
         // console.log(dataJson);
 
-        //Run through all the case studies to create the slugs, titles and images
-        dataJson.blogentries.forEach(function(blogPost) {
+		//Run through 10 Blog Posts to create the slugs, titles and images for SEO
+		var i = 0;
+        while (i < 5) {
+		  var blogPost = dataJson.blogentries[i];
+
 		  //Slugs (Array)
 		  SEORoutes.slugs.push('/blog/post'+blogPost.ID);
 		  //Titles (Object)
@@ -70,12 +79,13 @@ const readFileAsyncBLOGPOSTS = (FILE_NAME) => {
 		  SEORoutes.descriptions['/blog/post'+blogPost.ID] = 'Find out how Buzz Radar has helped a wide range of organisations gain critical insights from their data.';
 		  //Sharer Images (Object)
 		  SEORoutes.sharerImages['/blog/post'+blogPost.ID] = '/public_assets/blog/'+blogPost.thumb_name;
-		});
 
-		console.clear();
-		console.log(" final SEORoutes --------->");
-		console.log(SEORoutes);
+		  i++;
+		}
 
+		// console.clear();
+		// console.log(" final SEORoutes --------->");
+		// console.log(SEORoutes);
 
       } catch (error) {
         console.log(error);
@@ -138,10 +148,6 @@ const SEORoutes = {
 	  	// '/studies_library/guardians-of-the-galaxy' : 'Guardians of The Galaxy - DESCRIPTION',
 	},
 	sharerImages : {
-
-		//If you need to get the thumbs from public folder: /public_assets/...
-		//To apply the sharer relative, you need to add ../ when there is one folder and ../../ where there are 2 folders into the tree.
-
 	    '/': 'https://www.buzzradar.com/sharer.jpg',
         '/realtimedashboard': 'https://www.buzzradar.com/sharer_dashboard.jpg',
         '/aiaudienceanalysis': 'https://www.buzzradar.com/sharer_ai_audience_analysis.jpg',
@@ -153,7 +159,7 @@ const SEORoutes = {
 	  	// '/studies_library/guardians-of-the-galaxy' : 'https://www.buzzradar.com/public_assets/studies_library/guardians-of-the-galaxy2.jpg',
 	},
 };
-// readFileAsyncCASESTUDIES('./src/statics/CaseStudiesEntries.json');
+readFileAsyncCASESTUDIES('./src/statics/CaseStudiesEntries.json');
 readFileAsyncBLOGPOSTS('./src/statics/WPPostsEntries.json');
 
 
@@ -177,8 +183,9 @@ module.exports = {
 			  routes: SEORoutes.slugs,
 			  renderer: new PuppeteerRenderer({
 			    renderAfterElementExists: '#app',
+			    timeout: 60000,
 			  }),
-			  minify : true,
+			  minify : false,
 			  postProcess: function (context) {
 
 		          context.html = context.html.replace(

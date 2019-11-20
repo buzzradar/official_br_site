@@ -117,6 +117,11 @@
 
         console.log('----------------------------------------');
         console.log(currentRoute, matchingRoute);
+
+        if (currentRoute.includes(matchingRoute)){
+          console.log("I am in!!!!!!", currentRoute);
+        }
+
         return currentRoute.includes(matchingRoute);
       }
     }

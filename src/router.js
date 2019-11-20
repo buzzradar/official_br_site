@@ -14,7 +14,6 @@ import Blog from './components/Content/pages/Blog';
 import BlogIndividual from './components/Content/pages/BlogIndividual';
 import CaseStudies from './components/Content/pages/CaseStudies';
 import CaseStudyIndividual from './components/Content/pages/CaseStudyIndividual';
-import StudiesLibrary from './components/Content/pages/StudiesLibrary';
 
 
 import Products from './components/Content/pages/Products';
@@ -72,10 +71,10 @@ const studiesRoutes = Object.keys(CaseStudiesEntries).map(section => {
     component: CaseStudyIndividual
   }))
   return {
-    path: '/studies_library',
-    name: 'studies_library',
-    label: 'Studies Library',
-    component: StudiesLibrary,
+    path: '/casestudies',
+    name: 'casestudies',
+    label: 'Case Studies',
+    component: CaseStudies,
     children
   }
 });
@@ -146,13 +145,8 @@ export default new Router({
       },
     },
 
-    {
-      path: '/casestudies',
-      name: 'casestudies',
-      label: 'Case Studies',
-      component: CaseStudies,
-    },
-
+    ...studiesRoutes,
+    
     ...blogRoutes,
 
     {
@@ -223,8 +217,7 @@ export default new Router({
     },
 
 
-    ...studiesRoutes,
-    
+
 
 
 
