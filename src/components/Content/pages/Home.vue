@@ -640,6 +640,23 @@
                data-pagi-classes="text-center u-slick__pagination mt-4 mb-0">
 
 
+            <!-- Testimonial -->
+            <div class="js-slide">
+              <div class="text-center mb-5">
+                <blockquote class="h1">Buzz Radar has consistently been a valued partner for our organization. They are at the cutting edge of data and AI and bring expert analytics to any project we have worked on with them.</blockquote>
+              </div>
+              <div class="d-flex justify-content-center align-items-center w-lg-50 mx-auto">
+                <div class="u-avatar">
+                  <img class="img-fluid rounded-circle" src="@/assets/buzzradar/img/testimonials/tinaanthony.png" alt="Tina Anthony, Director, Digital Strategy at the Consumer Technology Association">
+                </div>
+                <div class="ml-3">
+                  <h4 class="h6 mb-0">Tina Anthony</h4>
+                  <small class="text-muted">Director, Digital Strategy at the Consumer Technology Association</small>
+                </div>
+              </div>
+            </div>
+            <!-- End Testimonial -->
+
 
             <!-- Testimonial -->
             <div class="js-slide">
@@ -648,7 +665,7 @@
               </div>
               <div class="d-flex justify-content-center align-items-center w-lg-50 mx-auto">
                 <div class="u-avatar">
-                  <img class="img-fluid rounded-circle" src="@/assets/buzzradar/img/testimonials/amygoodnow.png" alt="Jeremy Waite - Chief Strategy Officer at IBM">
+                  <img class="img-fluid rounded-circle" src="@/assets/buzzradar/img/testimonials/amygoodnow.png" alt="Amy Goodnow, Insights & Analytics Manager for Hallmark">
                 </div>
                 <div class="ml-3">
                   <h4 class="h6 mb-0">Amy Goodnow</h4>
@@ -684,7 +701,7 @@
               </div>
               <div class="d-flex justify-content-center align-items-center w-lg-50 mx-auto">
                 <div class="u-avatar">
-                  <img class="img-fluid rounded-circle" src="@/assets/buzzradar/img/testimonials/michaeldelacruz.png" alt="Jeremy Waite - Chief Strategy Officer at IBM">
+                  <img class="img-fluid rounded-circle" src="@/assets/buzzradar/img/testimonials/michaeldelacruz.png" alt="Michael de la Cruz, Director at FX Networks">
                 </div>
                 <div class="ml-3">
                   <h4 class="h6 mb-0">Michael de la Cruz</h4>

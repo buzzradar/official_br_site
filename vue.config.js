@@ -123,7 +123,6 @@ const SEORoutes = {
 	  	'/marketingintelplatform/paidmedia',
 	  	'/marketingintelplatform/newspr',
 	  	'/blog',
-	  	// '/studies_library/guardians-of-the-galaxy',
 	],
 	titles : {
 	    '/': 'Buzz Radar - Real Time Social Media Intelligence Made Easy',
@@ -134,7 +133,6 @@ const SEORoutes = {
 	  	'/marketingintelplatform/paidmedia': 'Paid Media Analysis',
 	  	'/marketingintelplatform/newspr': 'News & PR Monitoring',
 	  	'/blog': 'Blog Buzz Radar',
-	  	// '/studies_library/guardians-of-the-galaxy' : 'Guardians of The Galaxy',
 	},
 	descriptions : {
 	    '/': 'Buzz Radar is the leading social intelligence platform designed for marketers rather than analysts. Providing powerful, easy to digest actionable insights.',
@@ -145,7 +143,6 @@ const SEORoutes = {
 	  	'/marketingintelplatform/paidmedia': 'Smart easy to digest insights on your performance for Facebook Ads and Google Adwords.',
 	  	'/marketingintelplatform/newspr': 'Capture and analyse data from all your PR campaigns from across over 3 Million news outlets and blogs.',
 	  	'/blog': 'Capture and analyse data from all your PR campaigns from across over 3 Million news outlets and blogs.',
-	  	// '/studies_library/guardians-of-the-galaxy' : 'Guardians of The Galaxy - DESCRIPTION',
 	},
 	sharerImages : {
 	    '/': 'https://www.buzzradar.com/sharer.jpg',
@@ -156,7 +153,6 @@ const SEORoutes = {
 	  	'/marketingintelplatform/paidmedia': 'https://www.buzzradar.com/sharer_mark_intelligence.jpg',
 	  	'/marketingintelplatform/newspr': 'https://www.buzzradar.com/sharer_mark_intelligence.jpg',
 	  	'/blog': 'https://www.buzzradar.com/sharer.jpg',
-	  	// '/studies_library/guardians-of-the-galaxy' : 'https://www.buzzradar.com/public_assets/studies_library/guardians-of-the-galaxy2.jpg',
 	},
 };
 readFileAsyncCASESTUDIES('./src/statics/CaseStudiesEntries.json');
