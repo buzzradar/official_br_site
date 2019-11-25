@@ -123,16 +123,18 @@ const SEORoutes = {
 	  	'/marketingintelplatform/paidmedia',
 	  	'/marketingintelplatform/newspr',
 	  	'/blog',
+	  	'/casestudies',
 	],
 	titles : {
 	    '/': 'Buzz Radar - Real Time Social Media Intelligence Made Easy',
-	    '/realtimedashboard': 'Real-Time Dashboard',
-	    '/aiaudienceanalysis': 'Audience AI',
-	    '/marketingintelplatform': 'Marketing Intelligence Platform',	   
-	  	'/marketingintelplatform/socialintelligence' : 'Social Intelligence',
-	  	'/marketingintelplatform/paidmedia': 'Paid Media Analysis',
-	  	'/marketingintelplatform/newspr': 'News & PR Monitoring',
-	  	'/blog': 'Blog Buzz Radar',
+	    '/realtimedashboard': 'Real-Time Dashboard - Buzz Radar',
+	    '/aiaudienceanalysis': 'Audience AI - Buzz Radar',
+	    '/marketingintelplatform': 'Marketing Intelligence Platform - Buzz Radar',	   
+	  	'/marketingintelplatform/socialintelligence' : 'Social Intelligence - Buzz Radar',
+	  	'/marketingintelplatform/paidmedia': 'Paid Media Analysis - Buzz Radar',
+	  	'/marketingintelplatform/newspr': 'News & PR Monitoring - Buzz Radar',
+	  	'/blog': 'Blog - Buzz Radar',
+	  	'/casestudies': 'Case Studies - Buzz Radar',
 	},
 	descriptions : {
 	    '/': 'Buzz Radar is the leading social intelligence platform designed for marketers rather than analysts. Providing powerful, easy to digest actionable insights.',
@@ -143,6 +145,7 @@ const SEORoutes = {
 	  	'/marketingintelplatform/paidmedia': 'Smart easy to digest insights on your performance for Facebook Ads and Google Adwords.',
 	  	'/marketingintelplatform/newspr': 'Capture and analyse data from all your PR campaigns from across over 3 Million news outlets and blogs.',
 	  	'/blog': 'Capture and analyse data from all your PR campaigns from across over 3 Million news outlets and blogs.',
+	  	'/casestudies': 'Find out how Buzz Radar has helped a wide range of organisations gain critical insights from their data.',
 	},
 	sharerImages : {
 	    '/': 'https://www.buzzradar.com/sharer.jpg',
@@ -153,6 +156,7 @@ const SEORoutes = {
 	  	'/marketingintelplatform/paidmedia': 'https://www.buzzradar.com/sharer_mark_intelligence.jpg',
 	  	'/marketingintelplatform/newspr': 'https://www.buzzradar.com/sharer_mark_intelligence.jpg',
 	  	'/blog': 'https://www.buzzradar.com/sharer.jpg',
+	  	'/casestudies': 'https://www.buzzradar.com/sharer.jpg',
 	},
 };
 readFileAsyncCASESTUDIES('./src/statics/CaseStudiesEntries.json');
