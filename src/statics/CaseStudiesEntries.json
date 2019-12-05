@@ -2,6 +2,19 @@
   "casesentries": [
 
     {
+      "slug": "cs-start-with-them",
+      "date": "September 2019",
+      "title": "Twitter: #startwiththem",
+      "thumb" : "use-case-start-with-them-thumb.jpg",
+      "filter" : "strategy-research",
+      "content" : {
+        "videoId" : false,
+        "photoArray" : "use-case-start-with-them1.jpg,use-case-start-with-them2.jpg,use-case-start-with-them3.jpg,use-case-start-with-them4.jpg",
+        "copy" : "<p>Designing and visualising a groundbreaking study into the UK social audience for Twitter. It uncovers the communities that thrive on Twitter and drive conversation. Using a combination of cutting-edge data science and traditional market research, the study identified 75 subcommunities. We then built a custom visualisation engine to explore and interact with both real-time and manually researched insights.</p><p>We visualised four communities in detail: Health, Music, Football and Gaming to find out what motivates people on Twitter and how brands can best engage with them.</p><p>The result, a new way to engage with research that allows a much wider audience explore and learn from complex research.</p><p>Our visualisation platform has been deployed by Twitter at key events and used across their teams as the primary way for both internal audience and clients to engage with their research.</p>",
+        "pdf" : false
+      }
+    },
+    {
       "slug": "cs-user-case-allianz",
       "date": "June 2018",
       "title": "Use Case: Data driven strategic decision making",

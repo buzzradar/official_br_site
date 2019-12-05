@@ -205,20 +205,10 @@
       }
     },
     mounted() {
-      var hash = window.location.hash;
-      
-      var defaultFilter = '*';
-      if (hash){
-        defaultFilter = hash.replace('#','.');
-      }
-
-      $.HSCore.components.HSCubeportfolio.init('.cbp',{"defaultFilter": defaultFilter});
-      $.HSCore.components.HSFancyBox.init('.js-fancybox');
-
-
+      this.buildFancyBoxGallery();
     },
     updated() {
-      
+      this.buildFancyBoxGallery();
     },
     methods: {
       routeContains(currentRoute,matchingRoute) {
@@ -226,6 +216,15 @@
         console.log('----------------------------------------');
         console.log(currentRoute, matchingRoute);
         return currentRoute.includes(matchingRoute);
+      },
+      buildFancyBoxGallery() {
+        var hash = window.location.hash;
+        var defaultFilter = '*';
+        if (hash){
+          defaultFilter = hash.replace('#','.');
+        }
+        $.HSCore.components.HSCubeportfolio.init('.cbp',{"defaultFilter": defaultFilter});
+        $.HSCore.components.HSFancyBox.init('.js-fancybox');
       }
     }
 

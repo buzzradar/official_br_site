@@ -21,7 +21,7 @@ const readFileAsyncCASESTUDIES = (FILE_NAME) => {
 
         //Run through 10 Case Studies to create the slugs, titles and images for SEO
 		var i = 0;
-        while (i < 10) {
+        while (i < 5) {
 		  var caseStudy = dataJson.casesentries[i];
 
 		  //Slugs (Array)
@@ -126,7 +126,7 @@ const SEORoutes = {
 	  	'/casestudies',
 	],
 	titles : {
-	    '/': 'Buzz Radar - Real Time Social Media Intelligence Made Easy',
+	    '/': 'Buzz Radar - Real Time Social Media Intelligence Tool Made Easy',
 	    '/realtimedashboard': 'Real-Time Dashboard - Buzz Radar',
 	    '/aiaudienceanalysis': 'Audience AI - Buzz Radar',
 	    '/marketingintelplatform': 'Marketing Intelligence Platform - Buzz Radar',	   

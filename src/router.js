@@ -26,6 +26,8 @@ import MktgNewsPr from './components/Content/pages/MktgIntelNewsPr';
 import TermsConditions from './components/Content/pages/TermsConditions';
 import PrivacyPolicy from './components/Content/pages/PrivacyPolicy';
 
+import CES from './components/Content/pages/Ces';
+
 import BlogEntries from './statics/WPPostsEntries.json';
 import JobsEntries from './statics/CareersEntries.json';
 import CaseStudiesEntries from './statics/CaseStudiesEntries.json';
@@ -215,6 +217,13 @@ export default new Router({
       label : 'Privacy Policy',
       component: PrivacyPolicy
     },
+    
+    // {
+    //   path: '/ces',
+    //   name: 'ces',
+    //   label : 'CES',
+    //   component: CES
+    // },
 
 
 

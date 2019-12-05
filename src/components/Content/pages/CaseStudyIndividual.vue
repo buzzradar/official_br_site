@@ -98,19 +98,19 @@
  		name : 'CaseStudyIndividual',
  		data : function(){
 
- 			var currentPath = this.$router.currentRoute.path;
- 			var currentSlug = currentPath.split("/casestudies/")[1];
+ 			var currentSlug = this.getCurrentSlug();
  			var caseStudyMatched;
 
  			console.log("All Case Studies", AllCaseStudiesEntries);
 
  			AllCaseStudiesEntries.casesentries.forEach(function(item,index){
 
- 				// console.log(item.slug, "<-> ",currentSlug);
+ 				// console.log(currentSlug, "<-> ",item.slug);
 
- 				if ( currentSlug.includes(item.slug) ) {
+ 				if ( currentSlug == item.slug ) {
 
  					console.log("--------------------i am in!--------------------");
+ 					console.log(item);
 
  					caseStudyMatched = item;
 
@@ -139,6 +139,16 @@
 	    },
 	    mounted() {
       		$.HSCore.components.HSStickyBlock.init('.js-sticky-block');
+	    },
+	    methods : {
+	    	getCurrentSlug : function() {
+ 				var currentPath = this.$router.currentRoute.path;
+	    		var currentSlug = currentPath.split("/casestudies/")[1];
+	    		if ( currentSlug.charAt(currentSlug.length - 1) == '/' ) {
+	    			currentSlug = currentSlug.substr(0,currentSlug.length - 1);
+	    		}	
+	    		return currentSlug;
+	    	},
 	    }
  	}
 

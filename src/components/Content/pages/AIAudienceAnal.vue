@@ -81,7 +81,7 @@
                 <h2 class="h4 font-weight-semi-bold text-secondary">Predict how new content will perform</h2>
                 <p class="mb-0">A great understanding of your audience is one thing, but how can you use that to create content that resonates</p>
                 <p>With Audience AI we capture and analyse your content from your website, social channels and even press releases and test it instantly against the virtual audience created by Audience AI. We provide predictive insight and powerful recommendations into how your can adjust your creative content to chime with your audience perfectly.</p>
-                <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="/casestudies/user-case-allianz">See the Case Study<span class="fas fa-angle-right ml-2"></span></a>
+                <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="/casestudies/cs-user-case-allianz">See the Case Study<span class="fas fa-angle-right ml-2"></span></a>
               </div>
               <!-- End Title -->
             </div>
@@ -112,7 +112,7 @@
                   </span> -->
                   <h2 class="h4 font-weight-semi-bold text-secondary">Create & discover data-driven brand personas</h2>
                   <p class="mb-0">By using data that truly understands your audience, we create accurate personas or tribes based on them. Profiling each individual, we can map them into each persona or tribe grouping, giving you an accurate picture of where to focus your marketing efforts. Audience AI can also take examples of audience personas you want to attract and help you discover influencers or partners that have similar audiences for you to align with.</p>
-                  <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="/casestudies/user-case-customer-service">See the Case Study<span class="fas fa-angle-right ml-2"></span></a>
+                  <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="/casestudies/cs-user-case-customer-service">See the Case Study<span class="fas fa-angle-right ml-2"></span></a>
                 </div>
                 <!-- End Title -->
               </div>

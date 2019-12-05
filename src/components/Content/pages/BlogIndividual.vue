@@ -83,10 +83,8 @@
  		name : 'BlogIndividual',
  		data : function(){
   		
-      var currentPath = this.$router.currentRoute.path;
-      var currentSlug = currentPath.split("/blog/")[1];
+      var currentSlug = this.getCurrentSlug();
       var blogPostMatched;
-
 
       console.log("For each!",AllBlogPosts);
 
@@ -94,7 +92,11 @@
 
         // console.log("post"+item.ID, currentSlug);
 
-        if ( currentSlug.includes('post'+item.ID) ) {
+        if ( currentSlug == 'post'+item.ID ) {
+
+          console.log("--------------------i am in!--------------------");
+          console.log("post"+item.id);
+
           blogPostMatched = item;
 
           console.log("item matched", item);
@@ -109,6 +111,16 @@
  		},
     mounted() {
       $('.post-content').find('img').css({'width' : '100%','height' : 'auto'});
+    },
+    methods : {
+      getCurrentSlug : function() {
+        var currentPath = this.$router.currentRoute.path;
+        var currentSlug = currentPath.split("/blog/")[1];
+        if ( currentSlug.charAt(currentSlug.length - 1) == '/' ) {
+          currentSlug = currentSlug.substr(0,currentSlug.length - 1);
+        } 
+        return currentSlug;
+      },
     }
  	}
 
