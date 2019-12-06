@@ -218,12 +218,12 @@ export default new Router({
       component: PrivacyPolicy
     },
     
-    // {
-    //   path: '/ces',
-    //   name: 'ces',
-    //   label : 'CES',
-    //   component: CES
-    // },
+    {
+      path: '/ces',
+      name: 'ces',
+      label : 'CES',
+      component: CES
+    },
 
 
 
