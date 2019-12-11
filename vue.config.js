@@ -124,6 +124,7 @@ const SEORoutes = {
 	  	'/marketingintelplatform/newspr',
 	  	'/blog',
 	  	'/casestudies',
+	  	'/ces',
 	],
 	titles : {
 	    '/': 'Buzz Radar - Real Time Social Media Intelligence Tool Made Easy',
@@ -135,6 +136,7 @@ const SEORoutes = {
 	  	'/marketingintelplatform/newspr': 'News & PR Monitoring - Buzz Radar',
 	  	'/blog': 'Blog - Buzz Radar',
 	  	'/casestudies': 'Case Studies - Buzz Radar',
+	  	'/ces': 'CES 2020 - Buzz Radar',
 	},
 	descriptions : {
 	    '/': 'Buzz Radar is the leading social intelligence platform designed for marketers rather than analysts. Providing powerful, easy to digest actionable insights.',
@@ -146,6 +148,7 @@ const SEORoutes = {
 	  	'/marketingintelplatform/newspr': 'Capture and analyse data from all your PR campaigns from across over 3 Million news outlets and blogs.',
 	  	'/blog': 'Capture and analyse data from all your PR campaigns from across over 3 Million news outlets and blogs.',
 	  	'/casestudies': 'Find out how Buzz Radar has helped a wide range of organisations gain critical insights from their data.',
+	  	'/ces': 'Buzz Radar is the leading social intelligence platform designed for marketers rather than analysts. Providing powerful, easy to digest actionable insights.',
 	},
 	sharerImages : {
 	    '/': 'https://www.buzzradar.com/sharer.jpg',
@@ -157,6 +160,7 @@ const SEORoutes = {
 	  	'/marketingintelplatform/newspr': 'https://www.buzzradar.com/sharer_mark_intelligence.jpg',
 	  	'/blog': 'https://www.buzzradar.com/sharer.jpg',
 	  	'/casestudies': 'https://www.buzzradar.com/sharer.jpg',
+	  	'/ces': 'http://insights.buzzradar.com/bundles/api/images/ces2020_sharer.png',
 	},
 };
 readFileAsyncCASESTUDIES('./src/statics/CaseStudiesEntries.json');
