@@ -26,6 +26,9 @@
                 <img class="img-fluid mt-3" src="@/assets/buzzradar/img/ces/ces_buzzradar.png" alt="CES & Buzz Radar">
               </p>
 
+              <p class="m-0 mt-5 text-white">Come visit us at CES</p>
+              <i class="fas fa-map-marker-alt mr-2"></i> <small>Booth GL-5A at the Las Vegas Convention centre and CS-14 at the Aria.</small>
+
             </div>
           </div>
           <!-- End Content -->
@@ -159,16 +162,14 @@
             </div>
 
 
-            <div class="col-md-12 mb-5 mt-9">
+            <!-- <div class="col-md-12 mb-5 mt-9">
               
               <div class="card mb-2">
                 <div class="card-body">
                   <p class="card-text">
-                    
-                    <!-- Contacts Info -->
                     <div class="media pl-lg-3">
                       <figure id="icon1" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4">
-                        <img class="js-svg-injector" src="@/assets/buzzradar/img/ces/icons/icon-8.svg" alt="Try the CES Attendee Analyser"
+                        <img class="js-svg-injector" src="@/assets/buzzradar/img/ces/icons/icon-8.svg" alt="Try the CES Attendee Analyzer"
                              data-parent="#icon1">
                       </figure>
                       <div class="media-body">
@@ -176,14 +177,12 @@
                         <p class="mb-0"><strong>Booth GL-5A at the Las Vegas Convention centre and CS-14 at the Aria.</strong></p>
                       </div>
                     </div>
-                    <!-- End Contacts Info -->
-
                   </p>
 
                 </div>
               </div>
 
-            </div>
+            </div> -->
 
         
           </div>
@@ -223,13 +222,13 @@
                 <!-- Contacts Info -->
                 <div class="media pl-lg-9">
                   <figure id="icon4" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4">
-                    <img class="js-svg-injector" src="@/assets/buzzradar/img/ces/icons/icon-1.svg" alt="Try the CES Attendee Analyser"
+                    <img class="js-svg-injector" src="@/assets/buzzradar/img/ces/icons/icon-1.svg" alt="Try the CES Attendee Analyer"
                          data-parent="#icon4">
                   </figure>
                   <div class="media-body">
-                    <h3 class="h4">Try the CES Attendee Analyser</h3>
+                    <h3 class="h4">Try the CES Attendee Analyzer</h3>
                     <p class="mb-1">Have some technical questions? Hit us with an email or just say hello on the bottom right corner of the page.</p>
-                    <a v-on:click="launchPersonalityAnalyser" class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="#">Try Now<span class="fas fa-angle-right ml-2"></span></a>
+                    <a v-on:click="launchPersonalityAnalyzer" class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="#">Try Now<span class="fas fa-angle-right ml-2"></span></a>
                   </div>
                 </div>
                 <!-- End Contacts Info -->
@@ -367,16 +366,16 @@
           $('.js-pagination').remove();
 
 
-          this.emailObject.inputVal = 'j.infante.garcia@gmail.com';
-          this.firstNameObject.inputVal  = 'Peter';
-          this.lastNameObject.inputVal  = 'Jones';
-          this.companyObject.inputVal  = 'Peter Jones Co';
+          // this.emailObject.inputVal = 'j.infante.garcia@gmail.com';
+          // this.firstNameObject.inputVal  = 'Peter';
+          // this.lastNameObject.inputVal  = 'Jones';
+          // this.companyObject.inputVal  = 'Peter Jones Co';
         },
         updated() {
 
         }, 
         methods : {
-          launchPersonalityAnalyser : function(e) {
+          launchPersonalityAnalyzer : function(e) {
             if (e) e.preventDefault();
             window.open('https://insights.buzzradar.com/preview/IDIVQYOP', '_blank');
             return false;
