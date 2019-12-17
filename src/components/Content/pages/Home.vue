@@ -81,6 +81,90 @@
 
 
 
+
+
+    <!-- Clients Section -->
+    <div class="bg-light">
+      <div class="container space-2">
+
+        <!-- Title -->
+        <div class="w-md-100 text-center mx-md-auto mb-9">
+          <h2 class="clients-title text-secondary">Trusted to by some of the <strong>world's biggest brands</strong> and organisations</h2>
+        </div>
+        <!-- End Title -->
+
+        <div class="js-slick-carousel u-slick"
+             data-autoplay="true"
+             data-speed="5000"
+             data-infinite="true"
+             data-slides-show="5"
+             data-responsive='[{
+               "breakpoint": 1200,
+               "settings": {
+                 "slidesToShow": 4
+               }
+             }, {
+               "breakpoint": 992,
+               "settings": {
+                 "slidesToShow": 4
+               }
+             }, {
+               "breakpoint": 768,
+               "settings": {
+                 "slidesToShow": 3
+               }
+             }, {
+               "breakpoint": 576,
+               "settings": {
+                 "slidesToShow": 3
+               }
+             }, {
+               "breakpoint": 480,
+               "settings": {
+                 "slidesToShow": 2
+               }
+             }]'>
+          <div class="js-slide">
+            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_1.png" alt="Image Description">
+          </div>
+          <div class="js-slide">
+            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_2.png" alt="Image Description">
+          </div>
+          <div class="js-slide">
+            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_3.png" alt="Image Description">
+          </div>
+          <div class="js-slide">
+            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_4.png" alt="Image Description">
+          </div>
+          <div class="js-slide">
+            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_5.png" alt="Image Description">
+          </div>
+          <div class="js-slide">
+            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_6.png" alt="Image Description">
+          </div>
+          <div class="js-slide">
+            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_7.png" alt="Image Description">
+          </div>
+          <div class="js-slide">
+            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_8.png" alt="Image Description">
+          </div>
+          <div class="js-slide">
+            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_9.png" alt="Image Description">
+          </div>
+          <div class="js-slide">
+            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_10.png" alt="Image Description">
+          </div>
+          <div class="js-slide">
+            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_11.png" alt="Image Description">
+          </div>
+          <div class="js-slide">
+            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_12.png" alt="Image Description">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Clients Section -->
+
     
 
 
@@ -205,87 +289,137 @@
 
 
 
-    <!-- Clients Section -->
+    <!-- Stats Section -->
     <div class="bg-light">
-      <div class="container space-2">
-
+      <div class="container space-1">
         <!-- Title -->
-        <div class="w-md-100 text-center mx-md-auto mb-9">
-          <h2 class="clients-title">Trusted to by some of the <strong>world's biggest brands</strong> and organisations</h2>
+        <div class="w-md-80 w-lg-80 text-center mx-md-auto">
+          <div id="svgArrows" class="pt-7 mb-5">
+            <h2 class="h3 font-weight-normal text-secondary">Stop making decisions based on guess work <br>
+            Start delivering content you know your audience will love</h2>
+          </div>
         </div>
         <!-- End Title -->
 
-        <div class="js-slick-carousel u-slick"
-             data-autoplay="true"
-             data-speed="5000"
-             data-infinite="true"
-             data-slides-show="5"
-             data-responsive='[{
-               "breakpoint": 1200,
-               "settings": {
-                 "slidesToShow": 4
-               }
-             }, {
-               "breakpoint": 992,
-               "settings": {
-                 "slidesToShow": 4
-               }
-             }, {
-               "breakpoint": 768,
-               "settings": {
-                 "slidesToShow": 3
-               }
-             }, {
-               "breakpoint": 576,
-               "settings": {
-                 "slidesToShow": 3
-               }
-             }, {
-               "breakpoint": 480,
-               "settings": {
-                 "slidesToShow": 2
-               }
-             }]'>
-          <div class="js-slide">
-            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_1.png" alt="Image Description">
+        <div class="row mb-5">
+          <div class="col-sm-6 col-lg-3 mb-7 mb-lg-4">
+            <div class="u-stats-progress position-relative d-flex align-items-center justify-content-center">
+              <!-- Pie Circle -->
+              <div class="js-pie text-center"
+                   data-circles-text-class="u-stats-progress__info"
+                   data-circles-value="31"
+                   data-circles-max-value="100"
+                   data-circles-bg-color="#ffffff"
+                   data-circles-fg-color="#21c5c9"
+                   data-circles-fg-stroke-linecap="round"
+                   data-circles-fg-stroke-miterlimit="10"
+                   data-circles-radius="100"
+                   data-circles-stroke-width="12"
+                   data-circles-additional-text="%"
+                   data-circles-duration="2000"
+                   data-circles-scroll-animate="true"
+                   data-circles-color="#21c5c9"
+                   data-circles-font-size="37"
+                   data-circles-font-weight="700"
+                   data-circles-secondary-text="Improvement in socially driven sales for companies after the first 3 months"
+                   data-circles-secondary-color="#77838f"
+                   data-circles-secondary-font-size="11"
+                   data-circles-secondary-font-weight="400"
+                   data-circles-divider-space="10"></div>
+              <!-- End Pie Circle -->
+            </div>
           </div>
-          <div class="js-slide">
-            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_2.png" alt="Image Description">
+
+          <div class="col-sm-6 col-lg-3 mb-7 mb-lg-4">
+            <div class="u-stats-progress position-relative d-flex align-items-center justify-content-center">
+              <!-- Pie Circle -->
+              <div class="js-pie text-center"
+                   data-circles-text-class="u-stats-progress__info"
+                   data-circles-value="19"
+                   data-circles-max-value="100"
+                   data-circles-bg-color="#ffffff"
+                   data-circles-fg-color="#f6921e"
+                   data-circles-fg-stroke-linecap="round"
+                   data-circles-fg-stroke-miterlimit="10"
+                   data-circles-radius="100"
+                   data-circles-stroke-width="12"
+                   data-circles-additional-text="%"
+                   data-circles-duration="2000"
+                   data-circles-scroll-animate="true"
+                   data-circles-color="#f6921e"
+                   data-circles-font-size="37"
+                   data-circles-font-weight="700"
+                   data-circles-secondary-text="The average amount our clients save on their paid media and content production budget"
+                   data-circles-secondary-color="#77838f"
+                   data-circles-secondary-font-size="11"
+                   data-circles-secondary-font-weight="400"
+                   data-circles-divider-space="10"></div>
+              <!-- End Pie Circle -->
+            </div>
           </div>
-          <div class="js-slide">
-            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_3.png" alt="Image Description">
+
+          <div class="col-sm-6 col-lg-3 mb-7 mb-lg-4">
+            <div class="u-stats-progress position-relative d-flex align-items-center justify-content-center">
+              <!-- Pie Circle -->
+              <div class="js-pie text-center"
+                   data-circles-text-class="u-stats-progress__info"
+                   data-circles-value="40"
+                   data-circles-max-value="100"
+                   data-circles-bg-color="#ffffff"
+                   data-circles-fg-color="#f6921e"
+                   data-circles-fg-stroke-linecap="round"
+                   data-circles-fg-stroke-miterlimit="10"
+                   data-circles-radius="100"
+                   data-circles-stroke-width="12"
+                   data-circles-additional-text="%"
+                   data-circles-duration="2000"
+                   data-circles-scroll-animate="true"
+                   data-circles-color="#f6921e"
+                   data-circles-font-size="37"
+                   data-circles-font-weight="700"
+                   data-circles-secondary-text="The amount our clients social audience grows on average annually with our help"
+                   data-circles-secondary-color="#77838f"
+                   data-circles-secondary-font-size="11"
+                   data-circles-secondary-font-weight="400"
+                   data-circles-divider-space="10"></div>
+              <!-- End Pie Circle -->
+            </div>
           </div>
-          <div class="js-slide">
-            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_4.png" alt="Image Description">
-          </div>
-          <div class="js-slide">
-            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_5.png" alt="Image Description">
-          </div>
-          <div class="js-slide">
-            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_6.png" alt="Image Description">
-          </div>
-          <div class="js-slide">
-            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_7.png" alt="Image Description">
-          </div>
-          <div class="js-slide">
-            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_8.png" alt="Image Description">
-          </div>
-          <div class="js-slide">
-            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_9.png" alt="Image Description">
-          </div>
-          <div class="js-slide">
-            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_10.png" alt="Image Description">
-          </div>
-          <div class="js-slide">
-            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_11.png" alt="Image Description">
-          </div>
-          <div class="js-slide">
-            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_12.png" alt="Image Description">
+
+          <div class="col-sm-6 col-lg-3 mb-7 mb-lg-4">
+            <div class="u-stats-progress position-relative d-flex align-items-center justify-content-center">
+              <!-- Pie Circle -->
+              <div class="js-pie text-center"
+                   data-circles-text-class="u-stats-progress__info"
+                   data-circles-is-hide-value="true"
+                   data-circles-value="65"
+                   data-circles-max-value="100"
+                   data-circles-bg-color="#ffffff"
+                   data-circles-fg-color="#21c5c9"
+                   data-circles-fg-stroke-linecap="round"
+                   data-circles-fg-stroke-miterlimit="10"
+                   data-circles-radius="100"
+                   data-circles-stroke-width="12"
+                   data-circles-additional-text="2.6x"
+
+                   data-circles-duration="2000"
+                   data-circles-scroll-animate="true"
+                   data-circles-color="#21c5c9"
+                   data-circles-font-size="37"
+                   data-circles-font-weight="700"
+                   data-circles-secondary-text="Better engagement with content after using our Audience AI technology for 6 months"
+                   data-circles-secondary-color="#77838f"
+                   data-circles-secondary-font-size="11"
+                   data-circles-secondary-font-weight="400"
+                   data-circles-divider-space="10"></div>
+              <!-- End Pie Circle -->
+            </div>
           </div>
         </div>
+
       </div>
     </div>
-    <!-- End Clients Section -->
+    <!-- End Stats Section -->
 
 
 
@@ -309,7 +443,7 @@
         <div class="container space-1 space-lg-2">
           <!-- Title -->
           <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
-            <h1 class="font-weight-medium">A suite of powerful tools all in one easy-to-use platform</h1>
+            <h1 class="font-weight-medium">Powerful tools all in one easy-to-use platform</h1>
           </div>
           <!-- End Title -->
 
@@ -822,6 +956,8 @@
       $.HSCore.components.HSFancyBox.init('.js-fancybox');
       $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
       $.HSCore.components.HSSelectPicker.init('.selectpicker');
+
+      var items = $.HSCore.components.HSChartPie.init('.js-pie');
 
       dzsprx_init('.dzsparallaxer', { direction: "normal"} );
 
