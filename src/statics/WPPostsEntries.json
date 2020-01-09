@@ -1,5 +1,38 @@
 {
   "blogentries": [
+
+    {
+      "ID": 7223,
+      "author" : "Nicky Yates",
+      "post_author": "13",
+      "post_date": "2020-01-09 09:00:00",
+      "post_date_gmt": "2020-01-09 09:00:00",
+      "post_content": "<p>CES 2020 is fully underway! On the second day of CES, conversation stayed steady. Today was all about Augmented Reality, largely due to <a href=\"https://mobile-ar.reality.news/news/mastercard-develops-mobile-ar-app-explain-rewards-benefits-cardholders-0228672/\">MasterCard’s new AR app</a>.</p> <p>AI was a second fan favorite, propelled by Samsung’s launch of <a href=\"https://www.designboom.com/technology/neon-artificial-human-ces-01-08-2020/\">NEON</a>. NEON is an incredibly realistic AI Avator that looks and interacts like a real human.</p><p>Conversation also kept on the hype of Hyundai and Uber’s <a href=\"https://www.cnn.com/2020/01/07/tech/uber-hyundai-flying-taxis-trnd/index.html\">Flying Taxi announcement</a>. Though we’ll need to wait until 2023 to see that one on the CES showfloor. </p><p>The day was full of excitement, healthy intrigue, and practical use of technology in our lives. Check out all the highlights from the second day below, and sign up for a full review of the trends <a href=\"http://www.buzzradar.com/ces/\">here</a>.</p><p>To follow our CES 2020 coverage live, head over to <a href=\"https://twitter.com/buzzradar\">twitter.com/buzzradar</a>. Or if beautiful insights, like the ones below, are your thing, come back to our <a href=\"http://www.buzzradar.com/blog/\">blog</a> for our daily roundups. And of course, don’t forget to take our CES Audience Analyzer for a spin by sending a DM to @CES with the word report! </p><p>Enjoy the show!</p><p><img src=\"https://www.buzzradar.com/wp_uploads/2020/01/ces-2020-day2-infographic.jpg\" alt=\"CES 2020 Day 2\" width=\"100%\" style=\"width: 100%; height: auto;margin-top:30px;\"></p>",
+      "post_title": "A Look Back at CES Day Two",
+      "post_excerpt": "",
+      "post_status": "publish",
+      "comment_status": "closed",
+      "ping_status": "open",
+      "post_password": "",
+      "post_name": "a-look-back-at-ces-2020-day-2",
+      "to_ping": "",
+      "pinged": "",
+      "post_type": "post",
+      "post_mime_type": "",
+      "comment_count": "0",
+      "filter": "raw",
+      "thumb_name": "7223-thumb.jpg",
+      "terms": {
+        "category": [
+          "Website"
+        ],
+        "post_tag": [
+          "data visualisation",
+          "social insights"
+        ],
+        "post_format": []
+      }
+    },
     {
       "ID": 7222,
       "author" : "Nicky Yates",

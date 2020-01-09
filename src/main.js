@@ -14,12 +14,13 @@ new Vue({
   render: h => h(App),
   mounted() {
 
-	this.$intercom.boot({
+	  this.$intercom.boot({
       name: 'Guest',
     });
-    setTimeout(function() {
-		this.$intercom.show();
-    }.bind(this),5000);
+    
+    // setTimeout(function() {
+  		// this.$intercom.show();
+    // }.bind(this),5000);
 
   },
   watch:{
