@@ -140,12 +140,30 @@
 
 	@import "compass";
 
+
+
   .card{
 
     img{
-      border: 1px solid #eee;        
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+
+      transform: scale(1,1);
+      border: 1px solid #eee;
+    }
+
+  }
+
+  .card:hover{
+    img{
+      transform: scale(1.02,1.02);
     }
   }
+
+
 
 </style>
 

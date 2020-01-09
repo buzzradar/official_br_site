@@ -92,7 +92,7 @@
 
             <!-- Item -->
             <div v-for="(caseStudy,index) in caseStudies" :class="`cbp-item `+caseStudy.filterClass">
-              <a class="cbp-caption" :href="'/casestudies/'+caseStudy.slug">
+              <a class="cbp-caption hover" :href="'/casestudies/'+caseStudy.slug">
                 
                 <img class="rounded" :src=" require('@/assets/buzzradar/img/casestudies/'+caseStudy.thumb) " alt="Image Description">
 
@@ -246,6 +246,26 @@
   h3{
     height: 45px;
     font-size:15px;
+  }
+
+  .hover{
+
+    img{
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+
+      transform: scale(1,1);
+    }
+
+  }
+
+  .hover:hover{
+    img{
+      transform: scale(1.02,1.02);
+    }
   }
 
 </style>

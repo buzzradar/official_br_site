@@ -174,8 +174,6 @@
 
 
 
-
-
     <!-- Mockup Block -->
     <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll bg-white" data-options='{direction: "normal"}'>
       <!-- Apply your Parallax background image here -->
@@ -952,6 +950,8 @@
     },
     mounted() {
 
+
+
       $.HSCore.components.HSBgVideo.init('.js-bg-video');
       $.HSCore.components.HSFancyBox.init('.js-fancybox');
       $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
@@ -996,8 +996,6 @@
         });
 
       },4000);
-
-
       
 
       $('#powerful_tools').find('.nav-link').click(function(e){

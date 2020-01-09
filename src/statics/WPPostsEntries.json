@@ -1,6 +1,38 @@
 {
   "blogentries": [
     {
+      "ID": 7222,
+      "author" : "Nicky Yates",
+      "post_author": "13",
+      "post_date": "2020-01-05 09:00:00",
+      "post_date_gmt": "2020-01-05 09:00:00",
+      "post_content": "<p>Over the past seven years we’ve been thrilled to analyse and visualise all the data around CES as their official partner. We’ve shown attendees what was trending, what brands were leading the conversation, and what really mattered -- all in real-time. This year we’re back, and we’re adding our latest machine learning based audience analysis technology to the CES command centres.</p><p>This year we are excited to be introducing the Attendee Analyzer with CES. We’ve adapted our ground breaking psychometric audience profiling AI to analyse individual attendees, so they can learn about what kind of Attendee personality type they are and based on that what parts of the show will inspire them most.</p><p>We’re giving every attendee the opportunity to receive a personality breakdown and description. Enter your public Twitter profile, and we’ll analyse who you are.</p><p>With your psychometric profile, you’ll know more about what moves the needle for you, what brands you should check out, what areas of CES will capture your attention best, and how to get the most out of CES. Attendees are grouped into one of eight personality types based on their OCEANS (Big 5) personality score. These types help give you an overview of your tendencies.</p><p>But we go further. We can tell you what traits are the biggest factors in your personality and how that displays. We can also provide insight into what influences your purchase decisions, as well as what will turn you off of brands; what types of entertainment you enjoy; and some interesting inclinations about your activities.</p><p><img src=\"https://www.buzzradar.com/wp_uploads/2020/01/ces_2020_bigscreen.png\" alt=\"Data-driven business\" width=\"1920\" height=\"1440\" class=\"alignleft size-full wp-image-7225\" /></p><p>How does it all work? We break down how we do the analysis <a href=\"https://www.buzzradar.com/blog/post7211/\">here</a>. But all you need to do is swing by our booth in the Grand Lobby of the North Hall at GL-5 or DM <a href=\"https://twitter.com/CES\">@CES</a> with Report to get your Personality Analysis.</p>",
+      "post_title": "The CES Attendee  Analyzer",
+      "post_excerpt": "",
+      "post_status": "publish",
+      "comment_status": "closed",
+      "ping_status": "open",
+      "post_password": "",
+      "post_name": "2020-ces-personality-analyzer",
+      "to_ping": "",
+      "pinged": "",
+      "post_type": "post",
+      "post_mime_type": "",
+      "comment_count": "0",
+      "filter": "raw",
+      "thumb_name": "7222-thumb.jpg",
+      "terms": {
+        "category": [
+          "Website"
+        ],
+        "post_tag": [
+          "data visualisation",
+          "social insights"
+        ],
+        "post_format": []
+      }
+    },
+    {
       "ID": 7221,
       "author" : "Patrick Charlton",
       "post_author": "13",
