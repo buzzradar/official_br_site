@@ -25,6 +25,7 @@ import MktgPaidMedia from './components/Content/pages/MtkgIntelPaidMedia';
 import MktgNewsPr from './components/Content/pages/MktgIntelNewsPr';
 import TermsConditions from './components/Content/pages/TermsConditions';
 import PrivacyPolicy from './components/Content/pages/PrivacyPolicy';
+import CookiePolicy from './components/Content/pages/CookiePolicy';
 
 import CES from './components/Content/pages/Ces';
 
@@ -223,6 +224,13 @@ export default new Router({
       name: 'ces',
       label : 'CES',
       component: CES
+    },
+
+    {
+      path: '/cookie-policy',
+      name: 'cookie-policy',
+      label : 'Cookie Policy',
+      component: CookiePolicy
     },
 
 
