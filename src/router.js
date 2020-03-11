@@ -27,7 +27,8 @@ import TermsConditions from './components/Content/pages/TermsConditions';
 import PrivacyPolicy from './components/Content/pages/PrivacyPolicy';
 import CookiePolicy from './components/Content/pages/CookiePolicy';
 
-import CES from './components/Content/pages/Ces';
+import CES from './components/Content/pages/campaigns/Ces';
+import VirtualEvents from './components/Content/pages/campaigns/VirtualEvents';
 
 import BlogEntries from './statics/WPPostsEntries.json';
 import JobsEntries from './statics/CareersEntries.json';
@@ -220,6 +221,13 @@ export default new Router({
     },
     
     {
+      path: '/cookie-policy',
+      name: 'cookie-policy',
+      label : 'Cookie Policy',
+      component: CookiePolicy
+    },
+
+    {
       path: '/ces',
       name: 'ces',
       label : 'CES',
@@ -227,13 +235,11 @@ export default new Router({
     },
 
     {
-      path: '/cookie-policy',
-      name: 'cookie-policy',
-      label : 'Cookie Policy',
-      component: CookiePolicy
+      path: '/virtualevents',
+      name: 'virtualevents',
+      label : 'Virtual Events',
+      component: VirtualEvents
     },
-
-
 
 
 

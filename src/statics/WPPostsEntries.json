@@ -2,6 +2,70 @@
   "blogentries": [
 
     {
+      "ID": 7226,
+      "author" : "Nicky Yates",
+      "post_author": "13",
+      "post_date": "2020-03-11 16:55:12",
+      "post_date_gmt": "2020-03-11 16:55:12",
+      "post_content": "<p class='mb-5'><img src='https://www.buzzradar.com/wp_uploads/2020/03/coronavirus.jpg' alt='coronavirus' /></p><p>The events industry is one that must respond quickly to unfolding situations. And COVID-19 is no exception. Companies care about their employees and their attendees. For many in the events industry who are rapidly having to switch to virtual events, it’s a tricky time for event producers and marketers. Moving quickly to a virtual event format from an event that was painstakingly planned for the real world is a big challenge, doubly so if it needs to be achieved in a matter of weeks -- or even days.</p><p>However, there are some marketing advantages to virtual events that can counter the downside of an event being forced to cancel. The shift to virtual events significantly increases online conversation. Event organisers, exhibitors and attendees have the ability to contribute across much more of conversations happening at the event, from trending topics, engagement and sentiment on keynotes and top-performing panels. All this allows you to tailor your event in much more focused and effective ways from understanding what are the top topics to highlight in your messaging to what speakers are resonating best with audiences.</p><p>The ability to track more tangible metrics and KPI’s through a virtual event shows a clearer picture compared to the often harder to track anecdotal outcomes from real-world events. It also allows event organisers to showcase those metrics and KPI’s better to attendees, helping events provide exhibitors with solid metrics about their return on investment much faster and more accurately than the slow and small sample rates that are mostly based on the ground surveys and head-counts.</p><p>While shifting your event to virtual won’t be easy, there are tools to help you manage the transition and make the most of it. And our team is here to help.</p>",
+      "post_title": "Responding to Real-World Situations",
+      "post_excerpt": "",
+      "post_status": "publish",
+      "comment_status": "closed",
+      "ping_status": "open",
+      "post_password": "",
+      "post_name": "responding-real-world-situations",
+      "to_ping": "",
+      "pinged": "",
+      "post_type": "post",
+      "post_mime_type": "",
+      "comment_count": "0",
+      "filter": "raw",
+      "thumb_name": "7226-thumb.jpg",
+      "terms": {
+        "category": [
+          "Website"
+        ],
+        "post_tag": [
+          "data visualisation",
+          "social insights"
+        ],
+        "post_format": []
+      }
+    },
+    {
+      "ID": 7225,
+      "author" : "Nicky Yates",
+      "post_author": "13",
+      "post_date": "2020-02-04 09:00:00",
+      "post_date_gmt": "2020-02-04 09:00:00",
+      "post_content": "<p>Another big Football Sunday has passed. Advertising during the Big Game has become a sport in and of itself, with brands spending millions on ad spots and months planning. Some brands are staples, but this year, we saw political ads make a strong showing, along with some fan favorites. We tracked the big players over the course of the night. With a huge data pool of over 3.35 million mentions, there was a lot to look at. </p><p>Not surprising, Trump’s spot (and his geography mistake) garnered the most buzz. Not far behind him though, was Pepsi, largely due to the impressive half-time show and their celebrity-filled ad spot. Olay and Avocados From Mexico had a very strong showing. Olay showed that going socially conscious can pay off, and they promised to donate $1 to Girls Who Code for every tweet. Hard Rock gained points for pulling in superstar and MVP J.Lo, while Google went sentimental with reminding us of the little things they can help us remember. </p><p>It was a great night for brands. Take a look at our high-level stats from the evening. </p><img src=\"https://www.buzzradar.com/wp_uploads/2020/02/big_game_infog.jpg\" width=\"100%\" /><br><br><p>Want more data? Take our platform for a trial run to see how your brand can score big. </p>",
+      "post_title": "The Big Game: Ad Wars",
+      "post_excerpt": "",
+      "post_status": "publish",
+      "comment_status": "closed",
+      "ping_status": "open",
+      "post_password": "",
+      "post_name": "the-big-game-ad-wars-2020",
+      "to_ping": "",
+      "pinged": "",
+      "post_type": "post",
+      "post_mime_type": "",
+      "comment_count": "0",
+      "filter": "raw",
+      "thumb_name": "7225-thumb.jpg",
+      "terms": {
+        "category": [
+          "Website"
+        ],
+        "post_tag": [
+          "data visualisation",
+          "social insights"
+        ],
+        "post_format": []
+      }
+    },
+    {
       "ID": 7224,
       "author" : "Nicky Yates",
       "post_author": "13",

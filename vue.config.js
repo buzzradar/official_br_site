@@ -21,7 +21,7 @@ const readFileAsyncCASESTUDIES = (FILE_NAME) => {
 
         //Run through 10 Case Studies to create the slugs, titles and images for SEO
 		var i = 0;
-        while (i < 5) {
+        while (i < 1) {
 		  var caseStudy = dataJson.casesentries[i];
 
 		  //Slugs (Array)
@@ -68,7 +68,7 @@ const readFileAsyncBLOGPOSTS = (FILE_NAME) => {
 
 		//Run through 10 Blog Posts to create the slugs, titles and images for SEO
 		var i = 0;
-        while (i < 5) {
+        while (i < 1) {
 		  var blogPost = dataJson.blogentries[i];
 
 		  //Slugs (Array)
@@ -125,6 +125,7 @@ const SEORoutes = {
 	  	'/blog',
 	  	'/casestudies',
 	  	'/ces',
+	  	'/virtualevents',
 	],
 	titles : {
 	    '/': 'Buzz Radar - Real Time Social Media Intelligence Tool Made Easy',
@@ -137,6 +138,7 @@ const SEORoutes = {
 	  	'/blog': 'Blog - Buzz Radar',
 	  	'/casestudies': 'Case Studies - Buzz Radar',
 	  	'/ces': 'CES 2020 - Buzz Radar',
+	  	'/virtualevents': 'Make your Virtual Event count - Buzz Radar',
 	},
 	descriptions : {
 	    '/': 'Buzz Radar is the leading social intelligence platform designed for marketers rather than analysts. Providing powerful, easy to digest actionable insights.',
@@ -149,6 +151,7 @@ const SEORoutes = {
 	  	'/blog': 'Capture and analyse data from all your PR campaigns from across over 3 Million news outlets and blogs.',
 	  	'/casestudies': 'Find out how Buzz Radar has helped a wide range of organisations gain critical insights from their data.',
 	  	'/ces': 'Buzz Radar is the leading social intelligence platform designed for marketers rather than analysts. Providing powerful, easy to digest actionable insights.',
+	  	'/virtualevents': 'With the many events this year turning virtual, utilising and understanding the online conversation around them has become increasingly important. Virtual events have special needs; Buzz Radar’s Audience Analysis and Real-time Data Visualisation can help event organisers quickly fill gaps in several key areas.',
 	},
 	sharerImages : {
 	    '/': 'https://www.buzzradar.com/sharer.jpg',
@@ -160,7 +163,8 @@ const SEORoutes = {
 	  	'/marketingintelplatform/newspr': 'https://www.buzzradar.com/sharer_mark_intelligence.jpg',
 	  	'/blog': 'https://www.buzzradar.com/sharer.jpg',
 	  	'/casestudies': 'https://www.buzzradar.com/sharer.jpg',
-	  	'/ces': 'http://insights.buzzradar.com/bundles/api/images/ces2020_sharer.png',
+	  	'/ces': 'https://insights.buzzradar.com/bundles/api/images/ces2020_sharer.png',
+	  	'/virtualevents': 'https://www.buzzradar.com/public_assets/images/sharers/virtualevents_sharer.jpg',
 	},
 };
 readFileAsyncCASESTUDIES('./src/statics/CaseStudiesEntries.json');
@@ -180,44 +184,44 @@ readFileAsyncBLOGPOSTS('./src/statics/WPPostsEntries.json');
 module.exports = {
 	publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
 
-	configureWebpack: {
-		plugins: [
-			new PrerenderSPAPlugin({
-			  staticDir: path.join(__dirname, '.', 'dist'),
-			  routes: SEORoutes.slugs,
-			  renderer: new PuppeteerRenderer({
-			    renderAfterElementExists: '#app',
-			    timeout: 60000,
-			  }),
-			  minify : false,
-			  postProcess: function (context) {
+	// configureWebpack: {
+	// 	plugins: [
+	// 		new PrerenderSPAPlugin({
+	// 		  staticDir: path.join(__dirname, '.', 'dist'),
+	// 		  routes: SEORoutes.slugs,
+	// 		  renderer: new PuppeteerRenderer({
+	// 		    renderAfterElementExists: '#app',
+	// 		    timeout: 60000,
+	// 		  }),
+	// 		  minify : false,
+	// 		  postProcess: function (context) {
 
-		          context.html = context.html.replace(
-		            /T-I-T-L-E/g,
-		            SEORoutes.titles[context.route]
-		          );
+	// 	          context.html = context.html.replace(
+	// 	            /T-I-T-L-E/g,
+	// 	            SEORoutes.titles[context.route]
+	// 	          );
 
-		          context.html = context.html.replace(
-		            /D-E-S-C-R-I-P-T-I-O-N/g,
-		            SEORoutes.descriptions[context.route]
-		          );
+	// 	          context.html = context.html.replace(
+	// 	            /D-E-S-C-R-I-P-T-I-O-N/g,
+	// 	            SEORoutes.descriptions[context.route]
+	// 	          );
 
-		          context.html = context.html.replace(
-		            /S-H-A-R-E-I-M-G/g,
-		            SEORoutes.sharerImages[context.route]
-		          );
+	// 	          context.html = context.html.replace(
+	// 	            /S-H-A-R-E-I-M-G/g,
+	// 	            SEORoutes.sharerImages[context.route]
+	// 	          );
 
-		          context.html = context.html.replace(
-		            /U-R-L/g,
-		            'https://www.buzzradar.com'+context.route
-		          );
+	// 	          context.html = context.html.replace(
+	// 	            /U-R-L/g,
+	// 	            'https://www.buzzradar.com'+context.route
+	// 	          );
 
-		          return context;
-	          },
+	// 	          return context;
+	//           },
 
-			})
-		]
-	},
+	// 		})
+	// 	]
+	// },
 
 	css: {
 		loaderOptions: {
