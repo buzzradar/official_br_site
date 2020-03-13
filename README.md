@@ -1,8 +1,8 @@
-# test2
+# Buzz Radar Official VUE Site
 
 ## Project setup
 ```
-npm install
+sudo npm install
 ```
 
 ### Compiles and hot-reloads for development
