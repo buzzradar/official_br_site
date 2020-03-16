@@ -23,7 +23,7 @@
               </h1>
               <h3>with Real-Time Social and Audience Intelligence<br>you can act on instantly</h3>
               
-              <button type="button" class="btn btn-sm btn-primary transition-3d-hover try-now-btn mt-2" tabindex="0">Learn More</button>
+              <button type="button" class="btn btn-sm btn-primary transition-3d-hover try-now-btn mt-2" tabindex="0">Book a Demo</button>
               
 
             </div>
@@ -128,7 +128,7 @@
                 </span> -->
                 <h2 class="h4 font-weight-semi-bold text-secondary">Powerful reporting post-event</h2>
                 <p class="mb-0">Detailed analysis of the online performance of your event based on audience conversations online. Understand the digital impact of the event alongside the ROI for sponsors and exhibitors. Learn what worked for your audience and what didn’t and which topics and speakers drove conversation and inspired attendees.</p>
-                <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="/aiaudienceanalysis">Find out More <span class="fas fa-angle-right ml-2"></span></a>
+                <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" :href="pdfreportpath" target="_blank">Download a Sample Report <span class="fas fa-angle-right ml-2"></span></a>
               </div>
               <!-- End Title -->
             </div>
@@ -164,7 +164,7 @@
                   </span> -->
                   <h2 class="h4 font-weight-semi-bold text-secondary">Interactive social content on display</h2>
                   <p class="mb-0">Help your attendees feel part of the conversation with a fully customisable real-time social wall enabling them to discover the conversations and feedback across social channels in a variety of engaging ways. All social walls are embeddable across your social channels or website.</p>
-                  <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="/marketingintelplatform">Find out More <span class="fas fa-angle-right ml-2"></span></a>
+                  <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="https://insights.buzzradar.com/preview/IDJFFPAW" target="_blank">View a Dashboard<span class="fas fa-angle-right ml-2"></span></a>
                 </div>
                 <!-- End Title -->
               </div>
@@ -198,7 +198,7 @@
                 </span> -->
                 <h2 class="h4 font-weight-semi-bold text-secondary">In-event audience analysis</h2>
                 <p class="mb-0">With a deeper understanding of their guest sentiment, trending topics, and deep audience psychographics allows the insights to communicate broadly with guests in real-time targeting their needs more closely in an effort to help manage their shift to virtual conferencing.</p>
-                <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="/aiaudienceanalysis">Find out More <span class="fas fa-angle-right ml-2"></span></a>
+                <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="/aiaudienceanalysis">Book a Demo<span class="fas fa-angle-right ml-2"></span></a>
               </div>
               <!-- End Title -->
             </div>
@@ -230,55 +230,6 @@
 
 
 
-
-
-
-
-
-
-
-
-        <!-- 2 Choice Section -->
-        <div class="bg-light mt-9">
-          <div class="container">
-            <div class="row space-2">
-              <div class="col-lg-6 u-ver-divider u-ver-divider--none-lg mb-7 mb-lg-0">
-                <!-- Contacts Info -->
-                <div class="media pr-lg-9">
-                  <figure id="icon15" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4">
-                    <img class="js-svg-injector" src="@/assets/buzzradar/svg/icons/icon-11.svg" alt="Book a Meeting"
-                         data-parent="#icon15">
-                  </figure>
-                  <div class="media-body">
-                    <h3 class="h4">Book a Meeting</h3>
-                    <p class="mb-1">We want to answer all of your queries. Get in touch and we'll get back to you as soon as we can.</p>
-                    <a v-on:click="bookMeeting" class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="/casestudies/cs-user-case-allianz">Book a Meeting<span class="fas fa-angle-right ml-2"></span></a>
-
-                  </div>
-                </div>
-                <!-- End Contacts Info -->
-              </div>
-
-              <div class="col-lg-6">
-                <!-- Contacts Info -->
-                <div class="media pl-lg-9">
-                  <figure id="icon4" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4">
-                    <img class="js-svg-injector" src="@/assets/buzzradar/svg/icons/icon-1.svg" alt="Try the Attendee Analyer"
-                         data-parent="#icon4">
-                  </figure>
-                  <div class="media-body">
-                    <h3 class="h4">Try the Attendee Analyzer</h3>
-                    <p class="mb-1">Have some technical questions? Hit us with an email or just say hello on the bottom right corner of the page.</p>
-                    <a v-on:click="launchPersonalityAnalyzer" class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="#">Try Now<span class="fas fa-angle-right ml-2"></span></a>
-                  </div>
-                </div>
-                <!-- End Contacts Info -->
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <!-- End 2 Choice Section -->
 
 
 
@@ -363,6 +314,8 @@
                 height : '120%',
                 backgroundImage : 'url("'+require('@/assets/buzzradar/img/campaigns/virtualevents/heroimage_virtualevents.jpg')+'")',
               },
+
+              pdfreportpath : process.env.BASE_URL + 'public_assets/pdf/ces_2020_social_insight.pdf',
 
               firstNameObject : {
                 'inputVal' : null,
