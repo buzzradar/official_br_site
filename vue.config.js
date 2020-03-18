@@ -184,44 +184,44 @@ readFileAsyncBLOGPOSTS('./src/statics/WPPostsEntries.json');
 module.exports = {
 	publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
 
-	// configureWebpack: {
-	// 	plugins: [
-	// 		new PrerenderSPAPlugin({
-	// 		  staticDir: path.join(__dirname, '.', 'dist'),
-	// 		  routes: SEORoutes.slugs,
-	// 		  renderer: new PuppeteerRenderer({
-	// 		    renderAfterElementExists: '#app',
-	// 		    timeout: 60000,
-	// 		  }),
-	// 		  minify : false,
-	// 		  postProcess: function (context) {
+	configureWebpack: {
+		plugins: [
+			new PrerenderSPAPlugin({
+			  staticDir: path.join(__dirname, '.', 'dist'),
+			  routes: SEORoutes.slugs,
+			  renderer: new PuppeteerRenderer({
+			    renderAfterElementExists: '#app',
+			    timeout: 60000,
+			  }),
+			  minify : false,
+			  postProcess: function (context) {
 
-	// 	          context.html = context.html.replace(
-	// 	            /T-I-T-L-E/g,
-	// 	            SEORoutes.titles[context.route]
-	// 	          );
+		          context.html = context.html.replace(
+		            /T-I-T-L-E/g,
+		            SEORoutes.titles[context.route]
+		          );
 
-	// 	          context.html = context.html.replace(
-	// 	            /D-E-S-C-R-I-P-T-I-O-N/g,
-	// 	            SEORoutes.descriptions[context.route]
-	// 	          );
+		          context.html = context.html.replace(
+		            /D-E-S-C-R-I-P-T-I-O-N/g,
+		            SEORoutes.descriptions[context.route]
+		          );
 
-	// 	          context.html = context.html.replace(
-	// 	            /S-H-A-R-E-I-M-G/g,
-	// 	            SEORoutes.sharerImages[context.route]
-	// 	          );
+		          context.html = context.html.replace(
+		            /S-H-A-R-E-I-M-G/g,
+		            SEORoutes.sharerImages[context.route]
+		          );
 
-	// 	          context.html = context.html.replace(
-	// 	            /U-R-L/g,
-	// 	            'https://www.buzzradar.com'+context.route
-	// 	          );
+		          context.html = context.html.replace(
+		            /U-R-L/g,
+		            'https://www.buzzradar.com'+context.route
+		          );
 
-	// 	          return context;
-	//           },
+		          return context;
+	          },
 
-	// 		})
-	// 	]
-	// },
+			})
+		]
+	},
 
 	css: {
 		loaderOptions: {

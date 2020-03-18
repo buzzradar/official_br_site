@@ -102,7 +102,7 @@
               </div> -->
 
               <div class="col-lg-7">
-                <img class="img-fluid" src="@/assets/buzzradar/svg/illustrations/homepage/empower_team.png" alt="Empower Team">
+                <img class="img-fluid" src="@/assets/buzzradar/img/campaigns/virtualevents/real_time_command.png" alt="Real Time Command">
               </div>
 
 
@@ -133,14 +133,10 @@
               <!-- End Title -->
             </div>
 
-            <div id="SVGappDevelopment" class="col-lg-7 order-lg-1 svg-preloader">
-              <!-- SVG Icon -->
-              <figure class="ie-app-development">
-                <img class="js-svg-injector" src="@/assets/buzzradar/svg/illustrations/homepage/ai_social_intelligence.svg" alt="AI Social Intelligence"
-                     data-parent="#SVGappDevelopment">
-              </figure>
-              <!-- End SVG Icon -->
+            <div class="col-lg-7">
+              <img class="img-fluid" src="@/assets/buzzradar/img/campaigns/virtualevents/powerful_rep.png" alt="Real Time Command">
             </div>
+
           </div>
         </div>
         <!-- End Mockup Block -->
@@ -169,14 +165,10 @@
                 <!-- End Title -->
               </div>
 
-              <div id="SVGbusinessAnalysis" class="col-lg-7 svg-preloader">
-                <!-- SVG Icon -->
-                <figure class="ie-app-development">
-                  <img class="js-svg-injector" src="@/assets/buzzradar/svg/illustrations/homepage/great_insights.svg" alt="Great Insights"
-                       data-parent="#SVGbusinessAnalysis">
-                </figure>
-                <!-- End SVG Icon -->
+              <div class="col-lg-7">
+                <img class="img-fluid" src="@/assets/buzzradar/img/campaigns/virtualevents/interactive_social_content.png" alt="Interactive Social Content">
               </div>
+
             </div>
           </div>
         </div>
@@ -203,14 +195,10 @@
               <!-- End Title -->
             </div>
 
-            <div id="SVGaudAnalisys" class="col-lg-7 order-lg-1 svg-preloader">
-              <!-- SVG Icon -->
-              <figure class="ie-app-development">
-                <img class="js-svg-injector" src="@/assets/buzzradar/svg/illustrations/homepage/ai_social_intelligence.svg" alt="AI Social Intelligence"
-                     data-parent="#SVGaudAnalisys">
-              </figure>
-              <!-- End SVG Icon -->
+            <div class="col-lg-7">
+              <img class="img-fluid" src="@/assets/buzzradar/img/campaigns/virtualevents/event_audience_analysis.png" alt="In-Event Audience Analysis">
             </div>
+
           </div>
         </div>
         <!-- End Mockup Block -->
@@ -317,38 +305,12 @@
 
               pdfreportpath : process.env.BASE_URL + 'public_assets/pdf/ces_2020_social_insight.pdf',
 
-              firstNameObject : {
-                'inputVal' : null,
-                'inputGroupClass' : {
-                  'input-group' : true,
-                  'u-has-error' : false,  
-                }
-              },
-              lastNameObject : {
-                'inputVal' : null,
-                'inputGroupClass' : {
-                  'input-group' : true,
-                  'u-has-error' : false,  
-                }
-              },
-              companyObject : {
-                'inputVal' : null,
-                'inputGroupClass' : {
-                  'input-group' : true,
-                  'u-has-error' : false,  
-                }
-              },
-              emailObject : {
-                'inputVal' : null,
-                'inputGroupClass' : {
-                  'input-group' : true,
-                  'u-has-error' : false,  
-                }
-              },
-              envelopeSentAsset : {
-                url : require('@/assets/buzzradar/img/ces/sent.png'),
+              styleParallaxBg1 : {
+                backgroundImage : 'url('+require('@/assets/buzzradar/svg/components/bg-elements-7.svg')+')',
+                height : '120%',
               },
 
+              
             }
         },
         components: {
@@ -379,87 +341,8 @@
             Calendly.showPopupWidget('https://calendly.com/buzzradar/introduction-meeting');
             return false;
           },
-          checkForm: function() {
-
-            if ( !$('.btn-submit-form').hasClass('disabled') ) {
-
-              this.firstNameObject.inputGroupClass['u-has-error'] = !this.firstNameObject.inputVal;
-              this.lastNameObject.inputGroupClass['u-has-error'] = !this.lastNameObject.inputVal;        
-              this.companyObject.inputGroupClass['u-has-error'] = !this.companyObject.inputVal;        
-              this.emailObject.inputGroupClass['u-has-error'] = !this.validEmail(this.emailObject.inputVal); 
-
-              if (!this.firstNameObject.inputGroupClass['u-has-error'] && !this.lastNameObject.inputGroupClass['u-has-error'] && !this.companyObject.inputGroupClass['u-has-error'] && !this.emailObject.inputGroupClass['u-has-error']) {
-                console.log("submit the form!!!!!!!", this.envelopeSentAsset);
-
-                var objToSend = {
-                  'EMAIL' : this.emailObject.inputVal,
-                  'FNAME' : this.firstNameObject.inputVal,
-                  'LNAME' : this.lastNameObject.inputVal,
-                  'MMERGE3' : this.companyObject.inputVal,
-                };
-
-                console.log("Contact Form objToSend-->", objToSend);
-                $('.btn-submit-form').addClass('disabled');
-                $('.btn-submit-form').html('<i class="fas fa-spinner fa-spin"></i>');
-
-
-                this.updateMailingList(objToSend);
-
-              }
-
-            }
-
-          },
-          validEmail: function (email) {
-            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            return re.test(email);
-          },
-          updateMailingList : function (dataForm) {
-    
-              var newsLetterList =  {
-                  'ht' : '110cc29c538300a21aa753004897a90886c7e9f6:MTUyNDY3NDg0Ni43MzE2',
-                  'listId' : 'c994623d59',
-              };
-
-              console.log("MailChimp listName newsletter");
-              console.log(newsLetterList);
-              console.log(dataForm);
-
-              var url = 'https://buzzradar.us5.list-manage.com/subscribe/post?u=c9003a2b46ba63c35711fc287&amp;id='+newsLetterList.listId;
-              url = url.replace('/post?', '/post-json?').concat('&c=?');
-
-              var _this = this;
-              $.ajax({
-                  url: url,
-                  data : dataForm,
-                  success: function() {
-                    
-                    $('.btn-submit-form').removeClass('disabled');
-                    $('.btn-submit-form').html("Submit");
-                    $('.envelope-holder').html('<img class="envelope-sent animated zoomInUp" style="position: absolute;z-index: 999;top:50px;right:30px;" src="'+_this.envelopeSentAsset.url+'" alt="Email Sent">');
-
-                    $('.form-alert').html('<p><small>Once the report is completed and ready we’ll send it right over</small></p>');
-
-                    //Reset the form
-                    setTimeout(function(){
-                      $('.envelope-holder').remove();
-                      this.firstNameObject.inputVal = '';
-                      this.lastNameObject.inputVal = '';        
-                      this.companyObject.inputVal = '';        
-                      this.emailObject.inputVal = ''; 
-
-                      $('.form-alert').empty();
-
-                    }.bind(_this),4500); 
-
-                  },
-                  dataType: 'jsonp',
-                  error: function (resp, text) {
-                      console.log('mailchimp ajax submit error: ' + text);
-                  }
-              });
-
-          }
+          
+          
         },
         
 	}
