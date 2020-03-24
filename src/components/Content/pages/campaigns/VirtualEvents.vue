@@ -318,14 +318,12 @@
         },
         mounted(){
 
-          $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
           $('.js-pagination').remove();
+          $.HSCore.components.HSFancyBox.init('.js-fancybox');
+          $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+          dzsprx_init('#parallaxDOM', { direction: "normal", mode_scroll:"fromtop"} );
+          dzsprx_init('.dzsparallaxer', { direction: "normal"} );
 
-
-          // this.emailObject.inputVal = 'j.infante.garcia@gmail.com';
-          // this.firstNameObject.inputVal  = 'Peter';
-          // this.lastNameObject.inputVal  = 'Jones';
-          // this.companyObject.inputVal  = 'Peter Jones Co';
         },
         updated() {
 

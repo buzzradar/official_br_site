@@ -138,6 +138,12 @@ export default new Router({
           label : 'Marketing Intelligence Platform',
           component: MarketingIntel
         },
+        {
+          path: '/virtualevents',
+          name : 'virtualevents',
+          label : 'Virtual Events',
+          component: VirtualEvents
+        },
       ]
     },
     {
@@ -234,12 +240,7 @@ export default new Router({
       component: CES
     },
 
-    {
-      path: '/virtualevents',
-      name: 'virtualevents',
-      label : 'Virtual Events',
-      component: VirtualEvents
-    },
+
 
 
 
