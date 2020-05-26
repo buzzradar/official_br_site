@@ -26,6 +26,8 @@ import MktgNewsPr from './components/Content/pages/MktgIntelNewsPr';
 import TermsConditions from './components/Content/pages/TermsConditions';
 import PrivacyPolicy from './components/Content/pages/PrivacyPolicy';
 import CookiePolicy from './components/Content/pages/CookiePolicy';
+import CredibleInfluence from './components/Content/pages/CredibleInfluenceLanding';
+
 
 import CES from './components/Content/pages/campaigns/Ces';
 import VirtualEvents from './components/Content/pages/campaigns/VirtualEvents';
@@ -150,9 +152,10 @@ export default new Router({
       path: '/services',
       name: 'services',
       label : 'Services',
-      beforeEnter() {
-        location.href = 'http://www.credibleinfluence.com/';
-      },
+      component: CredibleInfluence
+      // beforeEnter() {
+      //   location.href = 'http://www.credibleinfluence.com/';
+      // },
     },
 
     ...studiesRoutes,
