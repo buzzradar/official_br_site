@@ -149,13 +149,10 @@ export default new Router({
       ]
     },
     {
-      path: '/services',
-      name: 'services',
+      path: '/credibleinfluence',
+      name: 'credibleinfluence',
       label : 'Services',
       component: CredibleInfluence
-      // beforeEnter() {
-      //   location.href = 'http://www.credibleinfluence.com/';
-      // },
     },
 
     ...studiesRoutes,

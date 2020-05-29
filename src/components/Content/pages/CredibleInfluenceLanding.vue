@@ -21,9 +21,10 @@
               <h1 class="display-5 font-size-md-down-5 font-weight-bold mb-2 text-credibleinfluence">
                 Credible Influence
               </h1>
-              <h3>The AI Powered Audience Intelligence, Social Insight and Content Optimisation Agency</h3>
+              <h3>The AI Powered Audience Intelligence,<br>Social Insight and Content Optimisation Agency</h3>
+              <p><img src="@/assets/buzzradar/img/credibleinfluence/powered_buzzradar.png" width="150" /></p>
 
-              <button type="button" class="btn btn-sm btn-secondary transition-3d-hover try-now-btn mt-2" tabindex="0">Learn More</button>
+              <button v-on:click="learnMoreClicked" type="button" class="btn btn-sm btn-secondary transition-3d-hover try-now-btn mt-2 learn-more" tabindex="0">Learn More</button>
 
             </div>
           </div>
@@ -37,7 +38,15 @@
 
 
 
-        <!-- The next Generation -->
+
+
+
+
+
+
+
+
+<!-- The next Generation -->
     <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll bg-white" data-options='{direction: "normal"}'>
       <!-- Apply your Parallax background image here -->
       <div class="dzsparallaxer--target" :style="styleParallaxBg1"></div>
@@ -47,20 +56,20 @@
               <!-- Title -->
               <div class="pr-lg-4">
 
-                <h2 class="h4 font-weight-semi-bold text-secondary">Who is Credible Influence?</h2>
+                <h2 class="h4 font-weight-semi-bold text-secondary">Human Expertise x Data x Machine Learning</h2>
                 <p class="mb-0">Data without context and empathy is meaningless.</p>
+                
+                <p>We’ve spent the last 6 years designing and developing Buzz Radar a real-time insight platform for some of the biggest brands in the world. As well as providing cutting edge insight technology, our clients have often asked us to help translate that insight, provide context and data driven advice to inform their strategy. So we’ve created Credible Influence to do just that.</p>
+            
+                <p>Whether it’s helping guide engaging creative content or helping predict trends that provides a brand with game changing insight, everything we do is based on state of the art data science.</p>
 
-				<p>We’ve spent the last 6 years designing and developing Buzz Radar a real-time insight platform for some of the biggest brands in the world. As well as providing cutting edge insight technology, our clients have often asked us to help translate that insight, provide context and data driven advice to inform their strategy. So we’ve created Credible Influence to do just that.</p>
-
-				<p>Whether it’s helping guide engaging creative content or helping predict trends that provides a brand with game changing insight, everything we do is based on state of the art data science.</p>
-                <button type="button" class="btn btn-sm btn-outline-secondary transition-3d-hover try-now-btn mt-3" tabindex="0">Learn More<span class="fas fa-angle-right ml-2"></span></button>
-
+                <button v-on:click="learnMoreClicked" type="button" class="btn btn-sm btn-outline-secondary transition-3d-hover try-now-btn mt-3" tabindex="0">Learn More<span class="fas fa-angle-right ml-2"></span></button>
               </div>
               <!-- End Title -->
             </div>
 
             <div class="offset-lg-1 col-lg-5 order-lg-1">
-              <img class="img-fluid rounded d-md-block" src="@/assets/buzzradar/img/credibleinfluence/whoarethey.jpg" alt="The next generation in Audience and Content Optimisation">
+              <img class="img-fluid rounded d-md-block" src="@/assets/buzzradar/img/credibleinfluence/whoarethey.jpg" alt="Human Expertise x Data x Machine Learning">
             </div>
 
           </div>
@@ -71,37 +80,101 @@
 
 
 
-
       <!-- Helping Creatives -->
       <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll bg-white" data-options='{direction: "normal"}'>
         <!-- Apply your Parallax background image here -->
         <div class="dzsparallaxer--target" :style="styleParallaxBg1"></div>
-        <div class="container space-1 space-bottom-md-3">
+        <div class="container space-1">
           <div class="row align-items-lg-center">
             <div class="col-lg-6 offset-lg-1 order-lg-2 mb-7 mb-lg-0">
               <!-- Title -->
               <div class="pl-lg-4">
-                <!-- <span class="btn btn-icon btn-soft-warning rounded-circle mb-3">
-                  <span class="font-weight-semi-bold btn-icon__inner">2.</span>
-                </span> -->
-                <h2 class="h4 font-weight-semi-bold text-secondary">Their Advantages</h2>
+                <h2 class="h4 font-weight-semi-bold text-secondary">Helping Brands Become Data Driven</h2>
                 <p class="mb-0">Dashboards, algorithms and machine learning can only push data, correlations and insights to a certain point. In a world where technology has adapted faster than human behaviour, you need experts to provide a human touch to ensure you’re working with powerful insights that will help you to win.</p>
+                <p>The engine that powers and supports our team of strategists, tacticians and analysts is our proprietary Buzz Radar platform. 6 years in the making and built using IBM Watson AI, it allows us to capture, analyse and visualise vast amounts of data quickly and extract deep meaningful insight.</p>
+                <p>Combined with our industry leading team, we can quickly and easily uncover insights, spot trends and make predictions for our clients. Turning all that, unwieldy unconnected data into powerful actionable intelligence that drives ROI.</p>
 
-				<p>The engine that powers and supports our team of strategists, tacticians and analysts is our proprietary Buzz Radar platform. 6 years in the making and built using IBM Watson AI, it allows us to capture, analyse and visualise vast amounts of data quickly and extract deep meaningful insight.</p>
-
-				<p>Combined with our industry leading team, we can quickly and easily uncover insights, spot trends and make predictions for our clients. Turning all that, unwieldy unconnected data into powerful actionable intelligence that drives ROI.</p>
-                <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="/casestudies/cs-user-case-allianz">Learn More<span class="fas fa-angle-right ml-2"></span></a>
+                <a v-on:click="learnMoreClicked" class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="/casestudies/cs-user-case-allianz">Learn More<span class="fas fa-angle-right ml-2"></span></a>
               </div>
               <!-- End Title -->
             </div>
 
             <div class="col-lg-5 order-lg-1">
-              <img class="img-fluid rounded d-md-block" src="@/assets/buzzradar/img/credibleinfluence/advantage.jpg" alt="The next generation in Audience and Content Optimisation">
+              <img class="img-fluid rounded d-md-block" src="@/assets/buzzradar/img/credibleinfluence/advantage.jpg" alt="Helping Brands Become Data Driven">
             </div>
           </div>
         </div>
       </div>
       <!-- Helping Creatives -->
+
+
+
+
+
+      <!-- Personas And Tribes -->
+      <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll bg-white" data-options='{direction: "normal"}'>
+        <!-- Apply your Parallax background image here -->
+        <div class="dzsparallaxer--target" :style="styleParallaxBg1"></div>
+        <div class="container space-2 space-md-3">
+            <div class="row align-items-lg-center">
+              <div class="col-lg-6 mb-7 mb-lg-0">
+                <!-- Title -->
+                <div class="pr-lg-4">
+                  <h2 class="h4 font-weight-semi-bold text-secondary">Our unique advantage: AI Audience Analysis + Human Expertise</h2>
+
+                  <p class="mb-0">Having the most advanced tools and access to great data is often only part of the challenge when it comes to getting the most useful insights. Our experienced team of analysts work with clients to ask the right questions for their unique use case then let machine learning do the heavy lifting. This allows our specialists to focus on things humans do better than computers, providing context, interpretation, and recommendation. The results come in the form of beautiful easy to understand tailored reports and data driven strategies that transform performance. </p>
+
+                  <button v-on:click="learnMoreClicked" type="button" class="btn btn-sm btn-outline-secondary transition-3d-hover try-now-btn mt-3" tabindex="0">Learn More<span class="fas fa-angle-right ml-2"></span></button>
+                </div>
+                <!-- End Title -->
+              </div>
+
+              <div class="offset-lg-1 col-lg-5 order-lg-1">
+                <img class="img-fluid rounded d-md-block" src="@/assets/buzzradar/img/credibleinfluence/human.jpg" alt="Our unique advantage: AI Audience Analysis + Human Expertise">
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Personas And Tribes -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -141,7 +214,7 @@
                   <div class="media-body">
                     <h3 class="h4">Are you Interested?</h3>
                     <p class="mb-1">If you want to know more about Credible Influence click here to find out more about them.</p>
-                    <a v-on:click="bookMeeting" class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="/casestudies/cs-user-case-allianz">Learn More<span class="fas fa-angle-right ml-2"></span></a>
+                    <a v-on:click="learnMoreClicked" class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="/casestudies/cs-user-case-allianz">Learn More<span class="fas fa-angle-right ml-2"></span></a>
 
                   </div>
                 </div>
@@ -229,7 +302,7 @@
 <script>
 
 	export default {
-        name: 'Credible Influence',
+        name: 'CredibleInfluence',
         data() {
             return {
               heroBgImage : {
@@ -237,36 +310,9 @@
                 backgroundImage : 'url("'+require('@/assets/buzzradar/img/credibleinfluence/heroimage.jpg')+'")',
               },
 
-              firstNameObject : {
-                'inputVal' : null,
-                'inputGroupClass' : {
-                  'input-group' : true,
-                  'u-has-error' : false,  
-                }
-              },
-              lastNameObject : {
-                'inputVal' : null,
-                'inputGroupClass' : {
-                  'input-group' : true,
-                  'u-has-error' : false,  
-                }
-              },
-              companyObject : {
-                'inputVal' : null,
-                'inputGroupClass' : {
-                  'input-group' : true,
-                  'u-has-error' : false,  
-                }
-              },
-              emailObject : {
-                'inputVal' : null,
-                'inputGroupClass' : {
-                  'input-group' : true,
-                  'u-has-error' : false,  
-                }
-              },
-              envelopeSentAsset : {
-                url : require('@/assets/buzzradar/img/ces/sent.png'),
+              styleParallaxBg1 : {
+                backgroundImage : 'url('+require('@/assets/buzzradar/svg/components/bg-elements-7.svg')+')',
+                height : '120%',
               },
 
             }
@@ -281,107 +327,23 @@
           $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
           $('.js-pagination').remove();
 
-
-          // this.emailObject.inputVal = 'j.infante.garcia@gmail.com';
-          // this.firstNameObject.inputVal  = 'Peter';
-          // this.lastNameObject.inputVal  = 'Jones';
-          // this.companyObject.inputVal  = 'Peter Jones Co';
         },
         updated() {
 
         }, 
         methods : {
-          launchPersonalityAnalyzer : function(e) {
-            if (e) e.preventDefault();
-            window.open('https://insights.buzzradar.com/preview/IDIVQYOP', '_blank');
-            return false;
-          },
+
           bookMeeting : function(e) {
             e.preventDefault();
             Calendly.showPopupWidget('https://calendly.com/buzzradar/introduction-meeting');
             return false;
           },
-          checkForm: function() {
-
-            if ( !$('.btn-submit-form').hasClass('disabled') ) {
-
-              this.firstNameObject.inputGroupClass['u-has-error'] = !this.firstNameObject.inputVal;
-              this.lastNameObject.inputGroupClass['u-has-error'] = !this.lastNameObject.inputVal;        
-              this.companyObject.inputGroupClass['u-has-error'] = !this.companyObject.inputVal;        
-              this.emailObject.inputGroupClass['u-has-error'] = !this.validEmail(this.emailObject.inputVal); 
-
-              if (!this.firstNameObject.inputGroupClass['u-has-error'] && !this.lastNameObject.inputGroupClass['u-has-error'] && !this.companyObject.inputGroupClass['u-has-error'] && !this.emailObject.inputGroupClass['u-has-error']) {
-                console.log("submit the form!!!!!!!", this.envelopeSentAsset);
-
-                var objToSend = {
-                  'EMAIL' : this.emailObject.inputVal,
-                  'FNAME' : this.firstNameObject.inputVal,
-                  'LNAME' : this.lastNameObject.inputVal,
-                  'MMERGE3' : this.companyObject.inputVal,
-                };
-
-                console.log("Contact Form objToSend-->", objToSend);
-                $('.btn-submit-form').addClass('disabled');
-                $('.btn-submit-form').html('<i class="fas fa-spinner fa-spin"></i>');
-
-
-                this.updateMailingList(objToSend);
-
-              }
-
-            }
-
+          learnMoreClicked : function(e) {
+            e.preventDefault();
+            window.open('http://www.credibleinfluence.com/', '_blank');
+            return false;
           },
-          validEmail: function (email) {
-            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            return re.test(email);
-          },
-          updateMailingList : function (dataForm) {
-    
-              var newsLetterList =  {
-                  'ht' : '110cc29c538300a21aa753004897a90886c7e9f6:MTUyNDY3NDg0Ni43MzE2',
-                  'listId' : 'c994623d59',
-              };
 
-              console.log("MailChimp listName newsletter");
-              console.log(newsLetterList);
-              console.log(dataForm);
-
-              var url = 'https://buzzradar.us5.list-manage.com/subscribe/post?u=c9003a2b46ba63c35711fc287&amp;id='+newsLetterList.listId;
-              url = url.replace('/post?', '/post-json?').concat('&c=?');
-
-              var _this = this;
-              $.ajax({
-                  url: url,
-                  data : dataForm,
-                  success: function() {
-                    
-                    $('.btn-submit-form').removeClass('disabled');
-                    $('.btn-submit-form').html("Submit");
-                    $('.envelope-holder').html('<img class="envelope-sent animated zoomInUp" style="position: absolute;z-index: 999;top:50px;right:30px;" src="'+_this.envelopeSentAsset.url+'" alt="Email Sent">');
-
-                    $('.form-alert').html('<p><small>Once the report is completed and ready we’ll send it right over</small></p>');
-
-                    //Reset the form
-                    setTimeout(function(){
-                      $('.envelope-holder').remove();
-                      this.firstNameObject.inputVal = '';
-                      this.lastNameObject.inputVal = '';        
-                      this.companyObject.inputVal = '';        
-                      this.emailObject.inputVal = ''; 
-
-                      $('.form-alert').empty();
-
-                    }.bind(_this),4500); 
-
-                  },
-                  dataType: 'jsonp',
-                  error: function (resp, text) {
-                      console.log('mailchimp ajax submit error: ' + text);
-                  }
-              });
-
-          }
         },
         
 	}

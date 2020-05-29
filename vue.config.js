@@ -126,6 +126,7 @@ const SEORoutes = {
 	  	'/casestudies',
 	  	'/ces',
 	  	'/virtualevents',
+	  	'/credibleinfluence',
 	],
 	titles : {
 	    '/': 'Buzz Radar - Real Time Social Media Intelligence Tool Made Easy',
@@ -139,6 +140,7 @@ const SEORoutes = {
 	  	'/casestudies': 'Case Studies - Buzz Radar',
 	  	'/ces': 'CES 2020 - Buzz Radar',
 	  	'/virtualevents': 'Make your Virtual Event count - Buzz Radar',
+	  	'/credibleinfluence': 'Credible Influence - The AI Powered Audience Intelligence, Social Insight and Content Optimisation Agency',
 	},
 	descriptions : {
 	    '/': 'Buzz Radar is the leading social intelligence platform designed for marketers rather than analysts. Providing powerful, easy to digest actionable insights.',
@@ -152,23 +154,25 @@ const SEORoutes = {
 	  	'/casestudies': 'Find out how Buzz Radar has helped a wide range of organisations gain critical insights from their data.',
 	  	'/ces': 'Buzz Radar is the leading social intelligence platform designed for marketers rather than analysts. Providing powerful, easy to digest actionable insights.',
 	  	'/virtualevents': 'With the many events this year turning virtual, utilising and understanding the online conversation around them has become increasingly important. Virtual events have special needs; Buzz Radar’s Audience Analysis and Real-time Data Visualisation can help event organisers quickly fill gaps in several key areas.',
+	  	'/credibleinfluence': 'Credible Influence - The AI Powered Audience Intelligence, Social Insight and Content Optimisation Agency',
 	},
 	sharerImages : {
-	    '/': 'https://www.buzzradar.com/sharer.jpg',
-        '/realtimedashboard': 'https://www.buzzradar.com/sharer_dashboard.jpg',
-        '/aiaudienceanalysis': 'https://www.buzzradar.com/sharer_ai_audience_analysis.jpg',
-        '/marketingintelplatform': 'https://www.buzzradar.com/sharer_mark_intelligence.jpg',
-	  	'/marketingintelplatform/socialintelligence' : 'https://www.buzzradar.com/sharer_mark_intelligence.jpg',
-	  	'/marketingintelplatform/paidmedia': 'https://www.buzzradar.com/sharer_mark_intelligence.jpg',
-	  	'/marketingintelplatform/newspr': 'https://www.buzzradar.com/sharer_mark_intelligence.jpg',
-	  	'/blog': 'https://www.buzzradar.com/sharer.jpg',
-	  	'/casestudies': 'https://www.buzzradar.com/sharer.jpg',
+	    '/': 'https://www.buzzradar.com/public_assets/images/sharers/sharer.jpg',
+        '/realtimedashboard': 'https://www.buzzradar.com/public_assets/images/sharers/sharer_dashboard.jpg',
+        '/aiaudienceanalysis': 'https://www.buzzradar.com/public_assets/images/sharers/sharer_ai_audience_analysis.jpg',
+        '/marketingintelplatform': 'https://www.buzzradar.com/public_assets/images/sharers/sharer_mark_intelligence.jpg',
+	  	'/marketingintelplatform/socialintelligence' : 'https://www.buzzradar.com/public_assets/images/sharers/sharer_mark_intelligence.jpg',
+	  	'/marketingintelplatform/paidmedia': 'https://www.buzzradar.com/public_assets/images/sharers/sharer_mark_intelligence.jpg',
+	  	'/marketingintelplatform/newspr': 'https://www.buzzradar.com/public_assets/images/sharers/sharer_mark_intelligence.jpg',
+	  	'/blog': 'https://www.buzzradar.com/public_assets/images/sharers/sharer.jpg',
+	  	'/casestudies': 'https://www.buzzradar.com/public_assets/images/sharers/sharer.jpg',
 	  	'/ces': 'https://insights.buzzradar.com/bundles/api/images/ces2020_sharer.png',
-	  	'/virtualevents': 'https://www.buzzradar.com/public_assets/images/sharers/virtualevents_sharer.jpg',
+	  	'/virtualevents': 'https://www.buzzradar.com/public_assets/images/sharers/sharer_virtualevents.jpg',
+	  	'/credibleinfluence': 'https://www.buzzradar.com/public_assets/images/sharers/sharer_services.jpg',
 	},
 };
-// readFileAsyncCASESTUDIES('./src/statics/CaseStudiesEntries.json');
-// readFileAsyncBLOGPOSTS('./src/statics/WPPostsEntries.json');
+readFileAsyncCASESTUDIES('./src/statics/CaseStudiesEntries.json');
+readFileAsyncBLOGPOSTS('./src/statics/WPPostsEntries.json');
 
 
 
@@ -184,44 +188,44 @@ const SEORoutes = {
 module.exports = {
 	publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
 
-	// configureWebpack: {
-	// 	plugins: [
-	// 		new PrerenderSPAPlugin({
-	// 		  staticDir: path.join(__dirname, '.', 'dist'),
-	// 		  routes: SEORoutes.slugs,
-	// 		  renderer: new PuppeteerRenderer({
-	// 		    renderAfterElementExists: '#app',
-	// 		    timeout: 60000,
-	// 		  }),
-	// 		  minify : false,
-	// 		  postProcess: function (context) {
+	configureWebpack: {
+		plugins: [
+			new PrerenderSPAPlugin({
+			  staticDir: path.join(__dirname, '.', 'dist'),
+			  routes: SEORoutes.slugs,
+			  renderer: new PuppeteerRenderer({
+			    renderAfterElementExists: '#app',
+			    timeout: 60000,
+			  }),
+			  minify : false,
+			  postProcess: function (context) {
 
-	// 	          context.html = context.html.replace(
-	// 	            /T-I-T-L-E/g,
-	// 	            SEORoutes.titles[context.route]
-	// 	          );
+		          context.html = context.html.replace(
+		            /T-I-T-L-E/g,
+		            SEORoutes.titles[context.route]
+		          );
 
-	// 	          context.html = context.html.replace(
-	// 	            /D-E-S-C-R-I-P-T-I-O-N/g,
-	// 	            SEORoutes.descriptions[context.route]
-	// 	          );
+		          context.html = context.html.replace(
+		            /D-E-S-C-R-I-P-T-I-O-N/g,
+		            SEORoutes.descriptions[context.route]
+		          );
 
-	// 	          context.html = context.html.replace(
-	// 	            /S-H-A-R-E-I-M-G/g,
-	// 	            SEORoutes.sharerImages[context.route]
-	// 	          );
+		          context.html = context.html.replace(
+		            /S-H-A-R-E-I-M-G/g,
+		            SEORoutes.sharerImages[context.route]
+		          );
 
-	// 	          context.html = context.html.replace(
-	// 	            /U-R-L/g,
-	// 	            'https://www.buzzradar.com'+context.route
-	// 	          );
+		          context.html = context.html.replace(
+		            /U-R-L/g,
+		            'https://www.buzzradar.com'+context.route
+		          );
 
-	// 	          return context;
-	//           },
+		          return context;
+	          },
 
-	// 		})
-	// 	]
-	// },
+			})
+		]
+	},
 
 	css: {
 		loaderOptions: {
