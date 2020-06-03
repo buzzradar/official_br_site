@@ -21,7 +21,7 @@
 
 	          <p class="small text-white-70">Buzz Radar is the leading social intelligence platform designed for marketers rather than analysts, providing powerful, easy to digest, actionable insights.</p>
 	          <!-- Copyright -->
-	          <p class="small text-white-70 mb-0">All Rights Reserved, © 2019 Buzz Radar Ltd <a href="/terms-conditions">T&C</a>/<a href="/privacy-policy">Privacy</a></p>
+	          <p class="small text-white-70 mb-0">All Rights Reserved, © 2020 Buzz Radar Ltd <a href="/terms-conditions">T&C</a>/<a href="/privacy-policy">Privacy</a></p>
 	          <!-- End Copyright -->
 	        </div>
 
