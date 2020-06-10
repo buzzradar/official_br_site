@@ -21,7 +21,7 @@ const readFileAsyncCASESTUDIES = (FILE_NAME) => {
 
         //Run through 10 Case Studies to create the slugs, titles and images for SEO
 		var i = 0;
-        while (i < 1) {
+        while (i < 5) {
 		  var caseStudy = dataJson.casesentries[i];
 
 		  //Slugs (Array)
@@ -68,7 +68,7 @@ const readFileAsyncBLOGPOSTS = (FILE_NAME) => {
 
 		//Run through 10 Blog Posts to create the slugs, titles and images for SEO
 		var i = 0;
-        while (i < 1) {
+        while (i < 5) {
 		  var blogPost = dataJson.blogentries[i];
 
 		  //Slugs (Array)
@@ -76,7 +76,14 @@ const readFileAsyncBLOGPOSTS = (FILE_NAME) => {
 		  //Titles (Object)
 		  SEORoutes.titles['/blog/post'+blogPost.ID] = blogPost.post_title;
 		  //Descriptions (Object)
-		  SEORoutes.descriptions['/blog/post'+blogPost.ID] = 'Find out how Buzz Radar has helped a wide range of organisations gain critical insights from their data.';
+
+		  console.log(blogPost.sharer_header);
+
+		  if (blogPost.sharer_header){
+		  	SEORoutes.descriptions['/blog/post'+blogPost.ID] = blogPost.sharer_header;		  	
+		  }else{
+		  	SEORoutes.descriptions['/blog/post'+blogPost.ID] = 'Find out how Buzz Radar has helped a wide range of organisations gain critical insights from their data.';		  	
+		  }
 		  //Sharer Images (Object)
 		  SEORoutes.sharerImages['/blog/post'+blogPost.ID] = 'https://www.buzzradar.com/public_assets/blog/'+blogPost.thumb_name;
 
