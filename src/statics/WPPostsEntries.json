@@ -2,6 +2,39 @@
   "blogentries": [
 
     {
+      "ID": 7228,
+      "author" : "Nicky Yates",
+      "post_author": "13",
+      "post_date": "2020-06-25 08:35:03",
+      "post_date_gmt": "2020-06-25 08:35:03",
+      "post_content": "<p>Buzz Radar has been around for eight years. And over the past couple of years, we’ve been fortunate to experience growth. We wanted to take this time to help our audience to get to know us a bit better. So, who is Buzz Radar? </p><p>We’re a small company of developers, analysts, and strategists. Most of our team has been with us from the beginning. We spun out of an agency, starting off building Command Centres. As a small company, we listen to our clients. In fact, they’ve helped guide some our innovation and development with their requests. This spurred our company to focus on social intelligence.</p><p>Many of our clients have been with us for all eight years, and we’ve grown together. As a small company, we like focusing on our clients on a deep level. The past couple of years, a big question that kept coming back to us was how can our clients understand their audiences. That’s led to our focus on applicable AI that can really guide decisions. </p><p>Now that you know a bit more about us, we’d love to share more about how we work with our clients. Watch the video to learn more about how we guided an Internet of Things company from making a multi-million dollar mistake with our technology. </p><iframe src='https://player.vimeo.com/video/431818753' width='100%' height='328' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe>",
+      "post_title": "Get to know us",
+      "sharer_header" : "Buzz Radar has been around for eight years. And over the past couple of years, we’ve been fortunate to experience growth.",
+      "post_excerpt": "",
+      "post_status": "publish",
+      "comment_status": "closed",
+      "ping_status": "open",
+      "post_password": "",
+      "post_name": "get-to-know-us",
+      "to_ping": "",
+      "pinged": "",
+      "post_type": "post",
+      "post_mime_type": "",
+      "comment_count": "0",
+      "filter": "raw",
+      "thumb_name": "7228-thumb.jpg",
+      "terms": {
+        "category": [
+          "Website"
+        ],
+        "post_tag": [
+          "data visualisation",
+          "social insights"
+        ],
+        "post_format": []
+      }
+    },
+    {
       "ID": 7227,
       "author" : "Nicky Yates",
       "post_author": "13",
