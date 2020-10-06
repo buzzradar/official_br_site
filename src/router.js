@@ -3,6 +3,7 @@ import Router from 'vue-router';
 
 import NotFound from './components/Content/pages/NotFound';
 
+
 import Home from './components/Content/pages/Home';
 import About from './components/Content/pages/AboutWrapper';
 import AboutUs from './components/Content/pages/AboutUs';
