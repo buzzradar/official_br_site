@@ -22,6 +22,7 @@ new Vue({
   		// this.$intercom.show();
     // }.bind(this),5000);
 
+  
   },
   watch:{
 	'$route' (to, from){
