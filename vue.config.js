@@ -134,6 +134,9 @@ const SEORoutes = {
 	  	'/ces',
 	  	'/virtualevents',
 	  	'/credibleinfluence',
+	  	'/careers',
+	  	'/careers/job-mid-backend-dev',
+	  	'/careers/job-junior-social-media-analyst',
 	],
 	titles : {
 	    '/': 'Buzz Radar - Real Time Social Media Intelligence Tool Made Easy',
@@ -147,7 +150,10 @@ const SEORoutes = {
 	  	'/casestudies': 'Case Studies - Buzz Radar',
 	  	'/ces': 'CES 2020 - Buzz Radar',
 	  	'/virtualevents': 'Make your Virtual Event count - Buzz Radar',
-	  	'/credibleinfluence': 'Credible Influence - The AI Powered Audience Intelligence, Social Insight and Content Optimisation Agency',
+		'/credibleinfluence': 'Credible Influence - The AI Powered Audience Intelligence, Social Insight and Content Optimisation Agency',
+		'/careers' : 'Buzz Radar - Careers',
+	  	'/careers/job-mid-backend-dev' : 'Buzz Radar - Mid-Level Backend Developer',
+	  	'/careers/job-junior-social-media-analyst' : 'Buzz Radar - Junior Social Media Analyst',
 	},
 	descriptions : {
 	    '/': 'Buzz Radar is the leading social intelligence platform designed for marketers rather than analysts. Providing powerful, easy to digest actionable insights.',
@@ -161,7 +167,10 @@ const SEORoutes = {
 	  	'/casestudies': 'Find out how Buzz Radar has helped a wide range of organisations gain critical insights from their data.',
 	  	'/ces': 'Buzz Radar is the leading social intelligence platform designed for marketers rather than analysts. Providing powerful, easy to digest actionable insights.',
 	  	'/virtualevents': 'With the many events this year turning virtual, utilising and understanding the online conversation around them has become increasingly important. Virtual events have special needs; Buzz Radar’s Audience Analysis and Real-time Data Visualisation can help event organisers quickly fill gaps in several key areas.',
-	  	'/credibleinfluence': 'Credible Influence - The AI Powered Audience Intelligence, Social Insight and Content Optimisation Agency',
+		'/credibleinfluence': 'Credible Influence - The AI Powered Audience Intelligence, Social Insight and Content Optimisation Agency',
+		'/careers' : 'People are at the centre of everything we do. We’re a creative, passionate and dedicated group, who live to create awesome stuff and have fun doing it. The team is tight-knit and excited about helping people gain insight from their data through innovative, creative solutions.',
+	  	'/careers/job-mid-backend-dev' : 'We’re looking for a talented backend developer to join one of the best development teams in the business and help us on the continued development of Buzz Radar’s cutting edge and award winning marketing insight platform.',
+	  	'/careers/job-junior-social-media-analyst' : 'We’re looking for a talented Junior Social Media Analyst to join one of the best development teams in the business and help us on the continued development of Buzz Radar’s cutting edge and award winning marketing insight platform.',  
 	},
 	sharerImages : {
 	    '/': 'https://www.buzzradar.com/public_assets/images/sharers/sharer.jpg',
@@ -175,7 +184,10 @@ const SEORoutes = {
 	  	'/casestudies': 'https://www.buzzradar.com/public_assets/images/sharers/sharer.jpg',
 	  	'/ces': 'https://insights.buzzradar.com/bundles/api/images/ces2020_sharer.png',
 	  	'/virtualevents': 'https://www.buzzradar.com/public_assets/images/sharers/sharer_virtualevents.jpg',
-	  	'/credibleinfluence': 'https://www.buzzradar.com/public_assets/images/sharers/sharer_services.jpg',
+		'/credibleinfluence': 'https://www.buzzradar.com/public_assets/images/sharers/sharer_services.jpg',
+		'/careers' : 'https://www.buzzradar.com/public_assets/images/sharers/sharer_careers.jpg',
+	  	'/careers/job-mid-backend-dev' : 'https://www.buzzradar.com/public_assets/images/sharers/sharer_careers.jpg',
+	  	'/careers/job-junior-social-media-analyst' : 'https://www.buzzradar.com/public_assets/images/sharers/sharer_careers.jpg',  
 	},
 };
 readFileAsyncCASESTUDIES('./src/statics/CaseStudiesEntries.json');
