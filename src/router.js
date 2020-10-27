@@ -127,24 +127,32 @@ export default new Router({
           path: '/realtimedashboard',
           name : 'realtimedashboard',
           label : 'Real-Time Dashboard',
+          description_menu : 'Turn your data into fast, accessible and actionable intelligence for your entire organisation.',
+          icon_menu : 'icon-13.svg',
           component: RealTimeDash
         },
         {
           path: '/aiaudienceanalysis',
           name : 'aiaudienceanalysis',
           label : 'AI Audience Analysis',
+          description_menu : 'Find what really makes your customers tick with AI Audience Analysis.',
+          icon_menu : 'icon-14.svg',
           component: AIAudienceAnal
         },
         {
           path: '/marketingintelplatform',
           name : 'marketingintelplatform',
           label : 'Marketing Intelligence Platform',
+          description_menu : 'Buzz Radar connects the sea of marketing data created around your organisation and turns it into actionable, intelligent insights.',
+          icon_menu : 'icon-15.svg',
           component: MarketingIntel
         },
         {
           path: '/virtualevents',
           name : 'virtualevents',
           label : 'Virtual Events',
+          description_menu : 'Make your Virtual Event count with Real-Time Social and Audience Intelligence you can act on instantly',
+          icon_menu : 'icon-16.svg',
           component: VirtualEvents
         },
       ]
