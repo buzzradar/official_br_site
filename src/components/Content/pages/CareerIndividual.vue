@@ -29,7 +29,7 @@
 
 	      </div>
 
-	      <div ></div>
+	      <div v-html="this.jobJSONContent.description"></div> <!-- v-html="this.jobJSONContent.description" -->
 
 
 
@@ -40,13 +40,15 @@
 
 
 
-			<div class="w-lg-80 mx-auto">
+			<!-- <div class="w-lg-80 mx-auto">
 				<div class="space-bottom-1">
 					
-					<p>Buzz Radar has been leading the world of real-time data visualisation since 2012, delivering Command Centres and interactive live data visualisations to the world’s leading brands and events. With a client list, including Twitter, Burberry, Microsoft, Ogilvy, Samsung, IBM and Google, and as a winner of Tech City’s title of Most Disruptive Startup and Fastest Growing Startup, we’re excited to be at the forefront of social and audience intelligence.</p>
-					<p>Thanks to an influx of new business, we’re looking for a Junior Social Media Analyst to research, monitor and report on a variety of global social and audience analysis projects, helping our team provide actionable insights and recommendations to many of our Fortune 500 clients. We’re seeking someone who is passionate about understanding audiences through the use of social data and cutting edge technology. The ideal candidate is someone who has an innate curiosity and the desire to uncover the "why?” from the data and help our clients discover game-changing insights. We’re working with some of the most advanced and innovative clients in both the technology and pharmaceutical sectors, alongside some of the world’s biggest brands.</p>
-					<p><strong>The Role:</strong> Support the Audience Intelligence and Insights Team in producing analyses of social data across multiple projects and clients:</p>
-					
+					<p>Buzz Radar was founded in 2012 to try and figure out how to make social and audience data accessible, insightful and actionable for everyone Inside an organisation.</p>
+					<p>We created a cutting edge intelligence platform driven by a team of expert analysts and strategists. It delivers valuable insights and recommendations to the right person at the right moment in ways that they can easily understand and act on.</p>
+					<p>For the past 8 years we’ve been helping the world's biggest brands, events and broadcasters gain actionable intelligence from their data.</p>
+					<p>On the way we’ve won multiple international awards for the work we’ve done and are lucky enough to be considered one of the most innovative intelligence companies in the world.</p>
+					<p>Thanks to an influx of new business, we’re looking for a Junior Social Media Analyst to research, monitor and report on a variety of global social and audience analysis projects, helping our team provide actionable insights and recommendations to many of our Fortune 500 clients. We’re seeking someone who is passionate about understanding audiences through the use of social data and cutting edge technology. The ideal candidate is someone who has an innate curiosity and the desire to uncover the "why?” from the data and help our clients discover game-changing insights. We’re working with some of the most advanced and innovative clients in both the technology and pharmaceutical sectors, alongside some of the world’s biggest brands. </p>
+
 					<ul class="list-unstyled mb-0">
 						<li class="py-3">
 							<div class="media">
@@ -54,7 +56,7 @@
 								<span class="fas fa-arrow-right btn-icon__inner"></span>
 								</span>
 								<div class="media-body text-secondary">
-								Collect and clean social data from a wide variety of sources. An understanding of boolean is very helpful.
+								Collect and clean social data from a wide variety of sources. An understanding of boolean is very helpful. 
 								</div>
 							</div>
 						</li>
@@ -340,7 +342,7 @@
 
 				</div>
 
-			</div>
+			</div> -->
 
 
 
@@ -379,7 +381,15 @@
  			var jobItemMatched;
 
  			AllCareersEntries.jobs.forEach(function(item,index){
- 				if (item.slug == currentSlug) jobItemMatched = item;
+				// console.log("------------>>>>???1>>>>>>",item.slug, currentSlug);
+				if (currentSlug.charAt(currentSlug.length-1) == '/'){
+					currentSlug = currentSlug.slice(0, -1);
+				}
+				// console.log("------------>>>>???2>>>>>>",item.slug, currentSlug);
+
+ 				if (item.slug.includes(currentSlug)) {
+					jobItemMatched = item;
+				}
  			});
 
 			return {
