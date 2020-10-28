@@ -155,6 +155,7 @@
 	.router-link-exact-active,.router-link-active {
 
 		.u-header__promo-title{
+			color: #F6921E;
 			font-weight: bold;
 		}
 		

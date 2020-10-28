@@ -90,7 +90,7 @@
 					  megaMenu : true,   
 					  columns: 2,
 					  extraColumnLayout : null,
-					  megaMenuWidth : '800px'
+					  megaMenuWidth : '700px'
 	  			},
 	  			{
 	  				//Services
