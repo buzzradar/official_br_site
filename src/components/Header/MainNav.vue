@@ -22,7 +22,7 @@
 
 					<li v-for="childRoute in route.children" class="hs-has-sub-menu">
 
-						<router-link :to="childRoute.path" class="nav-link u-header__sub-menu-nav-link">{{childRoute.label}}</router-link>
+						<router-link @click.native="removeMenu" :to="childRoute.path" class="nav-link u-header__sub-menu-nav-link">{{childRoute.label}}</router-link>
 						<!-- <a class="nav-link u-header__sub-menu-nav-link" :href="childRoute.path">{{childRoute.label}}</a> -->
 
 					</li>				
@@ -128,7 +128,10 @@
 	  		e.preventDefault();
 	  		Calendly.showPopupWidget('https://calendly.com/buzzradar/introduction-meeting');
 	  		return false;
-	  	}
+		  },
+		  removeMenu : function () {
+			$('.hs-sub-menu').hide();
+		  }
 	  }
 	}
 
