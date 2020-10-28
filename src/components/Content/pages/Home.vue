@@ -906,14 +906,18 @@
     data () {
       return {
 
-        videoBgURL : process.env.BASE_URL + 'public_assets/html5-video/universe/universe',
+        videoBgURL : process.env.BASE_URL + 'public_assets/html5-video/universe/universe_720',
 
+        heroBgImageTest : {
+          height : '100%',
+          backgroundImage : 'url("'+require('@/assets/buzzradar/img/homepage/heroImgMobile.jpg')+'")',
+          backgroundPosition : 'top center',
+        },
         heroBgImageMobile : {
           height : '100%',
           backgroundImage : 'url("'+require('@/assets/buzzradar/img/homepage/heroImgMobile.jpg')+'")',
           backgroundPosition : 'top center',
         },
-
         styleParallaxBg1 : {
           backgroundImage : 'url('+require('@/assets/buzzradar/svg/components/bg-elements-7.svg')+')',
           height : '120%',
@@ -995,7 +999,7 @@
           backDelay: 2000
         });
 
-      },4000);
+      },0);
       
 
       $('#powerful_tools').find('.nav-link').click(function(e){

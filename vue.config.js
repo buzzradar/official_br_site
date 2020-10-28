@@ -21,7 +21,7 @@ const readFileAsyncCASESTUDIES = (FILE_NAME) => {
 
         //Run through 10 Case Studies to create the slugs, titles and images for SEO
 		var i = 0;
-        while (i < 1) {
+        while (i < 2) {
 		  var caseStudy = dataJson.casesentries[i];
 
 		  //Slugs (Array)
@@ -68,7 +68,7 @@ const readFileAsyncBLOGPOSTS = (FILE_NAME) => {
 
 		//Run through 10 Blog Posts to create the slugs, titles and images for SEO
 		var i = 0;
-        while (i < 1) {
+        while (i < 2) {
 		  var blogPost = dataJson.blogentries[i];
 
 		  //Slugs (Array)
