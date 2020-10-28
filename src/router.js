@@ -159,30 +159,40 @@ export default new Router({
         },
       ]
     },
+
+
     {
       path: '/services',
       name : 'services',
       label : 'Services',
-      component : Services,
-      children: [
-        {
-          path: '/credibleinfluence',
-          name : 'credibleinfluence',
-          label : 'Credible Influence',
-          description_menu : 'Turn your data into fast, accessible and actionable intelligence for your entire organisation.',
-          icon_menu : 'icon-5.svg',
-          component: CredibleInfluence
-        },
-        {
-          path: '/reports',
-          name : 'reports',
-          label : 'Reports',
-          description_menu : 'Turn your data into fast, accessible and actionable intelligence for your entire organisation.',
-          icon_menu : 'icon-5.svg',
-          component: Reports
-        },
-      ]
+      component : CredibleInfluence,
     },
+
+
+    // {
+    //   path: '/services',
+    //   name : 'services',
+    //   label : 'Services',
+    //   component : Services,
+    //   children: [
+    //     {
+    //       path: '/credibleinfluence',
+    //       name : 'credibleinfluence',
+    //       label : 'Credible Influence',
+    //       description_menu : 'Turn your data into fast, accessible and actionable intelligence for your entire organisation.',
+    //       icon_menu : 'icon-5.svg',
+    //       component: CredibleInfluence
+    //     },
+    //     {
+    //       path: '/reports',
+    //       name : 'reports',
+    //       label : 'Reports',
+    //       description_menu : 'Turn your data into fast, accessible and actionable intelligence for your entire organisation.',
+    //       icon_menu : 'icon-5.svg',
+    //       component: Reports
+    //     },
+    //   ]
+    // },
 
     ...studiesRoutes,
     

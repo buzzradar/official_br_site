@@ -87,7 +87,7 @@
 	  				//Products
 					  router_config : this.$router.options.routes[3],
 					  children : this.$router.options.routes[3].children,
-					  megaMenu : true,   
+					  megaMenu : false,   
 					  columns: 2,
 					  extraColumnLayout : 'freetools',
 					  megaMenuWidth : '100%'

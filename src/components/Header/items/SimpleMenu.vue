@@ -38,7 +38,7 @@
 	  },
 	  methods : {
 		removeMenu : function () {
-			$('.hs-mega-menu').hide();
+			$('.hs-sub-menu').hide();
 		}
 	  }
 	}
