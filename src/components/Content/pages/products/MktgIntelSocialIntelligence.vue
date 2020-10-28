@@ -248,7 +248,7 @@
 
 <script>
 
-  import AllCaseStudiesEntries from '../../../statics/CaseStudiesEntries.json';
+  import AllCaseStudiesEntries from '../../../../statics/CaseStudiesEntries.json';
 
  	export default {
 

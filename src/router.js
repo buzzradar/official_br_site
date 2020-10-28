@@ -3,35 +3,37 @@ import Router from 'vue-router';
 
 import NotFound from './components/Content/pages/NotFound';
 
-
 import Home from './components/Content/pages/Home';
-import About from './components/Content/pages/AboutWrapper';
-import AboutUs from './components/Content/pages/Aboutus';
-import Contactus from './components/Content/pages/Contactus';
-import Faq from './components/Content/pages/Faq';
-import Careers from './components/Content/pages/Careers';
-import CareerIndividual from './components/Content/pages/CareerIndividual';
+import About from './components/Content/pages/aboutUs/AboutWrapper';
+import AboutUs from './components/Content/pages/aboutUs/AboutUs';
+import Contactus from './components/Content/pages/aboutUs/Contactus';
+import Faq from './components/Content/pages/aboutUs/Faq';
+import Careers from './components/Content/pages/aboutUs/Careers';
+import CareerIndividual from './components/Content/pages/aboutUs/CareerIndividual';
 import Blog from './components/Content/pages/Blog';
 import BlogIndividual from './components/Content/pages/BlogIndividual';
 import CaseStudies from './components/Content/pages/CaseStudies';
 import CaseStudyIndividual from './components/Content/pages/CaseStudyIndividual';
 
 
-import Products from './components/Content/pages/Products';
-import RealTimeDash from './components/Content/pages/RealTimeDashboards';
-import AIAudienceAnal from './components/Content/pages/AIAudienceAnal';
-import MarketingIntel from './components/Content/pages/MarketingIntel';
-import MktgSocialIntelligence from './components/Content/pages/MktgIntelSocialIntelligence';
-import MktgPaidMedia from './components/Content/pages/MtkgIntelPaidMedia';
-import MktgNewsPr from './components/Content/pages/MktgIntelNewsPr';
+import Products from './components/Content/pages/products/Products';
+import RealTimeDash from './components/Content/pages/products/RealTimeDashboards';
+import AIAudienceAnal from './components/Content/pages/products/AIAudienceAnal';
+import MarketingIntel from './components/Content/pages/products/MarketingIntel';
+import MktgSocialIntelligence from './components/Content/pages/products/MktgIntelSocialIntelligence';
+import MktgPaidMedia from './components/Content/pages/products/MtkgIntelPaidMedia';
+import MktgNewsPr from './components/Content/pages/products/MktgIntelNewsPr';
 import TermsConditions from './components/Content/pages/TermsConditions';
 import PrivacyPolicy from './components/Content/pages/PrivacyPolicy';
 import CookiePolicy from './components/Content/pages/CookiePolicy';
-import CredibleInfluence from './components/Content/pages/CredibleInfluenceLanding';
+import VirtualEvents from './components/Content/pages/products/VirtualEvents';
 
+import Services from './components/Content/pages/services/Services';
+import CredibleInfluence from './components/Content/pages/services/CredibleInfluenceLanding';
+import Reports from './components/Content/pages/services/Reports';
 
 import CES from './components/Content/pages/campaigns/Ces';
-import VirtualEvents from './components/Content/pages/campaigns/VirtualEvents';
+
 
 import BlogEntries from './statics/WPPostsEntries.json';
 import JobsEntries from './statics/CareersEntries.json';
@@ -128,7 +130,7 @@ export default new Router({
           name : 'realtimedashboard',
           label : 'Real-Time Dashboard',
           description_menu : 'Turn your data into fast, accessible and actionable intelligence for your entire organisation.',
-          icon_menu : 'icon-13.svg',
+          icon_menu : 'icon-5.svg',
           component: RealTimeDash
         },
         {
@@ -136,7 +138,7 @@ export default new Router({
           name : 'aiaudienceanalysis',
           label : 'AI Audience Analysis',
           description_menu : 'Find what really makes your customers tick with AI Audience Analysis.',
-          icon_menu : 'icon-14.svg',
+          icon_menu : 'icon-24.svg',
           component: AIAudienceAnal
         },
         {
@@ -144,7 +146,7 @@ export default new Router({
           name : 'marketingintelplatform',
           label : 'Marketing Intelligence Platform',
           description_menu : 'Buzz Radar connects the sea of marketing data created around your organisation and turns it into actionable, intelligent insights.',
-          icon_menu : 'icon-15.svg',
+          icon_menu : 'icon-28.svg',
           component: MarketingIntel
         },
         {
@@ -152,16 +154,34 @@ export default new Router({
           name : 'virtualevents',
           label : 'Virtual Events',
           description_menu : 'Make your Virtual Event count with Real-Time Social and Audience Intelligence you can act on instantly',
-          icon_menu : 'icon-16.svg',
+          icon_menu : 'icon-48.svg',
           component: VirtualEvents
         },
       ]
     },
     {
-      path: '/credibleinfluence',
-      name: 'credibleinfluence',
+      path: '/services',
+      name : 'services',
       label : 'Services',
-      component: CredibleInfluence
+      component : Services,
+      children: [
+        {
+          path: '/credibleinfluence',
+          name : 'credibleinfluence',
+          label : 'Credible Influence',
+          description_menu : 'Turn your data into fast, accessible and actionable intelligence for your entire organisation.',
+          icon_menu : 'icon-5.svg',
+          component: CredibleInfluence
+        },
+        {
+          path: '/reports',
+          name : 'reports',
+          label : 'Reports',
+          description_menu : 'Turn your data into fast, accessible and actionable intelligence for your entire organisation.',
+          icon_menu : 'icon-5.svg',
+          component: Reports
+        },
+      ]
     },
 
     ...studiesRoutes,

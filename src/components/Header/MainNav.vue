@@ -7,38 +7,36 @@
 		<ul class="navbar-nav u-header__navbar-nav">
 
 
+
+
+
  			<!-- Root Level Menu Option -->
 			<li v-for="(route,index) in mainNavRoutesArray" v-if="route.hasChildren == true"
 
-			class="nav-item hs-has-sub-menu u-header__nav-item"
+			:class="(route.megaMenu) ? 'nav-item hs-has-mega-menu u-header__nav-item' : 'nav-item hs-has-sub-menu u-header__nav-item'"
 			data-event="hover"
 			data-animation-in="slideInUp"
-			data-animation-out="fadeOut">
+			data-animation-out="fadeOut"
+			:data-max-width="route.megaMenuWidth"
+			data-position="left">
 
 				<a class="nav-link u-header__nav-link u-header__nav-link-toggle" :href="route.children[0].path" aria-haspopup="true" aria-expanded="false" aria-labelledby="prodcutsSubMenu">{{route.router_config.label}}</a>
 
-				<!-- Submenu -->
-				<ul class="hs-sub-menu u-header__sub-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
-
-					<li v-for="childRoute in route.children" class="hs-has-sub-menu">
-
-						<router-link @click.native="removeMenu" :to="childRoute.path" class="nav-link u-header__sub-menu-nav-link">{{childRoute.label}}</router-link>
-						<!-- <a class="nav-link u-header__sub-menu-nav-link" :href="childRoute.path">{{childRoute.label}}</a> -->
-
-					</li>				
-
-				</ul>
-				<!-- End Submenu -->
+				<mega-menu v-if="route.megaMenu" :parent-route="route" :num-columns="route.columns" :extra-column-layout="route.extraColumnLayout"></mega-menu>   
+				<simple-menu v-else :parent-route="route"></simple-menu>
 
 			</li>
+
+			<!-- Standalone Link -->
 			<li v-else class="nav-item u-header__nav-item nav-item-standalone">
-
 				<router-link :to="route.router_config.path" class="nav-link u-header__nav-link">{{route.router_config.label}}</router-link>
-				<!-- <a class="nav-link u-header__nav-link" :href="route.router_config.path">{{route.router_config.label}}</a> -->
-
-
 			</li>
+			<!-- End Standalone Link -->
 			<!-- End Root Level Menu Option -->
+
+
+
+
 
 
 			<!-- Book a Meeting -->
@@ -73,32 +71,48 @@
 
 <script>
 
+	import MegaMenu from './items/MegaMenu';
+	import SimpleMenu from './items/SimpleMenu';
+
 	export default {
 	  name: 'MainNav',
+	  components: {
+		MegaMenu,
+		SimpleMenu,
+	  },
 	  data : function() {
 	  	return {	
 	  		mainNavRoutesArray : [
 	  			{
 	  				//Products
-	  				router_config : this.$router.options.routes[3],
-	  				children : this.$router.options.routes[3].children,
+					  router_config : this.$router.options.routes[3],
+					  children : this.$router.options.routes[3].children,
+					  megaMenu : true,   
+					  columns: 2,
+					  extraColumnLayout : 'freetools',
+					  megaMenuWidth : '100%'
 	  			},
 	  			{
 	  				//Services
-	  				router_config : this.$router.options.routes[4],
+					  router_config : this.$router.options.routes[4],
+					  children : this.$router.options.routes[4].children,
+					  megaMenu : false,
 	  			},
 	  			{
 	  				//Case Studies
-	  				router_config : this.$router.options.routes[5],
+					  router_config : this.$router.options.routes[5],
+					  megaMenu : false, 
 	  			},
 	  			{
 	  				//Blog
-	  				router_config : this.$router.options.routes[6],
+					  router_config : this.$router.options.routes[6],
+					  megaMenu : false, 
 	  			},
 	   			{
 	  				//About Us
-	  				router_config : this.$router.options.routes[7],
-	  				children : this.$router.options.routes[7].children,
+					  router_config : this.$router.options.routes[7],
+					  children : this.$router.options.routes[7].children,
+					  megaMenu : false, 
 	  			},
 	  		]
 	  	}
@@ -128,10 +142,13 @@
 	  		e.preventDefault();
 	  		Calendly.showPopupWidget('https://calendly.com/buzzradar/introduction-meeting');
 	  		return false;
-		  },
-		  removeMenu : function () {
-			$('.hs-sub-menu').hide();
-		  }
+		  }, 
+		getFirstColumn : function(ChildRoutesArray){
+			return [ChildRoutesArray[0],ChildRoutesArray[1]];
+		},
+		getSecondColumn : function(ChildRoutesArray){
+			return [ChildRoutesArray[2],ChildRoutesArray[3]];
+		},		
 	  }
 	}
 
@@ -155,6 +172,22 @@
 			//color: #ff0000;
 			font-weight: bold;
 		}		
+
+		.u-header__promo-title{
+			font-size: 1rem;
+		}
+
+		.u-header__promo-text{
+			font-size:70%;
+		}
+
+		.badge{
+			font-size: 90%;
+		}
+
+		.badge-pill{
+			background-color: #21C6CA;
+		}
 		
 	}
 	

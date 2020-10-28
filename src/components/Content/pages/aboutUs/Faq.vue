@@ -136,7 +136,7 @@
 
 <script>
 
-  import AllFaqsEntries from '../../../statics/Faqs.json';
+  import AllFaqsEntries from '../../../../statics/Faqs.json';
 
  	export default {
 

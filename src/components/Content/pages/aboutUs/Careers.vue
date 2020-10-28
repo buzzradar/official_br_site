@@ -80,7 +80,7 @@
 
 <script>
 
-  import AllCareersEntries from '../../../statics/CareersEntries.json';
+  import AllCareersEntries from '../../../../statics/CareersEntries.json';
 
  	export default {
 

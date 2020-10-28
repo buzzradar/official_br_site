@@ -3,8 +3,6 @@
   <div>
 
 
-
-
     <!-- Content of The Page -->
     <div class="container space-2">
 
@@ -27,8 +25,8 @@
                 <div class="col-lg-5 mb-9 mb-lg-0">
                     
                   <div class="mb-4">
-                    <h2 class="font-weight-medium mb-4">Paid Media Analysis</h2>
-                    <p>Receive insights and detailed reports on your performance for Facebook Ads and Google Adwords.</p>
+                    <h2 class="font-weight-medium mb-4">News & PR Monitoring</h2>
+                    <p>Capture and analyse data from all your PR campaigns across over 3 Million news outlets and blogs.</p>
                   </div>
 
                   <ul class="list-unstyled">
@@ -37,7 +35,7 @@
                         <span class="fas fa-check btn-icon__inner"></span>
                       </span>
                       <div class="media-body">
-                        <p><strong>Intelligent Alerts:</strong> Keep an eye on your paid media investments 24/7 and prevent costly anomalies like overspend or saturation.</p>
+                        <p>Quantify your PR impact</p>
                       </div>
                     </li>
                     <li class="media">
@@ -45,7 +43,7 @@
                         <span class="fas fa-check btn-icon__inner"></span>
                       </span>
                       <div class="media-body">
-                        <p><strong>Analysis:</strong> Track all your campaigns, not only the top spenders.</p>
+                        <p>Know your share of voice</p>
                       </div>
                     </li>
                     <li class="media">
@@ -53,18 +51,33 @@
                         <span class="fas fa-check btn-icon__inner"></span>
                       </span>
                       <div class="media-body">
-                        <p><strong>Recommendations:</strong> Receive proactive insights and actions to maximise ROI.</p>
+                        <p>Understand how audience feel about your brand.</p>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <span class="btn btn-icon btn-xs btn-primary rounded-circle mt-1 mr-3">
+                        <span class="fas fa-check btn-icon__inner"></span>
+                      </span>
+                      <div class="media-body">
+                        <p>Build Clippings lists in moments.</p>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <span class="btn btn-icon btn-xs btn-primary rounded-circle mt-1 mr-3">
+                        <span class="fas fa-check btn-icon__inner"></span>
+                      </span>
+                      <div class="media-body">
+                        <p>Be Alerted to impending PR crisis.</p>
                       </div>
                     </li>
                   </ul>
                   <a v-on:click="bookMeeting" class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-2" href="#">Book a Demo</a>
-
                 
 
                 </div>
 
                 <div class="col-lg-6">
-                  <img class="img-fluid rounded d-md-block" src="@/assets/buzzradar/img/marketingplatform/paidmedia.jpg" alt="SVG Arrow">
+                  <img class="img-fluid rounded d-md-block" src="@/assets/buzzradar/img/marketingplatform/pr.jpg" alt="SVG Arrow">
                 </div>
               </div>
             </div>
@@ -137,6 +150,8 @@
       </div>
     </div>
     <!-- End Case Studies Section -->
+
+
 
 
 
@@ -231,6 +246,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
   </div>
 
 </template>
@@ -239,11 +263,11 @@
 
 <script>
 
-  import AllCaseStudiesEntries from '../../../statics/CaseStudiesEntries.json';
+  import AllCaseStudiesEntries from '../../../../statics/CaseStudiesEntries.json';
 
   export default {
 
-    name : 'paidmedia',
+    name : 'newspr',
     data : function() {
       return {
         styleParallaxBg1 : {
