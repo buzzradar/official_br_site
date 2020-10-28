@@ -13,97 +13,26 @@
  			<!-- Root Level Menu Option -->
 			<li v-for="(route,index) in mainNavRoutesArray" v-if="route.hasChildren == true"
 
-			:class="route.subMenuClass"
+			:class="(route.megaMenu) ? 'nav-item hs-has-mega-menu u-header__nav-item' : 'nav-item hs-has-sub-menu u-header__nav-item'"
 			data-event="hover"
 			data-animation-in="slideInUp"
 			data-animation-out="fadeOut"
-			data-max-width="900px"
+			:data-max-width="route.megaMenuWidth"
 			data-position="left">
 
 				<a class="nav-link u-header__nav-link u-header__nav-link-toggle" :href="route.children[0].path" aria-haspopup="true" aria-expanded="false" aria-labelledby="prodcutsSubMenu">{{route.router_config.label}}</a>
 
-
-				<!-- Products - Mega Menu -->
-                <div v-if="route.mega_menu" class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="demosMegaMenu">
-                	<div class="row no-gutters">
-                    	<div class="col-md-4">
-							<!-- Mega Menu SubItem FIRST COLUMN -->
-							<div v-for="childRoute in getFirstColumn(route.children)" class="u-header__promo-item">
-								<router-link :to="childRoute.path" class="u-header__promo-link">
-								<div class="media align-items-center">
-									<img class="js-svg-injector u-header__promo-icon" :src="getURLIcon(childRoute.icon_menu)" :alt="childRoute.label">
-									<div class="media-body">
-									<span class="u-header__promo-title">{{childRoute.label}}</span>
-									<small class="u-header__promo-text">{{childRoute.description_menu}}</small>
-									</div>
-								</div>
-								</router-link>
-							</div>
-							<!-- End Mega Menu SubItem FIRST COLUMN -->
-                    	</div>
-						<div class="col-md-4">
-							<!-- Mega Menu SubItem SECOND COLUMN -->
-							<div v-for="childRoute in getSecondColumn(route.children)" class="u-header__promo-item">
-								<router-link :to="childRoute.path" class="u-header__promo-link">
-								<div class="media align-items-center">
-									<img class="js-svg-injector u-header__promo-icon" :src="getURLIcon(childRoute.icon_menu)" :alt="childRoute.label">
-									<div class="media-body">
-									<span class="u-header__promo-title">{{childRoute.label}}</span>
-									<small class="u-header__promo-text">{{childRoute.description_menu}}</small>
-
-									</div>
-								</div>
-								</router-link>
-							</div>
-							<!-- End Mega Menu SubItem SECOND COLUMN -->
-                    	</div>
-						<!-- Free Tools -->
-						<div class="col-md-4 u-header__promo">
-						<a class="d-block u-header__promo-inner" href="#">
-							<div class="position-relative">
-							<img class="img-fluid rounded mb-3" src="@/assets/buzzradar/img/topMenu/freeTools.jpg" alt="Buzz Radar Free Tools">
-							<span class="badge badge-success badge-pill badge-pos shadow-sm mt-3">New</span>
-							</div>
-							<span class="text-secondary font-size-1">Try some of our Free Tools for your organisation to see the potential of using Buzz Radar.</span>
-						</a>
-						</div>
-						<!-- End Free Tools -->
-					</div>
-                </div>
-                <!-- End Products - Mega Menu -->
-              
-
-
-				<!-- Regular Submenu -->
-				<ul v-else class="hs-sub-menu u-header__sub-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
-					<li v-for="childRoute in route.children" class="hs-has-sub-menu">
-						<router-link :to="childRoute.path" class="nav-link u-header__sub-menu-nav-link">{{childRoute.label}}</router-link>
-					</li>				
-				</ul>
-				<!-- End Regular Submenu -->
+				<mega-menu v-if="route.megaMenu" :parent-route="route" :num-columns="route.columns" :extra-column-layout="route.extraColumnLayout"></mega-menu>   
+				<simple-menu v-else :parent-route="route"></simple-menu>
 
 			</li>
 
 			<!-- Standalone Link -->
 			<li v-else class="nav-item u-header__nav-item nav-item-standalone">
-
 				<router-link :to="route.router_config.path" class="nav-link u-header__nav-link">{{route.router_config.label}}</router-link>
-
 			</li>
 			<!-- End Standalone Link -->
 			<!-- End Root Level Menu Option -->
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -142,8 +71,15 @@
 
 <script>
 
+	import MegaMenu from './items/MegaMenu';
+	import SimpleMenu from './items/SimpleMenu';
+
 	export default {
 	  name: 'MainNav',
+	  components: {
+		MegaMenu,
+		SimpleMenu,
+	  },
 	  data : function() {
 	  	return {	
 	  		mainNavRoutesArray : [
@@ -151,33 +87,32 @@
 	  				//Products
 					  router_config : this.$router.options.routes[3],
 					  children : this.$router.options.routes[3].children,
-					  subMenuClass : 'nav-item hs-has-mega-menu u-header__nav-item',
-					  mega_menu : true,   
+					  megaMenu : true,   
+					  columns: 2,
+					  extraColumnLayout : 'freetools',
+					  megaMenuWidth : '100%'
 	  			},
 	  			{
 	  				//Services
 					  router_config : this.$router.options.routes[4],
-					  subMenuClass : 'nav-item hs-has-sub-menu u-header__nav-item',
-					  mega_menu : false, 
+					  children : this.$router.options.routes[4].children,
+					  megaMenu : false,
 	  			},
 	  			{
 	  				//Case Studies
 					  router_config : this.$router.options.routes[5],
-					  subMenuClass : 'nav-item hs-has-sub-menu u-header__nav-item',
-					  mega_menu : false, 
+					  megaMenu : false, 
 	  			},
 	  			{
 	  				//Blog
 					  router_config : this.$router.options.routes[6],
-					  subMenuClass : 'nav-item hs-has-sub-menu u-header__nav-item',
-					  mega_menu : false, 
+					  megaMenu : false, 
 	  			},
 	   			{
 	  				//About Us
 					  router_config : this.$router.options.routes[7],
 					  children : this.$router.options.routes[7].children,
-					  subMenuClass : 'nav-item hs-has-sub-menu u-header__nav-item',
-					  mega_menu : false, 
+					  megaMenu : false, 
 	  			},
 	  		]
 	  	}
@@ -213,11 +148,7 @@
 		},
 		getSecondColumn : function(ChildRoutesArray){
 			return [ChildRoutesArray[2],ChildRoutesArray[3]];
-		},
-		getURLIcon : function(nameIcon){
-			console.log("get Name of the Icon", nameIcon);
-			return require('@/assets/buzzradar/svg/icons/'+nameIcon);
-		}
+		},		
 	  }
 	}
 
