@@ -23,7 +23,7 @@
               </h1>
               <h3>with Real-Time Social and Audience Intelligence<br>you can act on instantly</h3>
               
-              <button type="button" class="btn btn-sm btn-primary transition-3d-hover try-now-btn mt-2" tabindex="0">Book a Demo</button>
+              <button v-on:click="bookMeeting" type="button" class="btn btn-sm btn-primary transition-3d-hover mt-2" tabindex="0">Book a Demo</button>
               
 
             </div>
