@@ -6,7 +6,7 @@ import NotFound from './components/Content/pages/NotFound';
 
 import Home from './components/Content/pages/Home';
 import About from './components/Content/pages/AboutWrapper';
-import AboutUs from './components/Content/pages/AboutUs';
+import AboutUs from './components/Content/pages/Aboutus';
 import Contactus from './components/Content/pages/Contactus';
 import Faq from './components/Content/pages/Faq';
 import Careers from './components/Content/pages/Careers';
