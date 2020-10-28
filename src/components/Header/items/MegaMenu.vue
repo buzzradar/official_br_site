@@ -152,6 +152,14 @@
 
 	@import "compass";
 
+	.router-link-exact-active,.router-link-active {
+
+		.u-header__promo-title{
+			font-weight: bold;
+		}
+		
+	}		
+
 </style>
 
 

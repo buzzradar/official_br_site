@@ -56,6 +56,11 @@
 
 	@import "compass";
 
+	.router-link-exact-active,.router-link-active {
+		//color: #ff0000;
+		font-weight: bold;
+	}		
+
 </style>
 
 
