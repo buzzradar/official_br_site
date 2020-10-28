@@ -87,10 +87,10 @@
 	  				//Products
 					  router_config : this.$router.options.routes[3],
 					  children : this.$router.options.routes[3].children,
-					  megaMenu : false,   
+					  megaMenu : true,   
 					  columns: 2,
-					  extraColumnLayout : 'freetools',
-					  megaMenuWidth : '100%'
+					  extraColumnLayout : null,
+					  megaMenuWidth : '800px'
 	  			},
 	  			{
 	  				//Services
