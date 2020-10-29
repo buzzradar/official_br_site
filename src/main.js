@@ -4,6 +4,11 @@ import router from './router';
 import VueIntercom from 'vue-intercom';
 
 
+
+
+
+
+
 Vue.use(VueIntercom, { appId: 'nn0o63ch' });
 
 

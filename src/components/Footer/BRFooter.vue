@@ -1,5 +1,7 @@
 /* eslint-disable */
 
+
+
 <template>
 
 
@@ -137,7 +139,7 @@
 
 					var newsLetterList =  {
 				        'ht' : '110cc29c538300a21aa753004897a90886c7e9f6:MTUyNDY3NDg0Ni43MzE2',
-				        'listId' : 'a06aa57adb',
+				        'listId' : '254d31366d',
 				    };
 
 				    var dataForm = {
