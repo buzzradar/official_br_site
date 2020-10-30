@@ -113,9 +113,6 @@
 				}
 			});
 
-			console.log('Lets see--->', columnsChildrenArray);
-			console.log('Lets see--->', columnsChildrenArray[0][0].label);
-
 			return columnsChildrenArray;  
 		}
 	  },
