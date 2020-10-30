@@ -144,7 +144,7 @@
     data : function() {
 
       AllFaqsEntries.faqs.forEach(function(element) {
-        console.log( escape(element.copy));
+        //console.log( escape(element.copy));
       });
 
       return {

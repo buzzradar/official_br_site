@@ -24,7 +24,7 @@
       <!-- +++++++++++++++++++++++++++++++++ -->
      
       <!-- Testimonials Section -->
-      <div class="container mt-0 mt-md-10 mb-5" :style="bannerBg" >
+      <div class="container mb-5 mt-8" :style="bannerBg" >
         <div class="row">
           <div class="col-md-6">
 
@@ -33,10 +33,10 @@
               <div class="row">
                 <div class="col-md-12 position-relative z-index-2">
                   <div class="mb-4">
-                    <h1 class="display-5 text-white font-weight-normal">As soon I saw the platform I knew we had to have it.</h1>
+                    <h1 class="display-5 text-white font-weight-normal title">As soon I saw the platform I knew we had to have it.</h1>
                   </div>
                   
-                  <p class="lead text-white">Jeremy Waite – Chief Strategy Officer at IBM</p>
+                  <p class="lead text-white subtitle">Jeremy Waite – Chief Strategy Officer at IBM</p>
 
                   <!-- Fancybox -->
                   <a class="js-fancybox btn btn-primary transition-3d-hover mb-2 mb-sm-0 mr-sm-2" href="javascript:;"
@@ -139,7 +139,7 @@
       return {
         bannerBg : {
           backgroundImage : 'url('+require('@/assets/buzzradar/img/casestudies/ibm_banner_case_study.jpg')+')',
-          backgroundPosition: 'left',
+          backgroundPosition: 'right',
         },
         filtersLibrary : {
           "brand-management" : {
@@ -266,6 +266,10 @@
     img{
       transform: scale(1.02,1.02);
     }
+  }
+
+  .title, .subtitle{
+    text-shadow: 0px 0px 3px #000000;
   }
 
 </style>

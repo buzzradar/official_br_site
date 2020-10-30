@@ -20,16 +20,16 @@
       <!-- All Case Studies (Cube Portfolio) -->
       <!-- +++++++++++++++++++++++++++++++++ -->
 
-      <div class="container space-2 space-top-md-5 space-top-lg-3">
+      <div class="container space-2 space-top-md-2">
 
         <div class="row">
 
           <!-- Job Positions -->
-          <div id="jobPositions" class="container space-2 space-top-md-0">
+          <div id="jobPositions" class="container">
             <!-- Title -->
-            <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-5">
+            <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-5 mt-5">
               
-              <h1 class="font-weight-normal">Become part of the<br><span class="text-primary font-weight-semi-bold">Buzz Radar</span> team</h1>
+              <h1 class="font-weight-normal">Become part of <br><span class="text-primary font-weight-semi-bold">Buzz Radar</span> team</h1>
 
               <p>People are at the centre of everything we do. We’re a creative, passionate and dedicated group, who live to create awesome stuff and have fun doing it. The team is tight-knit and excited about helping people gain insight from their data through innovative, creative solutions.</p>
             </div>
@@ -95,9 +95,6 @@
     },
     methods: {
       routeContains(currentRoute,matchingRoute) {
-
-        console.log('----------------------------------------');
-        console.log(currentRoute, matchingRoute);
         return currentRoute.includes(matchingRoute);
       },
     }
