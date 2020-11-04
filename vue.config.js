@@ -237,8 +237,13 @@ module.exports = {
 		          context.html = context.html.replace(
 		            /U-R-L/g,
 		            'https://www.buzzradar.com'+context.route
-		          );
-
+				  );
+				  
+				  context.html = context.html.replace(
+		            '<div class="bootbox modal fade show" tabindex="-1" role="dialog" aria-modal="true" style="display: block;">',
+		            '<div class="bootbox modal fade hide" tabindex="-1" role="dialog" aria-modal="true" style="display: none;">'
+				  );
+				  
 		          return context;
 	          },
 
