@@ -6,22 +6,22 @@ const PuppeteerRenderer = PrerenderSPAPlugin.PuppeteerRenderer;
 //---------------------------------------------
 // CASE STUDIES: To Add Specific Info for each 
 //---------------------------------------------
-const readFileAsyncCASESTUDIES = (FILE_NAME) => {
+const readFileAsyncCASESTUDIES = (FILE_NAME,maxItemsToCrawl) => {
   fs.readFile(FILE_NAME, (error, data) => {
-    console.log('Async Read: starting...');
+    // console.log('Async Read: starting...');
     if (error) {
       console.log('Async Read: NOT successful!');
       console.log(error);
     } else {
       try {
         const dataJson = JSON.parse(data);
-        console.log('Async Read: successful!');
+        // console.log('Async Read: successful!');
         // console.log(dataJson);
 
 
         //Run through 10 Case Studies to create the slugs, titles and images for SEO
 		var i = 0;
-        while (i < 2) {
+        while (i < maxItemsToCrawl) {
 		  var caseStudy = dataJson.casesentries[i];
 
 		  //Slugs (Array)
@@ -34,7 +34,7 @@ const readFileAsyncCASESTUDIES = (FILE_NAME) => {
 		  SEORoutes.sharerImages['/casestudies/'+caseStudy.slug] = 'https://www.buzzradar.com/public_assets/casestudies/'+caseStudy.thumb;
 
 		  i++;
-		};
+		}
 
 		// console.clear();
 		// console.log(" final SEORoutes --------->");
@@ -54,21 +54,21 @@ const readFileAsyncCASESTUDIES = (FILE_NAME) => {
 //---------------------------------------------
 // BLOG POSTS: To Add Specific Info for each 
 //---------------------------------------------
-const readFileAsyncBLOGPOSTS = (FILE_NAME) => {
+const readFileAsyncBLOGPOSTS = (FILE_NAME,maxItemsToCrawl) => {
   fs.readFile(FILE_NAME, (error, data) => {
-    console.log('Async Read: starting...');
+    // console.log('Async Read: starting...');
     if (error) {
       console.log('Async Read: NOT successful!');
       console.log(error);
     } else {
       try {
         const dataJson = JSON.parse(data);
-        console.log('Async Read: successful!');
+        // console.log('Async Read: successful!');
         // console.log(dataJson);
 
 		//Run through 10 Blog Posts to create the slugs, titles and images for SEO
 		var i = 0;
-        while (i < 2) {
+        while (i < maxItemsToCrawl) {
 		  var blogPost = dataJson.blogentries[i];
 
 		  //Slugs (Array)
@@ -76,8 +76,6 @@ const readFileAsyncBLOGPOSTS = (FILE_NAME) => {
 		  //Titles (Object)
 		  SEORoutes.titles['/blog/post'+blogPost.ID] = blogPost.post_title;
 		  //Descriptions (Object)
-
-		  console.log(blogPost.sharer_header);
 
 		  if (blogPost.sharer_header){
 		  	SEORoutes.descriptions['/blog/post'+blogPost.ID] = blogPost.sharer_header;		  	
@@ -190,10 +188,15 @@ const SEORoutes = {
 	  	'/careers/job-junior-social-media-analyst' : 'https://www.buzzradar.com/public_assets/images/sharers/sharer_careers.jpg',  
 	},
 };
-readFileAsyncCASESTUDIES('./src/statics/CaseStudiesEntries.json');
-readFileAsyncBLOGPOSTS('./src/statics/WPPostsEntries.json');
+readFileAsyncCASESTUDIES('./src/statics/CaseStudiesEntries.json',3);
+readFileAsyncBLOGPOSTS('./src/statics/WPPostsEntries.json',3);
 
-
+console.log("--------------------------------------------------------")
+console.log("CASE STUDIES AND BLOG POSTS are being filled!")
+console.log("--------------------------------------------------------")
+// setTimeout(() => {
+// 	console.log(SEORoutes);
+// }, 3000);
 
 
 
@@ -209,6 +212,9 @@ module.exports = {
 
 	configureWebpack: {
 		plugins: [
+
+			
+
 			new PrerenderSPAPlugin({
 			  staticDir: path.join(__dirname, '.', 'dist'),
 			  routes: SEORoutes.slugs,
