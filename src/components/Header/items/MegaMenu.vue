@@ -12,7 +12,7 @@
 					<div v-for="childRoute in columnRoutes" class="u-header__promo-item">
 						<router-link @click.native="removeMenu" :to="childRoute.path" class="u-header__promo-link">
 						<div class="media align-items-center">
-							<!-- <img class="js-svg-injector u-header__promo-icon" :src="getURLIcon(childRoute.icon_menu)" :alt="childRoute.label"> -->
+							<img class="js-svg-injector u-header__promo-icon" :src="getURLIcon(childRoute.icon_menu)" :alt="childRoute.label">
 							<div class="media-body">
 							<span class="u-header__promo-title">{{childRoute.label}}</span>
 							<small class="u-header__promo-text">{{childRoute.description_menu}}</small>
@@ -125,7 +125,7 @@
 	  methods : {
 	  	getURLIcon : function(nameIcon){
 			//console.log("get Name of the Icon", nameIcon);
-			return require('@/assets/buzzradar/svg/icons/'+nameIcon);
+			return require('@/assets/buzzradar/svg/topMenu/'+nameIcon);
 		},
 		getClassFromNumColumns : function() {
 			return "col-md-"+(12/this.finalNumColumns);

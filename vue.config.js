@@ -212,9 +212,6 @@ module.exports = {
 
 	configureWebpack: {
 		plugins: [
-
-			
-
 			new PrerenderSPAPlugin({
 			  staticDir: path.join(__dirname, '.', 'dist'),
 			  routes: SEORoutes.slugs,
