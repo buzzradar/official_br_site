@@ -26,12 +26,14 @@
                 <img class="img-fluid mt-3" src="@/assets/buzzradar/img/ces/ces_buzzradar.png" alt="CES & Buzz Radar">
               </p>
 
+              <p class="m-0 mt-5 text-white">Come visit us at CES</p>
+              <i class="fas fa-map-marker-alt mr-2"></i> <small>Booth GL-5A at the Las Vegas Convention centre and CS-14 at the Aria.</small>
+
             </div>
           </div>
           <!-- End Content -->
         </div>
         <!-- End Hero Section -->
-
 
 
 
@@ -47,7 +49,7 @@
                 <!-- Title -->
                 <div class="mb-3">
                   <h2 class="text-primary font-weight-normal">
-                    <span class="text-ces">Buzz Radar + CES2021</span>
+                    <span class="text-ces">Buzz Radar + CES2020</span>
                   </h2>
                 </div>
                 <!-- End Title -->
@@ -55,9 +57,9 @@
 
             <div class="col-lg-6">
 
-              <p>For the past 8 years we’ve been the real-time data and insights provider for CES and the Consumer Technology Association. Helping them build and grow insight capability. Starting with developing the technogly platform behind the now established Social Media Command Centre that tracks every CES conversation, product and brand online. We also use that data to provide in-depth insight reports for all of CES’s top exhibitors and invaluable data led recommendations for CES across a wide range of topics. From understanding their audiences more intimately to analysing how well their content performs compared to their competitors.<br>
+              <p>For the past 7 years we’ve been the real-time data and insights provider for CES and the Consumer Technology Association. Helping them build and grow insight capability. Starting with developing the technogly platform behind the now established Social Media Command Centre that tracks every CES conversation, product and brand online. We also use that data to provide in-depth insight reports for all of CES’s top exhibitors and invaluable data led recommendations for CES across a wide range of topics. From understanding their audiences more intimately to analysing how well their content performs compared to their competitors.<br>
               The result? Across almost all major measurable data points CES is the leading technology conference across digital and social. </p>
-              <p>If you’d like to see how we can help your business in the same way we’ve helped CES or would just like the <strong>CES 2021</strong> report then click on the links below.</p>
+              <p>If you’d like to see how we can help your business in the same way we’ve helped CES or would just like the <strong>CES 2020</strong> report then click on the links below.</p>
 
             </div>
 
@@ -69,7 +71,7 @@
                 <form class="js-validate card shadow-sm p-5">
 
                   <div class="text-center mb-4">
-                    <h3 class="h4">Get the CES 2021 Intelligence Report</h3>
+                    <h3 class="h4">Get the CES 2020 Intelligence Report</h3>
                   </div>
 
                   <div class="envelope-holder"></div>
@@ -158,6 +160,30 @@
 
               </div>    
             </div>
+
+
+            <!-- <div class="col-md-12 mb-5 mt-9">
+              
+              <div class="card mb-2">
+                <div class="card-body">
+                  <p class="card-text">
+                    <div class="media pl-lg-3">
+                      <figure id="icon1" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4">
+                        <img class="js-svg-injector" src="@/assets/buzzradar/img/ces/icons/icon-8.svg" alt="Try the CES Attendee Analyzer"
+                             data-parent="#icon1">
+                      </figure>
+                      <div class="media-body">
+                        <h3 class="h4">Come visit us at CES we can show you how we can help your team too.</h3>
+                        <p class="mb-0"><strong>Booth GL-5A at the Las Vegas Convention centre and CS-14 at the Aria.</strong></p>
+                      </div>
+                    </div>
+                  </p>
+
+                </div>
+              </div>
+
+            </div> -->
+
         
           </div>
 
@@ -196,13 +222,13 @@
                 <!-- Contacts Info -->
                 <div class="media pl-lg-9">
                   <figure id="icon4" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4">
-                    <img class="js-svg-injector" src="@/assets/buzzradar/img/ces/icons/icon-42.svg" alt="Try the CES Attendee Analyer"
+                    <img class="js-svg-injector" src="@/assets/buzzradar/img/ces/icons/icon-1.svg" alt="Try the CES Attendee Analyer"
                          data-parent="#icon4">
                   </figure>
                   <div class="media-body">
-                    <h3 class="h4">Real-Time Dashboard</h3>
-                    <p class="mb-1">Easily turn your data into fast accessible and actionable data visualisations for your entire organisation.</p>
-                    <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="/realtimedashboard">Try Now<span class="fas fa-angle-right ml-2"></span></a>
+                    <h3 class="h4">Try the CES Attendee Analyzer</h3>
+                    <p class="mb-1">Have some technical questions? Hit us with an email or just say hello on the bottom right corner of the page.</p>
+                    <a v-on:click="launchPersonalityAnalyzer" class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="#">Try Now<span class="fas fa-angle-right ml-2"></span></a>
                   </div>
                 </div>
                 <!-- End Contacts Info -->
@@ -294,7 +320,7 @@
             return {
               heroBgImage : {
                 height : '120%',
-                backgroundImage : 'url("'+require('@/assets/buzzradar/img/ces/heroimage2021.jpg')+'")',
+                backgroundImage : 'url("'+require('@/assets/buzzradar/img/ces/heroimage2020.jpg')+'")',
               },
 
               firstNameObject : {
@@ -398,7 +424,7 @@
     
               var newsLetterList =  {
                   'ht' : '110cc29c538300a21aa753004897a90886c7e9f6:MTUyNDY3NDg0Ni43MzE2',
-                  'listId' : '254d31366d',
+                  'listId' : 'c994623d59',
               };
 
               console.log("MailChimp listName newsletter");

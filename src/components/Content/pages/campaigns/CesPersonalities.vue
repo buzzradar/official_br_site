@@ -12,19 +12,13 @@
           <div class="divimage dzsparallaxer--target" :style="heroBgImage"></div>
 
           <!-- Content -->
-          <div class="container position-relative space-3 space-top-md-4 space-bottom-md-3 text-white">
+          <div class="container position-relative space-3 space-top-md-5 space-bottom-md-5 text-white">
             <div class="w-lg-75">
               <!-- <img class="img-fluid" src="@/assets/buzzradar/img/ces/are_you_ces_ready.png" alt="Are you CES ready?">
               <p>
                 <img class="img-fluid mt-3" src="@/assets/buzzradar/img/ces/ces_2020_date.png" alt="January 7-10 (Las Vegas)">
               </p> -->
-              <h1 class="display-5 font-size-md-down-5 font-weight-bold mb-2">
-                We help CES make smarter<br>data driven decisions
-              </h1>
-              <h3>And we can help you too!</h3>
-              <p>
-                <img class="img-fluid mt-3" src="@/assets/buzzradar/img/ces/ces_buzzradar.png" alt="CES & Buzz Radar">
-              </p>
+              
 
             </div>
           </div>
@@ -32,6 +26,156 @@
         </div>
         <!-- End Hero Section -->
 
+
+
+
+
+        <!-- Personality Traits -->
+        <div class="bg-light">
+        <div class="container space-2 space-top-md-2">
+          <div class="row justify-content-lg-between">
+
+            <!-- The Networker -->
+            <div class="col-lg-12 mb-8">
+                <div class="media">
+                  <span class="btn btn-icon btn-lg rounded-circle mr-5" style="width:12rem;">
+                    <img class="img-fluid" src="@/assets/buzzradar/img/ces/personalities/Networker.svg" width="100%" alt="Personality Trait">
+                  </span>
+                  <div class="media-body">
+                    <h3 class="h3 text-secondary font-weight-bold">The Networker</h3>
+                    <p class="mb-0">
+                      The networker aims to meet and make lasting connections with other industry professionals. Often found at mixers and events asking lots of questions, getting to know other attendees and working out how to connect the dots. CES2020 ahead of time.
+                      <br> <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="https://digital.ces.tech/sessions/094e9acd-cd82-4011-9b78-78a5d07f5ec2?source=sessions" target="_blank">The Power of AI</a>
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <!-- END The Networker -->
+
+            <!-- The Discoverer -->
+            <div class="col-lg-12 mb-8">
+                <div class="media">
+                  <div class="media-body mr-5">
+                    <h3 class="h3 text-secondary font-weight-bold">The Discoverer</h3>
+                    <p class="mb-0">
+                      The Discoverer attends conferences to soak up every ounce of knowledge that he or she can. You’ll probably see this person juggling a laptop, smartphone, and notebook, all while diligently taking notes -- or live-tweeting -- from each.
+                      <br> <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="https://digital.ces.tech/sessions/54de7c4e-fb68-4704-b0fc-d8d41ebea7c4?source=sessions" target="_blank">Accelerating Discovery to Solve Big Challenges</a>
+                    </p>
+                  </div>
+                  <span class="btn btn-icon btn-lg rounded-circle" style="width:12rem;">
+                    <img class="img-fluid" src="@/assets/buzzradar/img/ces/personalities/Discoverer.svg" width="100%" alt="Personality Trait">
+                  </span>
+                </div>
+            </div>
+            <!-- END The Discoverer -->
+
+            <!-- The Inspiration Seeker -->
+            <div class="col-lg-12 mb-8">
+                <div class="media">
+                  <span class="btn btn-icon btn-lg rounded-circle mr-5" style="width:12rem;">
+                    <img class="img-fluid" src="@/assets/buzzradar/img/ces/personalities/InspirationSeeker.svg" width="100%" alt="Personality Trait">
+                  </span>
+                  <div class="media-body">
+                    <h3 class="h3 text-secondary font-weight-bold">The Inspiration Seeker</h3>
+                    <p class="mb-0">
+                      They watch TED Talks on a daily basis. Their favourite book, collectively, is Water Isaacson's Steve Jobs. And see themselves as innovators. They attend CES in hopes of striking a creative streak. Entrepreneurs, thinkers, and problem-solvers - people who seek inspiration for their next brilliant idea or invention.
+                      <br> <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="https://digital.ces.tech/sessions/ddc009e9-fe79-4c63-aca0-3ed432d71864?source=sessions" target="_blank">Next Generation Television in Focus</a>
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <!-- END The Inspiration Seeker -->
+
+            <!-- The Super Fan -->
+            <div class="col-lg-12 mb-8">
+                <div class="media">
+                  <div class="media-body mr-5">
+                    <h3 class="h3 text-secondary font-weight-bold">The Super Fan</h3>
+                    <p class="mb-0">
+                      The Superfan is super active when it comes to conference-related social media activity. This person never forgets to include the speaker's Twitter handle in hopes that he or she will retweet or reply  for example, tweeting with event's hashtag that they’re “so excited to meet @speaker.”
+                      <br> <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="https://digital.ces.tech/sessions/1b660d41-7b5c-4390-8f75-aade57f34b98?source=sessions" target="_blank">Trends Shaping the Future of The Fan Experience</a>
+                    </p>
+                  </div>
+                  <span class="btn btn-icon btn-lg rounded-circle" style="width:12rem;">
+                    <img class="img-fluid" src="@/assets/buzzradar/img/ces/personalities/SuperFan.svg" width="100%" alt="Personality Trait">
+                  </span>
+                </div>
+            </div>
+            <!-- END The Super Fan -->
+
+            <!-- The Deal Maker -->
+            <div class="col-lg-12 mb-8">
+                <div class="media mb-8">
+                  <span class="btn btn-icon btn-lg rounded-circle mr-5" style="width:12rem;">
+                    <img class="img-fluid" src="@/assets/buzzradar/img/ces/personalities/DealMaker.svg" width="100%" alt="Personality Trait">
+                  </span>
+                  <div class="media-body">
+                    <h3 class="h3 text-secondary font-weight-bold">The Deal Maker</h3>
+                    <p class="mb-0">
+                      Attends CES with the goal of creating business partnerships. But that could be for a number of opportunities.
+                      <br> <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="https://digital.ces.tech/sessions/938f3e9a-cda5-48d1-a979-09810e35fb74?source=sessions" target="_blank">Fast-Tracking the Digital Health Revolution</a>
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <!-- END The Deal Maker -->
+
+            <!-- The Content Creator -->
+            <div class="col-lg-12 mb-8">
+                <div class="media">
+                  <div class="media-body mr-5">
+                    <h3 class="h3 text-secondary font-weight-bold">The Content Creator</h3>
+                    <p class="mb-0">
+                      The Content Creator attends a conference specifically on behalf of, well, a blog, or to obtain fodder for some other form of content. He or she is likely found listening to keynotes and breakout sessions while writing down an outline or quotes on a laptop.
+                      <br> <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="https://digital.ces.tech/sessions/ceccdd0b-771a-4d9f-95ae-f7c7276db8fb?source=sessions" target="_blank">The Future of Gaming</a>
+                    </p>
+                  </div>
+                  <span class="btn btn-icon btn-lg rounded-circle" style="width:12rem;">
+                    <img class="img-fluid" src="@/assets/buzzradar/img/ces/personalities/ContentCreator.svg" width="100%" alt="Personality Trait">
+                  </span>
+                </div>
+            </div>
+            <!-- END The Content Creator -->
+
+            <!-- The Teacher -->
+            <div class="col-lg-12 mb-8">
+                <div class="media">
+                  <span class="btn btn-icon btn-lg rounded-circle mr-5" style="width:12rem;">
+                    <img class="img-fluid" src="@/assets/buzzradar/img/ces/personalities/Teacher.svg" width="100%" alt="Personality Trait">
+                  </span>
+                  <div class="media-body">
+                    <h3 class="h3 text-secondary font-weight-bold">The Teacher</h3>
+                    <p class="mb-0">
+                      We don't mean "teacher" in the conventional sense. Rather, this is the person who comes back from CES to the office with the best takeaways. The teacher takes excellent notes and then relays them back to the team. If you have a company wiki, he or she will likely create a page on there with the lessons and best practices from the conference, or even give a presentation upon return.
+                      <br> <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="https://digital.ces.tech/sessions/68e9460c-9754-47e7-96f4-988f90e0be3b?source=sessions" target="_blank">New Technologies Accelerating Education</a>
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <!-- END The Teacher -->
+
+            <!-- The Thought Leader -->
+            <div class="col-lg-12">
+                <div class="media">
+                  <div class="media-body mr-5">
+                    <h3 class="h3 text-secondary font-weight-bold">The Thought Leader</h3>
+                    <p class="mb-0">
+                      Thought leaders, though not synonymous with them, are often also the conference speakers. They're experts on a given topic, and that's why they're at the event: To talk to a crowd about it. They’ve probably written books and countless blog articles on the same topic, and have high numbers of followers on social media. 
+                      <br> <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="https://digital.ces.tech/sessions/b2ac78de-6b45-4c48-92c4-0fdfcb85c44d?source=sessions" target="_blank">Making Autonomous Vehicles a Reality</a>
+                    </p>
+                  </div>
+                  <span class="btn btn-icon btn-lg rounded-circle" style="width:12rem;">
+                    <img class="img-fluid" src="@/assets/buzzradar/img/ces/personalities/ThoughtLeader.svg" width="100%" alt="Personality Trait">
+                  </span>
+                </div>
+            </div>
+            <!-- END The Thought Leader -->
+        
+          </div>
+
+        </div>
+        </div>
+        <!-- End Personality Traits -->
 
 
 
@@ -170,112 +314,6 @@
 
 
 
-
-        <!-- 2 Choice Section -->
-        <div class="bg-light">
-          <div class="container">
-            <div class="row space-2">
-              <div class="col-lg-6 u-ver-divider u-ver-divider--none-lg mb-7 mb-lg-0">
-                <!-- Contacts Info -->
-                <div class="media pr-lg-9">
-                  <figure id="icon15" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4">
-                    <img class="js-svg-injector" src="@/assets/buzzradar/img/ces/icons/icon-11.svg" alt="Book a Meeting"
-                         data-parent="#icon15">
-                  </figure>
-                  <div class="media-body">
-                    <h3 class="h4">Book a Meeting</h3>
-                    <p class="mb-1">We want to answer all of your queries. Get in touch and we'll get back to you as soon as we can.</p>
-                    <a v-on:click="bookMeeting" class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="/casestudies/cs-user-case-allianz">Book a Meeting<span class="fas fa-angle-right ml-2"></span></a>
-
-                  </div>
-                </div>
-                <!-- End Contacts Info -->
-              </div>
-
-              <div class="col-lg-6">
-                <!-- Contacts Info -->
-                <div class="media pl-lg-9">
-                  <figure id="icon4" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4">
-                    <img class="js-svg-injector" src="@/assets/buzzradar/img/ces/icons/icon-42.svg" alt="Try the CES Attendee Analyer"
-                         data-parent="#icon4">
-                  </figure>
-                  <div class="media-body">
-                    <h3 class="h4">Real-Time Dashboard</h3>
-                    <p class="mb-1">Easily turn your data into fast accessible and actionable data visualisations for your entire organisation.</p>
-                    <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-3" href="/realtimedashboard">Try Now<span class="fas fa-angle-right ml-2"></span></a>
-                  </div>
-                </div>
-                <!-- End Contacts Info -->
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <!-- End 2 Choice Section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Testimonials Section -->
-        <div class="bg-white">
-          <div class="container space-2 space-lg-2">
-            <div class="w-md-80 w-lg-80 mx-md-auto">
-              <!-- Quote -->
-              <figure class="mx-auto text-center mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
-                   viewBox="0 0 8 8" style="enable-background:new 0 0 8 8;" xml:space="preserve">
-                  <path class="fill-gray-400" d="M3,1.3C2,1.7,1.2,2.7,1.2,3.6c0,0.2,0,0.4,0.1,0.5c0.2-0.2,0.5-0.3,0.9-0.3c0.8,0,1.5,0.6,1.5,1.5c0,0.9-0.7,1.5-1.5,1.5
-                    C1.4,6.9,1,6.6,0.7,6.1C0.4,5.6,0.3,4.9,0.3,4.5c0-1.6,0.8-2.9,2.5-3.7L3,1.3z M7.1,1.3c-1,0.4-1.8,1.4-1.8,2.3
-                    c0,0.2,0,0.4,0.1,0.5c0.2-0.2,0.5-0.3,0.9-0.3c0.8,0,1.5,0.6,1.5,1.5c0,0.9-0.7,1.5-1.5,1.5c-0.7,0-1.1-0.3-1.4-0.8
-                    C4.4,5.6,4.4,4.9,4.4,4.5c0-1.6,0.8-2.9,2.5-3.7L7.1,1.3z"/>
-                </svg>
-              </figure>
-              <!-- End Quote -->
-
-              <div class="js-slick-carousel u-slick"
-                   data-fade="true"
-                   data-autoplay="true"
-                   data-autoplay-speed="7000"
-                   data-pagi-classes="text-center u-slick__pagination mt-4 mb-0">
-
-
-                <!-- Testimonial -->
-                <div class="js-slide">
-                  <div class="text-center mb-5">
-                    <blockquote class="h3">Buzz Radar has consistently been a valued partner for our organization. They are at the cutting edge of data and AI and bring expert analytics to any project we have worked on with them.</blockquote>
-                  </div>
-                  <div class="d-flex justify-content-center align-items-center w-lg-50 mx-auto">
-                    <div class="u-avatar">
-                      <img class="img-fluid rounded-circle" src="@/assets/buzzradar/img/testimonials/tinaanthony.png" alt="Tina Anthony, Director, Digital Strategy at the Consumer Technology Association">
-                    </div>
-                    <div class="ml-3">
-                      <h4 class="h6 mb-0">Tina Anthony</h4>
-                      <small class="text-muted">Director, Digital Strategy at the CTA</small>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Testimonial -->
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Testimonials Section -->
-
-
-
-
-
-
     </div>
 
 </template>
@@ -294,7 +332,7 @@
             return {
               heroBgImage : {
                 height : '120%',
-                backgroundImage : 'url("'+require('@/assets/buzzradar/img/ces/heroimage2021.jpg')+'")',
+                backgroundImage : 'url("'+require('@/assets/buzzradar/img/ces/heroimage2021-personalities.jpg')+'")',
               },
 
               firstNameObject : {

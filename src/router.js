@@ -33,6 +33,7 @@ import CredibleInfluence from './components/Content/pages/services/CredibleInflu
 import Reports from './components/Content/pages/services/Reports';
 
 import CES from './components/Content/pages/campaigns/Ces';
+import CESPersonalities from './components/Content/pages/campaigns/CesPersonalities';
 
 
 import BlogEntries from './statics/WPPostsEntries.json';
@@ -277,6 +278,13 @@ export default new Router({
       name: 'ces',
       label : 'CES',
       component: CES
+    },
+
+    {
+      path: '/ces-personalities',
+      name: 'ces-personalities',
+      label : 'CES Personalities',
+      component: CESPersonalities
     },
 
 
