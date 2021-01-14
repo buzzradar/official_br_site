@@ -125,6 +125,18 @@
                }
              }]'>
           <div class="js-slide">
+            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_13.png" alt="Image Description">
+          </div>
+          <div class="js-slide">
+            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_14.png" alt="Image Description">
+          </div>
+          <div class="js-slide">
+            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_7.png" alt="Image Description">
+          </div>
+          <div class="js-slide">
+            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_12.png" alt="Image Description">
+          </div>
+          <div class="js-slide">
             <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_1.png" alt="Image Description">
           </div>
           <div class="js-slide">
@@ -143,11 +155,8 @@
             <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_6.png" alt="Image Description">
           </div>
           <!-- <div class="js-slide">
-            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_7.png" alt="Image Description">
-          </div> -->
-          <div class="js-slide">
             <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_8.png" alt="Image Description">
-          </div>
+          </div> -->
           <div class="js-slide">
             <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_9.png" alt="Image Description">
           </div>
@@ -157,9 +166,7 @@
           <div class="js-slide">
             <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_11.png" alt="Image Description">
           </div>
-          <!-- <div class="js-slide">
-            <img class="u-clients" src="@/assets/buzzradar/img/homepage/clients_logos/client_logo_12.png" alt="Image Description">
-          </div> -->
+          
         </div>
       </div>
     </div>
