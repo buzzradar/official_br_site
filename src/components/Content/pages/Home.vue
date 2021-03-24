@@ -39,7 +39,7 @@
       <!-- <div class="divimage" :style="heroBgImageMobile"></div> -->
 
 
-            <h1 class="display-5 font-size-md-down-5 font-weight-bold mb-2">
+            <h1 class="display-5 font-size-md-down-5 font-weight-bold mb-2 drop-shadow">
               
                 Unlock the <br class="d-block d-md-none">secrets <br class="d-none d-md-block">of your <br class="d-block d-md-none">
                 <span class="text-white">
@@ -51,7 +51,7 @@
                 <br>
               
             </h1>
-            <h3>with smarter, more <br class="d-block d-md-none">useful insights.</h3>
+            <h3 class="drop-shadow">with smarter, more <br class="d-block d-md-none">useful insights.</h3>
 
             
             <!-- Fancybox -->
@@ -913,13 +913,9 @@
     data () {
       return {
 
-        videoBgURL : process.env.BASE_URL + 'public_assets/html5-video/universe/universe_720',
+        //videoBgURL : process.env.BASE_URL + 'public_assets/html5-video/universe/universe_720',
+        videoBgURL : process.env.BASE_URL + 'public_assets/html5-video/homepage/home_banner',
 
-        heroBgImageTest : {
-          height : '100%',
-          backgroundImage : 'url("'+require('@/assets/buzzradar/img/homepage/heroImgMobile.jpg')+'")',
-          backgroundPosition : 'top center',
-        },
         heroBgImageMobile : {
           height : '100%',
           backgroundImage : 'url("'+require('@/assets/buzzradar/img/homepage/heroImgMobile.jpg')+'")',
@@ -1057,6 +1053,10 @@
     height:100%;
     Background: black;
     object-fit: cover;
+  }
+
+  .drop-shadow{
+    text-shadow: 0px 0px 5px #000;
   }
 
   .circle{

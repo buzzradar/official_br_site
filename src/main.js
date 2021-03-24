@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
-import VueIntercom from 'vue-intercom';
+//import VueIntercom from 'vue-intercom';
 
 
 
@@ -9,7 +9,7 @@ import VueIntercom from 'vue-intercom';
 
 
 
-Vue.use(VueIntercom, { appId: 'nn0o63ch' });
+//Vue.use(VueIntercom, { appId: 'nn0o63ch' });
 
 
 Vue.config.productionTip = false;
@@ -19,9 +19,9 @@ new Vue({
   render: h => h(App),
   mounted() {
 
-	  this.$intercom.boot({
-      name: 'Guest',
-    });
+	  // this.$intercom.boot({
+    //   name: 'Guest',
+    // });
     
     // setTimeout(function() {
   		// this.$intercom.show();
