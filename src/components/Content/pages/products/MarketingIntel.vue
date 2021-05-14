@@ -10,7 +10,7 @@
     <div class="container space-3 space-top-md-4 space-bottom-md-3">
       <div class="w-lg-75">
         <h1 class="display-5 font-size-md-down-5 font-weight-bold mb-2 text-white">
-          A faster, smarter way <br class="d-block d-md-none"><br class="d-none d-md-block">to run your <strong class="text-primary">marketing</strong>
+          A faster, smarter way <br class="d-block d-md-none"><br class="d-none d-md-block">to run your <strong class="text-primary">marketing.</strong>
           <br>
         </h1>
         <h3 class="text-white">Buzz Radar connects the sea of marketing data created around your organisation and turns it into actionable, intelligent insights.</h3>

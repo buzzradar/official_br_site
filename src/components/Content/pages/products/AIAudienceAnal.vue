@@ -11,7 +11,7 @@
     <div class="container space-3 space-top-md-4 space-bottom-md-3">
       <div class="w-lg-75">
         <h1 class="display-5 font-size-md-down-5 font-weight-bold mb-2">
-          Don’t just rely on gut instinct;<br> <strong class="text-primary">Truly understand your audience</strong>
+          Don’t just rely on gut instinct;<br> <strong class="text-primary">Truly understand your audience with Artificial Intelligence.</strong>
         </h1>
         <h3>Find what really makes your customers tick<br>with AI Audience Analysis.</h3>
         <button type="button" class="btn btn-sm btn-primary transition-3d-hover try-now-btn mt-2" tabindex="0">Free Demo Now</button>
