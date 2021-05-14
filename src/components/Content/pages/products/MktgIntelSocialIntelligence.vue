@@ -25,7 +25,7 @@
                 <div class="col-lg-5 mb-9 mb-lg-0">
                     
                   <div class="mb-4">
-                    <h2 class="font-weight-medium mb-4">Social Intelligence</h2>
+                    <h1 class="h2 font-weight-medium mb-4">Social Intelligence</h1>
                     <p>Access award-winning social tracking capability across nearly all major social channels.</p>
                   </div>
 

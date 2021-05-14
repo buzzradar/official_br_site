@@ -19,7 +19,7 @@
                 <img class="img-fluid mt-3" src="@/assets/buzzradar/img/ces/ces_2020_date.png" alt="January 7-10 (Las Vegas)">
               </p> -->
               <h1 class="display-5 font-size-md-down-5 font-weight-bold mb-2 text-credibleinfluence">
-                Credible Influence
+                Credible Influence, AI Audience Intelligence
               </h1>
               <h3>The AI Powered Audience Intelligence,<br>Social Insight and Content Optimisation Agency</h3>
               <p><img src="@/assets/buzzradar/img/credibleinfluence/powered_buzzradar.png" width="150" /></p>

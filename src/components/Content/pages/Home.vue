@@ -448,7 +448,7 @@
         <div class="container space-1 space-lg-2">
           <!-- Title -->
           <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
-            <h1 class="font-weight-medium">Powerful tools all in one easy-to-use platform</h1>
+            <h2 class="h1 font-weight-medium">Powerful tools all in one easy-to-use platform</h2>
           </div>
           <!-- End Title -->
 
@@ -558,7 +558,7 @@
           <div class="container space-1 space-lg-2">
             <!-- Title -->
             <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-4">
-              <h1 class="font-weight-medium">Use Cases</h1>
+              <h2 class="h1 font-weight-medium">Use Cases</h2>
             </div>
             <!-- End Title -->
 

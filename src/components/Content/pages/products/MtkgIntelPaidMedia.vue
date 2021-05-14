@@ -27,7 +27,7 @@
                 <div class="col-lg-5 mb-9 mb-lg-0">
                     
                   <div class="mb-4">
-                    <h2 class="font-weight-medium mb-4">Paid Media Analysis</h2>
+                    <h1 class="h2 font-weight-medium mb-4">Paid Media Analysis</h1>
                     <p>Receive insights and detailed reports on your performance for Facebook Ads and Google Adwords.</p>
                   </div>
 

@@ -25,7 +25,7 @@
                 <div class="col-lg-5 mb-9 mb-lg-0">
                     
                   <div class="mb-4">
-                    <h2 class="font-weight-medium mb-4">News & PR Monitoring</h2>
+                    <h1 class="h2 font-weight-medium mb-4">News & PR Monitoring</h1>
                     <p>Capture and analyse data from all your PR campaigns across over 3 Million news outlets and blogs.</p>
                   </div>
 

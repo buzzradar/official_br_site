@@ -18,9 +18,9 @@
               <p>
                 <img class="img-fluid mt-3" src="@/assets/buzzradar/img/ces/ces_2020_date.png" alt="January 7-10 (Las Vegas)">
               </p> -->
-              <h1 class="display-5 font-size-md-down-5 font-weight-bold mb-2">
+              <h2 class="h1 display-5 font-size-md-down-5 font-weight-bold mb-2">
                 Make your Virtual Event count
-              </h1>
+              </h2>
               <h3>with Real-Time Social and Audience Intelligence<br>you can act on instantly</h3>
               
               <button v-on:click="bookMeeting" type="button" class="btn btn-sm btn-primary transition-3d-hover mt-2" tabindex="0">Book a Demo</button>
@@ -48,7 +48,7 @@
             <!-- Title -->
             <div class="w-md-80 w-lg-80 text-center mx-md-auto">
               <div id="svgArrows" class="pt-3 mb-5">
-                <h1 class="h2 text-primary">Make your virtual event count with Buzz Radar</h1>
+                <h1 class="h2 text-primary">Make your virtual events count with Buzz Radar</h1>
                 <h2 class="h5 font-weight-normal text-secondary">With the many events this year turning virtual, utilising and understanding the online conversation around them has become increasingly important. Virtual events have special needs; Buzz Radar’s Audience Analysis and Real-time Data Visualisation can help event organisers quickly fill gaps in several key areas:</h2>
               </div>
             </div>
