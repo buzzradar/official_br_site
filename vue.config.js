@@ -3,6 +3,7 @@ const path = require('path');
 const PrerenderSPAPlugin = require('prerender-spa-plugin');
 const PuppeteerRenderer = PrerenderSPAPlugin.PuppeteerRenderer;
 
+
 //---------------------------------------------
 // CASE STUDIES: To Add Specific Info for each 
 //---------------------------------------------
@@ -135,7 +136,6 @@ const SEORoutes = {
 	  	'/credibleinfluence',
 	  	'/careers',
 	  	'/careers/job-mid-backend-dev',
-	  	'/careers/job-junior-social-media-analyst',
 	],
 	titles : {
 	    '/': 'Buzz Radar - Real Time Social Media Intelligence Tool Made Easy',
@@ -153,7 +153,6 @@ const SEORoutes = {
 		'/credibleinfluence': 'Credible Influence - The AI Powered Audience Intelligence, Social Insight and Content Optimisation Agency',
 		'/careers' : 'Buzz Radar - Careers',
 	  	'/careers/job-mid-backend-dev' : 'Buzz Radar - Mid-Level Backend Developer',
-	  	'/careers/job-junior-social-media-analyst' : 'Buzz Radar - Junior Social Media Analyst',
 	},
 	descriptions : {
 	    '/': 'Buzz Radar is the leading social intelligence platform designed for marketers rather than analysts. Providing powerful, easy to digest actionable insights.',
@@ -171,7 +170,6 @@ const SEORoutes = {
 		'/credibleinfluence': 'Credible Influence - The AI Powered Audience Intelligence, Social Insight and Content Optimisation Agency',
 		'/careers' : 'People are at the centre of everything we do. We’re a creative, passionate and dedicated group, who live to create awesome stuff and have fun doing it. The team is tight-knit and excited about helping people gain insight from their data through innovative, creative solutions.',
 	  	'/careers/job-mid-backend-dev' : 'We’re looking for a talented backend developer to join one of the best development teams in the business and help us on the continued development of Buzz Radar’s cutting edge and award winning marketing insight platform.',
-	  	'/careers/job-junior-social-media-analyst' : 'We’re looking for a talented Junior Social Media Analyst to join one of the best development teams in the business and help us on the continued development of Buzz Radar’s cutting edge and award winning marketing insight platform.',  
 	},
 	sharerImages : {
 	    '/': 'https://www.buzzradar.com/public_assets/images/sharers/sharer.jpg',
@@ -189,18 +187,57 @@ const SEORoutes = {
 		'/credibleinfluence': 'https://www.buzzradar.com/public_assets/images/sharers/sharer_services.jpg',
 		'/careers' : 'https://www.buzzradar.com/public_assets/images/sharers/sharer_careers.jpg',
 	  	'/careers/job-mid-backend-dev' : 'https://www.buzzradar.com/public_assets/images/sharers/sharer_careers.jpg',
-	  	'/careers/job-junior-social-media-analyst' : 'https://www.buzzradar.com/public_assets/images/sharers/sharer_careers.jpg',  
 	},
 };
-readFileAsyncCASESTUDIES('./src/statics/CaseStudiesEntries.json',3);
-readFileAsyncBLOGPOSTS('./src/statics/WPPostsEntries.json',3);
+
+
+
+console.log("--------------------------------------------------------")
+console.log("Creating SITEMAP.XML!");
+console.log("--------------------------------------------------------")
+
+var sitemapXLM = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`;
+Object.keys(SEORoutes.slugs).forEach(page => {
+	var d = new Date();
+	var lastmod = d.getFullYear()+`-`+ ('0' + (d.getMonth()+1)).slice(-2) +`-`+ ('0' + d.getDate()).slice(-2);
+	var pageTag = `
+	<url>
+		<loc>https://www.buzzradar.com`+SEORoutes.slugs[page]+`</loc>
+		<lastmod>`+lastmod+`</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>`;
+
+	sitemapXLM += pageTag;
+});
+sitemapXLM += `
+</urlset>`;
+
+console.log("********************************************************")
+console.log("********************************************************")
+console.log("********************************************************")
+console.log(sitemapXLM);
+console.log("********************************************************")
+console.log("********************************************************")
+console.log("********************************************************")
+
+
+
+
+
 
 console.log("--------------------------------------------------------")
 console.log("CASE STUDIES AND BLOG POSTS are being filled!")
 console.log("--------------------------------------------------------")
+
+readFileAsyncCASESTUDIES('./src/statics/CaseStudiesEntries.json',3);
+readFileAsyncBLOGPOSTS('./src/statics/WPPostsEntries.json',3);
+
 // setTimeout(() => {
 // 	console.log(SEORoutes);
 // }, 3000);
+
 
 
 
@@ -254,7 +291,8 @@ module.exports = {
 		          return context;
 	          },
 
-			})
+			}),
+
 		]
 	},
 

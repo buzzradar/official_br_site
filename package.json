@@ -11,7 +11,8 @@
     "@mailchimp/mailchimp_marketing": "^3.0.22",
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
-    "vue-intercom": "^1.0.14"
+    "vue-intercom": "^1.0.14",
+    "vue-router-sitemap": "0.0.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
