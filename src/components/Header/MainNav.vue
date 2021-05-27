@@ -92,12 +92,22 @@
 					  extraColumnLayout : null,
 					  megaMenuWidth : '700px'
 	  			},
-	  			{
-	  				//Services
+				{
+					//Services
 					  router_config : this.$router.options.routes[4],
 					  children : this.$router.options.routes[4].children,
 					  megaMenu : false,
 	  			},
+
+	  			// {
+	  			// 	//Services
+				// 	  router_config : this.$router.options.routes[4],
+				// 	  children : this.$router.options.routes[4].children,
+				// 	  megaMenu : true,   
+				// 	  columns: 2,
+				// 	  extraColumnLayout : null,
+				// 	  megaMenuWidth : '700px'
+	  			// },
 	  			{
 	  				//Case Studies
 					  router_config : this.$router.options.routes[5],
