@@ -125,7 +125,6 @@ export default new Router({
       path: '/products',
       name : 'products',
       label : 'Products',
-      redirect: '/realtimedashboard',
       component : Products,
       children: [
         {
@@ -173,60 +172,59 @@ export default new Router({
 
 
 
-    // {
-    //   path: '/services',
-    //   name : 'services',
-    //   label : 'Services',
-    //   redirect: '/realtimedashboard',
-    //   component : Services,
-    //   children: [
-    //     {
-    //       path: '/srv-human-ai-insight',
-    //       name : 'srv-human-ai-insight',
-    //       label : 'Human x AI insight',
-    //       description_menu : 'Combine AI powered social intelligence with award winning human expertise to go beyond the data and understand how insight can be applied to your business.',
-    //       icon_menu : 'icon_dash.svg',
-    //       component: RealTimeDash
-    //     },
-    //     {
-    //       path: '/srv-data-driven-strategy',
-    //       name : 'srv-data-driven-strategy',
-    //       label : 'Data Driven Strategy',
-    //       description_menu : 'Fully data driven digital and social and strategies for brands and campaigns. Powered by deep audience, competitor and landscape analysis.',
-    //       icon_menu : 'icon_ai.svg',
-    //       component: AIAudienceAnal
-    //     },
-    //     {
-    //       path: '/srv-content-optimisation',
-    //       name : 'srv-content-optimisation',
-    //       label : 'Content Optimisation',
-    //       description_menu : 'Using our Virtual AI Audience technology understand how to align your creative so it really resonates with your target personas.',
-    //       icon_menu : 'icon_mkt_intel.svg',
-    //       component: MarketingIntel
-    //     },
-    //     {
-    //       path: '/srv-real-time-monitoring-support',
-    //       name : 'srv-real-time-monitoring-support',
-    //       label : 'Real-Time crisis monitoring & support',
-    //       description_menu : 'With our technology and experienced team we can help you protect your brand’s reputation and prepare you for any future social media crisis.',
-    //       icon_menu : 'icon_events.svg',
-    //       component: VirtualEvents
-    //     },
-    //   ]
-    // },
-
-
-
-
-
-
-
     {
       path: '/services',
       name : 'services',
       label : 'Services',
-      component : CredibleInfluence,
+      component : Services,
+      children: [
+        {
+          path: '/srv-human-ai-insight',
+          name : 'srv-human-ai-insight',
+          label : 'Human x AI insight',
+          description_menu : 'Combine AI powered social intelligence with award winning human expertise to go beyond the data and understand how insight can be applied to your business.',
+          icon_menu : 'icon_dash.svg',
+          component: RealTimeDash
+        },
+        {
+          path: '/srv-data-driven-strategy',
+          name : 'srv-data-driven-strategy',
+          label : 'Data Driven Strategy',
+          description_menu : 'Fully data driven digital and social and strategies for brands and campaigns. Powered by deep audience, competitor and landscape analysis.',
+          icon_menu : 'icon_ai.svg',
+          component: AIAudienceAnal
+        },
+        {
+          path: '/srv-content-optimisation',
+          name : 'srv-content-optimisation',
+          label : 'Content Optimisation',
+          description_menu : 'Using our Virtual AI Audience technology understand how to align your creative so it really resonates with your target personas.',
+          icon_menu : 'icon_mkt_intel.svg',
+          component: MarketingIntel
+        },
+        {
+          path: '/srv-real-time-monitoring-support',
+          name : 'srv-real-time-monitoring-support',
+          label : 'Real-Time crisis monitoring & support',
+          description_menu : 'With our technology and experienced team we can help you protect your brand’s reputation and prepare you for any future social media crisis.',
+          icon_menu : 'icon_events.svg',
+          component: VirtualEvents
+        },
+      ]
     },
+
+
+
+
+
+
+
+    // {
+    //   path: '/services',
+    //   name : 'services',
+    //   label : 'Services',
+    //   component : Services,
+    // },
 
 
 
@@ -328,5 +326,3 @@ export default new Router({
 });
 
 
-
-console.log("hello world");

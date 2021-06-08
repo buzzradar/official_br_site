@@ -20,7 +20,13 @@
 			:data-max-width="route.megaMenuWidth"
 			data-position="left">
 
-				<a class="nav-link u-header__nav-link u-header__nav-link-toggle" :href="route.children[0].path" aria-haspopup="true" aria-expanded="false" aria-labelledby="prodcutsSubMenu">{{route.router_config.label}}</a>
+			    <div v-if="route.name == 'services'">
+					<a class="nav-link u-header__nav-link u-header__nav-link-toggle" :href="route.router_config.path" aria-haspopup="true" aria-expanded="false" aria-labelledby="prodcutsSubMenu">{{route.router_config.label}}</a>
+				</div>
+			    <div v-else>
+					<a class="nav-link u-header__nav-link u-header__nav-link-toggle" :href="route.children[0].path" aria-haspopup="true" aria-expanded="false" aria-labelledby="prodcutsSubMenu">{{route.router_config.label}}</a>
+				</div>
+
 
 				<mega-menu v-if="route.megaMenu" :parent-route="route" :num-columns="route.columns" :extra-column-layout="route.extraColumnLayout"></mega-menu>   
 				<simple-menu v-else :parent-route="route"></simple-menu>
@@ -85,6 +91,7 @@
 	  		mainNavRoutesArray : [
 	  			{
 	  				//Products
+					  name : 'products',
 					  router_config : this.$router.options.routes[3],
 					  children : this.$router.options.routes[3].children,
 					  megaMenu : true,   
@@ -92,34 +99,46 @@
 					  extraColumnLayout : null,
 					  megaMenuWidth : '700px'
 	  			},
-				{
 					//Services
-					  router_config : this.$router.options.routes[4],
-					  children : this.$router.options.routes[4].children,
-					  megaMenu : false,
-	  			},
 
-	  			// {
-	  			// 	//Services
+				// {
+				//    name : 'services',
 				// 	  router_config : this.$router.options.routes[4],
 				// 	  children : this.$router.options.routes[4].children,
-				// 	  megaMenu : true,   
-				// 	  columns: 2,
-				// 	  extraColumnLayout : null,
-				// 	  megaMenuWidth : '700px'
+				// 	  megaMenu : false,
 	  			// },
+
+
+
+	  			{
+					  name : 'services',
+					  router_config : this.$router.options.routes[4],
+					  children : this.$router.options.routes[4].children,
+					  megaMenu : true,   
+					  columns: 2,
+					  extraColumnLayout : null,
+					  megaMenuWidth : '700px'
+	  			},
+
+
+
+
+
 	  			{
 	  				//Case Studies
+					  name : 'casestudies',
 					  router_config : this.$router.options.routes[5],
 					  megaMenu : false, 
 	  			},
 	  			{
 	  				//Blog
+					  name : 'blog',
 					  router_config : this.$router.options.routes[6],
 					  megaMenu : false, 
 	  			},
 	   			{
 	  				//About Us
+					  name : 'aboutus',
 					  router_config : this.$router.options.routes[7],
 					  children : this.$router.options.routes[7].children,
 					  megaMenu : false, 

@@ -115,11 +115,11 @@
     methods: {
       routeContains(currentRoute,matchingRoute) {
 
-        console.log('----------------------------------------');
-        console.log(currentRoute, matchingRoute);
+        //console.log('----------------------------------------');
+        //console.log(currentRoute, matchingRoute);
 
         if (currentRoute.includes(matchingRoute)){
-          console.log("I am in!!!!!!", currentRoute);
+          //console.log("I am in!!!!!!", currentRoute);
         }
 
         return currentRoute.includes(matchingRoute);
