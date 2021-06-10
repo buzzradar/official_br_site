@@ -4,14 +4,6 @@
 
     <div>
 
-      
-
-
-      <!-- <h1>{{this.$router.currentRoute.path}}</h1>
-      <h1>{{this.$router.currentRoute.path}}</h1> -->
-
-
-
       <div v-if="routeContains(this.$router.currentRoute.path,'srv-')">
 
         <!-- ++++++++++++++++++++ -->
@@ -40,9 +32,9 @@
                 <img class="img-fluid mt-3" src="@/assets/buzzradar/img/ces/ces_2020_date.png" alt="January 7-10 (Las Vegas)">
               </p> -->
               <h2 class="h1 display-5 font-size-md-down-5 font-weight-bold mb-2">
-                Services Pages
+                Social Data + AI + Human Expertise = Game Changing Insights 
               </h2>
-              <h3>with Real-Time Social and Audience Intelligence<br>you can act on instantly</h3>
+              <h3>Get data-driven insights, recommendations and strategy to your toughest marketing challenges - from start to finish</h3>
               
               <button v-on:click="bookMeeting" type="button" class="btn btn-sm btn-primary transition-3d-hover mt-2" tabindex="0">Book a Demo</button>
               
@@ -63,24 +55,62 @@
 
 
 
-        <!-- Stats Section -->
+        <!-- Paragraph Section -->
         <div class="bg-light">
           <div class="container space-1">
             <!-- Title -->
             <div class="w-md-80 w-lg-80 text-center mx-md-auto">
-              <div id="svgArrows" class="pt-3 mb-5">
-                <h1 class="h2 text-primary">Make your virtual events count with Buzz Radar</h1>
-                <h2 class="h5 font-weight-normal text-secondary">With the many events this year turning virtual, utilising and understanding the online conversation around them has become increasingly important. Virtual events have special needs; Buzz Radar’s Audience Analysis and Real-time Data Visualisation can help event organisers quickly fill gaps in several key areas:</h2>
+              <div id="svgArrows" class="pt-3 mb-2">
+                <h1 class="h2 text-primary">Intelligence Platform + Intelligent Humans</h1>
+                <h2 class="h5 font-weight-normal text-secondary">As great as our platform is, on it's own it’s not enough. Data without context, expertise and experience can be hard to turn into meaningful insights and action. We’ve spent the last 9 years designing and developing Buzz Radar into a real-time insights platform for some of the biggest brands in the world. As well as providing cutting edge insight technology, we help translate that insight, provide context and give data-driven advice to guide their strategy. Our Insights and strategy team is here to help you do just that.<br><br></h2>
+                <h2 class="h5 font-weight-normal text-secondary">From one off reports to helping major brands launch their global social channels, we can help. We have a range of services that can help no matter the size of your business. If they don’t fit, just ask us and we will find a way to help.</h2>
               </div>
             </div>
             <!-- End Title -->
           </div>
         </div>
-        <!-- End Stats Section -->
+        <!-- End Paragraph Section -->
 
 
 
 
+
+
+
+
+
+
+        <!-- Small Icons Section -->
+        <div class="bg-light">
+          <div class="container space-1">
+            <!-- Title -->
+            <div class="w-md-100 w-lg-100 text-center mx-md-auto">
+              
+              <div class="row mx-n2 mb-3">
+
+                <div v-for="(serviceItem,index) in listServicesArray" class="col-sm-6 col-md-4 px-2 mb-3">
+                  <div class="card card-frame h-100">
+                    <a class="card-body" href="#"><div class="media align-items-center">
+                      <div class="u-sm-avatar mr-3">
+                        <img width="160" height="160" :src="serviceItem.icon" class="img-fluid wp-post-image" alt="" srcset="https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg 160w, https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9-150x150.jpg 150w, https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9-24x24.jpg 24w, https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9-36x36.jpg 36w, https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9-48x48.jpg 48w, https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9-96x96.jpg 96w, https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9-50x50.jpg 50w" sizes="(max-width: 160px) 100vw, 160px"> </div>
+                        <div class="media-body">
+                          <div class="d-flex align-items-center">
+                            <span class="d-block text-dark font-weight-medium text-left">{{serviceItem.name}}</span>
+                          </div>
+                          <!-- <small class="d-block text-secondary text-left">Design service</small>  -->
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+                
+            </div>
+            <!-- End Title -->
+          </div>
+        </div>
+        <!-- End Small Icons Section -->
 
 
 
@@ -106,8 +136,8 @@
                   <!-- <span class="btn btn-icon btn-soft-primary rounded-circle mb-3">
                     <span class="font-weight-semi-bold btn-icon__inner">1.</span>
                   </span> -->
-                  <h2 class="h4 font-weight-semi-bold text-secondary">Real-time command of your event</h2>
-                  <p class="mb-0">Live monitoring of every aspect of online conversation for your event. Get alerts to the most discussed topics, keynotes and speakers; repetitional issues; influencers; as well as the performance of your event messaging.</p>
+                  <h2 class="h4 font-weight-semi-bold text-secondary">Rapid Results</h2>
+                  <p class="mb-0">Due to the advances in AI, a lot of the difficult, cost-prohibitive heavy lifting often created with audience projects producing huge amounts of data can be removed. This allows for our team to zero in quickly and focus on delivering great insight and strategy.</p>
                   <a v-on:click="bookMeeting" class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="#">Book a Demo</a>
                 </div>
                 <!-- End Title -->
@@ -147,8 +177,8 @@
                 <!-- <span class="btn btn-icon btn-soft-primary rounded-circle mb-3">
                   <span class="font-weight-semi-bold btn-icon__inner">2.</span>
                 </span> -->
-                <h2 class="h4 font-weight-semi-bold text-secondary">Powerful reporting post-event</h2>
-                <p class="mb-0">Detailed analysis of the online performance of your event based on audience conversations online. Understand the digital impact of the event alongside the ROI for sponsors and exhibitors. Learn what worked for your audience and what didn’t and which topics and speakers drove conversation and inspired attendees.</p>
+                <h2 class="h4 font-weight-semi-bold text-secondary">Tool Agnostic</h2>
+                <p class="mb-0">While our own cutting edge social media tools we have developed for the past eight years are available, we can also adopt our clients’ tools as needed.</p>
                 <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" :href="pdfreportpath" target="_blank">Download a Sample Report <span class="fas fa-angle-right ml-2"></span></a>
               </div>
               <!-- End Title -->
@@ -165,74 +195,7 @@
 
 
 
-
-        <!-- Mockup Block -->
-        <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll bg-white" data-options='{direction: "normal"}'>
-          <!-- Apply your Parallax background image here -->
-          <div class="dzsparallaxer--target" :style="styleParallaxBg1"></div>
         
-          <div class="container space-2 space-md-3">
-            <div class="row align-items-lg-center">
-              <div class="col-lg-5 mb-7 mb-lg-0">
-                <!-- Title -->
-                <div class="pr-lg-4">
-                  <!-- <span class="btn btn-icon btn-soft-primary rounded-circle mb-3">
-                    <span class="font-weight-semi-bold btn-icon__inner">3.</span>
-                  </span> -->
-                  <h2 class="h4 font-weight-semi-bold text-secondary">Interactive social content on display</h2>
-                  <p class="mb-0">Help your attendees feel part of the conversation with a fully customisable real-time social wall enabling them to discover the conversations and feedback across social channels in a variety of engaging ways. All social walls are embeddable across your social channels or website.</p>
-                  <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="https://insights.buzzradar.com/preview/IDJFFPAW" target="_blank">View a Dashboard<span class="fas fa-angle-right ml-2"></span></a>
-                </div>
-                <!-- End Title -->
-              </div>
-
-              <div class="col-lg-7">
-                <img class="img-fluid" src="@/assets/buzzradar/img/campaigns/virtualevents/interactive_social_content.png" alt="Interactive Social Content">
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <!-- End Mockup Block -->
-
-
-
-
-
-
-        <!-- Mockup Block -->
-        <div class="container space-1">
-          <div class="row align-items-lg-center">
-            <div class="col-lg-5 order-lg-2 mb-7 mb-lg-0">
-              <!-- Title -->
-              <div class="pl-lg-4">
-                <!-- <span class="btn btn-icon btn-soft-primary rounded-circle mb-3">
-                  <span class="font-weight-semi-bold btn-icon__inner">2.</span>
-                </span> -->
-                <h2 class="h4 font-weight-semi-bold text-secondary">In-event audience analysis</h2>
-                <p class="mb-0">With a deeper understanding of their guest sentiment, trending topics, and deep audience psychographics allows the insights to communicate broadly with guests in real-time targeting their needs more closely in an effort to help manage their shift to virtual conferencing.</p>
-                <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="/aiaudienceanalysis">Book a Demo<span class="fas fa-angle-right ml-2"></span></a>
-              </div>
-              <!-- End Title -->
-            </div>
-
-            <div class="col-lg-7">
-              <img class="img-fluid" src="@/assets/buzzradar/img/campaigns/virtualevents/event_audience_analysis.png" alt="In-Event Audience Analysis">
-            </div>
-
-          </div>
-        </div>
-        <!-- End Mockup Block -->
-
-        
-
-
-
-
-
-
-
-
 
 
 
@@ -338,6 +301,47 @@
             height : '120%',
           },
 
+ 
+
+          listServicesArray : [
+            {
+              name : "Deep audience insight",
+              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+            },
+            {
+              name : "Campaign monitoring",
+              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+            },
+            {
+              name : "Crisis monitoring",
+              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+            },
+            {
+              name : "Content analysis and recommendations",
+              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+            },
+            {
+              name : "Event monitoring and analysis",
+              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+            },
+            {
+              name : "Social channel audit",
+              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+            },
+            {
+              name : "Competition analysis",
+              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+            },
+            {
+              name : "Social media governance",
+              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+            },
+            {
+              name : "Global social media strategy",
+              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+            },
+          ],
+
           
         }
     },
@@ -351,6 +355,24 @@
       $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
       dzsprx_init('#parallaxDOM', { direction: "normal", mode_scroll:"fromtop"} );
       dzsprx_init('.dzsparallaxer', { direction: "normal"} );
+
+      $('.use-case-link').hover(
+        function() {
+          $( this ).find('img').css('background-position','0px -75px')
+        }, function() {
+          var isActive = $(this).closest('.nav-link').hasClass('active');
+          if (!isActive) {
+            $( this ).find('img').css('background-position','0px 0px')  
+          }
+        }
+      );
+
+      $('.use-case-link').click( function() {
+
+        $('.use-case-link').find('img').css('background-position','0px 0px');
+        $(this).find('img').css('background-position','0px -75px');
+
+      });
 
     },
     methods: {
@@ -366,18 +388,21 @@
       },
       routeContains(currentRoute,matchingRoute) {
 
-        console.log('----------------------------------------');
-        console.log(currentRoute, matchingRoute);
-        console.log('----------------------------------------');
+        // console.log('----------------------------------------');
+        // console.log(currentRoute, matchingRoute);
+        // console.log('----------------------------------------');
 
         if (currentRoute.includes(matchingRoute)){
-          console.log("SERVICES PAGE: I am in!!!!!!", currentRoute);
+          //console.log("SERVICES PAGE: I am in!!!!!!", currentRoute);
         }else{
-          console.log("SERVICES PAGE: I am NOT in!!!!!!", currentRoute);
+          //console.log("SERVICES PAGE: I am NOT in!!!!!!", currentRoute);
         }
 
         return currentRoute.includes(matchingRoute);
-      }
+      },
+      onChange(event) {
+          $('a[href="#tab_use_cases_' + event.target.value + '"]').tab('show');
+      },
     },
     updated() {
       
@@ -396,6 +421,45 @@
 <style lang="scss" scoped>
 
 	@import "compass";
+
+  .nav-pills {
+
+    .nav-link {
+      border:1px solid #eee;
+      background: #fff;
+      font-size:12px;
+    }
+
+    .nav-link.active {
+      border: 1px solid #21c6ca;
+      background: white;
+
+      img{
+        width:75px;
+        height:75px;
+      }
+
+    }
+
+  }
+
+  .card:hover{
+    background:white;
+  }
+
+
+  @media (max-width: 1024px) {
+    .nav-pills>li {
+      //width:100%;
+      flex-basis: 32%;
+      //margin-bottom: 5px;
+    }
+
+    .nav .nav-item {
+      margin-right: 0rem !important;
+      margin-left: 0rem !important;
+    }
+  }
 
 </style>
 
