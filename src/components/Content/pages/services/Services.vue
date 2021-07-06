@@ -92,7 +92,7 @@
                   <div class="card card-frame h-100">
                     <a class="card-body" href="#"><div class="media align-items-center">
                       <div class="u-sm-avatar mr-3">
-                        <img width="160" height="160" :src="serviceItem.icon" class="img-fluid wp-post-image" alt="" srcset="https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg 160w, https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9-150x150.jpg 150w, https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9-24x24.jpg 24w, https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9-36x36.jpg 36w, https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9-48x48.jpg 48w, https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9-96x96.jpg 96w, https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9-50x50.jpg 50w" sizes="(max-width: 160px) 100vw, 160px"> </div>
+                        <img width="160" height="160" :src="serviceItem.icon" class="img-fluid wp-post-image" alt="" sizes="(max-width: 160px) 100vw, 160px"> </div>
                         <div class="media-body">
                           <div class="d-flex align-items-center">
                             <span class="d-block text-dark font-weight-medium text-left">{{serviceItem.name}}</span>
@@ -138,7 +138,7 @@
                   </span> -->
                   <h2 class="h4 font-weight-semi-bold text-secondary">Rapid Results</h2>
                   <p class="mb-0">Due to the advances in AI, a lot of the difficult, cost-prohibitive heavy lifting often created with audience projects producing huge amounts of data can be removed. This allows for our team to zero in quickly and focus on delivering great insight and strategy.</p>
-                  <a v-on:click="bookMeeting" class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="#">Book a Demo</a>
+                  <!-- <a v-on:click="bookMeeting" class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" href="#">Book a Demo</a> -->
                 </div>
                 <!-- End Title -->
               </div>
@@ -179,7 +179,7 @@
                 </span> -->
                 <h2 class="h4 font-weight-semi-bold text-secondary">Tool Agnostic</h2>
                 <p class="mb-0">While our own cutting edge social media tools we have developed for the past eight years are available, we can also adopt our clients’ tools as needed.</p>
-                <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" :href="pdfreportpath" target="_blank">Download a Sample Report <span class="fas fa-angle-right ml-2"></span></a>
+                <!-- <a class="btn btn-sm btn-outline-secondary btn-wide transition-3d-hover mt-4" :href="pdfreportpath" target="_blank">Download a Sample Report <span class="fas fa-angle-right ml-2"></span></a> -->
               </div>
               <!-- End Title -->
             </div>
@@ -291,7 +291,7 @@
         return {
           heroBgImage : {
             height : '120%',
-            backgroundImage : 'url("'+require('@/assets/buzzradar/img/campaigns/virtualevents/heroimage_virtualevents.jpg')+'")',
+            backgroundImage : 'url("'+require('@/assets/buzzradar/img/services/heroimage_services.jpg')+'")',
           },
 
           pdfreportpath : process.env.BASE_URL + 'public_assets/pdf/ces_2020_social_insight.pdf',
@@ -306,39 +306,39 @@
           listServicesArray : [
             {
               name : "Deep audience insight",
-              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+              icon : require('@/assets/buzzradar/svg/services/icons/deep_aud_insight.svg'),
             },
             {
               name : "Campaign monitoring",
-              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+              icon : require('@/assets/buzzradar/svg/services/icons/campaign_monitoring.svg'),
             },
             {
               name : "Crisis monitoring",
-              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+              icon : require('@/assets/buzzradar/svg/services/icons/crisis_monitoring.svg'),
             },
             {
               name : "Content analysis and recommendations",
-              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+              icon : require('@/assets/buzzradar/svg/services/icons/cont_anal_recom.svg'),
             },
             {
               name : "Event monitoring and analysis",
-              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+              icon : require('@/assets/buzzradar/svg/services/icons/event_monitoring.svg'),
             },
             {
               name : "Social channel audit",
-              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+              icon : require('@/assets/buzzradar/svg/services/icons/social_channel_audit.svg'),
             },
             {
               name : "Competition analysis",
-              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+              icon : require('@/assets/buzzradar/svg/services/icons/competition_analysis.svg'),
             },
             {
               name : "Social media governance",
-              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+              icon : require('@/assets/buzzradar/svg/services/icons/social_media_governance.svg'),
             },
             {
               name : "Global social media strategy",
-              icon : "https://demo3.madrasthemes.com/front-demos/app-marketplace/wp-content/uploads/sites/11/2020/08/img9.jpg",
+              icon : require('@/assets/buzzradar/svg/services/icons/global_social_media_strategy.svg'),
             },
           ],
 

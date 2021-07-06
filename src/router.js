@@ -29,6 +29,7 @@ import CookiePolicy from './components/Content/pages/CookiePolicy';
 import VirtualEvents from './components/Content/pages/products/VirtualEvents';
 
 import Services from './components/Content/pages/services/Services';
+import HumanAIInsight from './components/Content/pages/services/HumanAIInsight';
 import CredibleInfluence from './components/Content/pages/services/CredibleInfluenceLanding';
 import Reports from './components/Content/pages/services/Reports';
 
@@ -183,15 +184,15 @@ export default new Router({
           name : 'srv-human-ai-insight',
           label : 'Human x AI insight',
           description_menu : 'Combine AI powered social intelligence with award winning human expertise to go beyond the data and understand how insight can be applied to your business.',
-          icon_menu : 'icon_dash.svg',
-          component: RealTimeDash
+          icon_menu : 'icon_human_insights.svg',
+          component: HumanAIInsight
         },
         {
           path: '/srv-data-driven-strategy',
           name : 'srv-data-driven-strategy',
           label : 'Data Driven Strategy',
           description_menu : 'Fully data driven digital and social and strategies for brands and campaigns. Powered by deep audience, competitor and landscape analysis.',
-          icon_menu : 'icon_ai.svg',
+          icon_menu : 'icon_data_driven_strategy.svg',
           component: AIAudienceAnal
         },
         {
@@ -199,7 +200,7 @@ export default new Router({
           name : 'srv-content-optimisation',
           label : 'Content Optimisation',
           description_menu : 'Using our Virtual AI Audience technology understand how to align your creative so it really resonates with your target personas.',
-          icon_menu : 'icon_mkt_intel.svg',
+          icon_menu : 'icon_content_opt.svg',
           component: MarketingIntel
         },
         {
@@ -207,7 +208,7 @@ export default new Router({
           name : 'srv-real-time-monitoring-support',
           label : 'Real-Time crisis monitoring & support',
           description_menu : 'With our technology and experienced team we can help you protect your brand’s reputation and prepare you for any future social media crisis.',
-          icon_menu : 'icon_events.svg',
+          icon_menu : 'icon_real_time_crisis.svg',
           component: VirtualEvents
         },
       ]
